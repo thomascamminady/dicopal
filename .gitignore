@@ -162,3 +162,9 @@ cython_debug/
 logs/
 
 /.quarto/
+
+/.quarto/
+/_site/
+/_docs/
+docs/
+
