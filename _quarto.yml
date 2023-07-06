@@ -1,0 +1,36 @@
+project:
+  type: book
+
+
+
+book:
+  title: "dicopal"
+  author: "Thomas Camminady"
+  date: "7/6/2023"
+  chapters:
+    - index.qmd
+    - part: Sources.qmd
+      chapters:
+        - notebooks/cartocolors.qmd
+        - notebooks/cmocean.qmd
+        - notebooks/colorbrewer.qmd
+        - notebooks/lightbartlein.qmd
+        - notebooks/matplotlib.qmd
+        - notebooks/mycarta.qmd
+        - notebooks/scientific.qmd
+        - notebooks/tableau.qmd
+        - notebooks/wesanderson.qmd
+        - notebooks/otakeito.qmd
+  page-navigation: true
+
+
+
+format:
+  html:
+    theme: cosmo
+    page-layout: full
+    code-fold: true
+    toc: true
+    toc-expand: 3
+    toc-depth: 3
+

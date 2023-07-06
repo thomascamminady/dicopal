@@ -1,0 +1,11 @@
+---
+title: mycarta
+---
+
+
+```{python}
+from dicopal.create_page import create_page
+
+create_page("mycarta")
+```
+

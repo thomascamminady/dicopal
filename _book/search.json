@@ -1,0 +1,1325 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "dicopal",
+    "section": "",
+    "text": "1 dicopal.js\ndicopal.js deserves all credit for this work. I have only taken the palettes that they have collected and put them up on this page together with the hex codes. dicopal.js is using the Apache-2.0 license.\nIn total, dicopal.js has compiled color palettes with the following indentifiers:\n[\n  \"cartocolors\",\n  \"cmocean\",\n  \"colorbrewer\",\n  \"lightbartlein\",\n  \"matplotlib\",\n  \"mycarta\",\n  \"scientific\",\n  \"tableau\",\n  \"wesanderson\",\n  \"otakeito\",\n]\n\n\n2 How to use?\nEither go to dicopal.js to use these palettes or copy the provided hex codes and hard-code them in your application.\nI just wanted to have a collection of useful and beautiful colormaps from which I can copy the corresponding hex values when needed."
+  },
+  {
+    "objectID": "Sources.html#cartocolors",
+    "href": "Sources.html#cartocolors",
+    "title": "Sources",
+    "section": "Cartocolors",
+    "text": "Cartocolors\nhttps://carto.com/carto-colors/"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#armyrose",
+    "href": "notebooks/cartocolors.html#armyrose",
+    "title": "2  cartocolors",
+    "section": "2.1 ArmyRose",
+    "text": "2.1 ArmyRose"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#earth",
+    "href": "notebooks/cartocolors.html#earth",
+    "title": "2  cartocolors",
+    "section": "2.2 Earth",
+    "text": "2.2 Earth"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#fall",
+    "href": "notebooks/cartocolors.html#fall",
+    "title": "2  cartocolors",
+    "section": "2.3 Fall",
+    "text": "2.3 Fall"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#geyser",
+    "href": "notebooks/cartocolors.html#geyser",
+    "title": "2  cartocolors",
+    "section": "2.4 Geyser",
+    "text": "2.4 Geyser"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#tealrose",
+    "href": "notebooks/cartocolors.html#tealrose",
+    "title": "2  cartocolors",
+    "section": "2.5 TealRose",
+    "text": "2.5 TealRose"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#temps",
+    "href": "notebooks/cartocolors.html#temps",
+    "title": "2  cartocolors",
+    "section": "2.6 Temps",
+    "text": "2.6 Temps"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#tropic",
+    "href": "notebooks/cartocolors.html#tropic",
+    "title": "2  cartocolors",
+    "section": "2.7 Tropic",
+    "text": "2.7 Tropic"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#blugrn",
+    "href": "notebooks/cartocolors.html#blugrn",
+    "title": "2  cartocolors",
+    "section": "2.8 BluGrn",
+    "text": "2.8 BluGrn"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#bluyl",
+    "href": "notebooks/cartocolors.html#bluyl",
+    "title": "2  cartocolors",
+    "section": "2.9 BluYl",
+    "text": "2.9 BluYl"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#brwnyl",
+    "href": "notebooks/cartocolors.html#brwnyl",
+    "title": "2  cartocolors",
+    "section": "2.10 BrwnYl",
+    "text": "2.10 BrwnYl"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#burgyl",
+    "href": "notebooks/cartocolors.html#burgyl",
+    "title": "2  cartocolors",
+    "section": "2.11 BurgYl",
+    "text": "2.11 BurgYl"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#burg",
+    "href": "notebooks/cartocolors.html#burg",
+    "title": "2  cartocolors",
+    "section": "2.12 Burg",
+    "text": "2.12 Burg"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#darkmint",
+    "href": "notebooks/cartocolors.html#darkmint",
+    "title": "2  cartocolors",
+    "section": "2.13 DarkMint",
+    "text": "2.13 DarkMint"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#emrld",
+    "href": "notebooks/cartocolors.html#emrld",
+    "title": "2  cartocolors",
+    "section": "2.14 Emrld",
+    "text": "2.14 Emrld"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#magenta",
+    "href": "notebooks/cartocolors.html#magenta",
+    "title": "2  cartocolors",
+    "section": "2.15 Magenta",
+    "text": "2.15 Magenta"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#mint",
+    "href": "notebooks/cartocolors.html#mint",
+    "title": "2  cartocolors",
+    "section": "2.16 Mint",
+    "text": "2.16 Mint"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#oryel",
+    "href": "notebooks/cartocolors.html#oryel",
+    "title": "2  cartocolors",
+    "section": "2.17 OrYel",
+    "text": "2.17 OrYel"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#peach",
+    "href": "notebooks/cartocolors.html#peach",
+    "title": "2  cartocolors",
+    "section": "2.18 Peach",
+    "text": "2.18 Peach"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#pinkyl",
+    "href": "notebooks/cartocolors.html#pinkyl",
+    "title": "2  cartocolors",
+    "section": "2.19 PinkYl",
+    "text": "2.19 PinkYl"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#purpor",
+    "href": "notebooks/cartocolors.html#purpor",
+    "title": "2  cartocolors",
+    "section": "2.20 PurpOr",
+    "text": "2.20 PurpOr"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#purp",
+    "href": "notebooks/cartocolors.html#purp",
+    "title": "2  cartocolors",
+    "section": "2.21 Purp",
+    "text": "2.21 Purp"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#redor",
+    "href": "notebooks/cartocolors.html#redor",
+    "title": "2  cartocolors",
+    "section": "2.22 RedOr",
+    "text": "2.22 RedOr"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#sunsetdark",
+    "href": "notebooks/cartocolors.html#sunsetdark",
+    "title": "2  cartocolors",
+    "section": "2.23 SunsetDark",
+    "text": "2.23 SunsetDark"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#sunset",
+    "href": "notebooks/cartocolors.html#sunset",
+    "title": "2  cartocolors",
+    "section": "2.24 Sunset",
+    "text": "2.24 Sunset"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#tealgrn",
+    "href": "notebooks/cartocolors.html#tealgrn",
+    "title": "2  cartocolors",
+    "section": "2.25 TealGrn",
+    "text": "2.25 TealGrn"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#teal",
+    "href": "notebooks/cartocolors.html#teal",
+    "title": "2  cartocolors",
+    "section": "2.26 Teal",
+    "text": "2.26 Teal"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#aggrnyl",
+    "href": "notebooks/cartocolors.html#aggrnyl",
+    "title": "2  cartocolors",
+    "section": "2.27 agGrnYl",
+    "text": "2.27 agGrnYl"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#agsunset",
+    "href": "notebooks/cartocolors.html#agsunset",
+    "title": "2  cartocolors",
+    "section": "2.28 agSunset",
+    "text": "2.28 agSunset"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#antique",
+    "href": "notebooks/cartocolors.html#antique",
+    "title": "2  cartocolors",
+    "section": "2.29 Antique",
+    "text": "2.29 Antique"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#bold",
+    "href": "notebooks/cartocolors.html#bold",
+    "title": "2  cartocolors",
+    "section": "2.30 Bold",
+    "text": "2.30 Bold"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#pastel",
+    "href": "notebooks/cartocolors.html#pastel",
+    "title": "2  cartocolors",
+    "section": "2.31 Pastel",
+    "text": "2.31 Pastel"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#prism",
+    "href": "notebooks/cartocolors.html#prism",
+    "title": "2  cartocolors",
+    "section": "2.32 Prism",
+    "text": "2.32 Prism"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#safe",
+    "href": "notebooks/cartocolors.html#safe",
+    "title": "2  cartocolors",
+    "section": "2.33 Safe",
+    "text": "2.33 Safe"
+  },
+  {
+    "objectID": "notebooks/cartocolors.html#vivid",
+    "href": "notebooks/cartocolors.html#vivid",
+    "title": "2  cartocolors",
+    "section": "2.34 Vivid",
+    "text": "2.34 Vivid"
+  },
+  {
+    "objectID": "notebooks/cmocean.html#balance",
+    "href": "notebooks/cmocean.html#balance",
+    "title": "3  cmocean",
+    "section": "3.1 Balance",
+    "text": "3.1 Balance"
+  },
+  {
+    "objectID": "notebooks/cmocean.html#curl",
+    "href": "notebooks/cmocean.html#curl",
+    "title": "3  cmocean",
+    "section": "3.2 Curl",
+    "text": "3.2 Curl"
+  },
+  {
+    "objectID": "notebooks/cmocean.html#delta",
+    "href": "notebooks/cmocean.html#delta",
+    "title": "3  cmocean",
+    "section": "3.3 Delta",
+    "text": "3.3 Delta"
+  },
+  {
+    "objectID": "notebooks/cmocean.html#algae",
+    "href": "notebooks/cmocean.html#algae",
+    "title": "3  cmocean",
+    "section": "3.4 Algae",
+    "text": "3.4 Algae"
+  },
+  {
+    "objectID": "notebooks/cmocean.html#amp",
+    "href": "notebooks/cmocean.html#amp",
+    "title": "3  cmocean",
+    "section": "3.5 Amp",
+    "text": "3.5 Amp"
+  },
+  {
+    "objectID": "notebooks/cmocean.html#deep",
+    "href": "notebooks/cmocean.html#deep",
+    "title": "3  cmocean",
+    "section": "3.6 Deep",
+    "text": "3.6 Deep"
+  },
+  {
+    "objectID": "notebooks/cmocean.html#dense",
+    "href": "notebooks/cmocean.html#dense",
+    "title": "3  cmocean",
+    "section": "3.7 Dense",
+    "text": "3.7 Dense"
+  },
+  {
+    "objectID": "notebooks/cmocean.html#gray",
+    "href": "notebooks/cmocean.html#gray",
+    "title": "3  cmocean",
+    "section": "3.8 Gray",
+    "text": "3.8 Gray"
+  },
+  {
+    "objectID": "notebooks/cmocean.html#haline",
+    "href": "notebooks/cmocean.html#haline",
+    "title": "3  cmocean",
+    "section": "3.9 Haline",
+    "text": "3.9 Haline"
+  },
+  {
+    "objectID": "notebooks/cmocean.html#ice",
+    "href": "notebooks/cmocean.html#ice",
+    "title": "3  cmocean",
+    "section": "3.10 Ice",
+    "text": "3.10 Ice"
+  },
+  {
+    "objectID": "notebooks/cmocean.html#matter",
+    "href": "notebooks/cmocean.html#matter",
+    "title": "3  cmocean",
+    "section": "3.11 Matter",
+    "text": "3.11 Matter"
+  },
+  {
+    "objectID": "notebooks/cmocean.html#oxy",
+    "href": "notebooks/cmocean.html#oxy",
+    "title": "3  cmocean",
+    "section": "3.12 Oxy",
+    "text": "3.12 Oxy"
+  },
+  {
+    "objectID": "notebooks/cmocean.html#phase",
+    "href": "notebooks/cmocean.html#phase",
+    "title": "3  cmocean",
+    "section": "3.13 Phase",
+    "text": "3.13 Phase"
+  },
+  {
+    "objectID": "notebooks/cmocean.html#solar",
+    "href": "notebooks/cmocean.html#solar",
+    "title": "3  cmocean",
+    "section": "3.14 Solar",
+    "text": "3.14 Solar"
+  },
+  {
+    "objectID": "notebooks/cmocean.html#speed",
+    "href": "notebooks/cmocean.html#speed",
+    "title": "3  cmocean",
+    "section": "3.15 Speed",
+    "text": "3.15 Speed"
+  },
+  {
+    "objectID": "notebooks/cmocean.html#tempo",
+    "href": "notebooks/cmocean.html#tempo",
+    "title": "3  cmocean",
+    "section": "3.16 Tempo",
+    "text": "3.16 Tempo"
+  },
+  {
+    "objectID": "notebooks/cmocean.html#thermal",
+    "href": "notebooks/cmocean.html#thermal",
+    "title": "3  cmocean",
+    "section": "3.17 Thermal",
+    "text": "3.17 Thermal"
+  },
+  {
+    "objectID": "notebooks/cmocean.html#turbid",
+    "href": "notebooks/cmocean.html#turbid",
+    "title": "3  cmocean",
+    "section": "3.18 Turbid",
+    "text": "3.18 Turbid"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#brbg",
+    "href": "notebooks/colorbrewer.html#brbg",
+    "title": "4  colorbrewer",
+    "section": "4.1 BrBG",
+    "text": "4.1 BrBG"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#prgn",
+    "href": "notebooks/colorbrewer.html#prgn",
+    "title": "4  colorbrewer",
+    "section": "4.2 PRGn",
+    "text": "4.2 PRGn"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#piyg",
+    "href": "notebooks/colorbrewer.html#piyg",
+    "title": "4  colorbrewer",
+    "section": "4.3 PiYG",
+    "text": "4.3 PiYG"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#puor",
+    "href": "notebooks/colorbrewer.html#puor",
+    "title": "4  colorbrewer",
+    "section": "4.4 PuOr",
+    "text": "4.4 PuOr"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#rdbu",
+    "href": "notebooks/colorbrewer.html#rdbu",
+    "title": "4  colorbrewer",
+    "section": "4.5 RdBu",
+    "text": "4.5 RdBu"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#rdgy",
+    "href": "notebooks/colorbrewer.html#rdgy",
+    "title": "4  colorbrewer",
+    "section": "4.6 RdGy",
+    "text": "4.6 RdGy"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#rdylbu",
+    "href": "notebooks/colorbrewer.html#rdylbu",
+    "title": "4  colorbrewer",
+    "section": "4.7 RdYlBu",
+    "text": "4.7 RdYlBu"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#rdylgn",
+    "href": "notebooks/colorbrewer.html#rdylgn",
+    "title": "4  colorbrewer",
+    "section": "4.8 RdYlGn",
+    "text": "4.8 RdYlGn"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#spectral",
+    "href": "notebooks/colorbrewer.html#spectral",
+    "title": "4  colorbrewer",
+    "section": "4.9 Spectral",
+    "text": "4.9 Spectral"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#accent",
+    "href": "notebooks/colorbrewer.html#accent",
+    "title": "4  colorbrewer",
+    "section": "4.10 Accent",
+    "text": "4.10 Accent"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#dark2",
+    "href": "notebooks/colorbrewer.html#dark2",
+    "title": "4  colorbrewer",
+    "section": "4.11 Dark2",
+    "text": "4.11 Dark2"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#paired",
+    "href": "notebooks/colorbrewer.html#paired",
+    "title": "4  colorbrewer",
+    "section": "4.12 Paired",
+    "text": "4.12 Paired"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#pastel1",
+    "href": "notebooks/colorbrewer.html#pastel1",
+    "title": "4  colorbrewer",
+    "section": "4.13 Pastel1",
+    "text": "4.13 Pastel1"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#pastel2",
+    "href": "notebooks/colorbrewer.html#pastel2",
+    "title": "4  colorbrewer",
+    "section": "4.14 Pastel2",
+    "text": "4.14 Pastel2"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#set1",
+    "href": "notebooks/colorbrewer.html#set1",
+    "title": "4  colorbrewer",
+    "section": "4.15 Set1",
+    "text": "4.15 Set1"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#set2",
+    "href": "notebooks/colorbrewer.html#set2",
+    "title": "4  colorbrewer",
+    "section": "4.16 Set2",
+    "text": "4.16 Set2"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#set3",
+    "href": "notebooks/colorbrewer.html#set3",
+    "title": "4  colorbrewer",
+    "section": "4.17 Set3",
+    "text": "4.17 Set3"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#blues",
+    "href": "notebooks/colorbrewer.html#blues",
+    "title": "4  colorbrewer",
+    "section": "4.18 Blues",
+    "text": "4.18 Blues"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#bugn",
+    "href": "notebooks/colorbrewer.html#bugn",
+    "title": "4  colorbrewer",
+    "section": "4.19 BuGn",
+    "text": "4.19 BuGn"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#bupu",
+    "href": "notebooks/colorbrewer.html#bupu",
+    "title": "4  colorbrewer",
+    "section": "4.20 BuPu",
+    "text": "4.20 BuPu"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#gnbu",
+    "href": "notebooks/colorbrewer.html#gnbu",
+    "title": "4  colorbrewer",
+    "section": "4.21 GnBu",
+    "text": "4.21 GnBu"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#greens",
+    "href": "notebooks/colorbrewer.html#greens",
+    "title": "4  colorbrewer",
+    "section": "4.22 Greens",
+    "text": "4.22 Greens"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#greys",
+    "href": "notebooks/colorbrewer.html#greys",
+    "title": "4  colorbrewer",
+    "section": "4.23 Greys",
+    "text": "4.23 Greys"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#orrd",
+    "href": "notebooks/colorbrewer.html#orrd",
+    "title": "4  colorbrewer",
+    "section": "4.24 OrRd",
+    "text": "4.24 OrRd"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#oranges",
+    "href": "notebooks/colorbrewer.html#oranges",
+    "title": "4  colorbrewer",
+    "section": "4.25 Oranges",
+    "text": "4.25 Oranges"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#pubugn",
+    "href": "notebooks/colorbrewer.html#pubugn",
+    "title": "4  colorbrewer",
+    "section": "4.26 PuBuGn",
+    "text": "4.26 PuBuGn"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#pubu",
+    "href": "notebooks/colorbrewer.html#pubu",
+    "title": "4  colorbrewer",
+    "section": "4.27 PuBu",
+    "text": "4.27 PuBu"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#purd",
+    "href": "notebooks/colorbrewer.html#purd",
+    "title": "4  colorbrewer",
+    "section": "4.28 PuRd",
+    "text": "4.28 PuRd"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#purples",
+    "href": "notebooks/colorbrewer.html#purples",
+    "title": "4  colorbrewer",
+    "section": "4.29 Purples",
+    "text": "4.29 Purples"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#rdpu",
+    "href": "notebooks/colorbrewer.html#rdpu",
+    "title": "4  colorbrewer",
+    "section": "4.30 RdPu",
+    "text": "4.30 RdPu"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#reds",
+    "href": "notebooks/colorbrewer.html#reds",
+    "title": "4  colorbrewer",
+    "section": "4.31 Reds",
+    "text": "4.31 Reds"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#ylgnbu",
+    "href": "notebooks/colorbrewer.html#ylgnbu",
+    "title": "4  colorbrewer",
+    "section": "4.32 YlGnBu",
+    "text": "4.32 YlGnBu"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#ylgn",
+    "href": "notebooks/colorbrewer.html#ylgn",
+    "title": "4  colorbrewer",
+    "section": "4.33 YlGn",
+    "text": "4.33 YlGn"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#ylorbr",
+    "href": "notebooks/colorbrewer.html#ylorbr",
+    "title": "4  colorbrewer",
+    "section": "4.34 YlOrBr",
+    "text": "4.34 YlOrBr"
+  },
+  {
+    "objectID": "notebooks/colorbrewer.html#ylorrd",
+    "href": "notebooks/colorbrewer.html#ylorrd",
+    "title": "4  colorbrewer",
+    "section": "4.35 YlOrRd",
+    "text": "4.35 YlOrRd"
+  },
+  {
+    "objectID": "notebooks/lightbartlein.html#bluedarkorange12",
+    "href": "notebooks/lightbartlein.html#bluedarkorange12",
+    "title": "5  lightbartlein",
+    "section": "5.1 BlueDarkOrange12",
+    "text": "5.1 BlueDarkOrange12"
+  },
+  {
+    "objectID": "notebooks/lightbartlein.html#bluedarkorange18",
+    "href": "notebooks/lightbartlein.html#bluedarkorange18",
+    "title": "5  lightbartlein",
+    "section": "5.2 BlueDarkOrange18",
+    "text": "5.2 BlueDarkOrange18"
+  },
+  {
+    "objectID": "notebooks/lightbartlein.html#bluedarkred12",
+    "href": "notebooks/lightbartlein.html#bluedarkred12",
+    "title": "5  lightbartlein",
+    "section": "5.3 BlueDarkRed12",
+    "text": "5.3 BlueDarkRed12"
+  },
+  {
+    "objectID": "notebooks/lightbartlein.html#bluedarkred18",
+    "href": "notebooks/lightbartlein.html#bluedarkred18",
+    "title": "5  lightbartlein",
+    "section": "5.4 BlueDarkRed18",
+    "text": "5.4 BlueDarkRed18"
+  },
+  {
+    "objectID": "notebooks/lightbartlein.html#bluegray",
+    "href": "notebooks/lightbartlein.html#bluegray",
+    "title": "5  lightbartlein",
+    "section": "5.5 BlueGray",
+    "text": "5.5 BlueGray"
+  },
+  {
+    "objectID": "notebooks/lightbartlein.html#bluegreen",
+    "href": "notebooks/lightbartlein.html#bluegreen",
+    "title": "5  lightbartlein",
+    "section": "5.6 BlueGreen",
+    "text": "5.6 BlueGreen"
+  },
+  {
+    "objectID": "notebooks/lightbartlein.html#bluegrey",
+    "href": "notebooks/lightbartlein.html#bluegrey",
+    "title": "5  lightbartlein",
+    "section": "5.7 BlueGrey",
+    "text": "5.7 BlueGrey"
+  },
+  {
+    "objectID": "notebooks/lightbartlein.html#blueorange10",
+    "href": "notebooks/lightbartlein.html#blueorange10",
+    "title": "5  lightbartlein",
+    "section": "5.8 BlueOrange10",
+    "text": "5.8 BlueOrange10"
+  },
+  {
+    "objectID": "notebooks/lightbartlein.html#blueorange12",
+    "href": "notebooks/lightbartlein.html#blueorange12",
+    "title": "5  lightbartlein",
+    "section": "5.9 BlueOrange12",
+    "text": "5.9 BlueOrange12"
+  },
+  {
+    "objectID": "notebooks/lightbartlein.html#blueorange8",
+    "href": "notebooks/lightbartlein.html#blueorange8",
+    "title": "5  lightbartlein",
+    "section": "5.10 BlueOrange8",
+    "text": "5.10 BlueOrange8"
+  },
+  {
+    "objectID": "notebooks/lightbartlein.html#blueorangered",
+    "href": "notebooks/lightbartlein.html#blueorangered",
+    "title": "5  lightbartlein",
+    "section": "5.11 BlueOrangeRed",
+    "text": "5.11 BlueOrangeRed"
+  },
+  {
+    "objectID": "notebooks/lightbartlein.html#brownblue10",
+    "href": "notebooks/lightbartlein.html#brownblue10",
+    "title": "5  lightbartlein",
+    "section": "5.12 BrownBlue10",
+    "text": "5.12 BrownBlue10"
+  },
+  {
+    "objectID": "notebooks/lightbartlein.html#brownblue12",
+    "href": "notebooks/lightbartlein.html#brownblue12",
+    "title": "5  lightbartlein",
+    "section": "5.13 BrownBlue12",
+    "text": "5.13 BrownBlue12"
+  },
+  {
+    "objectID": "notebooks/lightbartlein.html#greenmagenta",
+    "href": "notebooks/lightbartlein.html#greenmagenta",
+    "title": "5  lightbartlein",
+    "section": "5.14 GreenMagenta",
+    "text": "5.14 GreenMagenta"
+  },
+  {
+    "objectID": "notebooks/lightbartlein.html#redyellowblue",
+    "href": "notebooks/lightbartlein.html#redyellowblue",
+    "title": "5  lightbartlein",
+    "section": "5.15 RedYellowBlue",
+    "text": "5.15 RedYellowBlue"
+  },
+  {
+    "objectID": "notebooks/lightbartlein.html#blues10",
+    "href": "notebooks/lightbartlein.html#blues10",
+    "title": "5  lightbartlein",
+    "section": "5.16 Blues10",
+    "text": "5.16 Blues10"
+  },
+  {
+    "objectID": "notebooks/lightbartlein.html#blues7",
+    "href": "notebooks/lightbartlein.html#blues7",
+    "title": "5  lightbartlein",
+    "section": "5.17 Blues7",
+    "text": "5.17 Blues7"
+  },
+  {
+    "objectID": "notebooks/matplotlib.html#inferno",
+    "href": "notebooks/matplotlib.html#inferno",
+    "title": "6  matplotlib",
+    "section": "6.1 Inferno",
+    "text": "6.1 Inferno"
+  },
+  {
+    "objectID": "notebooks/matplotlib.html#magma",
+    "href": "notebooks/matplotlib.html#magma",
+    "title": "6  matplotlib",
+    "section": "6.2 Magma",
+    "text": "6.2 Magma"
+  },
+  {
+    "objectID": "notebooks/matplotlib.html#plasma",
+    "href": "notebooks/matplotlib.html#plasma",
+    "title": "6  matplotlib",
+    "section": "6.3 Plasma",
+    "text": "6.3 Plasma"
+  },
+  {
+    "objectID": "notebooks/matplotlib.html#viridis",
+    "href": "notebooks/matplotlib.html#viridis",
+    "title": "6  matplotlib",
+    "section": "6.4 Viridis",
+    "text": "6.4 Viridis"
+  },
+  {
+    "objectID": "notebooks/mycarta.html#cube1",
+    "href": "notebooks/mycarta.html#cube1",
+    "title": "7  mycarta",
+    "section": "7.1 Cube1",
+    "text": "7.1 Cube1"
+  },
+  {
+    "objectID": "notebooks/mycarta.html#cubeyf",
+    "href": "notebooks/mycarta.html#cubeyf",
+    "title": "7  mycarta",
+    "section": "7.2 CubeYF",
+    "text": "7.2 CubeYF"
+  },
+  {
+    "objectID": "notebooks/mycarta.html#linearl",
+    "href": "notebooks/mycarta.html#linearl",
+    "title": "7  mycarta",
+    "section": "7.3 LinearL",
+    "text": "7.3 LinearL"
+  },
+  {
+    "objectID": "notebooks/scientific.html#berlin",
+    "href": "notebooks/scientific.html#berlin",
+    "title": "8  scientific",
+    "section": "8.1 Berlin",
+    "text": "8.1 Berlin"
+  },
+  {
+    "objectID": "notebooks/scientific.html#broc",
+    "href": "notebooks/scientific.html#broc",
+    "title": "8  scientific",
+    "section": "8.2 Broc",
+    "text": "8.2 Broc"
+  },
+  {
+    "objectID": "notebooks/scientific.html#cork",
+    "href": "notebooks/scientific.html#cork",
+    "title": "8  scientific",
+    "section": "8.3 Cork",
+    "text": "8.3 Cork"
+  },
+  {
+    "objectID": "notebooks/scientific.html#lisbon",
+    "href": "notebooks/scientific.html#lisbon",
+    "title": "8  scientific",
+    "section": "8.4 Lisbon",
+    "text": "8.4 Lisbon"
+  },
+  {
+    "objectID": "notebooks/scientific.html#roma",
+    "href": "notebooks/scientific.html#roma",
+    "title": "8  scientific",
+    "section": "8.5 Roma",
+    "text": "8.5 Roma"
+  },
+  {
+    "objectID": "notebooks/scientific.html#tofino",
+    "href": "notebooks/scientific.html#tofino",
+    "title": "8  scientific",
+    "section": "8.6 Tofino",
+    "text": "8.6 Tofino"
+  },
+  {
+    "objectID": "notebooks/scientific.html#vik",
+    "href": "notebooks/scientific.html#vik",
+    "title": "8  scientific",
+    "section": "8.7 Vik",
+    "text": "8.7 Vik"
+  },
+  {
+    "objectID": "notebooks/scientific.html#acton",
+    "href": "notebooks/scientific.html#acton",
+    "title": "8  scientific",
+    "section": "8.8 Acton",
+    "text": "8.8 Acton"
+  },
+  {
+    "objectID": "notebooks/scientific.html#bamako",
+    "href": "notebooks/scientific.html#bamako",
+    "title": "8  scientific",
+    "section": "8.9 Bamako",
+    "text": "8.9 Bamako"
+  },
+  {
+    "objectID": "notebooks/scientific.html#batlow",
+    "href": "notebooks/scientific.html#batlow",
+    "title": "8  scientific",
+    "section": "8.10 Batlow",
+    "text": "8.10 Batlow"
+  },
+  {
+    "objectID": "notebooks/scientific.html#bilbao",
+    "href": "notebooks/scientific.html#bilbao",
+    "title": "8  scientific",
+    "section": "8.11 Bilbao",
+    "text": "8.11 Bilbao"
+  },
+  {
+    "objectID": "notebooks/scientific.html#buda",
+    "href": "notebooks/scientific.html#buda",
+    "title": "8  scientific",
+    "section": "8.12 Buda",
+    "text": "8.12 Buda"
+  },
+  {
+    "objectID": "notebooks/scientific.html#davos",
+    "href": "notebooks/scientific.html#davos",
+    "title": "8  scientific",
+    "section": "8.13 Davos",
+    "text": "8.13 Davos"
+  },
+  {
+    "objectID": "notebooks/scientific.html#devon",
+    "href": "notebooks/scientific.html#devon",
+    "title": "8  scientific",
+    "section": "8.14 Devon",
+    "text": "8.14 Devon"
+  },
+  {
+    "objectID": "notebooks/scientific.html#grayc",
+    "href": "notebooks/scientific.html#grayc",
+    "title": "8  scientific",
+    "section": "8.15 GrayC",
+    "text": "8.15 GrayC"
+  },
+  {
+    "objectID": "notebooks/scientific.html#hawaii",
+    "href": "notebooks/scientific.html#hawaii",
+    "title": "8  scientific",
+    "section": "8.16 Hawaii",
+    "text": "8.16 Hawaii"
+  },
+  {
+    "objectID": "notebooks/scientific.html#imola",
+    "href": "notebooks/scientific.html#imola",
+    "title": "8  scientific",
+    "section": "8.17 Imola",
+    "text": "8.17 Imola"
+  },
+  {
+    "objectID": "notebooks/scientific.html#lajolla",
+    "href": "notebooks/scientific.html#lajolla",
+    "title": "8  scientific",
+    "section": "8.18 LaJolla",
+    "text": "8.18 LaJolla"
+  },
+  {
+    "objectID": "notebooks/scientific.html#lapaz",
+    "href": "notebooks/scientific.html#lapaz",
+    "title": "8  scientific",
+    "section": "8.19 LaPaz",
+    "text": "8.19 LaPaz"
+  },
+  {
+    "objectID": "notebooks/scientific.html#nuuk",
+    "href": "notebooks/scientific.html#nuuk",
+    "title": "8  scientific",
+    "section": "8.20 Nuuk",
+    "text": "8.20 Nuuk"
+  },
+  {
+    "objectID": "notebooks/scientific.html#oleron",
+    "href": "notebooks/scientific.html#oleron",
+    "title": "8  scientific",
+    "section": "8.21 Oleron",
+    "text": "8.21 Oleron"
+  },
+  {
+    "objectID": "notebooks/scientific.html#oslo",
+    "href": "notebooks/scientific.html#oslo",
+    "title": "8  scientific",
+    "section": "8.22 Oslo",
+    "text": "8.22 Oslo"
+  },
+  {
+    "objectID": "notebooks/scientific.html#tokyo",
+    "href": "notebooks/scientific.html#tokyo",
+    "title": "8  scientific",
+    "section": "8.23 Tokyo",
+    "text": "8.23 Tokyo"
+  },
+  {
+    "objectID": "notebooks/scientific.html#turku",
+    "href": "notebooks/scientific.html#turku",
+    "title": "8  scientific",
+    "section": "8.24 Turku",
+    "text": "8.24 Turku"
+  },
+  {
+    "objectID": "notebooks/tableau.html#bluered",
+    "href": "notebooks/tableau.html#bluered",
+    "title": "9  tableau",
+    "section": "9.1 BlueRed",
+    "text": "9.1 BlueRed"
+  },
+  {
+    "objectID": "notebooks/tableau.html#colorblind",
+    "href": "notebooks/tableau.html#colorblind",
+    "title": "9  tableau",
+    "section": "9.2 ColorBlind",
+    "text": "9.2 ColorBlind"
+  },
+  {
+    "objectID": "notebooks/tableau.html#gray",
+    "href": "notebooks/tableau.html#gray",
+    "title": "9  tableau",
+    "section": "9.3 Gray",
+    "text": "9.3 Gray"
+  },
+  {
+    "objectID": "notebooks/tableau.html#greenorange",
+    "href": "notebooks/tableau.html#greenorange",
+    "title": "9  tableau",
+    "section": "9.4 GreenOrange",
+    "text": "9.4 GreenOrange"
+  },
+  {
+    "objectID": "notebooks/tableau.html#purplegray",
+    "href": "notebooks/tableau.html#purplegray",
+    "title": "9  tableau",
+    "section": "9.5 PurpleGray",
+    "text": "9.5 PurpleGray"
+  },
+  {
+    "objectID": "notebooks/tableau.html#tableaulight",
+    "href": "notebooks/tableau.html#tableaulight",
+    "title": "9  tableau",
+    "section": "9.6 TableauLight",
+    "text": "9.6 TableauLight"
+  },
+  {
+    "objectID": "notebooks/tableau.html#tableaumedium",
+    "href": "notebooks/tableau.html#tableaumedium",
+    "title": "9  tableau",
+    "section": "9.7 TableauMedium",
+    "text": "9.7 TableauMedium"
+  },
+  {
+    "objectID": "notebooks/tableau.html#tableau",
+    "href": "notebooks/tableau.html#tableau",
+    "title": "9  tableau",
+    "section": "9.8 Tableau",
+    "text": "9.8 Tableau"
+  },
+  {
+    "objectID": "notebooks/tableau.html#trafficlight",
+    "href": "notebooks/tableau.html#trafficlight",
+    "title": "9  tableau",
+    "section": "9.9 TrafficLight",
+    "text": "9.9 TrafficLight"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#aquatic1",
+    "href": "notebooks/wesanderson.html#aquatic1",
+    "title": "10  wesanderson",
+    "section": "10.1 Aquatic1",
+    "text": "10.1 Aquatic1"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#aquatic2",
+    "href": "notebooks/wesanderson.html#aquatic2",
+    "title": "10  wesanderson",
+    "section": "10.2 Aquatic2",
+    "text": "10.2 Aquatic2"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#aquatic3",
+    "href": "notebooks/wesanderson.html#aquatic3",
+    "title": "10  wesanderson",
+    "section": "10.3 Aquatic3",
+    "text": "10.3 Aquatic3"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#cavalcanti",
+    "href": "notebooks/wesanderson.html#cavalcanti",
+    "title": "10  wesanderson",
+    "section": "10.4 Cavalcanti",
+    "text": "10.4 Cavalcanti"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#chevalier",
+    "href": "notebooks/wesanderson.html#chevalier",
+    "title": "10  wesanderson",
+    "section": "10.5 Chevalier",
+    "text": "10.5 Chevalier"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#darjeeling1",
+    "href": "notebooks/wesanderson.html#darjeeling1",
+    "title": "10  wesanderson",
+    "section": "10.6 Darjeeling1",
+    "text": "10.6 Darjeeling1"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#darjeeling2",
+    "href": "notebooks/wesanderson.html#darjeeling2",
+    "title": "10  wesanderson",
+    "section": "10.7 Darjeeling2",
+    "text": "10.7 Darjeeling2"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#darjeeling3",
+    "href": "notebooks/wesanderson.html#darjeeling3",
+    "title": "10  wesanderson",
+    "section": "10.8 Darjeeling3",
+    "text": "10.8 Darjeeling3"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#darjeeling4",
+    "href": "notebooks/wesanderson.html#darjeeling4",
+    "title": "10  wesanderson",
+    "section": "10.9 Darjeeling4",
+    "text": "10.9 Darjeeling4"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#fantasticfox1",
+    "href": "notebooks/wesanderson.html#fantasticfox1",
+    "title": "10  wesanderson",
+    "section": "10.10 FantasticFox1",
+    "text": "10.10 FantasticFox1"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#fantasticfox2",
+    "href": "notebooks/wesanderson.html#fantasticfox2",
+    "title": "10  wesanderson",
+    "section": "10.11 FantasticFox2",
+    "text": "10.11 FantasticFox2"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#grandbudapest1",
+    "href": "notebooks/wesanderson.html#grandbudapest1",
+    "title": "10  wesanderson",
+    "section": "10.12 GrandBudapest1",
+    "text": "10.12 GrandBudapest1"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#grandbudapest2",
+    "href": "notebooks/wesanderson.html#grandbudapest2",
+    "title": "10  wesanderson",
+    "section": "10.13 GrandBudapest2",
+    "text": "10.13 GrandBudapest2"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#grandbudapest3",
+    "href": "notebooks/wesanderson.html#grandbudapest3",
+    "title": "10  wesanderson",
+    "section": "10.14 GrandBudapest3",
+    "text": "10.14 GrandBudapest3"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#grandbudapest4",
+    "href": "notebooks/wesanderson.html#grandbudapest4",
+    "title": "10  wesanderson",
+    "section": "10.15 GrandBudapest4",
+    "text": "10.15 GrandBudapest4"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#grandbudapest5",
+    "href": "notebooks/wesanderson.html#grandbudapest5",
+    "title": "10  wesanderson",
+    "section": "10.16 GrandBudapest5",
+    "text": "10.16 GrandBudapest5"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#isleofdogs1",
+    "href": "notebooks/wesanderson.html#isleofdogs1",
+    "title": "10  wesanderson",
+    "section": "10.17 IsleOfDogs1",
+    "text": "10.17 IsleOfDogs1"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#isleofdogs2",
+    "href": "notebooks/wesanderson.html#isleofdogs2",
+    "title": "10  wesanderson",
+    "section": "10.18 IsleOfDogs2",
+    "text": "10.18 IsleOfDogs2"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#isleofdogs3",
+    "href": "notebooks/wesanderson.html#isleofdogs3",
+    "title": "10  wesanderson",
+    "section": "10.19 IsleOfDogs3",
+    "text": "10.19 IsleOfDogs3"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#margot1",
+    "href": "notebooks/wesanderson.html#margot1",
+    "title": "10  wesanderson",
+    "section": "10.20 Margot1",
+    "text": "10.20 Margot1"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#margot2",
+    "href": "notebooks/wesanderson.html#margot2",
+    "title": "10  wesanderson",
+    "section": "10.21 Margot2",
+    "text": "10.21 Margot2"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#margot3",
+    "href": "notebooks/wesanderson.html#margot3",
+    "title": "10  wesanderson",
+    "section": "10.22 Margot3",
+    "text": "10.22 Margot3"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#mendl",
+    "href": "notebooks/wesanderson.html#mendl",
+    "title": "10  wesanderson",
+    "section": "10.23 Mendl",
+    "text": "10.23 Mendl"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#moonrise1",
+    "href": "notebooks/wesanderson.html#moonrise1",
+    "title": "10  wesanderson",
+    "section": "10.24 Moonrise1",
+    "text": "10.24 Moonrise1"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#moonrise2",
+    "href": "notebooks/wesanderson.html#moonrise2",
+    "title": "10  wesanderson",
+    "section": "10.25 Moonrise2",
+    "text": "10.25 Moonrise2"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#moonrise3",
+    "href": "notebooks/wesanderson.html#moonrise3",
+    "title": "10  wesanderson",
+    "section": "10.26 Moonrise3",
+    "text": "10.26 Moonrise3"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#moonrise4",
+    "href": "notebooks/wesanderson.html#moonrise4",
+    "title": "10  wesanderson",
+    "section": "10.27 Moonrise4",
+    "text": "10.27 Moonrise4"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#moonrise5",
+    "href": "notebooks/wesanderson.html#moonrise5",
+    "title": "10  wesanderson",
+    "section": "10.28 Moonrise5",
+    "text": "10.28 Moonrise5"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#moonrise6",
+    "href": "notebooks/wesanderson.html#moonrise6",
+    "title": "10  wesanderson",
+    "section": "10.29 Moonrise6",
+    "text": "10.29 Moonrise6"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#moonrise7",
+    "href": "notebooks/wesanderson.html#moonrise7",
+    "title": "10  wesanderson",
+    "section": "10.30 Moonrise7",
+    "text": "10.30 Moonrise7"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#royal1",
+    "href": "notebooks/wesanderson.html#royal1",
+    "title": "10  wesanderson",
+    "section": "10.31 Royal1",
+    "text": "10.31 Royal1"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#royal2",
+    "href": "notebooks/wesanderson.html#royal2",
+    "title": "10  wesanderson",
+    "section": "10.32 Royal2",
+    "text": "10.32 Royal2"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#royal3",
+    "href": "notebooks/wesanderson.html#royal3",
+    "title": "10  wesanderson",
+    "section": "10.33 Royal3",
+    "text": "10.33 Royal3"
+  },
+  {
+    "objectID": "notebooks/wesanderson.html#zissou",
+    "href": "notebooks/wesanderson.html#zissou",
+    "title": "10  wesanderson",
+    "section": "10.34 Zissou",
+    "text": "10.34 Zissou"
+  },
+  {
+    "objectID": "notebooks/otakeito.html#okabe_ito_categorigal",
+    "href": "notebooks/otakeito.html#okabe_ito_categorigal",
+    "title": "11  otakeito",
+    "section": "11.1 Okabe_Ito_Categorigal",
+    "text": "11.1 Okabe_Ito_Categorigal"
+  },
+  {
+    "objectID": "Sources.html#fabio-crameris-scientific-colour-maps",
+    "href": "Sources.html#fabio-crameris-scientific-colour-maps",
+    "title": "Sources",
+    "section": "Fabio Crameri’s Scientific Colour Maps",
+    "text": "Fabio Crameri’s Scientific Colour Maps\nhttps://www.fabiocrameri.ch/colourmaps/"
+  },
+  {
+    "objectID": "Sources.html#colorbrewer",
+    "href": "Sources.html#colorbrewer",
+    "title": "Sources",
+    "section": "Colorbrewer",
+    "text": "Colorbrewer\nhttps://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3"
+  },
+  {
+    "objectID": "Sources.html#cmocean",
+    "href": "Sources.html#cmocean",
+    "title": "Sources",
+    "section": "cmocean",
+    "text": "cmocean\nhttps://matplotlib.org/cmocean/"
+  },
+  {
+    "objectID": "Sources.html#matplotlib",
+    "href": "Sources.html#matplotlib",
+    "title": "Sources",
+    "section": "matplotlib",
+    "text": "matplotlib\nhttps://bids.github.io/colormap/"
+  },
+  {
+    "objectID": "Sources.html#mycarta",
+    "href": "Sources.html#mycarta",
+    "title": "Sources",
+    "section": "mycarta",
+    "text": "mycarta\nhttps://mycartablog.com/color-palettes/"
+  },
+  {
+    "objectID": "Sources.html#tableau",
+    "href": "Sources.html#tableau",
+    "title": "Sources",
+    "section": "tableau",
+    "text": "tableau\nhttps://help.tableau.com/current/pro/desktop/en-us/formatting_create_custom_colors.htm#hex-values-for-discontinued-color-palettes"
+  },
+  {
+    "objectID": "Sources.html#the-wes-anderson-palettes-blog",
+    "href": "Sources.html#the-wes-anderson-palettes-blog",
+    "title": "Sources",
+    "section": "The Wes Anderson Palettes blog",
+    "text": "The Wes Anderson Palettes blog\nhttps://wesandersonpalettes.tumblr.com/"
+  },
+  {
+    "objectID": "Sources.html#masataka-okabe-and-kei-itos-color-universal-design-cud-palette",
+    "href": "Sources.html#masataka-okabe-and-kei-itos-color-universal-design-cud-palette",
+    "title": "Sources",
+    "section": "Masataka Okabe and Kei Ito’s Color Universal Design (CUD) palette",
+    "text": "Masataka Okabe and Kei Ito’s Color Universal Design (CUD) palette\nhttps://jfly.uni-koeln.de/color/"
+  }
+]

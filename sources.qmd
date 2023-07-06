@@ -1,0 +1,31 @@
+---
+title: "Sources"
+---
+
+## Fabio Crameri's Scientific Colour Maps
+[https://www.fabiocrameri.ch/colourmaps/](https://www.fabiocrameri.ch/colourmaps/)
+
+## Colorbrewer
+[https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3)
+
+## Cartocolors
+[https://carto.com/carto-colors/](https://carto.com/carto-colors/)
+
+## cmocean
+[https://matplotlib.org/cmocean/](https://matplotlib.org/cmocean/)
+
+## matplotlib
+[https://bids.github.io/colormap/](https://bids.github.io/colormap/)
+
+## mycarta
+[https://mycartablog.com/color-palettes/](https://mycartablog.com/color-palettes/)
+
+
+## tableau
+[https://help.tableau.com/current/pro/desktop/en-us/formatting_create_custom_colors.htm#hex-values-for-discontinued-color-palettes](https://help.tableau.com/current/pro/desktop/en-us/formatting_create_custom_colors.htm#hex-values-for-discontinued-color-palettes)
+
+## The Wes Anderson Palettes blog
+[https://wesandersonpalettes.tumblr.com/](https://wesandersonpalettes.tumblr.com/)
+
+## Masataka Okabe and Kei Ito's Color Universal Design (CUD) palette
+[https://jfly.uni-koeln.de/color/](https://jfly.uni-koeln.de/color/)
