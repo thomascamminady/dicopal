@@ -1,0 +1,3023 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>dicopal - 10&nbsp; wesanderson</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../notebooks/otakeito.html" rel="next">
+<link href="../notebooks/tableau.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Sources.html">Sources</a></li><li class="breadcrumb-item"><a href="../notebooks/wesanderson.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">wesanderson</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">dicopal</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">dicopal.js</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../Sources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sources</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/cartocolors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">cartocolors</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/cmocean.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">cmocean</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/colorbrewer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">colorbrewer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/lightbartlein.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">lightbartlein</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/matplotlib.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">matplotlib</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/mycarta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">mycarta</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/scientific.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">scientific</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/tableau.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">tableau</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/wesanderson.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">wesanderson</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/otakeito.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">otakeito</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content column-page-right" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">wesanderson</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="cell" data-execution_count="1">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dicopal.create_page <span class="im">import</span> create_page</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>create_page(<span class="st">"wesanderson"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<section id="aquatic1" class="level2 cell-output cell-output-display" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="aquatic1"><span class="header-section-number">10.1</span> Aquatic1</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-6456a6eefb0641c9bc72f133d67888f2.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-6456a6eefb0641c9bc72f133d67888f2.vega-embed details,
+  #altair-viz-6456a6eefb0641c9bc72f133d67888f2.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-6456a6eefb0641c9bc72f133d67888f2"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-6456a6eefb0641c9bc72f133d67888f2") {
+      outputDiv = document.getElementById("altair-viz-6456a6eefb0641c9bc72f133d67888f2");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#B89382", "#665899", "#342419", "#F1C90E", "#1C4027"], "domain": ["#B89382", "#665899", "#342419", "#F1C90E", "#1C4027"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-878ef21804cc423c4c2359ff63c66e08"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-878ef21804cc423c4c2359ff63c66e08": [{"count": 5, "color": "#342419", "y": 1, "order": 0}, {"count": 5, "color": "#1C4027", "y": 1, "order": 1}, {"count": 5, "color": "#F1C90E", "y": 1, "order": 2}, {"count": 5, "color": "#665899", "y": 1, "order": 3}, {"count": 5, "color": "#B89382", "y": 1, "order": 4}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#342419','#1C4027','#F1C90E','#665899','#B89382']</code></p>
+</div>
+<section id="aquatic2" class="level2 cell-output cell-output-display" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="aquatic2"><span class="header-section-number">10.2</span> Aquatic2</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-e3065b1d6c7e40c19556235376cbde5f.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-e3065b1d6c7e40c19556235376cbde5f.vega-embed details,
+  #altair-viz-e3065b1d6c7e40c19556235376cbde5f.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-e3065b1d6c7e40c19556235376cbde5f"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-e3065b1d6c7e40c19556235376cbde5f") {
+      outputDiv = document.getElementById("altair-viz-e3065b1d6c7e40c19556235376cbde5f");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#BDB9CE", "#8B9CB8", "#E9E541", "#589FC2", "#A08D5E"], "domain": ["#BDB9CE", "#8B9CB8", "#E9E541", "#589FC2", "#A08D5E"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-34bab34b79151c8eda1512829f1a59bb"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-34bab34b79151c8eda1512829f1a59bb": [{"count": 5, "color": "#8B9CB8", "y": 1, "order": 0}, {"count": 5, "color": "#E9E541", "y": 1, "order": 1}, {"count": 5, "color": "#589FC2", "y": 1, "order": 2}, {"count": 5, "color": "#A08D5E", "y": 1, "order": 3}, {"count": 5, "color": "#BDB9CE", "y": 1, "order": 4}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#8B9CB8','#E9E541','#589FC2','#A08D5E','#BDB9CE']</code></p>
+</div>
+<section id="aquatic3" class="level2 cell-output cell-output-display" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="aquatic3"><span class="header-section-number">10.3</span> Aquatic3</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-c8ceb6fbb99243349c7ad3f93ab602f6.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-c8ceb6fbb99243349c7ad3f93ab602f6.vega-embed details,
+  #altair-viz-c8ceb6fbb99243349c7ad3f93ab602f6.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-c8ceb6fbb99243349c7ad3f93ab602f6"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-c8ceb6fbb99243349c7ad3f93ab602f6") {
+      outputDiv = document.getElementById("altair-viz-c8ceb6fbb99243349c7ad3f93ab602f6");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#C8B7A1", "#BD442D", "#64543C", "#D6A142", "#C28072"], "domain": ["#C8B7A1", "#BD442D", "#64543C", "#D6A142", "#C28072"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-4fd4fd277c535c6365df7d75b997497e"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-4fd4fd277c535c6365df7d75b997497e": [{"count": 5, "color": "#D6A142", "y": 1, "order": 0}, {"count": 5, "color": "#C28072", "y": 1, "order": 1}, {"count": 5, "color": "#C8B7A1", "y": 1, "order": 2}, {"count": 5, "color": "#BD442D", "y": 1, "order": 3}, {"count": 5, "color": "#64543C", "y": 1, "order": 4}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#D6A142','#C28072','#C8B7A1','#BD442D','#64543C']</code></p>
+</div>
+<section id="cavalcanti" class="level2 cell-output cell-output-display" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="cavalcanti"><span class="header-section-number">10.4</span> Cavalcanti</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-4e0fa9c9e1624728893ea44fff9bc484.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-4e0fa9c9e1624728893ea44fff9bc484.vega-embed details,
+  #altair-viz-4e0fa9c9e1624728893ea44fff9bc484.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-4e0fa9c9e1624728893ea44fff9bc484"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-4e0fa9c9e1624728893ea44fff9bc484") {
+      outputDiv = document.getElementById("altair-viz-4e0fa9c9e1624728893ea44fff9bc484");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#6F9879", "#842111", "#929460", "#083213", "#D1AA00"], "domain": ["#6F9879", "#842111", "#929460", "#083213", "#D1AA00"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-67e29441245c914a8bdca13ca4ad3e65"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-67e29441245c914a8bdca13ca4ad3e65": [{"count": 5, "color": "#D1AA00", "y": 1, "order": 0}, {"count": 5, "color": "#083213", "y": 1, "order": 1}, {"count": 5, "color": "#929460", "y": 1, "order": 2}, {"count": 5, "color": "#6F9879", "y": 1, "order": 3}, {"count": 5, "color": "#842111", "y": 1, "order": 4}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#D1AA00','#083213','#929460','#6F9879','#842111']</code></p>
+</div>
+<section id="chevalier" class="level2 cell-output cell-output-display" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="chevalier"><span class="header-section-number">10.5</span> Chevalier</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-22a7073285f943e8947092c09e0810eb.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-22a7073285f943e8947092c09e0810eb.vega-embed details,
+  #altair-viz-22a7073285f943e8947092c09e0810eb.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-22a7073285f943e8947092c09e0810eb"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-22a7073285f943e8947092c09e0810eb") {
+      outputDiv = document.getElementById("altair-viz-22a7073285f943e8947092c09e0810eb");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#BBA289", "#FECA49", "#C9D5D5", "#355243"], "domain": ["#BBA289", "#FECA49", "#C9D5D5", "#355243"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-ab946c813c2ceac632c70fe30aaceff9"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-ab946c813c2ceac632c70fe30aaceff9": [{"count": 4, "color": "#355243", "y": 1, "order": 0}, {"count": 4, "color": "#FECA49", "y": 1, "order": 1}, {"count": 4, "color": "#C9D5D5", "y": 1, "order": 2}, {"count": 4, "color": "#BBA289", "y": 1, "order": 3}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#355243','#FECA49','#C9D5D5','#BBA289']</code></p>
+</div>
+<section id="darjeeling1" class="level2 cell-output cell-output-display" data-number="10.6">
+<h2 data-number="10.6" class="anchored" data-anchor-id="darjeeling1"><span class="header-section-number">10.6</span> Darjeeling1</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-3c5d6956835e413da09b30cb9414e71f.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-3c5d6956835e413da09b30cb9414e71f.vega-embed details,
+  #altair-viz-3c5d6956835e413da09b30cb9414e71f.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-3c5d6956835e413da09b30cb9414e71f"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-3c5d6956835e413da09b30cb9414e71f") {
+      outputDiv = document.getElementById("altair-viz-3c5d6956835e413da09b30cb9414e71f");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#9E9797", "#C28E00", "#9C5A33", "#836659"], "domain": ["#9E9797", "#C28E00", "#9C5A33", "#836659"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-887c848ed10b5d02ff710384586f7226"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-887c848ed10b5d02ff710384586f7226": [{"count": 4, "color": "#9E9797", "y": 1, "order": 0}, {"count": 4, "color": "#C28E00", "y": 1, "order": 1}, {"count": 4, "color": "#836659", "y": 1, "order": 2}, {"count": 4, "color": "#9C5A33", "y": 1, "order": 3}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#9E9797','#C28E00','#836659','#9C5A33']</code></p>
+</div>
+<section id="darjeeling2" class="level2 cell-output cell-output-display" data-number="10.7">
+<h2 data-number="10.7" class="anchored" data-anchor-id="darjeeling2"><span class="header-section-number">10.7</span> Darjeeling2</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-3b6e82dc31e449c4ac2f545161244014.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-3b6e82dc31e449c4ac2f545161244014.vega-embed details,
+  #altair-viz-3b6e82dc31e449c4ac2f545161244014.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-3b6e82dc31e449c4ac2f545161244014"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-3b6e82dc31e449c4ac2f545161244014") {
+      outputDiv = document.getElementById("altair-viz-3b6e82dc31e449c4ac2f545161244014");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#AE4B16", "#F9DA95", "#618A98", "#D5E3D8", "#787064"], "domain": ["#AE4B16", "#F9DA95", "#618A98", "#D5E3D8", "#787064"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-f314a1362f3f6c8bfd7c937b2906defd"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-f314a1362f3f6c8bfd7c937b2906defd": [{"count": 5, "color": "#D5E3D8", "y": 1, "order": 0}, {"count": 5, "color": "#618A98", "y": 1, "order": 1}, {"count": 5, "color": "#F9DA95", "y": 1, "order": 2}, {"count": 5, "color": "#AE4B16", "y": 1, "order": 3}, {"count": 5, "color": "#787064", "y": 1, "order": 4}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#D5E3D8','#618A98','#F9DA95','#AE4B16','#787064']</code></p>
+</div>
+<section id="darjeeling3" class="level2 cell-output cell-output-display" data-number="10.8">
+<h2 data-number="10.8" class="anchored" data-anchor-id="darjeeling3"><span class="header-section-number">10.8</span> Darjeeling3</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-b305f3b68a9448139465c3d9a3760cdc.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-b305f3b68a9448139465c3d9a3760cdc.vega-embed details,
+  #altair-viz-b305f3b68a9448139465c3d9a3760cdc.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-b305f3b68a9448139465c3d9a3760cdc"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-b305f3b68a9448139465c3d9a3760cdc") {
+      outputDiv = document.getElementById("altair-viz-b305f3b68a9448139465c3d9a3760cdc");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#FFE83D", "#A8AB50", "#5A917C", "#24477D", "#A9D3D2"], "domain": ["#FFE83D", "#A8AB50", "#5A917C", "#24477D", "#A9D3D2"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-bb225b07fdc82a6514dc133676f789cf"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-bb225b07fdc82a6514dc133676f789cf": [{"count": 5, "color": "#A8AB50", "y": 1, "order": 0}, {"count": 5, "color": "#FFE83D", "y": 1, "order": 1}, {"count": 5, "color": "#A9D3D2", "y": 1, "order": 2}, {"count": 5, "color": "#24477D", "y": 1, "order": 3}, {"count": 5, "color": "#5A917C", "y": 1, "order": 4}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#A8AB50','#FFE83D','#A9D3D2','#24477D','#5A917C']</code></p>
+</div>
+<section id="darjeeling4" class="level2 cell-output cell-output-display" data-number="10.9">
+<h2 data-number="10.9" class="anchored" data-anchor-id="darjeeling4"><span class="header-section-number">10.9</span> Darjeeling4</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-d3744516d573400988c0b3ebd321bfe1.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-d3744516d573400988c0b3ebd321bfe1.vega-embed details,
+  #altair-viz-d3744516d573400988c0b3ebd321bfe1.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-d3744516d573400988c0b3ebd321bfe1"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-d3744516d573400988c0b3ebd321bfe1") {
+      outputDiv = document.getElementById("altair-viz-d3744516d573400988c0b3ebd321bfe1");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#800806", "#746768", "#684762", "#BC840E", "#AE595C"], "domain": ["#800806", "#746768", "#684762", "#BC840E", "#AE595C"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-b27c96f545e62ef85d4b1196a1952347"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-b27c96f545e62ef85d4b1196a1952347": [{"count": 5, "color": "#746768", "y": 1, "order": 0}, {"count": 5, "color": "#684762", "y": 1, "order": 1}, {"count": 5, "color": "#800806", "y": 1, "order": 2}, {"count": 5, "color": "#BC840E", "y": 1, "order": 3}, {"count": 5, "color": "#AE595C", "y": 1, "order": 4}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#746768','#684762','#800806','#BC840E','#AE595C']</code></p>
+</div>
+<section id="fantasticfox1" class="level2 cell-output cell-output-display" data-number="10.10">
+<h2 data-number="10.10" class="anchored" data-anchor-id="fantasticfox1"><span class="header-section-number">10.10</span> FantasticFox1</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-1bc0921a0a874718b980bcdaf705e0b4.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-1bc0921a0a874718b980bcdaf705e0b4.vega-embed details,
+  #altair-viz-1bc0921a0a874718b980bcdaf705e0b4.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-1bc0921a0a874718b980bcdaf705e0b4"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-1bc0921a0a874718b980bcdaf705e0b4") {
+      outputDiv = document.getElementById("altair-viz-1bc0921a0a874718b980bcdaf705e0b4");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#F9DB20", "#E2C8A7", "#42170D", "#C27922", "#934B4E"], "domain": ["#F9DB20", "#E2C8A7", "#42170D", "#C27922", "#934B4E"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-1c00ec1f32b7ae7b54376c373e4a956b"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-1c00ec1f32b7ae7b54376c373e4a956b": [{"count": 5, "color": "#F9DB20", "y": 1, "order": 0}, {"count": 5, "color": "#934B4E", "y": 1, "order": 1}, {"count": 5, "color": "#42170D", "y": 1, "order": 2}, {"count": 5, "color": "#C27922", "y": 1, "order": 3}, {"count": 5, "color": "#E2C8A7", "y": 1, "order": 4}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#F9DB20','#934B4E','#42170D','#C27922','#E2C8A7']</code></p>
+</div>
+<section id="fantasticfox2" class="level2 cell-output cell-output-display" data-number="10.11">
+<h2 data-number="10.11" class="anchored" data-anchor-id="fantasticfox2"><span class="header-section-number">10.11</span> FantasticFox2</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-e16a330d090e4fa6b3d0c9b4fcecff53.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-e16a330d090e4fa6b3d0c9b4fcecff53.vega-embed details,
+  #altair-viz-e16a330d090e4fa6b3d0c9b4fcecff53.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-e16a330d090e4fa6b3d0c9b4fcecff53"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-e16a330d090e4fa6b3d0c9b4fcecff53") {
+      outputDiv = document.getElementById("altair-viz-e16a330d090e4fa6b3d0c9b4fcecff53");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#332737", "#E4BF44", "#ABA18D", "#C65742", "#9AD0BB"], "domain": ["#332737", "#E4BF44", "#ABA18D", "#C65742", "#9AD0BB"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-180d582032c56dd57a1a8b2ba6f2fa11"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-180d582032c56dd57a1a8b2ba6f2fa11": [{"count": 5, "color": "#E4BF44", "y": 1, "order": 0}, {"count": 5, "color": "#C65742", "y": 1, "order": 1}, {"count": 5, "color": "#9AD0BB", "y": 1, "order": 2}, {"count": 5, "color": "#332737", "y": 1, "order": 3}, {"count": 5, "color": "#ABA18D", "y": 1, "order": 4}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#E4BF44','#C65742','#9AD0BB','#332737','#ABA18D']</code></p>
+</div>
+<section id="grandbudapest1" class="level2 cell-output cell-output-display" data-number="10.12">
+<h2 data-number="10.12" class="anchored" data-anchor-id="grandbudapest1"><span class="header-section-number">10.12</span> GrandBudapest1</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-dd2336e979ef4a47b9cf439b4b1c937c.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-dd2336e979ef4a47b9cf439b4b1c937c.vega-embed details,
+  #altair-viz-dd2336e979ef4a47b9cf439b4b1c937c.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-dd2336e979ef4a47b9cf439b4b1c937c"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-dd2336e979ef4a47b9cf439b4b1c937c") {
+      outputDiv = document.getElementById("altair-viz-dd2336e979ef4a47b9cf439b4b1c937c");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#FB4F55", "#481313", "#CC5F27", "#EEAE65"], "domain": ["#FB4F55", "#481313", "#CC5F27", "#EEAE65"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-4568d5f3ada463afff328d24cacdaeea"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-4568d5f3ada463afff328d24cacdaeea": [{"count": 4, "color": "#EEAE65", "y": 1, "order": 0}, {"count": 4, "color": "#FB4F55", "y": 1, "order": 1}, {"count": 4, "color": "#481313", "y": 1, "order": 2}, {"count": 4, "color": "#CC5F27", "y": 1, "order": 3}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#EEAE65','#FB4F55','#481313','#CC5F27']</code></p>
+</div>
+<section id="grandbudapest2" class="level2 cell-output cell-output-display" data-number="10.13">
+<h2 data-number="10.13" class="anchored" data-anchor-id="grandbudapest2"><span class="header-section-number">10.13</span> GrandBudapest2</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-da8615ca4e48496d83e64ff830a95810.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-da8615ca4e48496d83e64ff830a95810.vega-embed details,
+  #altair-viz-da8615ca4e48496d83e64ff830a95810.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-da8615ca4e48496d83e64ff830a95810"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-da8615ca4e48496d83e64ff830a95810") {
+      outputDiv = document.getElementById("altair-viz-da8615ca4e48496d83e64ff830a95810");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#FFA68E", "#8C1108", "#FBCCB7", "#290B04"], "domain": ["#FFA68E", "#8C1108", "#FBCCB7", "#290B04"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-040faa9739fe358b7faef83c1b9b898a"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-040faa9739fe358b7faef83c1b9b898a": [{"count": 4, "color": "#FFA68E", "y": 1, "order": 0}, {"count": 4, "color": "#FBCCB7", "y": 1, "order": 1}, {"count": 4, "color": "#8C1108", "y": 1, "order": 2}, {"count": 4, "color": "#290B04", "y": 1, "order": 3}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#FFA68E','#FBCCB7','#8C1108','#290B04']</code></p>
+</div>
+<section id="grandbudapest3" class="level2 cell-output cell-output-display" data-number="10.14">
+<h2 data-number="10.14" class="anchored" data-anchor-id="grandbudapest3"><span class="header-section-number">10.14</span> GrandBudapest3</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-7d3ae335cfe14fd19ae6d879887152b4.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-7d3ae335cfe14fd19ae6d879887152b4.vega-embed details,
+  #altair-viz-7d3ae335cfe14fd19ae6d879887152b4.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-7d3ae335cfe14fd19ae6d879887152b4"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-7d3ae335cfe14fd19ae6d879887152b4") {
+      outputDiv = document.getElementById("altair-viz-7d3ae335cfe14fd19ae6d879887152b4");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#66756E", "#8B3F31", "#FFDCB6", "#966D35", "#E7AD9D", "#253845"], "domain": ["#66756E", "#8B3F31", "#FFDCB6", "#966D35", "#E7AD9D", "#253845"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-1608e9377241687dee815d5216405b15"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-1608e9377241687dee815d5216405b15": [{"count": 6, "color": "#FFDCB6", "y": 1, "order": 0}, {"count": 6, "color": "#253845", "y": 1, "order": 1}, {"count": 6, "color": "#E7AD9D", "y": 1, "order": 2}, {"count": 6, "color": "#66756E", "y": 1, "order": 3}, {"count": 6, "color": "#8B3F31", "y": 1, "order": 4}, {"count": 6, "color": "#966D35", "y": 1, "order": 5}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#FFDCB6','#253845','#E7AD9D','#66756E','#8B3F31','#966D35']</code></p>
+</div>
+<section id="grandbudapest4" class="level2 cell-output cell-output-display" data-number="10.15">
+<h2 data-number="10.15" class="anchored" data-anchor-id="grandbudapest4"><span class="header-section-number">10.15</span> GrandBudapest4</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-7d7749bf65f64afcb044f5766b034b8d.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-7d7749bf65f64afcb044f5766b034b8d.vega-embed details,
+  #altair-viz-7d7749bf65f64afcb044f5766b034b8d.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-7d7749bf65f64afcb044f5766b034b8d"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-7d7749bf65f64afcb044f5766b034b8d") {
+      outputDiv = document.getElementById("altair-viz-7d7749bf65f64afcb044f5766b034b8d");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#BA6E00", "#FFF6BB", "#1F121B", "#9A7F19", "#502056"], "domain": ["#BA6E00", "#FFF6BB", "#1F121B", "#9A7F19", "#502056"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-d975ed86b71ef0d6b88a9cf2d632398b"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-d975ed86b71ef0d6b88a9cf2d632398b": [{"count": 5, "color": "#BA6E00", "y": 1, "order": 0}, {"count": 5, "color": "#502056", "y": 1, "order": 1}, {"count": 5, "color": "#FFF6BB", "y": 1, "order": 2}, {"count": 5, "color": "#9A7F19", "y": 1, "order": 3}, {"count": 5, "color": "#1F121B", "y": 1, "order": 4}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#BA6E00','#502056','#FFF6BB','#9A7F19','#1F121B']</code></p>
+</div>
+<section id="grandbudapest5" class="level2 cell-output cell-output-display" data-number="10.16">
+<h2 data-number="10.16" class="anchored" data-anchor-id="grandbudapest5"><span class="header-section-number">10.16</span> GrandBudapest5</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-f6504615be204f87a49f06224cd6ebf3.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-f6504615be204f87a49f06224cd6ebf3.vega-embed details,
+  #altair-viz-f6504615be204f87a49f06224cd6ebf3.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-f6504615be204f87a49f06224cd6ebf3"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-f6504615be204f87a49f06224cd6ebf3") {
+      outputDiv = document.getElementById("altair-viz-f6504615be204f87a49f06224cd6ebf3");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#E7C7BE", "#8C1B4C", "#E19283", "#330C00", "#D19336"], "domain": ["#E7C7BE", "#8C1B4C", "#E19283", "#330C00", "#D19336"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-7a24e622d0255663fa0af0ba3e77babe"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-7a24e622d0255663fa0af0ba3e77babe": [{"count": 5, "color": "#E19283", "y": 1, "order": 0}, {"count": 5, "color": "#8C1B4C", "y": 1, "order": 1}, {"count": 5, "color": "#D19336", "y": 1, "order": 2}, {"count": 5, "color": "#E7C7BE", "y": 1, "order": 3}, {"count": 5, "color": "#330C00", "y": 1, "order": 4}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#E19283','#8C1B4C','#D19336','#E7C7BE','#330C00']</code></p>
+</div>
+<section id="isleofdogs1" class="level2 cell-output cell-output-display" data-number="10.17">
+<h2 data-number="10.17" class="anchored" data-anchor-id="isleofdogs1"><span class="header-section-number">10.17</span> IsleOfDogs1</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-971d73c70cfd4251b247c8e2aef0faba.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-971d73c70cfd4251b247c8e2aef0faba.vega-embed details,
+  #altair-viz-971d73c70cfd4251b247c8e2aef0faba.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-971d73c70cfd4251b247c8e2aef0faba"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-971d73c70cfd4251b247c8e2aef0faba") {
+      outputDiv = document.getElementById("altair-viz-971d73c70cfd4251b247c8e2aef0faba");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#FEC5AF", "#AE7E71", "#322323", "#181213", "#D26732"], "domain": ["#FEC5AF", "#AE7E71", "#322323", "#181213", "#D26732"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-0dd75b817aa4da2dd968db9b6d487d86"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-0dd75b817aa4da2dd968db9b6d487d86": [{"count": 5, "color": "#FEC5AF", "y": 1, "order": 0}, {"count": 5, "color": "#AE7E71", "y": 1, "order": 1}, {"count": 5, "color": "#D26732", "y": 1, "order": 2}, {"count": 5, "color": "#322323", "y": 1, "order": 3}, {"count": 5, "color": "#181213", "y": 1, "order": 4}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#FEC5AF','#AE7E71','#D26732','#322323','#181213']</code></p>
+</div>
+<section id="isleofdogs2" class="level2 cell-output cell-output-display" data-number="10.18">
+<h2 data-number="10.18" class="anchored" data-anchor-id="isleofdogs2"><span class="header-section-number">10.18</span> IsleOfDogs2</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-6a2ebd00f9a541029a93f3909c03cd57.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-6a2ebd00f9a541029a93f3909c03cd57.vega-embed details,
+  #altair-viz-6a2ebd00f9a541029a93f3909c03cd57.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-6a2ebd00f9a541029a93f3909c03cd57"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-6a2ebd00f9a541029a93f3909c03cd57") {
+      outputDiv = document.getElementById("altair-viz-6a2ebd00f9a541029a93f3909c03cd57");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#0E0C0C", "#DCC2C9", "#D5AB55", "#82726C", "#986C96", "#8A1F1F"], "domain": ["#0E0C0C", "#DCC2C9", "#D5AB55", "#82726C", "#986C96", "#8A1F1F"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-27d592c6b0f541bb174f841e66d98bc4"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-27d592c6b0f541bb174f841e66d98bc4": [{"count": 6, "color": "#986C96", "y": 1, "order": 0}, {"count": 6, "color": "#8A1F1F", "y": 1, "order": 1}, {"count": 6, "color": "#D5AB55", "y": 1, "order": 2}, {"count": 6, "color": "#0E0C0C", "y": 1, "order": 3}, {"count": 6, "color": "#DCC2C9", "y": 1, "order": 4}, {"count": 6, "color": "#82726C", "y": 1, "order": 5}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#986C96','#8A1F1F','#D5AB55','#0E0C0C','#DCC2C9','#82726C']</code></p>
+</div>
+<section id="isleofdogs3" class="level2 cell-output cell-output-display" data-number="10.19">
+<h2 data-number="10.19" class="anchored" data-anchor-id="isleofdogs3"><span class="header-section-number">10.19</span> IsleOfDogs3</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-b0d1d2b11d6a4d4d88199244e46b6ba5.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-b0d1d2b11d6a4d4d88199244e46b6ba5.vega-embed details,
+  #altair-viz-b0d1d2b11d6a4d4d88199244e46b6ba5.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-b0d1d2b11d6a4d4d88199244e46b6ba5"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-b0d1d2b11d6a4d4d88199244e46b6ba5") {
+      outputDiv = document.getElementById("altair-viz-b0d1d2b11d6a4d4d88199244e46b6ba5");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#E58EA7", "#D8B148", "#1E1263", "#E0C1A0"], "domain": ["#E58EA7", "#D8B148", "#1E1263", "#E0C1A0"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-d5fe12b1ee69cc6fc0d011fbb43b5a49"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-d5fe12b1ee69cc6fc0d011fbb43b5a49": [{"count": 4, "color": "#E58EA7", "y": 1, "order": 0}, {"count": 4, "color": "#E0C1A0", "y": 1, "order": 1}, {"count": 4, "color": "#1E1263", "y": 1, "order": 2}, {"count": 4, "color": "#D8B148", "y": 1, "order": 3}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#E58EA7','#E0C1A0','#1E1263','#D8B148']</code></p>
+</div>
+<section id="margot1" class="level2 cell-output cell-output-display" data-number="10.20">
+<h2 data-number="10.20" class="anchored" data-anchor-id="margot1"><span class="header-section-number">10.20</span> Margot1</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-5c73233f6d594bcf904b01529e558ce9.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-5c73233f6d594bcf904b01529e558ce9.vega-embed details,
+  #altair-viz-5c73233f6d594bcf904b01529e558ce9.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-5c73233f6d594bcf904b01529e558ce9"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-5c73233f6d594bcf904b01529e558ce9") {
+      outputDiv = document.getElementById("altair-viz-5c73233f6d594bcf904b01529e558ce9");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#897712", "#F69F97", "#F3C2A4", "#FED68C", "#629075"], "domain": ["#897712", "#F69F97", "#F3C2A4", "#FED68C", "#629075"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-e1f416c7624d0836ad6ff4de716f79c3"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-e1f416c7624d0836ad6ff4de716f79c3": [{"count": 5, "color": "#897712", "y": 1, "order": 0}, {"count": 5, "color": "#F3C2A4", "y": 1, "order": 1}, {"count": 5, "color": "#F69F97", "y": 1, "order": 2}, {"count": 5, "color": "#FED68C", "y": 1, "order": 3}, {"count": 5, "color": "#629075", "y": 1, "order": 4}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#897712','#F3C2A4','#F69F97','#FED68C','#629075']</code></p>
+</div>
+<section id="margot2" class="level2 cell-output cell-output-display" data-number="10.21">
+<h2 data-number="10.21" class="anchored" data-anchor-id="margot2"><span class="header-section-number">10.21</span> Margot2</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-b42bbf3f6ec04f1594bc83a34872f439.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-b42bbf3f6ec04f1594bc83a34872f439.vega-embed details,
+  #altair-viz-b42bbf3f6ec04f1594bc83a34872f439.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-b42bbf3f6ec04f1594bc83a34872f439"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-b42bbf3f6ec04f1594bc83a34872f439") {
+      outputDiv = document.getElementById("altair-viz-b42bbf3f6ec04f1594bc83a34872f439");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#768B93", "#D47329", "#BC240F", "#F9ECC5"], "domain": ["#768B93", "#D47329", "#BC240F", "#F9ECC5"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-9035b0a778641fbbc73c125ff572c30a"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-9035b0a778641fbbc73c125ff572c30a": [{"count": 4, "color": "#768B93", "y": 1, "order": 0}, {"count": 4, "color": "#BC240F", "y": 1, "order": 1}, {"count": 4, "color": "#F9ECC5", "y": 1, "order": 2}, {"count": 4, "color": "#D47329", "y": 1, "order": 3}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#768B93','#BC240F','#F9ECC5','#D47329']</code></p>
+</div>
+<section id="margot3" class="level2 cell-output cell-output-display" data-number="10.22">
+<h2 data-number="10.22" class="anchored" data-anchor-id="margot3"><span class="header-section-number">10.22</span> Margot3</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-b3ef1044514f4b1f9bfb760f3e926d86.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-b3ef1044514f4b1f9bfb760f3e926d86.vega-embed details,
+  #altair-viz-b3ef1044514f4b1f9bfb760f3e926d86.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-b3ef1044514f4b1f9bfb760f3e926d86"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-b3ef1044514f4b1f9bfb760f3e926d86") {
+      outputDiv = document.getElementById("altair-viz-b3ef1044514f4b1f9bfb760f3e926d86");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#87A2A4", "#D6CABF", "#D6A0A0", "#CAA065"], "domain": ["#87A2A4", "#D6CABF", "#D6A0A0", "#CAA065"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-a45cdd3fb9f5a2723f4d968920bf0caa"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-a45cdd3fb9f5a2723f4d968920bf0caa": [{"count": 4, "color": "#87A2A4", "y": 1, "order": 0}, {"count": 4, "color": "#CAA065", "y": 1, "order": 1}, {"count": 4, "color": "#D6CABF", "y": 1, "order": 2}, {"count": 4, "color": "#D6A0A0", "y": 1, "order": 3}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#87A2A4','#CAA065','#D6CABF','#D6A0A0']</code></p>
+</div>
+<section id="mendl" class="level2 cell-output cell-output-display" data-number="10.23">
+<h2 data-number="10.23" class="anchored" data-anchor-id="mendl"><span class="header-section-number">10.23</span> Mendl</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-d0769ce5386d49c49dab3088887311a0.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-d0769ce5386d49c49dab3088887311a0.vega-embed details,
+  #altair-viz-d0769ce5386d49c49dab3088887311a0.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-d0769ce5386d49c49dab3088887311a0"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-d0769ce5386d49c49dab3088887311a0") {
+      outputDiv = document.getElementById("altair-viz-d0769ce5386d49c49dab3088887311a0");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#5C80CC", "#B8C0F6", "#CF9387", "#DE8DB9"], "domain": ["#5C80CC", "#B8C0F6", "#CF9387", "#DE8DB9"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-e23d18b6505bd45edfc1454dce19a6b8"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-e23d18b6505bd45edfc1454dce19a6b8": [{"count": 4, "color": "#DE8DB9", "y": 1, "order": 0}, {"count": 4, "color": "#B8C0F6", "y": 1, "order": 1}, {"count": 4, "color": "#CF9387", "y": 1, "order": 2}, {"count": 4, "color": "#5C80CC", "y": 1, "order": 3}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#DE8DB9','#B8C0F6','#CF9387','#5C80CC']</code></p>
+</div>
+<section id="moonrise1" class="level2 cell-output cell-output-display" data-number="10.24">
+<h2 data-number="10.24" class="anchored" data-anchor-id="moonrise1"><span class="header-section-number">10.24</span> Moonrise1</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-83406544554f4cd5bd2069208d017f50.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-83406544554f4cd5bd2069208d017f50.vega-embed details,
+  #altair-viz-83406544554f4cd5bd2069208d017f50.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-83406544554f4cd5bd2069208d017f50"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-83406544554f4cd5bd2069208d017f50") {
+      outputDiv = document.getElementById("altair-viz-83406544554f4cd5bd2069208d017f50");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#72CADD", "#F0A5B0", "#8C8536", "#FAD063", "#C3B477"], "domain": ["#72CADD", "#F0A5B0", "#8C8536", "#FAD063", "#C3B477"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-649fe445a67f1a55b7d7cda9c4e46971"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-649fe445a67f1a55b7d7cda9c4e46971": [{"count": 5, "color": "#72CADD", "y": 1, "order": 0}, {"count": 5, "color": "#F0A5B0", "y": 1, "order": 1}, {"count": 5, "color": "#8C8536", "y": 1, "order": 2}, {"count": 5, "color": "#C3B477", "y": 1, "order": 3}, {"count": 5, "color": "#FAD063", "y": 1, "order": 4}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#72CADD','#F0A5B0','#8C8536','#C3B477','#FAD063']</code></p>
+</div>
+<section id="moonrise2" class="level2 cell-output cell-output-display" data-number="10.25">
+<h2 data-number="10.25" class="anchored" data-anchor-id="moonrise2"><span class="header-section-number">10.25</span> Moonrise2</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-dd812618d6074ddbac79c5080daf8817.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-dd812618d6074ddbac79c5080daf8817.vega-embed details,
+  #altair-viz-dd812618d6074ddbac79c5080daf8817.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-dd812618d6074ddbac79c5080daf8817"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-dd812618d6074ddbac79c5080daf8817") {
+      outputDiv = document.getElementById("altair-viz-dd812618d6074ddbac79c5080daf8817");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#667C74", "#B56A27", "#C2BA7C", "#1F1917"], "domain": ["#667C74", "#B56A27", "#C2BA7C", "#1F1917"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-fd4c9e589b15188791d580ce1a6d6c5c"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-fd4c9e589b15188791d580ce1a6d6c5c": [{"count": 4, "color": "#667C74", "y": 1, "order": 0}, {"count": 4, "color": "#B56A27", "y": 1, "order": 1}, {"count": 4, "color": "#C2BA7C", "y": 1, "order": 2}, {"count": 4, "color": "#1F1917", "y": 1, "order": 3}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#667C74','#B56A27','#C2BA7C','#1F1917']</code></p>
+</div>
+<section id="moonrise3" class="level2 cell-output cell-output-display" data-number="10.26">
+<h2 data-number="10.26" class="anchored" data-anchor-id="moonrise3"><span class="header-section-number">10.26</span> Moonrise3</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-c2298dfe93da4ef59583623b2a581469.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-c2298dfe93da4ef59583623b2a581469.vega-embed details,
+  #altair-viz-c2298dfe93da4ef59583623b2a581469.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-c2298dfe93da4ef59583623b2a581469"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-c2298dfe93da4ef59583623b2a581469") {
+      outputDiv = document.getElementById("altair-viz-c2298dfe93da4ef59583623b2a581469");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#1B1E14", "#C59D00", "#F2DA52", "#CBCBC9"], "domain": ["#1B1E14", "#C59D00", "#F2DA52", "#CBCBC9"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-cee021b4f93fa3c88a9bcc0a31211302"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-cee021b4f93fa3c88a9bcc0a31211302": [{"count": 4, "color": "#F2DA52", "y": 1, "order": 0}, {"count": 4, "color": "#C59D00", "y": 1, "order": 1}, {"count": 4, "color": "#CBCBC9", "y": 1, "order": 2}, {"count": 4, "color": "#1B1E14", "y": 1, "order": 3}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#F2DA52','#C59D00','#CBCBC9','#1B1E14']</code></p>
+</div>
+<section id="moonrise4" class="level2 cell-output cell-output-display" data-number="10.27">
+<h2 data-number="10.27" class="anchored" data-anchor-id="moonrise4"><span class="header-section-number">10.27</span> Moonrise4</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-4e4b94aadec147cbba783a8dbbc665c5.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-4e4b94aadec147cbba783a8dbbc665c5.vega-embed details,
+  #altair-viz-4e4b94aadec147cbba783a8dbbc665c5.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-4e4b94aadec147cbba783a8dbbc665c5"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-4e4b94aadec147cbba783a8dbbc665c5") {
+      outputDiv = document.getElementById("altair-viz-4e4b94aadec147cbba783a8dbbc665c5");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#7B8761", "#4F8F6B", "#C1A62E", "#3B453C", "#9F3208"], "domain": ["#7B8761", "#4F8F6B", "#C1A62E", "#3B453C", "#9F3208"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-2a91f454a7b6940869451704b0180183"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-2a91f454a7b6940869451704b0180183": [{"count": 5, "color": "#7B8761", "y": 1, "order": 0}, {"count": 5, "color": "#C1A62E", "y": 1, "order": 1}, {"count": 5, "color": "#4F8F6B", "y": 1, "order": 2}, {"count": 5, "color": "#3B453C", "y": 1, "order": 3}, {"count": 5, "color": "#9F3208", "y": 1, "order": 4}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#7B8761','#C1A62E','#4F8F6B','#3B453C','#9F3208']</code></p>
+</div>
+<section id="moonrise5" class="level2 cell-output cell-output-display" data-number="10.28">
+<h2 data-number="10.28" class="anchored" data-anchor-id="moonrise5"><span class="header-section-number">10.28</span> Moonrise5</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-58b699e1698149728d9bba0ed7b10c51.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-58b699e1698149728d9bba0ed7b10c51.vega-embed details,
+  #altair-viz-58b699e1698149728d9bba0ed7b10c51.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-58b699e1698149728d9bba0ed7b10c51"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-58b699e1698149728d9bba0ed7b10c51") {
+      outputDiv = document.getElementById("altair-viz-58b699e1698149728d9bba0ed7b10c51");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#D8D28E", "#F5BE25", "#D13060", "#3D4A1C", "#A86B4C", "#DF8C90"], "domain": ["#D8D28E", "#F5BE25", "#D13060", "#3D4A1C", "#A86B4C", "#DF8C90"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-f23cc6fcfb3a5a506e8570d79c2ca032"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-f23cc6fcfb3a5a506e8570d79c2ca032": [{"count": 6, "color": "#DF8C90", "y": 1, "order": 0}, {"count": 6, "color": "#D8D28E", "y": 1, "order": 1}, {"count": 6, "color": "#F5BE25", "y": 1, "order": 2}, {"count": 6, "color": "#3D4A1C", "y": 1, "order": 3}, {"count": 6, "color": "#D13060", "y": 1, "order": 4}, {"count": 6, "color": "#A86B4C", "y": 1, "order": 5}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#DF8C90','#D8D28E','#F5BE25','#3D4A1C','#D13060','#A86B4C']</code></p>
+</div>
+<section id="moonrise6" class="level2 cell-output cell-output-display" data-number="10.29">
+<h2 data-number="10.29" class="anchored" data-anchor-id="moonrise6"><span class="header-section-number">10.29</span> Moonrise6</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-78545573428146908cb6a3d013b00b4e.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-78545573428146908cb6a3d013b00b4e.vega-embed details,
+  #altair-viz-78545573428146908cb6a3d013b00b4e.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-78545573428146908cb6a3d013b00b4e"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-78545573428146908cb6a3d013b00b4e") {
+      outputDiv = document.getElementById("altair-viz-78545573428146908cb6a3d013b00b4e");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#C9A296", "#BF513D", "#C5C188", "#7BB191", "#D9AE30"], "domain": ["#C9A296", "#BF513D", "#C5C188", "#7BB191", "#D9AE30"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-24480a471d0063cd569f3a2abe453124"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-24480a471d0063cd569f3a2abe453124": [{"count": 5, "color": "#BF513D", "y": 1, "order": 0}, {"count": 5, "color": "#C9A296", "y": 1, "order": 1}, {"count": 5, "color": "#C5C188", "y": 1, "order": 2}, {"count": 5, "color": "#7BB191", "y": 1, "order": 3}, {"count": 5, "color": "#D9AE30", "y": 1, "order": 4}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#BF513D','#C9A296','#C5C188','#7BB191','#D9AE30']</code></p>
+</div>
+<section id="moonrise7" class="level2 cell-output cell-output-display" data-number="10.30">
+<h2 data-number="10.30" class="anchored" data-anchor-id="moonrise7"><span class="header-section-number">10.30</span> Moonrise7</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-5024b2b71a014c13ae23f38ac6121b7e.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-5024b2b71a014c13ae23f38ac6121b7e.vega-embed details,
+  #altair-viz-5024b2b71a014c13ae23f38ac6121b7e.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-5024b2b71a014c13ae23f38ac6121b7e"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-5024b2b71a014c13ae23f38ac6121b7e") {
+      outputDiv = document.getElementById("altair-viz-5024b2b71a014c13ae23f38ac6121b7e");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#FFE38F", "#912B29", "#A75B44", "#232355", "#616860"], "domain": ["#FFE38F", "#912B29", "#A75B44", "#232355", "#616860"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-18aae068a56de3d13314ce584a20fd1f"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-18aae068a56de3d13314ce584a20fd1f": [{"count": 5, "color": "#232355", "y": 1, "order": 0}, {"count": 5, "color": "#616860", "y": 1, "order": 1}, {"count": 5, "color": "#A75B44", "y": 1, "order": 2}, {"count": 5, "color": "#912B29", "y": 1, "order": 3}, {"count": 5, "color": "#FFE38F", "y": 1, "order": 4}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#232355','#616860','#A75B44','#912B29','#FFE38F']</code></p>
+</div>
+<section id="royal1" class="level2 cell-output cell-output-display" data-number="10.31">
+<h2 data-number="10.31" class="anchored" data-anchor-id="royal1"><span class="header-section-number">10.31</span> Royal1</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-fbe1ce876b70446d98fb5ef733e74aba.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-fbe1ce876b70446d98fb5ef733e74aba.vega-embed details,
+  #altair-viz-fbe1ce876b70446d98fb5ef733e74aba.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-fbe1ce876b70446d98fb5ef733e74aba"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-fbe1ce876b70446d98fb5ef733e74aba") {
+      outputDiv = document.getElementById("altair-viz-fbe1ce876b70446d98fb5ef733e74aba");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#181401", "#F2D6AF", "#79A43A", "#5E4829"], "domain": ["#181401", "#F2D6AF", "#79A43A", "#5E4829"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-f40ede044f6abfc2d352c2c1b6c24d92"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-f40ede044f6abfc2d352c2c1b6c24d92": [{"count": 4, "color": "#79A43A", "y": 1, "order": 0}, {"count": 4, "color": "#F2D6AF", "y": 1, "order": 1}, {"count": 4, "color": "#5E4829", "y": 1, "order": 2}, {"count": 4, "color": "#181401", "y": 1, "order": 3}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#79A43A','#F2D6AF','#5E4829','#181401']</code></p>
+</div>
+<section id="royal2" class="level2 cell-output cell-output-display" data-number="10.32">
+<h2 data-number="10.32" class="anchored" data-anchor-id="royal2"><span class="header-section-number">10.32</span> Royal2</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-5e02a70047f3498d98d2a6357a8714ad.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-5e02a70047f3498d98d2a6357a8714ad.vega-embed details,
+  #altair-viz-5e02a70047f3498d98d2a6357a8714ad.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-5e02a70047f3498d98d2a6357a8714ad"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-5e02a70047f3498d98d2a6357a8714ad") {
+      outputDiv = document.getElementById("altair-viz-5e02a70047f3498d98d2a6357a8714ad");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#8C3B49", "#B6ACA6", "#D1D3D5", "#212053", "#C2ABBA"], "domain": ["#8C3B49", "#B6ACA6", "#D1D3D5", "#212053", "#C2ABBA"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-61ebf06545915dbd8171e25555b78ef3"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-61ebf06545915dbd8171e25555b78ef3": [{"count": 5, "color": "#C2ABBA", "y": 1, "order": 0}, {"count": 5, "color": "#8C3B49", "y": 1, "order": 1}, {"count": 5, "color": "#B6ACA6", "y": 1, "order": 2}, {"count": 5, "color": "#212053", "y": 1, "order": 3}, {"count": 5, "color": "#D1D3D5", "y": 1, "order": 4}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#C2ABBA','#8C3B49','#B6ACA6','#212053','#D1D3D5']</code></p>
+</div>
+<section id="royal3" class="level2 cell-output cell-output-display" data-number="10.33">
+<h2 data-number="10.33" class="anchored" data-anchor-id="royal3"><span class="header-section-number">10.33</span> Royal3</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-c7e0314370584395952a5238e28ca735.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-c7e0314370584395952a5238e28ca735.vega-embed details,
+  #altair-viz-c7e0314370584395952a5238e28ca735.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-c7e0314370584395952a5238e28ca735"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-c7e0314370584395952a5238e28ca735") {
+      outputDiv = document.getElementById("altair-viz-c7e0314370584395952a5238e28ca735");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#FC576C", "#E2998B", "#FBD6CA", "#ED7E53", "#2E1718"], "domain": ["#FC576C", "#E2998B", "#FBD6CA", "#ED7E53", "#2E1718"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-f7f8c19ac96e62158e7890b3dd9adc69"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-f7f8c19ac96e62158e7890b3dd9adc69": [{"count": 5, "color": "#FC576C", "y": 1, "order": 0}, {"count": 5, "color": "#ED7E53", "y": 1, "order": 1}, {"count": 5, "color": "#E2998B", "y": 1, "order": 2}, {"count": 5, "color": "#2E1718", "y": 1, "order": 3}, {"count": 5, "color": "#FBD6CA", "y": 1, "order": 4}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#FC576C','#ED7E53','#E2998B','#2E1718','#FBD6CA']</code></p>
+</div>
+<section id="zissou" class="level2 cell-output cell-output-display" data-number="10.34">
+<h2 data-number="10.34" class="anchored" data-anchor-id="zissou"><span class="header-section-number">10.34</span> Zissou</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-ba92c6c588a44c19b3f16117f1f108bd.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-ba92c6c588a44c19b3f16117f1f108bd.vega-embed details,
+  #altair-viz-ba92c6c588a44c19b3f16117f1f108bd.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-ba92c6c588a44c19b3f16117f1f108bd"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-ba92c6c588a44c19b3f16117f1f108bd") {
+      outputDiv = document.getElementById("altair-viz-ba92c6c588a44c19b3f16117f1f108bd");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#F23814", "#DFB78B", "#B6C3C5", "#0099E6", "#12255A"], "domain": ["#F23814", "#DFB78B", "#B6C3C5", "#0099E6", "#12255A"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-cb25f7ad8187defba9688c9a802b7f5a"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-cb25f7ad8187defba9688c9a802b7f5a": [{"count": 5, "color": "#0099E6", "y": 1, "order": 0}, {"count": 5, "color": "#12255A", "y": 1, "order": 1}, {"count": 5, "color": "#F23814", "y": 1, "order": 2}, {"count": 5, "color": "#DFB78B", "y": 1, "order": 3}, {"count": 5, "color": "#B6C3C5", "y": 1, "order": 4}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#0099E6','#12255A','#F23814','#DFB78B','#B6C3C5']</code></p>
+</div>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+
+<nav class="page-navigation column-page-right">
+  <div class="nav-page nav-page-previous">
+      <a href="../notebooks/tableau.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">tableau</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../notebooks/otakeito.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">otakeito</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
