@@ -22,6 +22,7 @@ book:
         - notebooks/tableau.qmd
         - notebooks/wesanderson.qmd
         - notebooks/otakeito.qmd
+        - notebooks/apdocc.qmd
     - part: types.qmd
       chapters:
         - notebooks/sequential.qmd

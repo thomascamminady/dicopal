@@ -19,7 +19,7 @@ want to browse by source or type, use the table of contents.
 ```{python}
 from dicopal.create_page import create_page_by_type
 
-path = "dicopal.js/src/palettes.json"
+path = "dicopal.js/src/palettes_apdocc.json"
 create_page_by_type("sequential", path)
 create_page_by_type("diverging", path)
 create_page_by_type("qualitative", path)

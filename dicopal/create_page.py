@@ -14,7 +14,7 @@ def create(palettes, source, palette, url, palettetype):
     # display(Markdown("```python\n[\n " + ",\n ".join(colors.split(",")) + ",\n]\n```"))
 
 
-def create_page(source: str, path: str = "../dicopal.js/src/palettes.json"):
+def create_page(source: str, path: str = "../dicopal.js/src/palettes_apdocc.json"):
     with open(path, "r") as f:
         palettes = json.load(f)
 
@@ -25,7 +25,7 @@ def create_page(source: str, path: str = "../dicopal.js/src/palettes.json"):
 
 
 def create_page_by_type(
-    requested_palettetype: str, path: str = "../dicopal.js/src/palettes.json"
+    requested_palettetype: str, path: str = "../dicopal.js/src/palettes_apdocc.json"
 ):
     with open(path, "r") as f:
         palettes = json.load(f)

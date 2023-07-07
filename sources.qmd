@@ -29,3 +29,7 @@ title: "By source"
 
 ## Masataka Okabe and Kei Ito's Color Universal Design (CUD) palette
 [https://jfly.uni-koeln.de/color/](https://jfly.uni-koeln.de/color/)
+
+
+## 'A Dictionary of Color Combinations' by Sanzo Wada
+[https://github.com/thomascamminady/APDOCC](https://github.com/thomascamminady/APDOCC)
