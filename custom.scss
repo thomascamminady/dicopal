@@ -1,0 +1,14 @@
+/*-- scss:rules --*/
+
+// If your code blocks are inside a pre tag
+pre {
+  // Nested SCSS syntax to target code blocks inside pre tags
+  code {
+    font-size: 12px;
+  }
+}
+
+// If your code blocks are not nested inside any specific tag
+code {
+  font-size: 12px;
+}
