@@ -21,7 +21,7 @@ def create(palettes, source, palette, url, palettetype, include_example):
     color_strings = [f"\n[{color}]" for color in colors[n : n + 1]]
     color_string = "".join(color_strings)
     if include_example:
-        display(Markdown("Here's are are some example plots."))
+        display(Markdown("Here are some example plots."))
         display(example)
         display(
             Markdown(
