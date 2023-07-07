@@ -1,6 +1,7 @@
 import altair as alt
 import numpy as np
 import polars as pl
+from vega_datasets import data
 
 alt.renderers.set_embed_options(actions=False)
 
@@ -59,3 +60,36 @@ def create_overview(
     ]
 
     return (chart, colors)
+
+
+def create_example(palette):
+    width = 200
+    base = (
+        alt.Chart(data.cars.url)
+        .encode(color=alt.Color("Name:N").scale(range=palette).legend(None))
+        .properties(width=width)
+    )
+    return (
+        alt.vconcat(
+            alt.hconcat(
+                base.mark_circle(size=300, opacity=1).encode(
+                    x=alt.X("Horsepower:Q").title(""),
+                    y=alt.Y("Miles_per_Gallon:Q").title(""),
+                ),
+                base.mark_bar().encode(
+                    x=alt.X("Miles_per_Gallon:Q").bin().title(""),
+                    y=alt.Y("Miles_per_Gallon:Q").title(""),
+                    color=alt.Color("Miles_per_Gallon:N"),
+                ),
+            ),
+            base.mark_line(strokeWidth=4)
+            .encode(
+                x=alt.X("Horsepower:Q").title(""),
+                y=alt.Y("Miles_per_Gallon:Q").title(""),
+                color=alt.Color("Miles_per_Gallon:N"),
+            )
+            .properties(width=2.25 * width),
+        )
+        .configure_view(strokeWidth=0)
+        .configure_axis(grid=False, domain=False)
+    )
