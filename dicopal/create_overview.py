@@ -63,7 +63,7 @@ def create_overview(
 
 
 def create_example(palette):
-    width = 200
+    width = 180
     height = 150
     base = (
         alt.Chart(data.cars.url)
@@ -98,10 +98,10 @@ def create_example(palette):
                 base.mark_bar().encode(
                     x=alt.X("Miles_per_Gallon:Q").bin().title(""),
                     y=alt.Y("Miles_per_Gallon:Q").title(""),
-                    color=alt.Color("Miles_per_Gallon:N"),
+                    color=alt.Color("Miles_per_Gallon:N")
+                    .scale(range=palette)
+                    .legend(None),
                 ),
-            ),
-            alt.hconcat(
                 base.mark_line(strokeWidth=4).encode(
                     x=alt.X("Horsepower:Q").title(""),
                     y=alt.Y("Miles_per_Gallon:Q").title(""),
@@ -111,6 +111,16 @@ def create_example(palette):
                 ),
                 geomap,
             ),
+            # alt.hconcat(
+            #     base.mark_line(strokeWidth=4).encode(
+            #         x=alt.X("Horsepower:Q").title(""),
+            #         y=alt.Y("Miles_per_Gallon:Q").title(""),
+            #         color=alt.Color("Miles_per_Gallon:N")
+            #         .scale(range=palette)
+            #         .legend(None),
+            #     ),
+            #     geomap,
+            # ),
         )
         .configure_view(strokeWidth=0)
         .configure_axis(grid=False, domain=False)

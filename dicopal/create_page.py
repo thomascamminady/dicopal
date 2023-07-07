@@ -9,10 +9,10 @@ from dicopal.create_overview import create_example, create_overview
 def create(palettes, source, palette, url, palettetype, include_example):
     chart, colors = create_overview(palettes[source][palette]["values"])
 
-    n = len(colors) // 2
+    n = len(colors) // 5
     colorhex = [c.strip("'") for c in colors[n].split(",")]
     example = create_example(colorhex)
-    display(Markdown(f"## [{palette}]({url}), {palettetype}"))
+    display(Markdown(f"   \n## [{palette}]({url}), {palettetype}"))
     color_strings = [f"\n[{color}]" for color in colors]
     color_string = "".join(color_strings)
     display(chart)
@@ -21,9 +21,13 @@ def create(palettes, source, palette, url, palettetype, include_example):
     color_strings = [f"\n[{color}]" for color in colors[n : n + 1]]
     color_string = "".join(color_strings)
     if include_example:
-        display(Markdown("Creating an example using the following hex codes:"))
-        display(Markdown(f"""```python{color_string}\n```"""))
+        display(Markdown("Here's are are some example plots."))
         display(example)
+        display(
+            Markdown(
+                f"""Specifically, these colors where used:\n```python{color_string}\n```"""
+            )
+        )
     # display(Markdown("```python\n[\n " + ",\n ".join(colors.split(",")) + ",\n]\n```"))
 
 
