@@ -40,7 +40,7 @@ format:
     page-layout: full
     code-fold: true
     code-overflow: wrap
-    toc: true
+    toc: false
     toc-expand: 10
     toc-depth: 10
 

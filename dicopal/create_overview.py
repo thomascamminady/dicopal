@@ -23,7 +23,7 @@ def create_overview(palette: dict[str, list[str]]) -> tuple[alt.HConcatChart, st
             tooltip=["color:N"],
         )
         .properties(
-            width=700,
+            width=900,
             height=60 * len(palette.items()),
         )
     )
