@@ -87,9 +87,9 @@ def create_example(palette):
     return (
         alt.vconcat(
             alt.hconcat(
-                base.mark_circle(size=300, opacity=1).encode(
-                    x=alt.X("Horsepower:Q").title(""),
-                    y=alt.Y("Miles_per_Gallon:Q").title(""),
+                base.mark_circle(size=100, opacity=1, clip=True).encode(
+                    x=alt.X("Horsepower:Q").title("").scale(domain=(50, 140)),
+                    y=alt.Y("Miles_per_Gallon:Q").title("").scale(domain=(20, 30)),
                 ),
                 base.mark_bar().encode(
                     x=alt.X("Miles_per_Gallon:Q").bin().title(""),
