@@ -39,7 +39,9 @@ format:
       dark: darkly
     page-layout: full
     code-fold: true
-    code-overflow: wrap
+    code-copy: true
+    code-line-numbers: false
+    code-overflow: scroll
     toc: false
     toc-expand: 10
     toc-depth: 10
