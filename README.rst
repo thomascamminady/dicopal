@@ -1,26 +1,14 @@
 =======
 dicopal
 =======
+Lists all colors here: https://thomascamminady.github.io/dicopal/
 
 
 
-
-Extending the work of dicopal.js
-
-Development
---------
-To set up the project, simply run
-
-.. code-block:: bash
-
-   make init
+Extending the work of `dicopal.js`_
 
 
-Credits
--------
-
-This package was created with Cookiecutter_ and `thomascamminady/cookiecutter-pypackage`_, a fork of the `audreyr/cookiecutter-pypackage`_ project template.
-
+.. _`dicopal.js`: https://github.com/riatelab/dicopal.js
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`thomascamminady/cookiecutter-pypackage`: https://github.com/thomascamminady/cookiecutter-pypackage
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
