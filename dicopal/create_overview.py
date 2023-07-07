@@ -26,29 +26,27 @@ def create_overview(palette: dict[str, list[str]]) -> tuple[alt.HConcatChart, st
         )
     )
 
-    return (
-        (
-            alt.hconcat(
-                base.mark_bar().encode(
-                    x=alt.X("y:Q").axis(None).stack("zero"),
-                    color=alt.Color("color:N")
-                    .scale(range=colors, domain=colors)
-                    .legend(None),
-                ),
-                # base.mark_text(fontSize=15, color="black").encode(
-                #     x=alt.X("y:Q").axis(None).stack("zero"),
-                #     text=alt.Text("color:N"),
-                # ),
-            )
-            .configure_view(strokeWidth=0)
-            .configure_axis(grid=False, domain=False)
-        ),
-        ",".join(
-            [
-                f"'{c}'"
-                for c in df.filter(pl.col("count") == df["count"].max())[
-                    "color"
-                ].to_list()
-            ]
-        ),
+    chart = (
+        alt.hconcat(
+            base.mark_bar().encode(
+                x=alt.X("y:Q").axis(None).stack("normalize"),
+                color=alt.Color("color:N")
+                .scale(range=colors, domain=colors)
+                .legend(None),
+            ),
+            # base.mark_text(fontSize=15, color="black").encode(
+            #     x=alt.X("y:Q").axis(None).stack("zero"),
+            #     text=alt.Text("color:N"),
+            # ),
+        )
+        .configure_view(strokeWidth=0)
+        .configure_axis(grid=False, domain=False)
     )
+    colors = ",".join(
+        [
+            f"'{str(c)}'"
+            for c in df.filter(pl.col("count") == df["count"].max())["color"].to_list()
+        ]
+    )
+
+    return (chart, colors)

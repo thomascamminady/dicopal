@@ -12,6 +12,8 @@ def create_page(source: str):
 
     for palette in palettes[source].keys():
         chart, colors = create_overview(palettes[source][palette]["values"])
-        display(Markdown(f"## {palette}"))
+        palettetype = palettes[source][palette]["type"]
+        url = palettes[source][palette]["url"]
+        display(Markdown(f"## [{palette}]({url}), {palettetype}"))
         display(chart)
         display(Markdown("```[" + colors + "]```"))
