@@ -4,8 +4,6 @@ title: colorbrewer
 
 
 ```{python}
-# | output: true
-
 from dicopal.create_page import create_page
 
 create_page("colorbrewer")

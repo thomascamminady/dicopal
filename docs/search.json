@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "A collection of colors",
     "section": "",
-    "text": "1 Getting started\nThis is a collection of colors, an homage to the dicopal.js project. This website allows you to quickly browse a variety of color palettes and just copy their hex codes."
+    "text": "1 Getting started\nThis is a collection of colors, an homage to the dicopal.js project. This website allows you to quickly browse a variety of color palettes and just copy their hex codes.\nI can think of two ways in which this collection might be helpfuls. A) You want to look for a suitable palette, click on the reference, and use the palette from the original source. B) You are looking for a discrete palette (the underlying map can still be continuous) and just need some fixed values that you can hard code in your application."
   },
   {
     "objectID": "index.html#dicopal.js",

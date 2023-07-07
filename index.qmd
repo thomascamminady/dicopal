@@ -5,6 +5,7 @@ title: "A Collection Of Colors"
 # Getting started
 This is [a collection of colors](https://github.com/thomascamminady/dicopal/tree/main), an homage to the [`dicopal.js`](https://github.com/riatelab/dicopal.js) project. This website allows you to quickly browse a variety of color palettes and just copy their hex codes.
 
+I can think of two ways in which this collection might be helpfuls. A) You want to look for a suitable palette, click on the reference, and use the palette from the original source. B) You are looking for a **discrete** palette (the underlying map can still be continuous) and just need some fixed values that you can hard code in your application.
 
 ## `dicopal.js`
 
