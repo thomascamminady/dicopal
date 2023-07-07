@@ -35,7 +35,7 @@ def create_overview(
     chart = (
         alt.hconcat(
             base.mark_bar().encode(
-                x=alt.X("y:Q").axis(None).stack("normalize"),
+                x=alt.X("y:Q").axis(None).stack("zero"),
                 color=alt.Color("color:N")
                 .scale(range=colors, domain=colors)
                 .legend(None),
