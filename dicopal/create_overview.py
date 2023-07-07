@@ -77,11 +77,7 @@ def create_example(palette):
     geomap = (
         alt.Chart(states)
         .mark_geoshape()
-        .encode(
-            alt.Color("engineers:Q", type="quantitative")
-            .scale(range=palette)
-            .legend(None)
-        )
+        .encode(alt.Color("engineers:N").scale(range=palette).legend(None))
         .transform_lookup(
             lookup="id", from_=alt.LookupData(source, "id", ["engineers"])
         )
