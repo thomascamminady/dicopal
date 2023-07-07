@@ -28,7 +28,7 @@ def create_overview(
         )
         .properties(
             width=900,
-            height=60 * len(palette.items()),
+            height=30 * len(palette.items()),
         )
     )
 
@@ -64,10 +64,11 @@ def create_overview(
 
 def create_example(palette):
     width = 200
+    height = 150
     base = (
         alt.Chart(data.cars.url)
         .encode(color=alt.Color("Name:N").scale(range=palette).legend(None))
-        .properties(width=width)
+        .properties(width=width, height=height)
     )
 
     states = alt.topo_feature(data.us_10m.url, "states")
@@ -84,7 +85,7 @@ def create_example(palette):
         .transform_lookup(
             lookup="id", from_=alt.LookupData(source, "id", ["population"])
         )
-        .properties(width=width)
+        .properties(width=width, height=height)
         .project(type="albersUsa")
     )
     return (
