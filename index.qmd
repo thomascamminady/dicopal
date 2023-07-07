@@ -1,9 +1,9 @@
 ---
-title: "dicopal"
+title: "A Collection Of Colors"
 ---
 
-# `dicopal`
-This is [`dicopal`](https://github.com/thomascamminady/dicopal/tree/main), an homage to the [`dicopal.js`](https://github.com/riatelab/dicopal.js)  project. This website allows you to quickly browse a variety of color palettes and just copy their hex codes.
+# Getting started
+This is [a collection of colors](https://github.com/thomascamminady/dicopal/tree/main), an homage to the [`dicopal.js`](https://github.com/riatelab/dicopal.js) project. This website allows you to quickly browse a variety of color palettes and just copy their hex codes.
 
 
 ## `dicopal.js`
