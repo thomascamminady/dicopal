@@ -25,7 +25,7 @@ def create(palettes, source, palette, url, palettetype, include_example):
         display(example)
         display(
             Markdown(
-                f"""Specifically, these colors where used for the example:\n```python{color_string}\n```"""
+                f"""Specifically, the following colors where used for the example.\n```python{color_string}\n```"""
             )
         )
     # display(Markdown("```python\n[\n " + ",\n ".join(colors.split(",")) + ",\n]\n```"))

@@ -69,10 +69,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -126,6 +128,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../">A collection of colors</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -286,23 +291,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 
 <style>
-  #altair-viz-118358dd9bff49fcac30b3765fa0d565.vega-embed {
+  #altair-viz-7eae491d3e17402d92affd110725ed41.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-118358dd9bff49fcac30b3765fa0d565.vega-embed details,
-  #altair-viz-118358dd9bff49fcac30b3765fa0d565.vega-embed details summary {
+  #altair-viz-7eae491d3e17402d92affd110725ed41.vega-embed details,
+  #altair-viz-7eae491d3e17402d92affd110725ed41.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-118358dd9bff49fcac30b3765fa0d565"></div>
+<div id="altair-viz-7eae491d3e17402d92affd110725ed41"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-118358dd9bff49fcac30b3765fa0d565") {
-      outputDiv = document.getElementById("altair-viz-118358dd9bff49fcac30b3765fa0d565");
+    if (outputDiv.id !== "altair-viz-7eae491d3e17402d92affd110725ed41") {
+      outputDiv = document.getElementById("altair-viz-7eae491d3e17402d92affd110725ed41");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -348,7 +353,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#56b4e9", "#009e73", "#f0e442", "#0072b2", "#cc79a7", "#d55e00", "#e69f00", "#000000"], "domain": ["#56b4e9", "#009e73", "#f0e442", "#0072b2", "#cc79a7", "#d55e00", "#e69f00", "#000000"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "scale": {"domain": [0, 21]}, "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 50, "width": 900}], "data": {"name": "data-b9438275d9f0237a946eaf5031b1dd6f"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-b9438275d9f0237a946eaf5031b1dd6f": [{"count": 8, "color": "#000000", "y": 1, "order": 0}, {"count": 8, "color": "#e69f00", "y": 1, "order": 1}, {"count": 8, "color": "#56b4e9", "y": 1, "order": 2}, {"count": 8, "color": "#009e73", "y": 1, "order": 3}, {"count": 8, "color": "#f0e442", "y": 1, "order": 4}, {"count": 8, "color": "#0072b2", "y": 1, "order": 5}, {"count": 8, "color": "#d55e00", "y": 1, "order": 6}, {"count": 8, "color": "#cc79a7", "y": 1, "order": 7}]}}, {"actions": false, "mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#f0e442", "#009e73", "#56b4e9", "#d55e00", "#cc79a7", "#000000", "#e69f00", "#0072b2"], "domain": ["#f0e442", "#009e73", "#56b4e9", "#d55e00", "#cc79a7", "#000000", "#e69f00", "#0072b2"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "scale": {"domain": [0, 21]}, "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 50, "width": 900}], "data": {"name": "data-b9438275d9f0237a946eaf5031b1dd6f"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-b9438275d9f0237a946eaf5031b1dd6f": [{"count": 8, "color": "#000000", "y": 1, "order": 0}, {"count": 8, "color": "#e69f00", "y": 1, "order": 1}, {"count": 8, "color": "#56b4e9", "y": 1, "order": 2}, {"count": 8, "color": "#009e73", "y": 1, "order": 3}, {"count": 8, "color": "#f0e442", "y": 1, "order": 4}, {"count": 8, "color": "#0072b2", "y": 1, "order": 5}, {"count": 8, "color": "#d55e00", "y": 1, "order": 6}, {"count": 8, "color": "#cc79a7", "y": 1, "order": 7}]}}, {"actions": false, "mode": "vega-lite"});
 </script>
 </div>
 <div class="cell-output cell-output-display">
@@ -360,23 +365,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 
 <style>
-  #altair-viz-98003fcf3a534873bdf2d7ca4e57594c.vega-embed {
+  #altair-viz-69160b2e8e4844518cf7f05e02f5da7f.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-98003fcf3a534873bdf2d7ca4e57594c.vega-embed details,
-  #altair-viz-98003fcf3a534873bdf2d7ca4e57594c.vega-embed details summary {
+  #altair-viz-69160b2e8e4844518cf7f05e02f5da7f.vega-embed details,
+  #altair-viz-69160b2e8e4844518cf7f05e02f5da7f.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-98003fcf3a534873bdf2d7ca4e57594c"></div>
+<div id="altair-viz-69160b2e8e4844518cf7f05e02f5da7f"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-98003fcf3a534873bdf2d7ca4e57594c") {
-      outputDiv = document.getElementById("altair-viz-98003fcf3a534873bdf2d7ca4e57594c");
+    if (outputDiv.id !== "altair-viz-69160b2e8e4844518cf7f05e02f5da7f") {
+      outputDiv = document.getElementById("altair-viz-69160b2e8e4844518cf7f05e02f5da7f");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -426,7 +431,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </script>
 </div>
 <div class="cell-output cell-output-display">
-<p>Specifically, these colors where used for the example:</p>
+<p>Specifically, the following colors where used for the example.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>[<span class="st">'#000000'</span>,<span class="st">'#e69f00'</span>,<span class="st">'#56b4e9'</span>,<span class="st">'#009e73'</span>,<span class="st">'#f0e442'</span>,<span class="st">'#0072b2'</span>,<span class="st">'#d55e00'</span>,<span class="st">'#cc79a7'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
@@ -454,6 +459,121 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {

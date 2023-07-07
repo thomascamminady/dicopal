@@ -69,10 +69,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -126,6 +128,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../">A collection of colors</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -286,23 +291,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 
 <style>
-  #altair-viz-ff5828d006c04dfd87de3490899e71d5.vega-embed {
+  #altair-viz-8f7cfd562a3e45e59697270a39724950.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-ff5828d006c04dfd87de3490899e71d5.vega-embed details,
-  #altair-viz-ff5828d006c04dfd87de3490899e71d5.vega-embed details summary {
+  #altair-viz-8f7cfd562a3e45e59697270a39724950.vega-embed details,
+  #altair-viz-8f7cfd562a3e45e59697270a39724950.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-ff5828d006c04dfd87de3490899e71d5"></div>
+<div id="altair-viz-8f7cfd562a3e45e59697270a39724950"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-ff5828d006c04dfd87de3490899e71d5") {
-      outputDiv = document.getElementById("altair-viz-ff5828d006c04dfd87de3490899e71d5");
+    if (outputDiv.id !== "altair-viz-8f7cfd562a3e45e59697270a39724950") {
+      outputDiv = document.getElementById("altair-viz-8f7cfd562a3e45e59697270a39724950");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -348,7 +353,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#6BA3D6", "#B5C8E2", "#E9C39B", "#BD0A36", "#EA6B73", "#F02720", "#AC613C", "#AC8763", "#B5DFFD", "#FFB6B0", "#F4737A", "#DDC9B4", "#2C69B0"], "domain": ["#6BA3D6", "#B5C8E2", "#E9C39B", "#BD0A36", "#EA6B73", "#F02720", "#AC613C", "#AC8763", "#B5DFFD", "#FFB6B0", "#F4737A", "#DDC9B4", "#2C69B0"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "scale": {"domain": [0, 21]}, "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 100, "width": 900}], "data": {"name": "data-79d5dc5b7f8353a48f24731d7d4733f9"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-79d5dc5b7f8353a48f24731d7d4733f9": [{"count": 12, "color": "#2C69B0", "y": 1, "order": 0}, {"count": 12, "color": "#B5C8E2", "y": 1, "order": 1}, {"count": 12, "color": "#F02720", "y": 1, "order": 2}, {"count": 12, "color": "#FFB6B0", "y": 1, "order": 3}, {"count": 12, "color": "#AC613C", "y": 1, "order": 4}, {"count": 12, "color": "#E9C39B", "y": 1, "order": 5}, {"count": 12, "color": "#6BA3D6", "y": 1, "order": 6}, {"count": 12, "color": "#B5DFFD", "y": 1, "order": 7}, {"count": 12, "color": "#AC8763", "y": 1, "order": 8}, {"count": 12, "color": "#DDC9B4", "y": 1, "order": 9}, {"count": 12, "color": "#BD0A36", "y": 1, "order": 10}, {"count": 12, "color": "#F4737A", "y": 1, "order": 11}, {"count": 6, "color": "#2C69B0", "y": 1, "order": 0}, {"count": 6, "color": "#F02720", "y": 1, "order": 1}, {"count": 6, "color": "#AC613C", "y": 1, "order": 2}, {"count": 6, "color": "#6BA3D6", "y": 1, "order": 3}, {"count": 6, "color": "#EA6B73", "y": 1, "order": 4}, {"count": 6, "color": "#E9C39B", "y": 1, "order": 5}]}}, {"actions": false, "mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#B5DFFD", "#B5C8E2", "#AC613C", "#F4737A", "#EA6B73", "#FFB6B0", "#DDC9B4", "#F02720", "#2C69B0", "#AC8763", "#6BA3D6", "#E9C39B", "#BD0A36"], "domain": ["#B5DFFD", "#B5C8E2", "#AC613C", "#F4737A", "#EA6B73", "#FFB6B0", "#DDC9B4", "#F02720", "#2C69B0", "#AC8763", "#6BA3D6", "#E9C39B", "#BD0A36"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "scale": {"domain": [0, 21]}, "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 100, "width": 900}], "data": {"name": "data-79d5dc5b7f8353a48f24731d7d4733f9"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-79d5dc5b7f8353a48f24731d7d4733f9": [{"count": 12, "color": "#2C69B0", "y": 1, "order": 0}, {"count": 12, "color": "#B5C8E2", "y": 1, "order": 1}, {"count": 12, "color": "#F02720", "y": 1, "order": 2}, {"count": 12, "color": "#FFB6B0", "y": 1, "order": 3}, {"count": 12, "color": "#AC613C", "y": 1, "order": 4}, {"count": 12, "color": "#E9C39B", "y": 1, "order": 5}, {"count": 12, "color": "#6BA3D6", "y": 1, "order": 6}, {"count": 12, "color": "#B5DFFD", "y": 1, "order": 7}, {"count": 12, "color": "#AC8763", "y": 1, "order": 8}, {"count": 12, "color": "#DDC9B4", "y": 1, "order": 9}, {"count": 12, "color": "#BD0A36", "y": 1, "order": 10}, {"count": 12, "color": "#F4737A", "y": 1, "order": 11}, {"count": 6, "color": "#2C69B0", "y": 1, "order": 0}, {"count": 6, "color": "#F02720", "y": 1, "order": 1}, {"count": 6, "color": "#AC613C", "y": 1, "order": 2}, {"count": 6, "color": "#6BA3D6", "y": 1, "order": 3}, {"count": 6, "color": "#EA6B73", "y": 1, "order": 4}, {"count": 6, "color": "#E9C39B", "y": 1, "order": 5}]}}, {"actions": false, "mode": "vega-lite"});
 </script>
 </div>
 <div class="cell-output cell-output-display">
@@ -361,23 +366,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 
 <style>
-  #altair-viz-112085f7b5094b99a58039b700acb83c.vega-embed {
+  #altair-viz-c459430d3b8c4ea9b3be55ff0417b74f.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-112085f7b5094b99a58039b700acb83c.vega-embed details,
-  #altair-viz-112085f7b5094b99a58039b700acb83c.vega-embed details summary {
+  #altair-viz-c459430d3b8c4ea9b3be55ff0417b74f.vega-embed details,
+  #altair-viz-c459430d3b8c4ea9b3be55ff0417b74f.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-112085f7b5094b99a58039b700acb83c"></div>
+<div id="altair-viz-c459430d3b8c4ea9b3be55ff0417b74f"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-112085f7b5094b99a58039b700acb83c") {
-      outputDiv = document.getElementById("altair-viz-112085f7b5094b99a58039b700acb83c");
+    if (outputDiv.id !== "altair-viz-c459430d3b8c4ea9b3be55ff0417b74f") {
+      outputDiv = document.getElementById("altair-viz-c459430d3b8c4ea9b3be55ff0417b74f");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -427,7 +432,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </script>
 </div>
 <div class="cell-output cell-output-display">
-<p>Specifically, these colors where used for the example:</p>
+<p>Specifically, the following colors where used for the example.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>[<span class="st">'#2C69B0'</span>,<span class="st">'#F02720'</span>,<span class="st">'#AC613C'</span>,<span class="st">'#6BA3D6'</span>,<span class="st">'#EA6B73'</span>,<span class="st">'#E9C39B'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="colorblind-qualitative" class="level2 cell-output cell-output-display" data-number="9.2">
@@ -436,23 +441,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 
 <style>
-  #altair-viz-2ff3c69111464b4e871961650d1e8a8a.vega-embed {
+  #altair-viz-a5db51ea132c4b6586275a41161a4a9e.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-2ff3c69111464b4e871961650d1e8a8a.vega-embed details,
-  #altair-viz-2ff3c69111464b4e871961650d1e8a8a.vega-embed details summary {
+  #altair-viz-a5db51ea132c4b6586275a41161a4a9e.vega-embed details,
+  #altair-viz-a5db51ea132c4b6586275a41161a4a9e.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-2ff3c69111464b4e871961650d1e8a8a"></div>
+<div id="altair-viz-a5db51ea132c4b6586275a41161a4a9e"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-2ff3c69111464b4e871961650d1e8a8a") {
-      outputDiv = document.getElementById("altair-viz-2ff3c69111464b4e871961650d1e8a8a");
+    if (outputDiv.id !== "altair-viz-a5db51ea132c4b6586275a41161a4a9e") {
+      outputDiv = document.getElementById("altair-viz-a5db51ea132c4b6586275a41161a4a9e");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -498,7 +503,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#006BA4", "#FF800E", "#A2C8EC", "#595959", "#C85200", "#CFCFCF", "#898989", "#ABABAB", "#FFBC79", "#5F9ED1"], "domain": ["#006BA4", "#FF800E", "#A2C8EC", "#595959", "#C85200", "#CFCFCF", "#898989", "#ABABAB", "#FFBC79", "#5F9ED1"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "scale": {"domain": [0, 21]}, "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 50, "width": 900}], "data": {"name": "data-549b3623b56cde5ff226b013c417a1f0"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-549b3623b56cde5ff226b013c417a1f0": [{"count": 10, "color": "#006BA4", "y": 1, "order": 0}, {"count": 10, "color": "#FF800E", "y": 1, "order": 1}, {"count": 10, "color": "#ABABAB", "y": 1, "order": 2}, {"count": 10, "color": "#595959", "y": 1, "order": 3}, {"count": 10, "color": "#5F9ED1", "y": 1, "order": 4}, {"count": 10, "color": "#C85200", "y": 1, "order": 5}, {"count": 10, "color": "#898989", "y": 1, "order": 6}, {"count": 10, "color": "#A2C8EC", "y": 1, "order": 7}, {"count": 10, "color": "#FFBC79", "y": 1, "order": 8}, {"count": 10, "color": "#CFCFCF", "y": 1, "order": 9}]}}, {"actions": false, "mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#C85200", "#FF800E", "#5F9ED1", "#898989", "#CFCFCF", "#595959", "#006BA4", "#ABABAB", "#FFBC79", "#A2C8EC"], "domain": ["#C85200", "#FF800E", "#5F9ED1", "#898989", "#CFCFCF", "#595959", "#006BA4", "#ABABAB", "#FFBC79", "#A2C8EC"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "scale": {"domain": [0, 21]}, "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 50, "width": 900}], "data": {"name": "data-549b3623b56cde5ff226b013c417a1f0"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-549b3623b56cde5ff226b013c417a1f0": [{"count": 10, "color": "#006BA4", "y": 1, "order": 0}, {"count": 10, "color": "#FF800E", "y": 1, "order": 1}, {"count": 10, "color": "#ABABAB", "y": 1, "order": 2}, {"count": 10, "color": "#595959", "y": 1, "order": 3}, {"count": 10, "color": "#5F9ED1", "y": 1, "order": 4}, {"count": 10, "color": "#C85200", "y": 1, "order": 5}, {"count": 10, "color": "#898989", "y": 1, "order": 6}, {"count": 10, "color": "#A2C8EC", "y": 1, "order": 7}, {"count": 10, "color": "#FFBC79", "y": 1, "order": 8}, {"count": 10, "color": "#CFCFCF", "y": 1, "order": 9}]}}, {"actions": false, "mode": "vega-lite"});
 </script>
 </div>
 <div class="cell-output cell-output-display">
@@ -510,23 +515,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 
 <style>
-  #altair-viz-d698c42422214347a0aff9c43196002d.vega-embed {
+  #altair-viz-d8247cb0675848deaf0d3988b94e859f.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-d698c42422214347a0aff9c43196002d.vega-embed details,
-  #altair-viz-d698c42422214347a0aff9c43196002d.vega-embed details summary {
+  #altair-viz-d8247cb0675848deaf0d3988b94e859f.vega-embed details,
+  #altair-viz-d8247cb0675848deaf0d3988b94e859f.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-d698c42422214347a0aff9c43196002d"></div>
+<div id="altair-viz-d8247cb0675848deaf0d3988b94e859f"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-d698c42422214347a0aff9c43196002d") {
-      outputDiv = document.getElementById("altair-viz-d698c42422214347a0aff9c43196002d");
+    if (outputDiv.id !== "altair-viz-d8247cb0675848deaf0d3988b94e859f") {
+      outputDiv = document.getElementById("altair-viz-d8247cb0675848deaf0d3988b94e859f");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -576,7 +581,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </script>
 </div>
 <div class="cell-output cell-output-display">
-<p>Specifically, these colors where used for the example:</p>
+<p>Specifically, the following colors where used for the example.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>[<span class="st">'#006BA4'</span>,<span class="st">'#FF800E'</span>,<span class="st">'#ABABAB'</span>,<span class="st">'#595959'</span>,<span class="st">'#5F9ED1'</span>,<span class="st">'#C85200'</span>,<span class="st">'#898989'</span>,<span class="st">'#A2C8EC'</span>,<span class="st">'#FFBC79'</span>,<span class="st">'#CFCFCF'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="gray-qualitative" class="level2 cell-output cell-output-display" data-number="9.3">
@@ -585,23 +590,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 
 <style>
-  #altair-viz-7f59f3c18d734d8ea98dbd1936577b6e.vega-embed {
+  #altair-viz-98f7d1e4fecd44ab8a6e2a29c6e9ec03.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-7f59f3c18d734d8ea98dbd1936577b6e.vega-embed details,
-  #altair-viz-7f59f3c18d734d8ea98dbd1936577b6e.vega-embed details summary {
+  #altair-viz-98f7d1e4fecd44ab8a6e2a29c6e9ec03.vega-embed details,
+  #altair-viz-98f7d1e4fecd44ab8a6e2a29c6e9ec03.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-7f59f3c18d734d8ea98dbd1936577b6e"></div>
+<div id="altair-viz-98f7d1e4fecd44ab8a6e2a29c6e9ec03"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-7f59f3c18d734d8ea98dbd1936577b6e") {
-      outputDiv = document.getElementById("altair-viz-7f59f3c18d734d8ea98dbd1936577b6e");
+    if (outputDiv.id !== "altair-viz-98f7d1e4fecd44ab8a6e2a29c6e9ec03") {
+      outputDiv = document.getElementById("altair-viz-98f7d1e4fecd44ab8a6e2a29c6e9ec03");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -647,7 +652,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#CFCFCF", "#414451", "#60636A", "#8F8782", "#A5ACAF"], "domain": ["#CFCFCF", "#414451", "#60636A", "#8F8782", "#A5ACAF"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "scale": {"domain": [0, 21]}, "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 50, "width": 900}], "data": {"name": "data-65732494ad1c42ce23c48603c6310a7e"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-65732494ad1c42ce23c48603c6310a7e": [{"count": 5, "color": "#60636A", "y": 1, "order": 0}, {"count": 5, "color": "#A5ACAF", "y": 1, "order": 1}, {"count": 5, "color": "#414451", "y": 1, "order": 2}, {"count": 5, "color": "#8F8782", "y": 1, "order": 3}, {"count": 5, "color": "#CFCFCF", "y": 1, "order": 4}]}}, {"actions": false, "mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#CFCFCF", "#414451", "#A5ACAF", "#8F8782", "#60636A"], "domain": ["#CFCFCF", "#414451", "#A5ACAF", "#8F8782", "#60636A"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "scale": {"domain": [0, 21]}, "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 50, "width": 900}], "data": {"name": "data-65732494ad1c42ce23c48603c6310a7e"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-65732494ad1c42ce23c48603c6310a7e": [{"count": 5, "color": "#60636A", "y": 1, "order": 0}, {"count": 5, "color": "#A5ACAF", "y": 1, "order": 1}, {"count": 5, "color": "#414451", "y": 1, "order": 2}, {"count": 5, "color": "#8F8782", "y": 1, "order": 3}, {"count": 5, "color": "#CFCFCF", "y": 1, "order": 4}]}}, {"actions": false, "mode": "vega-lite"});
 </script>
 </div>
 <div class="cell-output cell-output-display">
@@ -659,23 +664,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 
 <style>
-  #altair-viz-aa5c1db510d74b5aacc7eaa2aba78c0f.vega-embed {
+  #altair-viz-bb0cdbb7b8f4441e86e55c175eca5bbe.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-aa5c1db510d74b5aacc7eaa2aba78c0f.vega-embed details,
-  #altair-viz-aa5c1db510d74b5aacc7eaa2aba78c0f.vega-embed details summary {
+  #altair-viz-bb0cdbb7b8f4441e86e55c175eca5bbe.vega-embed details,
+  #altair-viz-bb0cdbb7b8f4441e86e55c175eca5bbe.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-aa5c1db510d74b5aacc7eaa2aba78c0f"></div>
+<div id="altair-viz-bb0cdbb7b8f4441e86e55c175eca5bbe"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-aa5c1db510d74b5aacc7eaa2aba78c0f") {
-      outputDiv = document.getElementById("altair-viz-aa5c1db510d74b5aacc7eaa2aba78c0f");
+    if (outputDiv.id !== "altair-viz-bb0cdbb7b8f4441e86e55c175eca5bbe") {
+      outputDiv = document.getElementById("altair-viz-bb0cdbb7b8f4441e86e55c175eca5bbe");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -725,7 +730,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </script>
 </div>
 <div class="cell-output cell-output-display">
-<p>Specifically, these colors where used for the example:</p>
+<p>Specifically, the following colors where used for the example.</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>[<span class="st">'#60636A'</span>,<span class="st">'#A5ACAF'</span>,<span class="st">'#414451'</span>,<span class="st">'#8F8782'</span>,<span class="st">'#CFCFCF'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="greenorange-qualitative" class="level2 cell-output cell-output-display" data-number="9.4">
@@ -734,23 +739,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 
 <style>
-  #altair-viz-510764081469464881aed7b97f984ec4.vega-embed {
+  #altair-viz-7f4f44584d2d4e358d0b3b1a21bdd16e.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-510764081469464881aed7b97f984ec4.vega-embed details,
-  #altair-viz-510764081469464881aed7b97f984ec4.vega-embed details summary {
+  #altair-viz-7f4f44584d2d4e358d0b3b1a21bdd16e.vega-embed details,
+  #altair-viz-7f4f44584d2d4e358d0b3b1a21bdd16e.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-510764081469464881aed7b97f984ec4"></div>
+<div id="altair-viz-7f4f44584d2d4e358d0b3b1a21bdd16e"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-510764081469464881aed7b97f984ec4") {
-      outputDiv = document.getElementById("altair-viz-510764081469464881aed7b97f984ec4");
+    if (outputDiv.id !== "altair-viz-7f4f44584d2d4e358d0b3b1a21bdd16e") {
+      outputDiv = document.getElementById("altair-viz-7f4f44584d2d4e358d0b3b1a21bdd16e");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -796,7 +801,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#FFD94A", "#98D9E4", "#B85A0D", "#ACD98D", "#82853B", "#32A251", "#3CB7CC", "#FF7F0F", "#FFB977", "#39737C", "#86B4A9", "#CCC94D"], "domain": ["#FFD94A", "#98D9E4", "#B85A0D", "#ACD98D", "#82853B", "#32A251", "#3CB7CC", "#FF7F0F", "#FFB977", "#39737C", "#86B4A9", "#CCC94D"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "scale": {"domain": [0, 21]}, "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 100, "width": 900}], "data": {"name": "data-f2bf578fe2dbf897b5a66b8d8f8af024"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-f2bf578fe2dbf897b5a66b8d8f8af024": [{"count": 12, "color": "#32A251", "y": 1, "order": 0}, {"count": 12, "color": "#ACD98D", "y": 1, "order": 1}, {"count": 12, "color": "#FF7F0F", "y": 1, "order": 2}, {"count": 12, "color": "#FFB977", "y": 1, "order": 3}, {"count": 12, "color": "#3CB7CC", "y": 1, "order": 4}, {"count": 12, "color": "#98D9E4", "y": 1, "order": 5}, {"count": 12, "color": "#B85A0D", "y": 1, "order": 6}, {"count": 12, "color": "#FFD94A", "y": 1, "order": 7}, {"count": 12, "color": "#39737C", "y": 1, "order": 8}, {"count": 12, "color": "#86B4A9", "y": 1, "order": 9}, {"count": 12, "color": "#82853B", "y": 1, "order": 10}, {"count": 12, "color": "#CCC94D", "y": 1, "order": 11}, {"count": 6, "color": "#32A251", "y": 1, "order": 0}, {"count": 6, "color": "#FF7F0F", "y": 1, "order": 1}, {"count": 6, "color": "#3CB7CC", "y": 1, "order": 2}, {"count": 6, "color": "#FFD94A", "y": 1, "order": 3}, {"count": 6, "color": "#39737C", "y": 1, "order": 4}, {"count": 6, "color": "#B85A0D", "y": 1, "order": 5}]}}, {"actions": false, "mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#98D9E4", "#B85A0D", "#86B4A9", "#FFD94A", "#ACD98D", "#39737C", "#82853B", "#FF7F0F", "#3CB7CC", "#32A251", "#FFB977", "#CCC94D"], "domain": ["#98D9E4", "#B85A0D", "#86B4A9", "#FFD94A", "#ACD98D", "#39737C", "#82853B", "#FF7F0F", "#3CB7CC", "#32A251", "#FFB977", "#CCC94D"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "scale": {"domain": [0, 21]}, "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 100, "width": 900}], "data": {"name": "data-f2bf578fe2dbf897b5a66b8d8f8af024"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-f2bf578fe2dbf897b5a66b8d8f8af024": [{"count": 12, "color": "#32A251", "y": 1, "order": 0}, {"count": 12, "color": "#ACD98D", "y": 1, "order": 1}, {"count": 12, "color": "#FF7F0F", "y": 1, "order": 2}, {"count": 12, "color": "#FFB977", "y": 1, "order": 3}, {"count": 12, "color": "#3CB7CC", "y": 1, "order": 4}, {"count": 12, "color": "#98D9E4", "y": 1, "order": 5}, {"count": 12, "color": "#B85A0D", "y": 1, "order": 6}, {"count": 12, "color": "#FFD94A", "y": 1, "order": 7}, {"count": 12, "color": "#39737C", "y": 1, "order": 8}, {"count": 12, "color": "#86B4A9", "y": 1, "order": 9}, {"count": 12, "color": "#82853B", "y": 1, "order": 10}, {"count": 12, "color": "#CCC94D", "y": 1, "order": 11}, {"count": 6, "color": "#32A251", "y": 1, "order": 0}, {"count": 6, "color": "#FF7F0F", "y": 1, "order": 1}, {"count": 6, "color": "#3CB7CC", "y": 1, "order": 2}, {"count": 6, "color": "#FFD94A", "y": 1, "order": 3}, {"count": 6, "color": "#39737C", "y": 1, "order": 4}, {"count": 6, "color": "#B85A0D", "y": 1, "order": 5}]}}, {"actions": false, "mode": "vega-lite"});
 </script>
 </div>
 <div class="cell-output cell-output-display">
@@ -809,23 +814,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 
 <style>
-  #altair-viz-7f0679dafb9f4e9282177831ac9e968a.vega-embed {
+  #altair-viz-9ff8d20275e84ccd8a1662c55676d1e5.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-7f0679dafb9f4e9282177831ac9e968a.vega-embed details,
-  #altair-viz-7f0679dafb9f4e9282177831ac9e968a.vega-embed details summary {
+  #altair-viz-9ff8d20275e84ccd8a1662c55676d1e5.vega-embed details,
+  #altair-viz-9ff8d20275e84ccd8a1662c55676d1e5.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-7f0679dafb9f4e9282177831ac9e968a"></div>
+<div id="altair-viz-9ff8d20275e84ccd8a1662c55676d1e5"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-7f0679dafb9f4e9282177831ac9e968a") {
-      outputDiv = document.getElementById("altair-viz-7f0679dafb9f4e9282177831ac9e968a");
+    if (outputDiv.id !== "altair-viz-9ff8d20275e84ccd8a1662c55676d1e5") {
+      outputDiv = document.getElementById("altair-viz-9ff8d20275e84ccd8a1662c55676d1e5");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -875,7 +880,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </script>
 </div>
 <div class="cell-output cell-output-display">
-<p>Specifically, these colors where used for the example:</p>
+<p>Specifically, the following colors where used for the example.</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>[<span class="st">'#32A251'</span>,<span class="st">'#FF7F0F'</span>,<span class="st">'#3CB7CC'</span>,<span class="st">'#FFD94A'</span>,<span class="st">'#39737C'</span>,<span class="st">'#B85A0D'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="purplegray-qualitative" class="level2 cell-output cell-output-display" data-number="9.5">
@@ -884,23 +889,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 
 <style>
-  #altair-viz-c96c58e38f464c1188f0f0e5efcefa6f.vega-embed {
+  #altair-viz-166060c055054a6ab99e23fabe6dd994.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-c96c58e38f464c1188f0f0e5efcefa6f.vega-embed details,
-  #altair-viz-c96c58e38f464c1188f0f0e5efcefa6f.vega-embed details summary {
+  #altair-viz-166060c055054a6ab99e23fabe6dd994.vega-embed details,
+  #altair-viz-166060c055054a6ab99e23fabe6dd994.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-c96c58e38f464c1188f0f0e5efcefa6f"></div>
+<div id="altair-viz-166060c055054a6ab99e23fabe6dd994"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-c96c58e38f464c1188f0f0e5efcefa6f") {
-      outputDiv = document.getElementById("altair-viz-c96c58e38f464c1188f0f0e5efcefa6f");
+    if (outputDiv.id !== "altair-viz-166060c055054a6ab99e23fabe6dd994") {
+      outputDiv = document.getElementById("altair-viz-166060c055054a6ab99e23fabe6dd994");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -946,7 +951,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#995688", "#D7D5C5", "#B4B19B", "#DBD4C5", "#D098EE", "#7B66D2", "#94917B", "#5F5A41", "#DC5FBD", "#AB6AD5", "#8B7C6E", "#D898BA", "#FFC0DA", "#A699E8"], "domain": ["#995688", "#D7D5C5", "#B4B19B", "#DBD4C5", "#D098EE", "#7B66D2", "#94917B", "#5F5A41", "#DC5FBD", "#AB6AD5", "#8B7C6E", "#D898BA", "#FFC0DA", "#A699E8"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "scale": {"domain": [0, 21]}, "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 100, "width": 900}], "data": {"name": "data-f6196e0e9bd5dc6466bcc3ad7e481624"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-f6196e0e9bd5dc6466bcc3ad7e481624": [{"count": 12, "color": "#7B66D2", "y": 1, "order": 0}, {"count": 12, "color": "#A699E8", "y": 1, "order": 1}, {"count": 12, "color": "#DC5FBD", "y": 1, "order": 2}, {"count": 12, "color": "#FFC0DA", "y": 1, "order": 3}, {"count": 12, "color": "#5F5A41", "y": 1, "order": 4}, {"count": 12, "color": "#B4B19B", "y": 1, "order": 5}, {"count": 12, "color": "#995688", "y": 1, "order": 6}, {"count": 12, "color": "#D898BA", "y": 1, "order": 7}, {"count": 12, "color": "#AB6AD5", "y": 1, "order": 8}, {"count": 12, "color": "#D098EE", "y": 1, "order": 9}, {"count": 12, "color": "#8B7C6E", "y": 1, "order": 10}, {"count": 12, "color": "#DBD4C5", "y": 1, "order": 11}, {"count": 6, "color": "#7B66D2", "y": 1, "order": 0}, {"count": 6, "color": "#DC5FBD", "y": 1, "order": 1}, {"count": 6, "color": "#94917B", "y": 1, "order": 2}, {"count": 6, "color": "#995688", "y": 1, "order": 3}, {"count": 6, "color": "#D098EE", "y": 1, "order": 4}, {"count": 6, "color": "#D7D5C5", "y": 1, "order": 5}]}}, {"actions": false, "mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#FFC0DA", "#D898BA", "#94917B", "#DBD4C5", "#DC5FBD", "#995688", "#AB6AD5", "#5F5A41", "#A699E8", "#D098EE", "#7B66D2", "#D7D5C5", "#B4B19B", "#8B7C6E"], "domain": ["#FFC0DA", "#D898BA", "#94917B", "#DBD4C5", "#DC5FBD", "#995688", "#AB6AD5", "#5F5A41", "#A699E8", "#D098EE", "#7B66D2", "#D7D5C5", "#B4B19B", "#8B7C6E"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "scale": {"domain": [0, 21]}, "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 100, "width": 900}], "data": {"name": "data-f6196e0e9bd5dc6466bcc3ad7e481624"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-f6196e0e9bd5dc6466bcc3ad7e481624": [{"count": 12, "color": "#7B66D2", "y": 1, "order": 0}, {"count": 12, "color": "#A699E8", "y": 1, "order": 1}, {"count": 12, "color": "#DC5FBD", "y": 1, "order": 2}, {"count": 12, "color": "#FFC0DA", "y": 1, "order": 3}, {"count": 12, "color": "#5F5A41", "y": 1, "order": 4}, {"count": 12, "color": "#B4B19B", "y": 1, "order": 5}, {"count": 12, "color": "#995688", "y": 1, "order": 6}, {"count": 12, "color": "#D898BA", "y": 1, "order": 7}, {"count": 12, "color": "#AB6AD5", "y": 1, "order": 8}, {"count": 12, "color": "#D098EE", "y": 1, "order": 9}, {"count": 12, "color": "#8B7C6E", "y": 1, "order": 10}, {"count": 12, "color": "#DBD4C5", "y": 1, "order": 11}, {"count": 6, "color": "#7B66D2", "y": 1, "order": 0}, {"count": 6, "color": "#DC5FBD", "y": 1, "order": 1}, {"count": 6, "color": "#94917B", "y": 1, "order": 2}, {"count": 6, "color": "#995688", "y": 1, "order": 3}, {"count": 6, "color": "#D098EE", "y": 1, "order": 4}, {"count": 6, "color": "#D7D5C5", "y": 1, "order": 5}]}}, {"actions": false, "mode": "vega-lite"});
 </script>
 </div>
 <div class="cell-output cell-output-display">
@@ -959,23 +964,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 
 <style>
-  #altair-viz-0c8c35d627584f65999ac4099c710f9a.vega-embed {
+  #altair-viz-84be46e56e3d4aaf9fc8249c8b1078bc.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-0c8c35d627584f65999ac4099c710f9a.vega-embed details,
-  #altair-viz-0c8c35d627584f65999ac4099c710f9a.vega-embed details summary {
+  #altair-viz-84be46e56e3d4aaf9fc8249c8b1078bc.vega-embed details,
+  #altair-viz-84be46e56e3d4aaf9fc8249c8b1078bc.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-0c8c35d627584f65999ac4099c710f9a"></div>
+<div id="altair-viz-84be46e56e3d4aaf9fc8249c8b1078bc"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-0c8c35d627584f65999ac4099c710f9a") {
-      outputDiv = document.getElementById("altair-viz-0c8c35d627584f65999ac4099c710f9a");
+    if (outputDiv.id !== "altair-viz-84be46e56e3d4aaf9fc8249c8b1078bc") {
+      outputDiv = document.getElementById("altair-viz-84be46e56e3d4aaf9fc8249c8b1078bc");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -1025,7 +1030,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </script>
 </div>
 <div class="cell-output cell-output-display">
-<p>Specifically, these colors where used for the example:</p>
+<p>Specifically, the following colors where used for the example.</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>[<span class="st">'#7B66D2'</span>,<span class="st">'#DC5FBD'</span>,<span class="st">'#94917B'</span>,<span class="st">'#995688'</span>,<span class="st">'#D098EE'</span>,<span class="st">'#D7D5C5'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="tableaulight-qualitative" class="level2 cell-output cell-output-display" data-number="9.6">
@@ -1034,23 +1039,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 
 <style>
-  #altair-viz-d623486160064ce4b109709f37e8b469.vega-embed {
+  #altair-viz-46272f8c6efd4724a658c8ef0cdcf107.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-d623486160064ce4b109709f37e8b469.vega-embed details,
-  #altair-viz-d623486160064ce4b109709f37e8b469.vega-embed details summary {
+  #altair-viz-46272f8c6efd4724a658c8ef0cdcf107.vega-embed details,
+  #altair-viz-46272f8c6efd4724a658c8ef0cdcf107.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-d623486160064ce4b109709f37e8b469"></div>
+<div id="altair-viz-46272f8c6efd4724a658c8ef0cdcf107"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-d623486160064ce4b109709f37e8b469") {
-      outputDiv = document.getElementById("altair-viz-d623486160064ce4b109709f37e8b469");
+    if (outputDiv.id !== "altair-viz-46272f8c6efd4724a658c8ef0cdcf107") {
+      outputDiv = document.getElementById("altair-viz-46272f8c6efd4724a658c8ef0cdcf107");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -1096,7 +1101,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#DBDB8D", "#C49C94", "#F7B6D2", "#AEC7E8", "#FF9896", "#FFBB78", "#C5B0D5", "#C7C7C7", "#98DF8A", "#9EDAE5"], "domain": ["#DBDB8D", "#C49C94", "#F7B6D2", "#AEC7E8", "#FF9896", "#FFBB78", "#C5B0D5", "#C7C7C7", "#98DF8A", "#9EDAE5"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "scale": {"domain": [0, 21]}, "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 50, "width": 900}], "data": {"name": "data-95be8d60d716b6ee16771afe1956a72f"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-95be8d60d716b6ee16771afe1956a72f": [{"count": 10, "color": "#AEC7E8", "y": 1, "order": 0}, {"count": 10, "color": "#FFBB78", "y": 1, "order": 1}, {"count": 10, "color": "#98DF8A", "y": 1, "order": 2}, {"count": 10, "color": "#FF9896", "y": 1, "order": 3}, {"count": 10, "color": "#C5B0D5", "y": 1, "order": 4}, {"count": 10, "color": "#C49C94", "y": 1, "order": 5}, {"count": 10, "color": "#F7B6D2", "y": 1, "order": 6}, {"count": 10, "color": "#C7C7C7", "y": 1, "order": 7}, {"count": 10, "color": "#DBDB8D", "y": 1, "order": 8}, {"count": 10, "color": "#9EDAE5", "y": 1, "order": 9}]}}, {"actions": false, "mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#F7B6D2", "#9EDAE5", "#C49C94", "#DBDB8D", "#C7C7C7", "#FFBB78", "#98DF8A", "#C5B0D5", "#AEC7E8", "#FF9896"], "domain": ["#F7B6D2", "#9EDAE5", "#C49C94", "#DBDB8D", "#C7C7C7", "#FFBB78", "#98DF8A", "#C5B0D5", "#AEC7E8", "#FF9896"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "scale": {"domain": [0, 21]}, "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 50, "width": 900}], "data": {"name": "data-95be8d60d716b6ee16771afe1956a72f"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-95be8d60d716b6ee16771afe1956a72f": [{"count": 10, "color": "#AEC7E8", "y": 1, "order": 0}, {"count": 10, "color": "#FFBB78", "y": 1, "order": 1}, {"count": 10, "color": "#98DF8A", "y": 1, "order": 2}, {"count": 10, "color": "#FF9896", "y": 1, "order": 3}, {"count": 10, "color": "#C5B0D5", "y": 1, "order": 4}, {"count": 10, "color": "#C49C94", "y": 1, "order": 5}, {"count": 10, "color": "#F7B6D2", "y": 1, "order": 6}, {"count": 10, "color": "#C7C7C7", "y": 1, "order": 7}, {"count": 10, "color": "#DBDB8D", "y": 1, "order": 8}, {"count": 10, "color": "#9EDAE5", "y": 1, "order": 9}]}}, {"actions": false, "mode": "vega-lite"});
 </script>
 </div>
 <div class="cell-output cell-output-display">
@@ -1108,23 +1113,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 
 <style>
-  #altair-viz-9eedee310efa437d8babf5a808ccef00.vega-embed {
+  #altair-viz-33ca7aaaa3114288b47906bf5b96ecc2.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-9eedee310efa437d8babf5a808ccef00.vega-embed details,
-  #altair-viz-9eedee310efa437d8babf5a808ccef00.vega-embed details summary {
+  #altair-viz-33ca7aaaa3114288b47906bf5b96ecc2.vega-embed details,
+  #altair-viz-33ca7aaaa3114288b47906bf5b96ecc2.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-9eedee310efa437d8babf5a808ccef00"></div>
+<div id="altair-viz-33ca7aaaa3114288b47906bf5b96ecc2"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-9eedee310efa437d8babf5a808ccef00") {
-      outputDiv = document.getElementById("altair-viz-9eedee310efa437d8babf5a808ccef00");
+    if (outputDiv.id !== "altair-viz-33ca7aaaa3114288b47906bf5b96ecc2") {
+      outputDiv = document.getElementById("altair-viz-33ca7aaaa3114288b47906bf5b96ecc2");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -1174,7 +1179,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </script>
 </div>
 <div class="cell-output cell-output-display">
-<p>Specifically, these colors where used for the example:</p>
+<p>Specifically, the following colors where used for the example.</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>[<span class="st">'#AEC7E8'</span>,<span class="st">'#FFBB78'</span>,<span class="st">'#98DF8A'</span>,<span class="st">'#FF9896'</span>,<span class="st">'#C5B0D5'</span>,<span class="st">'#C49C94'</span>,<span class="st">'#F7B6D2'</span>,<span class="st">'#C7C7C7'</span>,<span class="st">'#DBDB8D'</span>,<span class="st">'#9EDAE5'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="tableaumedium-qualitative" class="level2 cell-output cell-output-display" data-number="9.7">
@@ -1183,23 +1188,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 
 <style>
-  #altair-viz-c8adfbaae81e483688dde744c7856f78.vega-embed {
+  #altair-viz-45bb5953d0cb41028e50b1017eaed3eb.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-c8adfbaae81e483688dde744c7856f78.vega-embed details,
-  #altair-viz-c8adfbaae81e483688dde744c7856f78.vega-embed details summary {
+  #altair-viz-45bb5953d0cb41028e50b1017eaed3eb.vega-embed details,
+  #altair-viz-45bb5953d0cb41028e50b1017eaed3eb.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-c8adfbaae81e483688dde744c7856f78"></div>
+<div id="altair-viz-45bb5953d0cb41028e50b1017eaed3eb"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-c8adfbaae81e483688dde744c7856f78") {
-      outputDiv = document.getElementById("altair-viz-c8adfbaae81e483688dde744c7856f78");
+    if (outputDiv.id !== "altair-viz-45bb5953d0cb41028e50b1017eaed3eb") {
+      outputDiv = document.getElementById("altair-viz-45bb5953d0cb41028e50b1017eaed3eb");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -1245,7 +1250,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#ED97CA", "#AD8BC9", "#CDCC5D", "#FF9E4A", "#A8786E", "#A2A2A2", "#729ECE", "#ED665D", "#6DCCDA", "#67BF5C"], "domain": ["#ED97CA", "#AD8BC9", "#CDCC5D", "#FF9E4A", "#A8786E", "#A2A2A2", "#729ECE", "#ED665D", "#6DCCDA", "#67BF5C"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "scale": {"domain": [0, 21]}, "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 50, "width": 900}], "data": {"name": "data-38ae5a5f61d258e96126114729320f6a"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-38ae5a5f61d258e96126114729320f6a": [{"count": 10, "color": "#729ECE", "y": 1, "order": 0}, {"count": 10, "color": "#FF9E4A", "y": 1, "order": 1}, {"count": 10, "color": "#67BF5C", "y": 1, "order": 2}, {"count": 10, "color": "#ED665D", "y": 1, "order": 3}, {"count": 10, "color": "#AD8BC9", "y": 1, "order": 4}, {"count": 10, "color": "#A8786E", "y": 1, "order": 5}, {"count": 10, "color": "#ED97CA", "y": 1, "order": 6}, {"count": 10, "color": "#A2A2A2", "y": 1, "order": 7}, {"count": 10, "color": "#CDCC5D", "y": 1, "order": 8}, {"count": 10, "color": "#6DCCDA", "y": 1, "order": 9}]}}, {"actions": false, "mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#ED665D", "#A2A2A2", "#CDCC5D", "#ED97CA", "#FF9E4A", "#6DCCDA", "#AD8BC9", "#729ECE", "#67BF5C", "#A8786E"], "domain": ["#ED665D", "#A2A2A2", "#CDCC5D", "#ED97CA", "#FF9E4A", "#6DCCDA", "#AD8BC9", "#729ECE", "#67BF5C", "#A8786E"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "scale": {"domain": [0, 21]}, "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 50, "width": 900}], "data": {"name": "data-38ae5a5f61d258e96126114729320f6a"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-38ae5a5f61d258e96126114729320f6a": [{"count": 10, "color": "#729ECE", "y": 1, "order": 0}, {"count": 10, "color": "#FF9E4A", "y": 1, "order": 1}, {"count": 10, "color": "#67BF5C", "y": 1, "order": 2}, {"count": 10, "color": "#ED665D", "y": 1, "order": 3}, {"count": 10, "color": "#AD8BC9", "y": 1, "order": 4}, {"count": 10, "color": "#A8786E", "y": 1, "order": 5}, {"count": 10, "color": "#ED97CA", "y": 1, "order": 6}, {"count": 10, "color": "#A2A2A2", "y": 1, "order": 7}, {"count": 10, "color": "#CDCC5D", "y": 1, "order": 8}, {"count": 10, "color": "#6DCCDA", "y": 1, "order": 9}]}}, {"actions": false, "mode": "vega-lite"});
 </script>
 </div>
 <div class="cell-output cell-output-display">
@@ -1257,23 +1262,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 
 <style>
-  #altair-viz-0203ceeefaab4c98b3a240133c64656c.vega-embed {
+  #altair-viz-6a6e3f2dddb94d87b425a4da52c38ac4.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-0203ceeefaab4c98b3a240133c64656c.vega-embed details,
-  #altair-viz-0203ceeefaab4c98b3a240133c64656c.vega-embed details summary {
+  #altair-viz-6a6e3f2dddb94d87b425a4da52c38ac4.vega-embed details,
+  #altair-viz-6a6e3f2dddb94d87b425a4da52c38ac4.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-0203ceeefaab4c98b3a240133c64656c"></div>
+<div id="altair-viz-6a6e3f2dddb94d87b425a4da52c38ac4"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-0203ceeefaab4c98b3a240133c64656c") {
-      outputDiv = document.getElementById("altair-viz-0203ceeefaab4c98b3a240133c64656c");
+    if (outputDiv.id !== "altair-viz-6a6e3f2dddb94d87b425a4da52c38ac4") {
+      outputDiv = document.getElementById("altair-viz-6a6e3f2dddb94d87b425a4da52c38ac4");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -1323,7 +1328,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </script>
 </div>
 <div class="cell-output cell-output-display">
-<p>Specifically, these colors where used for the example:</p>
+<p>Specifically, the following colors where used for the example.</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>[<span class="st">'#729ECE'</span>,<span class="st">'#FF9E4A'</span>,<span class="st">'#67BF5C'</span>,<span class="st">'#ED665D'</span>,<span class="st">'#AD8BC9'</span>,<span class="st">'#A8786E'</span>,<span class="st">'#ED97CA'</span>,<span class="st">'#A2A2A2'</span>,<span class="st">'#CDCC5D'</span>,<span class="st">'#6DCCDA'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="tableau-qualitative" class="level2 cell-output cell-output-display" data-number="9.8">
@@ -1332,23 +1337,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 
 <style>
-  #altair-viz-309314599e6d402cbb526f4c4a39827b.vega-embed {
+  #altair-viz-004d3b13943e4c899c5a6bbe80dd335b.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-309314599e6d402cbb526f4c4a39827b.vega-embed details,
-  #altair-viz-309314599e6d402cbb526f4c4a39827b.vega-embed details summary {
+  #altair-viz-004d3b13943e4c899c5a6bbe80dd335b.vega-embed details,
+  #altair-viz-004d3b13943e4c899c5a6bbe80dd335b.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-309314599e6d402cbb526f4c4a39827b"></div>
+<div id="altair-viz-004d3b13943e4c899c5a6bbe80dd335b"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-309314599e6d402cbb526f4c4a39827b") {
-      outputDiv = document.getElementById("altair-viz-309314599e6d402cbb526f4c4a39827b");
+    if (outputDiv.id !== "altair-viz-004d3b13943e4c899c5a6bbe80dd335b") {
+      outputDiv = document.getElementById("altair-viz-004d3b13943e4c899c5a6bbe80dd335b");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -1394,7 +1399,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#2CA02C", "#BCBD22", "#AEC7E8", "#9467BD", "#17BECF", "#C5B0D5", "#9EDAE5", "#FFBB78", "#C49C94", "#DBDB8D", "#D62728", "#E377C2", "#8C564B", "#98DF8A", "#F7B6D2", "#1F77B4", "#FF7F0E", "#C7C7C7", "#7F7F7F", "#FF9896"], "domain": ["#2CA02C", "#BCBD22", "#AEC7E8", "#9467BD", "#17BECF", "#C5B0D5", "#9EDAE5", "#FFBB78", "#C49C94", "#DBDB8D", "#D62728", "#E377C2", "#8C564B", "#98DF8A", "#F7B6D2", "#1F77B4", "#FF7F0E", "#C7C7C7", "#7F7F7F", "#FF9896"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "scale": {"domain": [0, 21]}, "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 100, "width": 900}], "data": {"name": "data-5308b0117dd9cb91f1e84c01460e7760"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-5308b0117dd9cb91f1e84c01460e7760": [{"count": 10, "color": "#1F77B4", "y": 1, "order": 0}, {"count": 10, "color": "#FF7F0E", "y": 1, "order": 1}, {"count": 10, "color": "#2CA02C", "y": 1, "order": 2}, {"count": 10, "color": "#D62728", "y": 1, "order": 3}, {"count": 10, "color": "#9467BD", "y": 1, "order": 4}, {"count": 10, "color": "#8C564B", "y": 1, "order": 5}, {"count": 10, "color": "#E377C2", "y": 1, "order": 6}, {"count": 10, "color": "#7F7F7F", "y": 1, "order": 7}, {"count": 10, "color": "#BCBD22", "y": 1, "order": 8}, {"count": 10, "color": "#17BECF", "y": 1, "order": 9}, {"count": 20, "color": "#1F77B4", "y": 1, "order": 0}, {"count": 20, "color": "#AEC7E8", "y": 1, "order": 1}, {"count": 20, "color": "#FF7F0E", "y": 1, "order": 2}, {"count": 20, "color": "#FFBB78", "y": 1, "order": 3}, {"count": 20, "color": "#2CA02C", "y": 1, "order": 4}, {"count": 20, "color": "#98DF8A", "y": 1, "order": 5}, {"count": 20, "color": "#D62728", "y": 1, "order": 6}, {"count": 20, "color": "#FF9896", "y": 1, "order": 7}, {"count": 20, "color": "#9467BD", "y": 1, "order": 8}, {"count": 20, "color": "#C5B0D5", "y": 1, "order": 9}, {"count": 20, "color": "#8C564B", "y": 1, "order": 10}, {"count": 20, "color": "#C49C94", "y": 1, "order": 11}, {"count": 20, "color": "#E377C2", "y": 1, "order": 12}, {"count": 20, "color": "#F7B6D2", "y": 1, "order": 13}, {"count": 20, "color": "#7F7F7F", "y": 1, "order": 14}, {"count": 20, "color": "#C7C7C7", "y": 1, "order": 15}, {"count": 20, "color": "#BCBD22", "y": 1, "order": 16}, {"count": 20, "color": "#DBDB8D", "y": 1, "order": 17}, {"count": 20, "color": "#17BECF", "y": 1, "order": 18}, {"count": 20, "color": "#9EDAE5", "y": 1, "order": 19}]}}, {"actions": false, "mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#C7C7C7", "#BCBD22", "#98DF8A", "#1F77B4", "#E377C2", "#17BECF", "#F7B6D2", "#8C564B", "#FF7F0E", "#FF9896", "#FFBB78", "#AEC7E8", "#C49C94", "#2CA02C", "#D62728", "#7F7F7F", "#9EDAE5", "#DBDB8D", "#9467BD", "#C5B0D5"], "domain": ["#C7C7C7", "#BCBD22", "#98DF8A", "#1F77B4", "#E377C2", "#17BECF", "#F7B6D2", "#8C564B", "#FF7F0E", "#FF9896", "#FFBB78", "#AEC7E8", "#C49C94", "#2CA02C", "#D62728", "#7F7F7F", "#9EDAE5", "#DBDB8D", "#9467BD", "#C5B0D5"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "scale": {"domain": [0, 21]}, "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 100, "width": 900}], "data": {"name": "data-5308b0117dd9cb91f1e84c01460e7760"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-5308b0117dd9cb91f1e84c01460e7760": [{"count": 10, "color": "#1F77B4", "y": 1, "order": 0}, {"count": 10, "color": "#FF7F0E", "y": 1, "order": 1}, {"count": 10, "color": "#2CA02C", "y": 1, "order": 2}, {"count": 10, "color": "#D62728", "y": 1, "order": 3}, {"count": 10, "color": "#9467BD", "y": 1, "order": 4}, {"count": 10, "color": "#8C564B", "y": 1, "order": 5}, {"count": 10, "color": "#E377C2", "y": 1, "order": 6}, {"count": 10, "color": "#7F7F7F", "y": 1, "order": 7}, {"count": 10, "color": "#BCBD22", "y": 1, "order": 8}, {"count": 10, "color": "#17BECF", "y": 1, "order": 9}, {"count": 20, "color": "#1F77B4", "y": 1, "order": 0}, {"count": 20, "color": "#AEC7E8", "y": 1, "order": 1}, {"count": 20, "color": "#FF7F0E", "y": 1, "order": 2}, {"count": 20, "color": "#FFBB78", "y": 1, "order": 3}, {"count": 20, "color": "#2CA02C", "y": 1, "order": 4}, {"count": 20, "color": "#98DF8A", "y": 1, "order": 5}, {"count": 20, "color": "#D62728", "y": 1, "order": 6}, {"count": 20, "color": "#FF9896", "y": 1, "order": 7}, {"count": 20, "color": "#9467BD", "y": 1, "order": 8}, {"count": 20, "color": "#C5B0D5", "y": 1, "order": 9}, {"count": 20, "color": "#8C564B", "y": 1, "order": 10}, {"count": 20, "color": "#C49C94", "y": 1, "order": 11}, {"count": 20, "color": "#E377C2", "y": 1, "order": 12}, {"count": 20, "color": "#F7B6D2", "y": 1, "order": 13}, {"count": 20, "color": "#7F7F7F", "y": 1, "order": 14}, {"count": 20, "color": "#C7C7C7", "y": 1, "order": 15}, {"count": 20, "color": "#BCBD22", "y": 1, "order": 16}, {"count": 20, "color": "#DBDB8D", "y": 1, "order": 17}, {"count": 20, "color": "#17BECF", "y": 1, "order": 18}, {"count": 20, "color": "#9EDAE5", "y": 1, "order": 19}]}}, {"actions": false, "mode": "vega-lite"});
 </script>
 </div>
 <div class="cell-output cell-output-display">
@@ -1407,23 +1412,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 
 <style>
-  #altair-viz-4e4e579ce0ff4c7bbddf346f714e3158.vega-embed {
+  #altair-viz-048f5db9f0c646b486eae6b9e435f624.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-4e4e579ce0ff4c7bbddf346f714e3158.vega-embed details,
-  #altair-viz-4e4e579ce0ff4c7bbddf346f714e3158.vega-embed details summary {
+  #altair-viz-048f5db9f0c646b486eae6b9e435f624.vega-embed details,
+  #altair-viz-048f5db9f0c646b486eae6b9e435f624.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-4e4e579ce0ff4c7bbddf346f714e3158"></div>
+<div id="altair-viz-048f5db9f0c646b486eae6b9e435f624"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-4e4e579ce0ff4c7bbddf346f714e3158") {
-      outputDiv = document.getElementById("altair-viz-4e4e579ce0ff4c7bbddf346f714e3158");
+    if (outputDiv.id !== "altair-viz-048f5db9f0c646b486eae6b9e435f624") {
+      outputDiv = document.getElementById("altair-viz-048f5db9f0c646b486eae6b9e435f624");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -1473,7 +1478,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </script>
 </div>
 <div class="cell-output cell-output-display">
-<p>Specifically, these colors where used for the example:</p>
+<p>Specifically, the following colors where used for the example.</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>[<span class="st">'#1F77B4'</span>,<span class="st">'#FF7F0E'</span>,<span class="st">'#2CA02C'</span>,<span class="st">'#D62728'</span>,<span class="st">'#9467BD'</span>,<span class="st">'#8C564B'</span>,<span class="st">'#E377C2'</span>,<span class="st">'#7F7F7F'</span>,<span class="st">'#BCBD22'</span>,<span class="st">'#17BECF'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="trafficlight-qualitative" class="level2 cell-output cell-output-display" data-number="9.9">
@@ -1482,23 +1487,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 
 <style>
-  #altair-viz-a04411d5458a49e7992a5ba1bc2795aa.vega-embed {
+  #altair-viz-d48000475ec548f797d8cd32f61a6f8c.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-a04411d5458a49e7992a5ba1bc2795aa.vega-embed details,
-  #altair-viz-a04411d5458a49e7992a5ba1bc2795aa.vega-embed details summary {
+  #altair-viz-d48000475ec548f797d8cd32f61a6f8c.vega-embed details,
+  #altair-viz-d48000475ec548f797d8cd32f61a6f8c.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-a04411d5458a49e7992a5ba1bc2795aa"></div>
+<div id="altair-viz-d48000475ec548f797d8cd32f61a6f8c"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a04411d5458a49e7992a5ba1bc2795aa") {
-      outputDiv = document.getElementById("altair-viz-a04411d5458a49e7992a5ba1bc2795aa");
+    if (outputDiv.id !== "altair-viz-d48000475ec548f797d8cd32f61a6f8c") {
+      outputDiv = document.getElementById("altair-viz-d48000475ec548f797d8cd32f61a6f8c");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -1544,7 +1549,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#309343", "#69B764", "#FFC156", "#D82526", "#FFDD71", "#DBA13A", "#9FCD99", "#B10318", "#F26C64"], "domain": ["#309343", "#69B764", "#FFC156", "#D82526", "#FFDD71", "#DBA13A", "#9FCD99", "#B10318", "#F26C64"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "scale": {"domain": [0, 21]}, "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 50, "width": 900}], "data": {"name": "data-0e58f1a6c5dc589dfe62d8aa4d9e9ff1"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-0e58f1a6c5dc589dfe62d8aa4d9e9ff1": [{"count": 9, "color": "#B10318", "y": 1, "order": 0}, {"count": 9, "color": "#DBA13A", "y": 1, "order": 1}, {"count": 9, "color": "#309343", "y": 1, "order": 2}, {"count": 9, "color": "#D82526", "y": 1, "order": 3}, {"count": 9, "color": "#FFC156", "y": 1, "order": 4}, {"count": 9, "color": "#69B764", "y": 1, "order": 5}, {"count": 9, "color": "#F26C64", "y": 1, "order": 6}, {"count": 9, "color": "#FFDD71", "y": 1, "order": 7}, {"count": 9, "color": "#9FCD99", "y": 1, "order": 8}]}}, {"actions": false, "mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#B10318", "#FFDD71", "#9FCD99", "#FFC156", "#F26C64", "#DBA13A", "#309343", "#D82526", "#69B764"], "domain": ["#B10318", "#FFDD71", "#9FCD99", "#FFC156", "#F26C64", "#DBA13A", "#309343", "#D82526", "#69B764"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "scale": {"domain": [0, 21]}, "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 50, "width": 900}], "data": {"name": "data-0e58f1a6c5dc589dfe62d8aa4d9e9ff1"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-0e58f1a6c5dc589dfe62d8aa4d9e9ff1": [{"count": 9, "color": "#B10318", "y": 1, "order": 0}, {"count": 9, "color": "#DBA13A", "y": 1, "order": 1}, {"count": 9, "color": "#309343", "y": 1, "order": 2}, {"count": 9, "color": "#D82526", "y": 1, "order": 3}, {"count": 9, "color": "#FFC156", "y": 1, "order": 4}, {"count": 9, "color": "#69B764", "y": 1, "order": 5}, {"count": 9, "color": "#F26C64", "y": 1, "order": 6}, {"count": 9, "color": "#FFDD71", "y": 1, "order": 7}, {"count": 9, "color": "#9FCD99", "y": 1, "order": 8}]}}, {"actions": false, "mode": "vega-lite"});
 </script>
 </div>
 <div class="cell-output cell-output-display">
@@ -1556,23 +1561,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 
 <style>
-  #altair-viz-89e538c0cd844d8596eed8af6a318a00.vega-embed {
+  #altair-viz-f6bb086250ff42e1bc4356d5f6900d24.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-89e538c0cd844d8596eed8af6a318a00.vega-embed details,
-  #altair-viz-89e538c0cd844d8596eed8af6a318a00.vega-embed details summary {
+  #altair-viz-f6bb086250ff42e1bc4356d5f6900d24.vega-embed details,
+  #altair-viz-f6bb086250ff42e1bc4356d5f6900d24.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-89e538c0cd844d8596eed8af6a318a00"></div>
+<div id="altair-viz-f6bb086250ff42e1bc4356d5f6900d24"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-89e538c0cd844d8596eed8af6a318a00") {
-      outputDiv = document.getElementById("altair-viz-89e538c0cd844d8596eed8af6a318a00");
+    if (outputDiv.id !== "altair-viz-f6bb086250ff42e1bc4356d5f6900d24") {
+      outputDiv = document.getElementById("altair-viz-f6bb086250ff42e1bc4356d5f6900d24");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -1622,7 +1627,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </script>
 </div>
 <div class="cell-output cell-output-display">
-<p>Specifically, these colors where used for the example:</p>
+<p>Specifically, the following colors where used for the example.</p>
 <div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>[<span class="st">'#B10318'</span>,<span class="st">'#DBA13A'</span>,<span class="st">'#309343'</span>,<span class="st">'#D82526'</span>,<span class="st">'#FFC156'</span>,<span class="st">'#69B764'</span>,<span class="st">'#F26C64'</span>,<span class="st">'#FFDD71'</span>,<span class="st">'#9FCD99'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
@@ -1650,6 +1655,121 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
