@@ -69,6 +69,24 @@ def create_example(palette):
         .encode(color=alt.Color("Name:N").scale(range=palette).legend(None))
         .properties(width=width)
     )
+
+    states = alt.topo_feature(data.us_10m.url, "states")
+    source = data.population_engineers_hurricanes.url
+
+    geomap = (
+        alt.Chart(states)
+        .mark_geoshape()
+        .encode(
+            alt.Color("population:Q", type="quantitative")
+            .scale(range=palette)
+            .legend(None)
+        )
+        .transform_lookup(
+            lookup="id", from_=alt.LookupData(source, "id", ["population"])
+        )
+        .properties(width=width)
+        .project(type="albersUsa")
+    )
     return (
         alt.vconcat(
             alt.hconcat(
@@ -82,13 +100,16 @@ def create_example(palette):
                     color=alt.Color("Miles_per_Gallon:N"),
                 ),
             ),
-            base.mark_line(strokeWidth=4)
-            .encode(
-                x=alt.X("Horsepower:Q").title(""),
-                y=alt.Y("Miles_per_Gallon:Q").title(""),
-                color=alt.Color("Miles_per_Gallon:N"),
-            )
-            .properties(width=2.25 * width),
+            alt.hconcat(
+                base.mark_line(strokeWidth=4).encode(
+                    x=alt.X("Horsepower:Q").title(""),
+                    y=alt.Y("Miles_per_Gallon:Q").title(""),
+                    color=alt.Color("Miles_per_Gallon:N")
+                    .scale(range=palette)
+                    .legend(None),
+                ),
+                geomap,
+            ),
         )
         .configure_view(strokeWidth=0)
         .configure_axis(grid=False, domain=False)
