@@ -28,14 +28,14 @@ def create_overview(
         )
         .properties(
             width=900,
-            height=30 * len(palette.items()),
+            height=50 * len(palette.items()),
         )
     )
 
     chart = (
         alt.hconcat(
             base.mark_bar().encode(
-                x=alt.X("y:Q").axis(None).stack("zero"),
+                x=alt.X("y:Q").axis(None).stack("zero").scale(domain=(0, 21)),
                 color=alt.Color("color:N")
                 .scale(range=colors, domain=colors)
                 .legend(None),
