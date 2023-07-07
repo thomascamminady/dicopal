@@ -1,6 +1,8 @@
 import altair as alt
 import polars as pl
 
+alt.renderers.set_embed_options(actions=False)
+
 
 def create_overview(palette: dict[str, list[str]]) -> tuple[alt.HConcatChart, str]:
     df = pl.DataFrame(
