@@ -6,17 +6,21 @@ from IPython.display import display
 from dicopal.create_overview import create_overview
 
 
+def create(palettes, source, palette, url, palettetype):
+    chart, colors = create_overview(palettes[source][palette]["values"])
+    display(Markdown(f"## [{palette}]({url}), {palettetype}"))
+    display(chart)
+    display(Markdown("```python\n[\n " + ",\n ".join(colors.split(",")) + ",\n]\n```"))
+
+
 def create_page(source: str, path: str = "../dicopal.js/src/palettes.json"):
     with open(path, "r") as f:
         palettes = json.load(f)
 
     for palette in palettes[source].keys():
-        chart, colors = create_overview(palettes[source][palette]["values"])
         palettetype = palettes[source][palette]["type"]
         url = palettes[source][palette]["url"]
-        display(Markdown(f"## [{palette}]({url}), {palettetype}"))
-        display(chart)
-        display(Markdown("```[" + colors + "]```"))
+        create(palettes, source, palette, url, palettetype)
 
 
 def create_page_by_type(
@@ -29,8 +33,5 @@ def create_page_by_type(
         for palette in palettes[source].keys():
             palettetype = palettes[source][palette]["type"]
             if requested_palettetype == palettetype:
-                chart, colors = create_overview(palettes[source][palette]["values"])
                 url = palettes[source][palette]["url"]
-                display(Markdown(f"## [{palette}]({url}), {palettetype}"))
-                display(chart)
-                display(Markdown("```[" + colors + "]```"))
+                create(palettes, source, palette, url, palettetype)
