@@ -242,32 +242,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 <div class="cell" data-execution_count="1">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dicopal.create_page <span class="im">import</span> create_page</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>create_page(<span class="st">"otakeito"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <section id="okabe_ito_categorigal" class="level2 cell-output cell-output-display" data-number="11.1">
 <h2 data-number="11.1" class="anchored" data-anchor-id="okabe_ito_categorigal"><span class="header-section-number">11.1</span> Okabe_Ito_Categorigal</h2>
 </section>
 <div class="cell-output cell-output-display">
 
 <style>
-  #altair-viz-c5c75236c32048c6aaac7598784a7879.vega-embed {
+  #altair-viz-eff277f94d7f43f29badf5701ef474c3.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-c5c75236c32048c6aaac7598784a7879.vega-embed details,
-  #altair-viz-c5c75236c32048c6aaac7598784a7879.vega-embed details summary {
+  #altair-viz-eff277f94d7f43f29badf5701ef474c3.vega-embed details,
+  #altair-viz-eff277f94d7f43f29badf5701ef474c3.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-c5c75236c32048c6aaac7598784a7879"></div>
+<div id="altair-viz-eff277f94d7f43f29badf5701ef474c3"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-c5c75236c32048c6aaac7598784a7879") {
-      outputDiv = document.getElementById("altair-viz-c5c75236c32048c6aaac7598784a7879");
+    if (outputDiv.id !== "altair-viz-eff277f94d7f43f29badf5701ef474c3") {
+      outputDiv = document.getElementById("altair-viz-eff277f94d7f43f29badf5701ef474c3");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -313,7 +316,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#cc79a7", "#009e73", "#0072b2", "#f0e442", "#e69f00", "#d55e00", "#000000", "#56b4e9"], "domain": ["#cc79a7", "#009e73", "#0072b2", "#f0e442", "#e69f00", "#d55e00", "#000000", "#56b4e9"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-b9438275d9f0237a946eaf5031b1dd6f"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-b9438275d9f0237a946eaf5031b1dd6f": [{"count": 8, "color": "#000000", "y": 1, "order": 0}, {"count": 8, "color": "#e69f00", "y": 1, "order": 1}, {"count": 8, "color": "#56b4e9", "y": 1, "order": 2}, {"count": 8, "color": "#009e73", "y": 1, "order": 3}, {"count": 8, "color": "#f0e442", "y": 1, "order": 4}, {"count": 8, "color": "#0072b2", "y": 1, "order": 5}, {"count": 8, "color": "#d55e00", "y": 1, "order": 6}, {"count": 8, "color": "#cc79a7", "y": 1, "order": 7}]}}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#000000", "#e69f00", "#0072b2", "#d55e00", "#009e73", "#56b4e9", "#cc79a7", "#f0e442"], "domain": ["#000000", "#e69f00", "#0072b2", "#d55e00", "#009e73", "#56b4e9", "#cc79a7", "#f0e442"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-b9438275d9f0237a946eaf5031b1dd6f"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-b9438275d9f0237a946eaf5031b1dd6f": [{"count": 8, "color": "#000000", "y": 1, "order": 0}, {"count": 8, "color": "#e69f00", "y": 1, "order": 1}, {"count": 8, "color": "#56b4e9", "y": 1, "order": 2}, {"count": 8, "color": "#009e73", "y": 1, "order": 3}, {"count": 8, "color": "#f0e442", "y": 1, "order": 4}, {"count": 8, "color": "#0072b2", "y": 1, "order": 5}, {"count": 8, "color": "#d55e00", "y": 1, "order": 6}, {"count": 8, "color": "#cc79a7", "y": 1, "order": 7}]}}, {"mode": "vega-lite"});
 </script>
 </div>
 <div class="cell-output cell-output-display">

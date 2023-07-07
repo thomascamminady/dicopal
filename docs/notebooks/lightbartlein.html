@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>dicopal - 5&nbsp; lightbartlein</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../notebooks/matplotlib.html" rel="next">
+<link href="../notebooks/colorbrewer.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Sources.html">Sources</a></li><li class="breadcrumb-item"><a href="../notebooks/lightbartlein.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">lightbartlein</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">dicopal</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">dicopal.js</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../Sources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sources</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/cartocolors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">cartocolors</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/cmocean.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">cmocean</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/colorbrewer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">colorbrewer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/lightbartlein.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">lightbartlein</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/matplotlib.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">matplotlib</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/mycarta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">mycarta</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/scientific.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">scientific</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/tableau.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">tableau</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/wesanderson.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">wesanderson</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/otakeito.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">otakeito</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content column-page-right" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">lightbartlein</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="cell" data-execution_count="1">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dicopal.create_page <span class="im">import</span> create_page</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>create_page(<span class="st">"lightbartlein"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<section id="bluedarkorange12" class="level2 cell-output cell-output-display" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="bluedarkorange12"><span class="header-section-number">5.1</span> BlueDarkOrange12</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-5213d93269e642c79df776647739ecd9.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-5213d93269e642c79df776647739ecd9.vega-embed details,
+  #altair-viz-5213d93269e642c79df776647739ecd9.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-5213d93269e642c79df776647739ecd9"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-5213d93269e642c79df776647739ecd9") {
+      outputDiv = document.getElementById("altair-viz-5213d93269e642c79df776647739ecd9");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#1E8E99", "#CC5800", "#993F00", "#FFCA99", "#E5FFFF", "#51C3CC", "#B2FCFF", "#FFE5CC", "#CCFEFF", "#FFAD65", "#FF8E32", "#99F9FF"], "domain": ["#1E8E99", "#CC5800", "#993F00", "#FFCA99", "#E5FFFF", "#51C3CC", "#B2FCFF", "#FFE5CC", "#CCFEFF", "#FFAD65", "#FF8E32", "#99F9FF"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-3ab573f51fd5c181afba206de6cc916f"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-3ab573f51fd5c181afba206de6cc916f": [{"count": 10, "color": "#1E8E99", "y": 1, "order": 0}, {"count": 10, "color": "#51C3CC", "y": 1, "order": 1}, {"count": 10, "color": "#99F9FF", "y": 1, "order": 2}, {"count": 10, "color": "#CCFEFF", "y": 1, "order": 3}, {"count": 10, "color": "#E5FFFF", "y": 1, "order": 4}, {"count": 10, "color": "#FFE5CC", "y": 1, "order": 5}, {"count": 10, "color": "#FFCA99", "y": 1, "order": 6}, {"count": 10, "color": "#FF8E32", "y": 1, "order": 7}, {"count": 10, "color": "#CC5800", "y": 1, "order": 8}, {"count": 10, "color": "#993F00", "y": 1, "order": 9}, {"count": 11, "color": "#1E8E99", "y": 1, "order": 0}, {"count": 11, "color": "#51C3CC", "y": 1, "order": 1}, {"count": 11, "color": "#99F9FF", "y": 1, "order": 2}, {"count": 11, "color": "#B2FCFF", "y": 1, "order": 3}, {"count": 11, "color": "#CCFEFF", "y": 1, "order": 4}, {"count": 11, "color": "#FFE5CC", "y": 1, "order": 5}, {"count": 11, "color": "#FFCA99", "y": 1, "order": 6}, {"count": 11, "color": "#FFAD65", "y": 1, "order": 7}, {"count": 11, "color": "#FF8E32", "y": 1, "order": 8}, {"count": 11, "color": "#CC5800", "y": 1, "order": 9}, {"count": 11, "color": "#993F00", "y": 1, "order": 10}, {"count": 12, "color": "#1E8E99", "y": 1, "order": 0}, {"count": 12, "color": "#51C3CC", "y": 1, "order": 1}, {"count": 12, "color": "#99F9FF", "y": 1, "order": 2}, {"count": 12, "color": "#B2FCFF", "y": 1, "order": 3}, {"count": 12, "color": "#CCFEFF", "y": 1, "order": 4}, {"count": 12, "color": "#E5FFFF", "y": 1, "order": 5}, {"count": 12, "color": "#FFE5CC", "y": 1, "order": 6}, {"count": 12, "color": "#FFCA99", "y": 1, "order": 7}, {"count": 12, "color": "#FFAD65", "y": 1, "order": 8}, {"count": 12, "color": "#FF8E32", "y": 1, "order": 9}, {"count": 12, "color": "#CC5800", "y": 1, "order": 10}, {"count": 12, "color": "#993F00", "y": 1, "order": 11}, {"count": 2, "color": "#1E8E99", "y": 1, "order": 0}, {"count": 2, "color": "#993F00", "y": 1, "order": 1}, {"count": 3, "color": "#1E8E99", "y": 1, "order": 0}, {"count": 3, "color": "#FFE5CC", "y": 1, "order": 1}, {"count": 3, "color": "#993F00", "y": 1, "order": 2}, {"count": 4, "color": "#1E8E99", "y": 1, "order": 0}, {"count": 4, "color": "#CCFEFF", "y": 1, "order": 1}, {"count": 4, "color": "#FFCA99", "y": 1, "order": 2}, {"count": 4, "color": "#993F00", "y": 1, "order": 3}, {"count": 5, "color": "#1E8E99", "y": 1, "order": 0}, {"count": 5, "color": "#B2FCFF", "y": 1, "order": 1}, {"count": 5, "color": "#FFE5CC", "y": 1, "order": 2}, {"count": 5, "color": "#FFAD65", "y": 1, "order": 3}, {"count": 5, "color": "#993F00", "y": 1, "order": 4}, {"count": 6, "color": "#1E8E99", "y": 1, "order": 0}, {"count": 6, "color": "#99F9FF", "y": 1, "order": 1}, {"count": 6, "color": "#CCFEFF", "y": 1, "order": 2}, {"count": 6, "color": "#FFCA99", "y": 1, "order": 3}, {"count": 6, "color": "#FF8E32", "y": 1, "order": 4}, {"count": 6, "color": "#993F00", "y": 1, "order": 5}, {"count": 7, "color": "#1E8E99", "y": 1, "order": 0}, {"count": 7, "color": "#99F9FF", "y": 1, "order": 1}, {"count": 7, "color": "#CCFEFF", "y": 1, "order": 2}, {"count": 7, "color": "#FFE5CC", "y": 1, "order": 3}, {"count": 7, "color": "#FFCA99", "y": 1, "order": 4}, {"count": 7, "color": "#FF8E32", "y": 1, "order": 5}, {"count": 7, "color": "#993F00", "y": 1, "order": 6}, {"count": 8, "color": "#1E8E99", "y": 1, "order": 0}, {"count": 8, "color": "#99F9FF", "y": 1, "order": 1}, {"count": 8, "color": "#B2FCFF", "y": 1, "order": 2}, {"count": 8, "color": "#E5FFFF", "y": 1, "order": 3}, {"count": 8, "color": "#FFE5CC", "y": 1, "order": 4}, {"count": 8, "color": "#FFAD65", "y": 1, "order": 5}, {"count": 8, "color": "#FF8E32", "y": 1, "order": 6}, {"count": 8, "color": "#993F00", "y": 1, "order": 7}, {"count": 9, "color": "#1E8E99", "y": 1, "order": 0}, {"count": 9, "color": "#51C3CC", "y": 1, "order": 1}, {"count": 9, "color": "#B2FCFF", "y": 1, "order": 2}, {"count": 9, "color": "#CCFEFF", "y": 1, "order": 3}, {"count": 9, "color": "#FFE5CC", "y": 1, "order": 4}, {"count": 9, "color": "#FFCA99", "y": 1, "order": 5}, {"count": 9, "color": "#FFAD65", "y": 1, "order": 6}, {"count": 9, "color": "#CC5800", "y": 1, "order": 7}, {"count": 9, "color": "#993F00", "y": 1, "order": 8}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#1E8E99','#51C3CC','#99F9FF','#B2FCFF','#CCFEFF','#E5FFFF','#FFE5CC','#FFCA99','#FFAD65','#FF8E32','#CC5800','#993F00']</code></p>
+</div>
+<section id="bluedarkorange18" class="level2 cell-output cell-output-display" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="bluedarkorange18"><span class="header-section-number">5.2</span> BlueDarkOrange18</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-01c5974f4d9a4fb9835fed752b07cf37.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-01c5974f4d9a4fb9835fed752b07cf37.vega-embed details,
+  #altair-viz-01c5974f4d9a4fb9835fed752b07cf37.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-01c5974f4d9a4fb9835fed752b07cf37"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-01c5974f4d9a4fb9835fed752b07cf37") {
+      outputDiv = document.getElementById("altair-viz-01c5974f4d9a4fb9835fed752b07cf37");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#CC5500", "#FF6E00", "#CBFFFF", "#99FFFF", "#00FFFF", "#006666", "#00CCCC", "#FFE5CB", "#993D00", "#009999", "#FFCA99", "#E5FFFF", "#FF8E33", "#662700", "#65FFFF", "#B2FFFF", "#FFAD65", "#33FFFF"], "domain": ["#CC5500", "#FF6E00", "#CBFFFF", "#99FFFF", "#00FFFF", "#006666", "#00CCCC", "#FFE5CB", "#993D00", "#009999", "#FFCA99", "#E5FFFF", "#FF8E33", "#662700", "#65FFFF", "#B2FFFF", "#FFAD65", "#33FFFF"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-31ab840eb9736800c3e2d9cbf10fee0f"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-31ab840eb9736800c3e2d9cbf10fee0f": [{"count": 10, "color": "#006666", "y": 1, "order": 0}, {"count": 10, "color": "#00CCCC", "y": 1, "order": 1}, {"count": 10, "color": "#33FFFF", "y": 1, "order": 2}, {"count": 10, "color": "#99FFFF", "y": 1, "order": 3}, {"count": 10, "color": "#CBFFFF", "y": 1, "order": 4}, {"count": 10, "color": "#E5FFFF", "y": 1, "order": 5}, {"count": 10, "color": "#FFCA99", "y": 1, "order": 6}, {"count": 10, "color": "#FF8E33", "y": 1, "order": 7}, {"count": 10, "color": "#CC5500", "y": 1, "order": 8}, {"count": 10, "color": "#662700", "y": 1, "order": 9}, {"count": 11, "color": "#006666", "y": 1, "order": 0}, {"count": 11, "color": "#00CCCC", "y": 1, "order": 1}, {"count": 11, "color": "#00FFFF", "y": 1, "order": 2}, {"count": 11, "color": "#65FFFF", "y": 1, "order": 3}, {"count": 11, "color": "#B2FFFF", "y": 1, "order": 4}, {"count": 11, "color": "#CBFFFF", "y": 1, "order": 5}, {"count": 11, "color": "#FFE5CB", "y": 1, "order": 6}, {"count": 11, "color": "#FFAD65", "y": 1, "order": 7}, {"count": 11, "color": "#FF6E00", "y": 1, "order": 8}, {"count": 11, "color": "#CC5500", "y": 1, "order": 9}, {"count": 11, "color": "#662700", "y": 1, "order": 10}, {"count": 12, "color": "#006666", "y": 1, "order": 0}, {"count": 12, "color": "#00CCCC", "y": 1, "order": 1}, {"count": 12, "color": "#00FFFF", "y": 1, "order": 2}, {"count": 12, "color": "#65FFFF", "y": 1, "order": 3}, {"count": 12, "color": "#99FFFF", "y": 1, "order": 4}, {"count": 12, "color": "#CBFFFF", "y": 1, "order": 5}, {"count": 12, "color": "#E5FFFF", "y": 1, "order": 6}, {"count": 12, "color": "#FFCA99", "y": 1, "order": 7}, {"count": 12, "color": "#FFAD65", "y": 1, "order": 8}, {"count": 12, "color": "#FF6E00", "y": 1, "order": 9}, {"count": 12, "color": "#CC5500", "y": 1, "order": 10}, {"count": 12, "color": "#662700", "y": 1, "order": 11}, {"count": 13, "color": "#006666", "y": 1, "order": 0}, {"count": 13, "color": "#009999", "y": 1, "order": 1}, {"count": 13, "color": "#00FFFF", "y": 1, "order": 2}, {"count": 13, "color": "#33FFFF", "y": 1, "order": 3}, {"count": 13, "color": "#99FFFF", "y": 1, "order": 4}, {"count": 13, "color": "#B2FFFF", "y": 1, "order": 5}, {"count": 13, "color": "#CBFFFF", "y": 1, "order": 6}, {"count": 13, "color": "#FFE5CB", "y": 1, "order": 7}, {"count": 13, "color": "#FFCA99", "y": 1, "order": 8}, {"count": 13, "color": "#FF8E33", "y": 1, "order": 9}, {"count": 13, "color": "#FF6E00", "y": 1, "order": 10}, {"count": 13, "color": "#993D00", "y": 1, "order": 11}, {"count": 13, "color": "#662700", "y": 1, "order": 12}, {"count": 14, "color": "#006666", "y": 1, "order": 0}, {"count": 14, "color": "#009999", "y": 1, "order": 1}, {"count": 14, "color": "#00FFFF", "y": 1, "order": 2}, {"count": 14, "color": "#33FFFF", "y": 1, "order": 3}, {"count": 14, "color": "#65FFFF", "y": 1, "order": 4}, {"count": 14, "color": "#B2FFFF", "y": 1, "order": 5}, {"count": 14, "color": "#CBFFFF", "y": 1, "order": 6}, {"count": 14, "color": "#E5FFFF", "y": 1, "order": 7}, {"count": 14, "color": "#FFE5CB", "y": 1, "order": 8}, {"count": 14, "color": "#FFAD65", "y": 1, "order": 9}, {"count": 14, "color": "#FF8E33", "y": 1, "order": 10}, {"count": 14, "color": "#FF6E00", "y": 1, "order": 11}, {"count": 14, "color": "#993D00", "y": 1, "order": 12}, {"count": 14, "color": "#662700", "y": 1, "order": 13}, {"count": 15, "color": "#006666", "y": 1, "order": 0}, {"count": 15, "color": "#009999", "y": 1, "order": 1}, {"count": 15, "color": "#00CCCC", "y": 1, "order": 2}, {"count": 15, "color": "#33FFFF", "y": 1, "order": 3}, {"count": 15, "color": "#65FFFF", "y": 1, "order": 4}, {"count": 15, "color": "#99FFFF", "y": 1, "order": 5}, {"count": 15, "color": "#B2FFFF", "y": 1, "order": 6}, {"count": 15, "color": "#CBFFFF", "y": 1, "order": 7}, {"count": 15, "color": "#FFE5CB", "y": 1, "order": 8}, {"count": 15, "color": "#FFCA99", "y": 1, "order": 9}, {"count": 15, "color": "#FFAD65", "y": 1, "order": 10}, {"count": 15, "color": "#FF8E33", "y": 1, "order": 11}, {"count": 15, "color": "#CC5500", "y": 1, "order": 12}, {"count": 15, "color": "#993D00", "y": 1, "order": 13}, {"count": 15, "color": "#662700", "y": 1, "order": 14}, {"count": 16, "color": "#006666", "y": 1, "order": 0}, {"count": 16, "color": "#009999", "y": 1, "order": 1}, {"count": 16, "color": "#00CCCC", "y": 1, "order": 2}, {"count": 16, "color": "#00FFFF", "y": 1, "order": 3}, {"count": 16, "color": "#65FFFF", "y": 1, "order": 4}, {"count": 16, "color": "#99FFFF", "y": 1, "order": 5}, {"count": 16, "color": "#B2FFFF", "y": 1, "order": 6}, {"count": 16, "color": "#CBFFFF", "y": 1, "order": 7}, {"count": 16, "color": "#E5FFFF", "y": 1, "order": 8}, {"count": 16, "color": "#FFE5CB", "y": 1, "order": 9}, {"count": 16, "color": "#FFCA99", "y": 1, "order": 10}, {"count": 16, "color": "#FFAD65", "y": 1, "order": 11}, {"count": 16, "color": "#FF6E00", "y": 1, "order": 12}, {"count": 16, "color": "#CC5500", "y": 1, "order": 13}, {"count": 16, "color": "#993D00", "y": 1, "order": 14}, {"count": 16, "color": "#662700", "y": 1, "order": 15}, {"count": 17, "color": "#006666", "y": 1, "order": 0}, {"count": 17, "color": "#009999", "y": 1, "order": 1}, {"count": 17, "color": "#00CCCC", "y": 1, "order": 2}, {"count": 17, "color": "#00FFFF", "y": 1, "order": 3}, {"count": 17, "color": "#33FFFF", "y": 1, "order": 4}, {"count": 17, "color": "#65FFFF", "y": 1, "order": 5}, {"count": 17, "color": "#99FFFF", "y": 1, "order": 6}, {"count": 17, "color": "#B2FFFF", "y": 1, "order": 7}, {"count": 17, "color": "#CBFFFF", "y": 1, "order": 8}, {"count": 17, "color": "#FFE5CB", "y": 1, "order": 9}, {"count": 17, "color": "#FFCA99", "y": 1, "order": 10}, {"count": 17, "color": "#FFAD65", "y": 1, "order": 11}, {"count": 17, "color": "#FF8E33", "y": 1, "order": 12}, {"count": 17, "color": "#FF6E00", "y": 1, "order": 13}, {"count": 17, "color": "#CC5500", "y": 1, "order": 14}, {"count": 17, "color": "#993D00", "y": 1, "order": 15}, {"count": 17, "color": "#662700", "y": 1, "order": 16}, {"count": 18, "color": "#006666", "y": 1, "order": 0}, {"count": 18, "color": "#009999", "y": 1, "order": 1}, {"count": 18, "color": "#00CCCC", "y": 1, "order": 2}, {"count": 18, "color": "#00FFFF", "y": 1, "order": 3}, {"count": 18, "color": "#33FFFF", "y": 1, "order": 4}, {"count": 18, "color": "#65FFFF", "y": 1, "order": 5}, {"count": 18, "color": "#99FFFF", "y": 1, "order": 6}, {"count": 18, "color": "#B2FFFF", "y": 1, "order": 7}, {"count": 18, "color": "#CBFFFF", "y": 1, "order": 8}, {"count": 18, "color": "#E5FFFF", "y": 1, "order": 9}, {"count": 18, "color": "#FFE5CB", "y": 1, "order": 10}, {"count": 18, "color": "#FFCA99", "y": 1, "order": 11}, {"count": 18, "color": "#FFAD65", "y": 1, "order": 12}, {"count": 18, "color": "#FF8E33", "y": 1, "order": 13}, {"count": 18, "color": "#FF6E00", "y": 1, "order": 14}, {"count": 18, "color": "#CC5500", "y": 1, "order": 15}, {"count": 18, "color": "#993D00", "y": 1, "order": 16}, {"count": 18, "color": "#662700", "y": 1, "order": 17}, {"count": 2, "color": "#006666", "y": 1, "order": 0}, {"count": 2, "color": "#662700", "y": 1, "order": 1}, {"count": 3, "color": "#006666", "y": 1, "order": 0}, {"count": 3, "color": "#CBFFFF", "y": 1, "order": 1}, {"count": 3, "color": "#662700", "y": 1, "order": 2}, {"count": 4, "color": "#006666", "y": 1, "order": 0}, {"count": 4, "color": "#99FFFF", "y": 1, "order": 1}, {"count": 4, "color": "#FFCA99", "y": 1, "order": 2}, {"count": 4, "color": "#662700", "y": 1, "order": 3}, {"count": 5, "color": "#006666", "y": 1, "order": 0}, {"count": 5, "color": "#33FFFF", "y": 1, "order": 1}, {"count": 5, "color": "#CBFFFF", "y": 1, "order": 2}, {"count": 5, "color": "#FF8E33", "y": 1, "order": 3}, {"count": 5, "color": "#662700", "y": 1, "order": 4}, {"count": 6, "color": "#006666", "y": 1, "order": 0}, {"count": 6, "color": "#00FFFF", "y": 1, "order": 1}, {"count": 6, "color": "#B2FFFF", "y": 1, "order": 2}, {"count": 6, "color": "#FFE5CB", "y": 1, "order": 3}, {"count": 6, "color": "#FF6E00", "y": 1, "order": 4}, {"count": 6, "color": "#662700", "y": 1, "order": 5}, {"count": 7, "color": "#006666", "y": 1, "order": 0}, {"count": 7, "color": "#00FFFF", "y": 1, "order": 1}, {"count": 7, "color": "#99FFFF", "y": 1, "order": 2}, {"count": 7, "color": "#CBFFFF", "y": 1, "order": 3}, {"count": 7, "color": "#FFCA99", "y": 1, "order": 4}, {"count": 7, "color": "#FF6E00", "y": 1, "order": 5}, {"count": 7, "color": "#662700", "y": 1, "order": 6}, {"count": 8, "color": "#006666", "y": 1, "order": 0}, {"count": 8, "color": "#00CCCC", "y": 1, "order": 1}, {"count": 8, "color": "#65FFFF", "y": 1, "order": 2}, {"count": 8, "color": "#B2FFFF", "y": 1, "order": 3}, {"count": 8, "color": "#FFE5CB", "y": 1, "order": 4}, {"count": 8, "color": "#FFAD65", "y": 1, "order": 5}, {"count": 8, "color": "#CC5500", "y": 1, "order": 6}, {"count": 8, "color": "#662700", "y": 1, "order": 7}, {"count": 9, "color": "#006666", "y": 1, "order": 0}, {"count": 9, "color": "#00CCCC", "y": 1, "order": 1}, {"count": 9, "color": "#33FFFF", "y": 1, "order": 2}, {"count": 9, "color": "#99FFFF", "y": 1, "order": 3}, {"count": 9, "color": "#CBFFFF", "y": 1, "order": 4}, {"count": 9, "color": "#FFCA99", "y": 1, "order": 5}, {"count": 9, "color": "#FF8E33", "y": 1, "order": 6}, {"count": 9, "color": "#CC5500", "y": 1, "order": 7}, {"count": 9, "color": "#662700", "y": 1, "order": 8}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#006666','#009999','#00CCCC','#00FFFF','#33FFFF','#65FFFF','#99FFFF','#B2FFFF','#CBFFFF','#E5FFFF','#FFE5CB','#FFCA99','#FFAD65','#FF8E33','#FF6E00','#CC5500','#993D00','#662700']</code></p>
+</div>
+<section id="bluedarkred12" class="level2 cell-output cell-output-display" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="bluedarkred12"><span class="header-section-number">5.3</span> BlueDarkRed12</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-daf3b736e43c4c18aaab1faecb7ad644.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-daf3b736e43c4c18aaab1faecb7ad644.vega-embed details,
+  #altair-viz-daf3b736e43c4c18aaab1faecb7ad644.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-daf3b736e43c4c18aaab1faecb7ad644"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-daf3b736e43c4c18aaab1faecb7ad644") {
+      outputDiv = document.getElementById("altair-viz-daf3b736e43c4c18aaab1faecb7ad644");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#AAF7FF", "#264DFF", "#3FA0FF", "#290AD8", "#D82632", "#72D9FF", "#F76D5E", "#FFE099", "#FFAD72", "#E0FFFF", "#FFFFBF", "#A50021"], "domain": ["#AAF7FF", "#264DFF", "#3FA0FF", "#290AD8", "#D82632", "#72D9FF", "#F76D5E", "#FFE099", "#FFAD72", "#E0FFFF", "#FFFFBF", "#A50021"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-59cc39400276192093a29832410327ee"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-59cc39400276192093a29832410327ee": [{"count": 10, "color": "#290AD8", "y": 1, "order": 0}, {"count": 10, "color": "#264DFF", "y": 1, "order": 1}, {"count": 10, "color": "#3FA0FF", "y": 1, "order": 2}, {"count": 10, "color": "#AAF7FF", "y": 1, "order": 3}, {"count": 10, "color": "#E0FFFF", "y": 1, "order": 4}, {"count": 10, "color": "#FFFFBF", "y": 1, "order": 5}, {"count": 10, "color": "#FFE099", "y": 1, "order": 6}, {"count": 10, "color": "#F76D5E", "y": 1, "order": 7}, {"count": 10, "color": "#D82632", "y": 1, "order": 8}, {"count": 10, "color": "#A50021", "y": 1, "order": 9}, {"count": 11, "color": "#290AD8", "y": 1, "order": 0}, {"count": 11, "color": "#264DFF", "y": 1, "order": 1}, {"count": 11, "color": "#3FA0FF", "y": 1, "order": 2}, {"count": 11, "color": "#72D9FF", "y": 1, "order": 3}, {"count": 11, "color": "#AAF7FF", "y": 1, "order": 4}, {"count": 11, "color": "#FFFFBF", "y": 1, "order": 5}, {"count": 11, "color": "#FFE099", "y": 1, "order": 6}, {"count": 11, "color": "#FFAD72", "y": 1, "order": 7}, {"count": 11, "color": "#F76D5E", "y": 1, "order": 8}, {"count": 11, "color": "#D82632", "y": 1, "order": 9}, {"count": 11, "color": "#A50021", "y": 1, "order": 10}, {"count": 12, "color": "#290AD8", "y": 1, "order": 0}, {"count": 12, "color": "#264DFF", "y": 1, "order": 1}, {"count": 12, "color": "#3FA0FF", "y": 1, "order": 2}, {"count": 12, "color": "#72D9FF", "y": 1, "order": 3}, {"count": 12, "color": "#AAF7FF", "y": 1, "order": 4}, {"count": 12, "color": "#E0FFFF", "y": 1, "order": 5}, {"count": 12, "color": "#FFFFBF", "y": 1, "order": 6}, {"count": 12, "color": "#FFE099", "y": 1, "order": 7}, {"count": 12, "color": "#FFAD72", "y": 1, "order": 8}, {"count": 12, "color": "#F76D5E", "y": 1, "order": 9}, {"count": 12, "color": "#D82632", "y": 1, "order": 10}, {"count": 12, "color": "#A50021", "y": 1, "order": 11}, {"count": 2, "color": "#290AD8", "y": 1, "order": 0}, {"count": 2, "color": "#A50021", "y": 1, "order": 1}, {"count": 3, "color": "#290AD8", "y": 1, "order": 0}, {"count": 3, "color": "#FFFFBF", "y": 1, "order": 1}, {"count": 3, "color": "#A50021", "y": 1, "order": 2}, {"count": 4, "color": "#290AD8", "y": 1, "order": 0}, {"count": 4, "color": "#AAF7FF", "y": 1, "order": 1}, {"count": 4, "color": "#FFE099", "y": 1, "order": 2}, {"count": 4, "color": "#A50021", "y": 1, "order": 3}, {"count": 5, "color": "#290AD8", "y": 1, "order": 0}, {"count": 5, "color": "#72D9FF", "y": 1, "order": 1}, {"count": 5, "color": "#FFFFBF", "y": 1, "order": 2}, {"count": 5, "color": "#FFAD72", "y": 1, "order": 3}, {"count": 5, "color": "#A50021", "y": 1, "order": 4}, {"count": 6, "color": "#290AD8", "y": 1, "order": 0}, {"count": 6, "color": "#3FA0FF", "y": 1, "order": 1}, {"count": 6, "color": "#AAF7FF", "y": 1, "order": 2}, {"count": 6, "color": "#FFE099", "y": 1, "order": 3}, {"count": 6, "color": "#F76D5E", "y": 1, "order": 4}, {"count": 6, "color": "#A50021", "y": 1, "order": 5}, {"count": 7, "color": "#290AD8", "y": 1, "order": 0}, {"count": 7, "color": "#3FA0FF", "y": 1, "order": 1}, {"count": 7, "color": "#AAF7FF", "y": 1, "order": 2}, {"count": 7, "color": "#FFFFBF", "y": 1, "order": 3}, {"count": 7, "color": "#FFE099", "y": 1, "order": 4}, {"count": 7, "color": "#F76D5E", "y": 1, "order": 5}, {"count": 7, "color": "#A50021", "y": 1, "order": 6}, {"count": 8, "color": "#290AD8", "y": 1, "order": 0}, {"count": 8, "color": "#3FA0FF", "y": 1, "order": 1}, {"count": 8, "color": "#72D9FF", "y": 1, "order": 2}, {"count": 8, "color": "#E0FFFF", "y": 1, "order": 3}, {"count": 8, "color": "#FFFFBF", "y": 1, "order": 4}, {"count": 8, "color": "#FFAD72", "y": 1, "order": 5}, {"count": 8, "color": "#F76D5E", "y": 1, "order": 6}, {"count": 8, "color": "#A50021", "y": 1, "order": 7}, {"count": 9, "color": "#290AD8", "y": 1, "order": 0}, {"count": 9, "color": "#264DFF", "y": 1, "order": 1}, {"count": 9, "color": "#72D9FF", "y": 1, "order": 2}, {"count": 9, "color": "#AAF7FF", "y": 1, "order": 3}, {"count": 9, "color": "#FFFFBF", "y": 1, "order": 4}, {"count": 9, "color": "#FFE099", "y": 1, "order": 5}, {"count": 9, "color": "#FFAD72", "y": 1, "order": 6}, {"count": 9, "color": "#D82632", "y": 1, "order": 7}, {"count": 9, "color": "#A50021", "y": 1, "order": 8}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#290AD8','#264DFF','#3FA0FF','#72D9FF','#AAF7FF','#E0FFFF','#FFFFBF','#FFE099','#FFAD72','#F76D5E','#D82632','#A50021']</code></p>
+</div>
+<section id="bluedarkred18" class="level2 cell-output cell-output-display" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="bluedarkred18"><span class="header-section-number">5.4</span> BlueDarkRed18</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-000f3b3760e047e796b6ef2d3816aabe.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-000f3b3760e047e796b6ef2d3816aabe.vega-embed details,
+  #altair-viz-000f3b3760e047e796b6ef2d3816aabe.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-000f3b3760e047e796b6ef2d3816aabe"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-000f3b3760e047e796b6ef2d3816aabe") {
+      outputDiv = document.getElementById("altair-viz-000f3b3760e047e796b6ef2d3816aabe");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#FF3D3D", "#FFD699", "#181CF7", "#56B0FF", "#BCF9FF", "#F72735", "#75D3FF", "#FFFFEA", "#D8152F", "#FF7856", "#EAFFFF", "#A50021", "#2857FF", "#3D87FF", "#FFF1BC", "#99EAFF", "#2400D8", "#FFAC75"], "domain": ["#FF3D3D", "#FFD699", "#181CF7", "#56B0FF", "#BCF9FF", "#F72735", "#75D3FF", "#FFFFEA", "#D8152F", "#FF7856", "#EAFFFF", "#A50021", "#2857FF", "#3D87FF", "#FFF1BC", "#99EAFF", "#2400D8", "#FFAC75"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-cc6d23504c391f3e9fbd921ac8454ccc"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-cc6d23504c391f3e9fbd921ac8454ccc": [{"count": 10, "color": "#2400D8", "y": 1, "order": 0}, {"count": 10, "color": "#2857FF", "y": 1, "order": 1}, {"count": 10, "color": "#56B0FF", "y": 1, "order": 2}, {"count": 10, "color": "#99EAFF", "y": 1, "order": 3}, {"count": 10, "color": "#EAFFFF", "y": 1, "order": 4}, {"count": 10, "color": "#FFFFEA", "y": 1, "order": 5}, {"count": 10, "color": "#FFD699", "y": 1, "order": 6}, {"count": 10, "color": "#FF7856", "y": 1, "order": 7}, {"count": 10, "color": "#F72735", "y": 1, "order": 8}, {"count": 10, "color": "#A50021", "y": 1, "order": 9}, {"count": 11, "color": "#2400D8", "y": 1, "order": 0}, {"count": 11, "color": "#2857FF", "y": 1, "order": 1}, {"count": 11, "color": "#3D87FF", "y": 1, "order": 2}, {"count": 11, "color": "#75D3FF", "y": 1, "order": 3}, {"count": 11, "color": "#BCF9FF", "y": 1, "order": 4}, {"count": 11, "color": "#EAFFFF", "y": 1, "order": 5}, {"count": 11, "color": "#FFF1BC", "y": 1, "order": 6}, {"count": 11, "color": "#FFAC75", "y": 1, "order": 7}, {"count": 11, "color": "#FF3D3D", "y": 1, "order": 8}, {"count": 11, "color": "#F72735", "y": 1, "order": 9}, {"count": 11, "color": "#A50021", "y": 1, "order": 10}, {"count": 12, "color": "#2400D8", "y": 1, "order": 0}, {"count": 12, "color": "#2857FF", "y": 1, "order": 1}, {"count": 12, "color": "#3D87FF", "y": 1, "order": 2}, {"count": 12, "color": "#75D3FF", "y": 1, "order": 3}, {"count": 12, "color": "#99EAFF", "y": 1, "order": 4}, {"count": 12, "color": "#EAFFFF", "y": 1, "order": 5}, {"count": 12, "color": "#FFFFEA", "y": 1, "order": 6}, {"count": 12, "color": "#FFD699", "y": 1, "order": 7}, {"count": 12, "color": "#FFAC75", "y": 1, "order": 8}, {"count": 12, "color": "#FF3D3D", "y": 1, "order": 9}, {"count": 12, "color": "#F72735", "y": 1, "order": 10}, {"count": 12, "color": "#A50021", "y": 1, "order": 11}, {"count": 13, "color": "#2400D8", "y": 1, "order": 0}, {"count": 13, "color": "#181CF7", "y": 1, "order": 1}, {"count": 13, "color": "#3D87FF", "y": 1, "order": 2}, {"count": 13, "color": "#56B0FF", "y": 1, "order": 3}, {"count": 13, "color": "#99EAFF", "y": 1, "order": 4}, {"count": 13, "color": "#BCF9FF", "y": 1, "order": 5}, {"count": 13, "color": "#EAFFFF", "y": 1, "order": 6}, {"count": 13, "color": "#FFF1BC", "y": 1, "order": 7}, {"count": 13, "color": "#FFD699", "y": 1, "order": 8}, {"count": 13, "color": "#FF7856", "y": 1, "order": 9}, {"count": 13, "color": "#FF3D3D", "y": 1, "order": 10}, {"count": 13, "color": "#D8152F", "y": 1, "order": 11}, {"count": 13, "color": "#A50021", "y": 1, "order": 12}, {"count": 14, "color": "#2400D8", "y": 1, "order": 0}, {"count": 14, "color": "#181CF7", "y": 1, "order": 1}, {"count": 14, "color": "#3D87FF", "y": 1, "order": 2}, {"count": 14, "color": "#56B0FF", "y": 1, "order": 3}, {"count": 14, "color": "#75D3FF", "y": 1, "order": 4}, {"count": 14, "color": "#BCF9FF", "y": 1, "order": 5}, {"count": 14, "color": "#EAFFFF", "y": 1, "order": 6}, {"count": 14, "color": "#FFFFEA", "y": 1, "order": 7}, {"count": 14, "color": "#FFF1BC", "y": 1, "order": 8}, {"count": 14, "color": "#FFAC75", "y": 1, "order": 9}, {"count": 14, "color": "#FF7856", "y": 1, "order": 10}, {"count": 14, "color": "#FF3D3D", "y": 1, "order": 11}, {"count": 14, "color": "#D8152F", "y": 1, "order": 12}, {"count": 14, "color": "#A50021", "y": 1, "order": 13}, {"count": 15, "color": "#2400D8", "y": 1, "order": 0}, {"count": 15, "color": "#181CF7", "y": 1, "order": 1}, {"count": 15, "color": "#2857FF", "y": 1, "order": 2}, {"count": 15, "color": "#56B0FF", "y": 1, "order": 3}, {"count": 15, "color": "#75D3FF", "y": 1, "order": 4}, {"count": 15, "color": "#99EAFF", "y": 1, "order": 5}, {"count": 15, "color": "#BCF9FF", "y": 1, "order": 6}, {"count": 15, "color": "#EAFFFF", "y": 1, "order": 7}, {"count": 15, "color": "#FFF1BC", "y": 1, "order": 8}, {"count": 15, "color": "#FFD699", "y": 1, "order": 9}, {"count": 15, "color": "#FFAC75", "y": 1, "order": 10}, {"count": 15, "color": "#FF7856", "y": 1, "order": 11}, {"count": 15, "color": "#F72735", "y": 1, "order": 12}, {"count": 15, "color": "#D8152F", "y": 1, "order": 13}, {"count": 15, "color": "#A50021", "y": 1, "order": 14}, {"count": 16, "color": "#2400D8", "y": 1, "order": 0}, {"count": 16, "color": "#181CF7", "y": 1, "order": 1}, {"count": 16, "color": "#2857FF", "y": 1, "order": 2}, {"count": 16, "color": "#3D87FF", "y": 1, "order": 3}, {"count": 16, "color": "#75D3FF", "y": 1, "order": 4}, {"count": 16, "color": "#99EAFF", "y": 1, "order": 5}, {"count": 16, "color": "#BCF9FF", "y": 1, "order": 6}, {"count": 16, "color": "#EAFFFF", "y": 1, "order": 7}, {"count": 16, "color": "#FFFFEA", "y": 1, "order": 8}, {"count": 16, "color": "#FFF1BC", "y": 1, "order": 9}, {"count": 16, "color": "#FFD699", "y": 1, "order": 10}, {"count": 16, "color": "#FFAC75", "y": 1, "order": 11}, {"count": 16, "color": "#FF3D3D", "y": 1, "order": 12}, {"count": 16, "color": "#F72735", "y": 1, "order": 13}, {"count": 16, "color": "#D8152F", "y": 1, "order": 14}, {"count": 16, "color": "#A50021", "y": 1, "order": 15}, {"count": 17, "color": "#2400D8", "y": 1, "order": 0}, {"count": 17, "color": "#181CF7", "y": 1, "order": 1}, {"count": 17, "color": "#2857FF", "y": 1, "order": 2}, {"count": 17, "color": "#3D87FF", "y": 1, "order": 3}, {"count": 17, "color": "#56B0FF", "y": 1, "order": 4}, {"count": 17, "color": "#75D3FF", "y": 1, "order": 5}, {"count": 17, "color": "#99EAFF", "y": 1, "order": 6}, {"count": 17, "color": "#BCF9FF", "y": 1, "order": 7}, {"count": 17, "color": "#EAFFFF", "y": 1, "order": 8}, {"count": 17, "color": "#FFF1BC", "y": 1, "order": 9}, {"count": 17, "color": "#FFD699", "y": 1, "order": 10}, {"count": 17, "color": "#FFAC75", "y": 1, "order": 11}, {"count": 17, "color": "#FF7856", "y": 1, "order": 12}, {"count": 17, "color": "#FF3D3D", "y": 1, "order": 13}, {"count": 17, "color": "#F72735", "y": 1, "order": 14}, {"count": 17, "color": "#D8152F", "y": 1, "order": 15}, {"count": 17, "color": "#A50021", "y": 1, "order": 16}, {"count": 18, "color": "#2400D8", "y": 1, "order": 0}, {"count": 18, "color": "#181CF7", "y": 1, "order": 1}, {"count": 18, "color": "#2857FF", "y": 1, "order": 2}, {"count": 18, "color": "#3D87FF", "y": 1, "order": 3}, {"count": 18, "color": "#56B0FF", "y": 1, "order": 4}, {"count": 18, "color": "#75D3FF", "y": 1, "order": 5}, {"count": 18, "color": "#99EAFF", "y": 1, "order": 6}, {"count": 18, "color": "#BCF9FF", "y": 1, "order": 7}, {"count": 18, "color": "#EAFFFF", "y": 1, "order": 8}, {"count": 18, "color": "#FFFFEA", "y": 1, "order": 9}, {"count": 18, "color": "#FFF1BC", "y": 1, "order": 10}, {"count": 18, "color": "#FFD699", "y": 1, "order": 11}, {"count": 18, "color": "#FFAC75", "y": 1, "order": 12}, {"count": 18, "color": "#FF7856", "y": 1, "order": 13}, {"count": 18, "color": "#FF3D3D", "y": 1, "order": 14}, {"count": 18, "color": "#F72735", "y": 1, "order": 15}, {"count": 18, "color": "#D8152F", "y": 1, "order": 16}, {"count": 18, "color": "#A50021", "y": 1, "order": 17}, {"count": 2, "color": "#2400D8", "y": 1, "order": 0}, {"count": 2, "color": "#A50021", "y": 1, "order": 1}, {"count": 3, "color": "#2400D8", "y": 1, "order": 0}, {"count": 3, "color": "#EAFFFF", "y": 1, "order": 1}, {"count": 3, "color": "#A50021", "y": 1, "order": 2}, {"count": 4, "color": "#2400D8", "y": 1, "order": 0}, {"count": 4, "color": "#99EAFF", "y": 1, "order": 1}, {"count": 4, "color": "#FFD699", "y": 1, "order": 2}, {"count": 4, "color": "#A50021", "y": 1, "order": 3}, {"count": 5, "color": "#2400D8", "y": 1, "order": 0}, {"count": 5, "color": "#56B0FF", "y": 1, "order": 1}, {"count": 5, "color": "#EAFFFF", "y": 1, "order": 2}, {"count": 5, "color": "#FF7856", "y": 1, "order": 3}, {"count": 5, "color": "#A50021", "y": 1, "order": 4}, {"count": 6, "color": "#2400D8", "y": 1, "order": 0}, {"count": 6, "color": "#3D87FF", "y": 1, "order": 1}, {"count": 6, "color": "#BCF9FF", "y": 1, "order": 2}, {"count": 6, "color": "#FFF1BC", "y": 1, "order": 3}, {"count": 6, "color": "#FF3D3D", "y": 1, "order": 4}, {"count": 6, "color": "#A50021", "y": 1, "order": 5}, {"count": 7, "color": "#2400D8", "y": 1, "order": 0}, {"count": 7, "color": "#3D87FF", "y": 1, "order": 1}, {"count": 7, "color": "#99EAFF", "y": 1, "order": 2}, {"count": 7, "color": "#EAFFFF", "y": 1, "order": 3}, {"count": 7, "color": "#FFD699", "y": 1, "order": 4}, {"count": 7, "color": "#FF3D3D", "y": 1, "order": 5}, {"count": 7, "color": "#A50021", "y": 1, "order": 6}, {"count": 8, "color": "#2400D8", "y": 1, "order": 0}, {"count": 8, "color": "#2857FF", "y": 1, "order": 1}, {"count": 8, "color": "#75D3FF", "y": 1, "order": 2}, {"count": 8, "color": "#BCF9FF", "y": 1, "order": 3}, {"count": 8, "color": "#FFF1BC", "y": 1, "order": 4}, {"count": 8, "color": "#FFAC75", "y": 1, "order": 5}, {"count": 8, "color": "#F72735", "y": 1, "order": 6}, {"count": 8, "color": "#A50021", "y": 1, "order": 7}, {"count": 9, "color": "#2400D8", "y": 1, "order": 0}, {"count": 9, "color": "#2857FF", "y": 1, "order": 1}, {"count": 9, "color": "#56B0FF", "y": 1, "order": 2}, {"count": 9, "color": "#99EAFF", "y": 1, "order": 3}, {"count": 9, "color": "#EAFFFF", "y": 1, "order": 4}, {"count": 9, "color": "#FFD699", "y": 1, "order": 5}, {"count": 9, "color": "#FF7856", "y": 1, "order": 6}, {"count": 9, "color": "#F72735", "y": 1, "order": 7}, {"count": 9, "color": "#A50021", "y": 1, "order": 8}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#2400D8','#181CF7','#2857FF','#3D87FF','#56B0FF','#75D3FF','#99EAFF','#BCF9FF','#EAFFFF','#FFFFEA','#FFF1BC','#FFD699','#FFAC75','#FF7856','#FF3D3D','#F72735','#D8152F','#A50021']</code></p>
+</div>
+<section id="bluegray" class="level2 cell-output cell-output-display" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="bluegray"><span class="header-section-number">5.5</span> BlueGray</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-f21996562e6948fd8dd0398c714adee9.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-f21996562e6948fd8dd0398c714adee9.vega-embed details,
+  #altair-viz-f21996562e6948fd8dd0398c714adee9.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-f21996562e6948fd8dd0398c714adee9"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-f21996562e6948fd8dd0398c714adee9") {
+      outputDiv = document.getElementById("altair-viz-f21996562e6948fd8dd0398c714adee9");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#666666", "#E5E5E5", "#99FFFF", "#999999", "#CCFFFF", "#333333", "#0099CC", "#66E5FF"], "domain": ["#666666", "#E5E5E5", "#99FFFF", "#999999", "#CCFFFF", "#333333", "#0099CC", "#66E5FF"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-b88b0dab4ba0568bc05b37561c9952b5"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-b88b0dab4ba0568bc05b37561c9952b5": [{"count": 2, "color": "#0099CC", "y": 1, "order": 0}, {"count": 2, "color": "#333333", "y": 1, "order": 1}, {"count": 3, "color": "#0099CC", "y": 1, "order": 0}, {"count": 3, "color": "#E5E5E5", "y": 1, "order": 1}, {"count": 3, "color": "#333333", "y": 1, "order": 2}, {"count": 4, "color": "#0099CC", "y": 1, "order": 0}, {"count": 4, "color": "#99FFFF", "y": 1, "order": 1}, {"count": 4, "color": "#999999", "y": 1, "order": 2}, {"count": 4, "color": "#333333", "y": 1, "order": 3}, {"count": 5, "color": "#0099CC", "y": 1, "order": 0}, {"count": 5, "color": "#99FFFF", "y": 1, "order": 1}, {"count": 5, "color": "#E5E5E5", "y": 1, "order": 2}, {"count": 5, "color": "#999999", "y": 1, "order": 3}, {"count": 5, "color": "#333333", "y": 1, "order": 4}, {"count": 6, "color": "#0099CC", "y": 1, "order": 0}, {"count": 6, "color": "#66E5FF", "y": 1, "order": 1}, {"count": 6, "color": "#CCFFFF", "y": 1, "order": 2}, {"count": 6, "color": "#E5E5E5", "y": 1, "order": 3}, {"count": 6, "color": "#666666", "y": 1, "order": 4}, {"count": 6, "color": "#333333", "y": 1, "order": 5}, {"count": 7, "color": "#0099CC", "y": 1, "order": 0}, {"count": 7, "color": "#66E5FF", "y": 1, "order": 1}, {"count": 7, "color": "#99FFFF", "y": 1, "order": 2}, {"count": 7, "color": "#E5E5E5", "y": 1, "order": 3}, {"count": 7, "color": "#999999", "y": 1, "order": 4}, {"count": 7, "color": "#666666", "y": 1, "order": 5}, {"count": 7, "color": "#333333", "y": 1, "order": 6}, {"count": 8, "color": "#0099CC", "y": 1, "order": 0}, {"count": 8, "color": "#66E5FF", "y": 1, "order": 1}, {"count": 8, "color": "#99FFFF", "y": 1, "order": 2}, {"count": 8, "color": "#CCFFFF", "y": 1, "order": 3}, {"count": 8, "color": "#E5E5E5", "y": 1, "order": 4}, {"count": 8, "color": "#999999", "y": 1, "order": 5}, {"count": 8, "color": "#666666", "y": 1, "order": 6}, {"count": 8, "color": "#333333", "y": 1, "order": 7}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#0099CC','#66E5FF','#99FFFF','#CCFFFF','#E5E5E5','#999999','#666666','#333333']</code></p>
+</div>
+<section id="bluegreen" class="level2 cell-output cell-output-display" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="bluegreen"><span class="header-section-number">5.6</span> BlueGreen</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-977ba4e202024da78428269250eef4c0.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-977ba4e202024da78428269250eef4c0.vega-embed details,
+  #altair-viz-977ba4e202024da78428269250eef4c0.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-977ba4e202024da78428269250eef4c0"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-977ba4e202024da78428269250eef4c0") {
+      outputDiv = document.getElementById("altair-viz-977ba4e202024da78428269250eef4c0");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#CBCBFF", "#0000FF", "#3333FF", "#E5FFE5", "#00FF00", "#99FF99", "#33FF33", "#B2FFB2", "#B2B2FF", "#6565FF", "#65FF65", "#E5E5FF", "#9999FF", "#CBFFCB"], "domain": ["#CBCBFF", "#0000FF", "#3333FF", "#E5FFE5", "#00FF00", "#99FF99", "#33FF33", "#B2FFB2", "#B2B2FF", "#6565FF", "#65FF65", "#E5E5FF", "#9999FF", "#CBFFCB"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-faa9bdacf21f18c9c7b7c1fbfe8bce55"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-faa9bdacf21f18c9c7b7c1fbfe8bce55": [{"count": 10, "color": "#0000FF", "y": 1, "order": 0}, {"count": 10, "color": "#3333FF", "y": 1, "order": 1}, {"count": 10, "color": "#9999FF", "y": 1, "order": 2}, {"count": 10, "color": "#B2B2FF", "y": 1, "order": 3}, {"count": 10, "color": "#E5E5FF", "y": 1, "order": 4}, {"count": 10, "color": "#E5FFE5", "y": 1, "order": 5}, {"count": 10, "color": "#B2FFB2", "y": 1, "order": 6}, {"count": 10, "color": "#99FF99", "y": 1, "order": 7}, {"count": 10, "color": "#33FF33", "y": 1, "order": 8}, {"count": 10, "color": "#00FF00", "y": 1, "order": 9}, {"count": 11, "color": "#0000FF", "y": 1, "order": 0}, {"count": 11, "color": "#3333FF", "y": 1, "order": 1}, {"count": 11, "color": "#9999FF", "y": 1, "order": 2}, {"count": 11, "color": "#B2B2FF", "y": 1, "order": 3}, {"count": 11, "color": "#CBCBFF", "y": 1, "order": 4}, {"count": 11, "color": "#E5E5FF", "y": 1, "order": 5}, {"count": 11, "color": "#CBFFCB", "y": 1, "order": 6}, {"count": 11, "color": "#B2FFB2", "y": 1, "order": 7}, {"count": 11, "color": "#99FF99", "y": 1, "order": 8}, {"count": 11, "color": "#33FF33", "y": 1, "order": 9}, {"count": 11, "color": "#00FF00", "y": 1, "order": 10}, {"count": 12, "color": "#0000FF", "y": 1, "order": 0}, {"count": 12, "color": "#3333FF", "y": 1, "order": 1}, {"count": 12, "color": "#6565FF", "y": 1, "order": 2}, {"count": 12, "color": "#B2B2FF", "y": 1, "order": 3}, {"count": 12, "color": "#CBCBFF", "y": 1, "order": 4}, {"count": 12, "color": "#E5E5FF", "y": 1, "order": 5}, {"count": 12, "color": "#E5FFE5", "y": 1, "order": 6}, {"count": 12, "color": "#CBFFCB", "y": 1, "order": 7}, {"count": 12, "color": "#B2FFB2", "y": 1, "order": 8}, {"count": 12, "color": "#65FF65", "y": 1, "order": 9}, {"count": 12, "color": "#33FF33", "y": 1, "order": 10}, {"count": 12, "color": "#00FF00", "y": 1, "order": 11}, {"count": 13, "color": "#0000FF", "y": 1, "order": 0}, {"count": 13, "color": "#3333FF", "y": 1, "order": 1}, {"count": 13, "color": "#6565FF", "y": 1, "order": 2}, {"count": 13, "color": "#9999FF", "y": 1, "order": 3}, {"count": 13, "color": "#B2B2FF", "y": 1, "order": 4}, {"count": 13, "color": "#CBCBFF", "y": 1, "order": 5}, {"count": 13, "color": "#E5E5FF", "y": 1, "order": 6}, {"count": 13, "color": "#CBFFCB", "y": 1, "order": 7}, {"count": 13, "color": "#B2FFB2", "y": 1, "order": 8}, {"count": 13, "color": "#99FF99", "y": 1, "order": 9}, {"count": 13, "color": "#65FF65", "y": 1, "order": 10}, {"count": 13, "color": "#33FF33", "y": 1, "order": 11}, {"count": 13, "color": "#00FF00", "y": 1, "order": 12}, {"count": 14, "color": "#0000FF", "y": 1, "order": 0}, {"count": 14, "color": "#3333FF", "y": 1, "order": 1}, {"count": 14, "color": "#6565FF", "y": 1, "order": 2}, {"count": 14, "color": "#9999FF", "y": 1, "order": 3}, {"count": 14, "color": "#B2B2FF", "y": 1, "order": 4}, {"count": 14, "color": "#CBCBFF", "y": 1, "order": 5}, {"count": 14, "color": "#E5E5FF", "y": 1, "order": 6}, {"count": 14, "color": "#E5FFE5", "y": 1, "order": 7}, {"count": 14, "color": "#CBFFCB", "y": 1, "order": 8}, {"count": 14, "color": "#B2FFB2", "y": 1, "order": 9}, {"count": 14, "color": "#99FF99", "y": 1, "order": 10}, {"count": 14, "color": "#65FF65", "y": 1, "order": 11}, {"count": 14, "color": "#33FF33", "y": 1, "order": 12}, {"count": 14, "color": "#00FF00", "y": 1, "order": 13}, {"count": 2, "color": "#0000FF", "y": 1, "order": 0}, {"count": 2, "color": "#00FF00", "y": 1, "order": 1}, {"count": 3, "color": "#0000FF", "y": 1, "order": 0}, {"count": 3, "color": "#E5E5FF", "y": 1, "order": 1}, {"count": 3, "color": "#00FF00", "y": 1, "order": 2}, {"count": 4, "color": "#0000FF", "y": 1, "order": 0}, {"count": 4, "color": "#B2B2FF", "y": 1, "order": 1}, {"count": 4, "color": "#B2FFB2", "y": 1, "order": 2}, {"count": 4, "color": "#00FF00", "y": 1, "order": 3}, {"count": 5, "color": "#0000FF", "y": 1, "order": 0}, {"count": 5, "color": "#9999FF", "y": 1, "order": 1}, {"count": 5, "color": "#E5E5FF", "y": 1, "order": 2}, {"count": 5, "color": "#99FF99", "y": 1, "order": 3}, {"count": 5, "color": "#00FF00", "y": 1, "order": 4}, {"count": 6, "color": "#0000FF", "y": 1, "order": 0}, {"count": 6, "color": "#9999FF", "y": 1, "order": 1}, {"count": 6, "color": "#CBCBFF", "y": 1, "order": 2}, {"count": 6, "color": "#CBFFCB", "y": 1, "order": 3}, {"count": 6, "color": "#99FF99", "y": 1, "order": 4}, {"count": 6, "color": "#00FF00", "y": 1, "order": 5}, {"count": 7, "color": "#0000FF", "y": 1, "order": 0}, {"count": 7, "color": "#6565FF", "y": 1, "order": 1}, {"count": 7, "color": "#B2B2FF", "y": 1, "order": 2}, {"count": 7, "color": "#E5E5FF", "y": 1, "order": 3}, {"count": 7, "color": "#B2FFB2", "y": 1, "order": 4}, {"count": 7, "color": "#65FF65", "y": 1, "order": 5}, {"count": 7, "color": "#00FF00", "y": 1, "order": 6}, {"count": 8, "color": "#0000FF", "y": 1, "order": 0}, {"count": 8, "color": "#6565FF", "y": 1, "order": 1}, {"count": 8, "color": "#B2B2FF", "y": 1, "order": 2}, {"count": 8, "color": "#E5E5FF", "y": 1, "order": 3}, {"count": 8, "color": "#E5FFE5", "y": 1, "order": 4}, {"count": 8, "color": "#B2FFB2", "y": 1, "order": 5}, {"count": 8, "color": "#65FF65", "y": 1, "order": 6}, {"count": 8, "color": "#00FF00", "y": 1, "order": 7}, {"count": 9, "color": "#0000FF", "y": 1, "order": 0}, {"count": 9, "color": "#6565FF", "y": 1, "order": 1}, {"count": 9, "color": "#9999FF", "y": 1, "order": 2}, {"count": 9, "color": "#CBCBFF", "y": 1, "order": 3}, {"count": 9, "color": "#E5E5FF", "y": 1, "order": 4}, {"count": 9, "color": "#CBFFCB", "y": 1, "order": 5}, {"count": 9, "color": "#99FF99", "y": 1, "order": 6}, {"count": 9, "color": "#65FF65", "y": 1, "order": 7}, {"count": 9, "color": "#00FF00", "y": 1, "order": 8}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#0000FF','#3333FF','#6565FF','#9999FF','#B2B2FF','#CBCBFF','#E5E5FF','#E5FFE5','#CBFFCB','#B2FFB2','#99FF99','#65FF65','#33FF33','#00FF00']</code></p>
+</div>
+<section id="bluegrey" class="level2 cell-output cell-output-display" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="bluegrey"><span class="header-section-number">5.7</span> BlueGrey</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-b0278b5792d14f88b8681185b1dd81a5.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-b0278b5792d14f88b8681185b1dd81a5.vega-embed details,
+  #altair-viz-b0278b5792d14f88b8681185b1dd81a5.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-b0278b5792d14f88b8681185b1dd81a5"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-b0278b5792d14f88b8681185b1dd81a5") {
+      outputDiv = document.getElementById("altair-viz-b0278b5792d14f88b8681185b1dd81a5");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#66E5FF", "#CCFFFF", "#999999", "#99FFFF", "#0099CC", "#333333", "#E5E5E5", "#666666"], "domain": ["#66E5FF", "#CCFFFF", "#999999", "#99FFFF", "#0099CC", "#333333", "#E5E5E5", "#666666"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-b88b0dab4ba0568bc05b37561c9952b5"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-b88b0dab4ba0568bc05b37561c9952b5": [{"count": 2, "color": "#0099CC", "y": 1, "order": 0}, {"count": 2, "color": "#333333", "y": 1, "order": 1}, {"count": 3, "color": "#0099CC", "y": 1, "order": 0}, {"count": 3, "color": "#E5E5E5", "y": 1, "order": 1}, {"count": 3, "color": "#333333", "y": 1, "order": 2}, {"count": 4, "color": "#0099CC", "y": 1, "order": 0}, {"count": 4, "color": "#99FFFF", "y": 1, "order": 1}, {"count": 4, "color": "#999999", "y": 1, "order": 2}, {"count": 4, "color": "#333333", "y": 1, "order": 3}, {"count": 5, "color": "#0099CC", "y": 1, "order": 0}, {"count": 5, "color": "#99FFFF", "y": 1, "order": 1}, {"count": 5, "color": "#E5E5E5", "y": 1, "order": 2}, {"count": 5, "color": "#999999", "y": 1, "order": 3}, {"count": 5, "color": "#333333", "y": 1, "order": 4}, {"count": 6, "color": "#0099CC", "y": 1, "order": 0}, {"count": 6, "color": "#66E5FF", "y": 1, "order": 1}, {"count": 6, "color": "#CCFFFF", "y": 1, "order": 2}, {"count": 6, "color": "#E5E5E5", "y": 1, "order": 3}, {"count": 6, "color": "#666666", "y": 1, "order": 4}, {"count": 6, "color": "#333333", "y": 1, "order": 5}, {"count": 7, "color": "#0099CC", "y": 1, "order": 0}, {"count": 7, "color": "#66E5FF", "y": 1, "order": 1}, {"count": 7, "color": "#99FFFF", "y": 1, "order": 2}, {"count": 7, "color": "#E5E5E5", "y": 1, "order": 3}, {"count": 7, "color": "#999999", "y": 1, "order": 4}, {"count": 7, "color": "#666666", "y": 1, "order": 5}, {"count": 7, "color": "#333333", "y": 1, "order": 6}, {"count": 8, "color": "#0099CC", "y": 1, "order": 0}, {"count": 8, "color": "#66E5FF", "y": 1, "order": 1}, {"count": 8, "color": "#99FFFF", "y": 1, "order": 2}, {"count": 8, "color": "#CCFFFF", "y": 1, "order": 3}, {"count": 8, "color": "#E5E5E5", "y": 1, "order": 4}, {"count": 8, "color": "#999999", "y": 1, "order": 5}, {"count": 8, "color": "#666666", "y": 1, "order": 6}, {"count": 8, "color": "#333333", "y": 1, "order": 7}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#0099CC','#66E5FF','#99FFFF','#CCFFFF','#E5E5E5','#999999','#666666','#333333']</code></p>
+</div>
+<section id="blueorange10" class="level2 cell-output cell-output-display" data-number="5.8">
+<h2 data-number="5.8" class="anchored" data-anchor-id="blueorange10"><span class="header-section-number">5.8</span> BlueOrange10</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-afb7cf9543d24a76af4543d4f3b6ced3.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-afb7cf9543d24a76af4543d4f3b6ced3.vega-embed details,
+  #altair-viz-afb7cf9543d24a76af4543d4f3b6ced3.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-afb7cf9543d24a76af4543d4f3b6ced3"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-afb7cf9543d24a76af4543d4f3b6ced3") {
+      outputDiv = document.getElementById("altair-viz-afb7cf9543d24a76af4543d4f3b6ced3");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#0054FF", "#FF9932", "#99EDFF", "#65CCFF", "#FF5500", "#FFFFCC", "#CCFFFF", "#FFEE99", "#3299FF", "#FFCC65"], "domain": ["#0054FF", "#FF9932", "#99EDFF", "#65CCFF", "#FF5500", "#FFFFCC", "#CCFFFF", "#FFEE99", "#3299FF", "#FFCC65"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-62cb234a6b1b814a400f344d04b01e1c"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-62cb234a6b1b814a400f344d04b01e1c": [{"count": 10, "color": "#0054FF", "y": 1, "order": 0}, {"count": 10, "color": "#3299FF", "y": 1, "order": 1}, {"count": 10, "color": "#65CCFF", "y": 1, "order": 2}, {"count": 10, "color": "#99EDFF", "y": 1, "order": 3}, {"count": 10, "color": "#CCFFFF", "y": 1, "order": 4}, {"count": 10, "color": "#FFFFCC", "y": 1, "order": 5}, {"count": 10, "color": "#FFEE99", "y": 1, "order": 6}, {"count": 10, "color": "#FFCC65", "y": 1, "order": 7}, {"count": 10, "color": "#FF9932", "y": 1, "order": 8}, {"count": 10, "color": "#FF5500", "y": 1, "order": 9}, {"count": 2, "color": "#0054FF", "y": 1, "order": 0}, {"count": 2, "color": "#FF5500", "y": 1, "order": 1}, {"count": 3, "color": "#0054FF", "y": 1, "order": 0}, {"count": 3, "color": "#CCFFFF", "y": 1, "order": 1}, {"count": 3, "color": "#FF5500", "y": 1, "order": 2}, {"count": 4, "color": "#0054FF", "y": 1, "order": 0}, {"count": 4, "color": "#99EDFF", "y": 1, "order": 1}, {"count": 4, "color": "#FFEE99", "y": 1, "order": 2}, {"count": 4, "color": "#FF5500", "y": 1, "order": 3}, {"count": 5, "color": "#0054FF", "y": 1, "order": 0}, {"count": 5, "color": "#65CCFF", "y": 1, "order": 1}, {"count": 5, "color": "#CCFFFF", "y": 1, "order": 2}, {"count": 5, "color": "#FFCC65", "y": 1, "order": 3}, {"count": 5, "color": "#FF5500", "y": 1, "order": 4}, {"count": 6, "color": "#0054FF", "y": 1, "order": 0}, {"count": 6, "color": "#65CCFF", "y": 1, "order": 1}, {"count": 6, "color": "#CCFFFF", "y": 1, "order": 2}, {"count": 6, "color": "#FFFFCC", "y": 1, "order": 3}, {"count": 6, "color": "#FFCC65", "y": 1, "order": 4}, {"count": 6, "color": "#FF5500", "y": 1, "order": 5}, {"count": 7, "color": "#0054FF", "y": 1, "order": 0}, {"count": 7, "color": "#65CCFF", "y": 1, "order": 1}, {"count": 7, "color": "#99EDFF", "y": 1, "order": 2}, {"count": 7, "color": "#CCFFFF", "y": 1, "order": 3}, {"count": 7, "color": "#FFEE99", "y": 1, "order": 4}, {"count": 7, "color": "#FF9932", "y": 1, "order": 5}, {"count": 7, "color": "#FF5500", "y": 1, "order": 6}, {"count": 8, "color": "#0054FF", "y": 1, "order": 0}, {"count": 8, "color": "#3299FF", "y": 1, "order": 1}, {"count": 8, "color": "#99EDFF", "y": 1, "order": 2}, {"count": 8, "color": "#CCFFFF", "y": 1, "order": 3}, {"count": 8, "color": "#FFFFCC", "y": 1, "order": 4}, {"count": 8, "color": "#FFEE99", "y": 1, "order": 5}, {"count": 8, "color": "#FF9932", "y": 1, "order": 6}, {"count": 8, "color": "#FF5500", "y": 1, "order": 7}, {"count": 9, "color": "#0054FF", "y": 1, "order": 0}, {"count": 9, "color": "#3299FF", "y": 1, "order": 1}, {"count": 9, "color": "#65CCFF", "y": 1, "order": 2}, {"count": 9, "color": "#99EDFF", "y": 1, "order": 3}, {"count": 9, "color": "#CCFFFF", "y": 1, "order": 4}, {"count": 9, "color": "#FFEE99", "y": 1, "order": 5}, {"count": 9, "color": "#FFCC65", "y": 1, "order": 6}, {"count": 9, "color": "#FF9932", "y": 1, "order": 7}, {"count": 9, "color": "#FF5500", "y": 1, "order": 8}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#0054FF','#3299FF','#65CCFF','#99EDFF','#CCFFFF','#FFFFCC','#FFEE99','#FFCC65','#FF9932','#FF5500']</code></p>
+</div>
+<section id="blueorange12" class="level2 cell-output cell-output-display" data-number="5.9">
+<h2 data-number="5.9" class="anchored" data-anchor-id="blueorange12"><span class="header-section-number">5.9</span> BlueOrange12</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-677007f71b8f47478e96c370fd072164.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-677007f71b8f47478e96c370fd072164.vega-embed details,
+  #altair-viz-677007f71b8f47478e96c370fd072164.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-677007f71b8f47478e96c370fd072164"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-677007f71b8f47478e96c370fd072164") {
+      outputDiv = document.getElementById("altair-viz-677007f71b8f47478e96c370fd072164");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#3299FF", "#99EDFF", "#CCFFFF", "#FFCC65", "#FF9932", "#FFFFCC", "#002AFF", "#FF6619", "#1965FF", "#FFEE99", "#FF2A00", "#65CCFF"], "domain": ["#3299FF", "#99EDFF", "#CCFFFF", "#FFCC65", "#FF9932", "#FFFFCC", "#002AFF", "#FF6619", "#1965FF", "#FFEE99", "#FF2A00", "#65CCFF"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-1d920570c1e29808ec81a6bcf654fd42"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-1d920570c1e29808ec81a6bcf654fd42": [{"count": 10, "color": "#002AFF", "y": 1, "order": 0}, {"count": 10, "color": "#1965FF", "y": 1, "order": 1}, {"count": 10, "color": "#3299FF", "y": 1, "order": 2}, {"count": 10, "color": "#65CCFF", "y": 1, "order": 3}, {"count": 10, "color": "#CCFFFF", "y": 1, "order": 4}, {"count": 10, "color": "#FFFFCC", "y": 1, "order": 5}, {"count": 10, "color": "#FFEE99", "y": 1, "order": 6}, {"count": 10, "color": "#FF9932", "y": 1, "order": 7}, {"count": 10, "color": "#FF6619", "y": 1, "order": 8}, {"count": 10, "color": "#FF2A00", "y": 1, "order": 9}, {"count": 11, "color": "#002AFF", "y": 1, "order": 0}, {"count": 11, "color": "#1965FF", "y": 1, "order": 1}, {"count": 11, "color": "#3299FF", "y": 1, "order": 2}, {"count": 11, "color": "#99EDFF", "y": 1, "order": 3}, {"count": 11, "color": "#65CCFF", "y": 1, "order": 4}, {"count": 11, "color": "#FFFFCC", "y": 1, "order": 5}, {"count": 11, "color": "#FFEE99", "y": 1, "order": 6}, {"count": 11, "color": "#FFCC65", "y": 1, "order": 7}, {"count": 11, "color": "#FF9932", "y": 1, "order": 8}, {"count": 11, "color": "#FF6619", "y": 1, "order": 9}, {"count": 11, "color": "#FF2A00", "y": 1, "order": 10}, {"count": 12, "color": "#002AFF", "y": 1, "order": 0}, {"count": 12, "color": "#1965FF", "y": 1, "order": 1}, {"count": 12, "color": "#3299FF", "y": 1, "order": 2}, {"count": 12, "color": "#99EDFF", "y": 1, "order": 3}, {"count": 12, "color": "#65CCFF", "y": 1, "order": 4}, {"count": 12, "color": "#CCFFFF", "y": 1, "order": 5}, {"count": 12, "color": "#FFFFCC", "y": 1, "order": 6}, {"count": 12, "color": "#FFEE99", "y": 1, "order": 7}, {"count": 12, "color": "#FFCC65", "y": 1, "order": 8}, {"count": 12, "color": "#FF9932", "y": 1, "order": 9}, {"count": 12, "color": "#FF6619", "y": 1, "order": 10}, {"count": 12, "color": "#FF2A00", "y": 1, "order": 11}, {"count": 2, "color": "#002AFF", "y": 1, "order": 0}, {"count": 2, "color": "#FF2A00", "y": 1, "order": 1}, {"count": 3, "color": "#002AFF", "y": 1, "order": 0}, {"count": 3, "color": "#FFFFCC", "y": 1, "order": 1}, {"count": 3, "color": "#FF2A00", "y": 1, "order": 2}, {"count": 4, "color": "#002AFF", "y": 1, "order": 0}, {"count": 4, "color": "#65CCFF", "y": 1, "order": 1}, {"count": 4, "color": "#FFEE99", "y": 1, "order": 2}, {"count": 4, "color": "#FF2A00", "y": 1, "order": 3}, {"count": 5, "color": "#002AFF", "y": 1, "order": 0}, {"count": 5, "color": "#99EDFF", "y": 1, "order": 1}, {"count": 5, "color": "#FFFFCC", "y": 1, "order": 2}, {"count": 5, "color": "#FFCC65", "y": 1, "order": 3}, {"count": 5, "color": "#FF2A00", "y": 1, "order": 4}, {"count": 6, "color": "#002AFF", "y": 1, "order": 0}, {"count": 6, "color": "#3299FF", "y": 1, "order": 1}, {"count": 6, "color": "#65CCFF", "y": 1, "order": 2}, {"count": 6, "color": "#FFEE99", "y": 1, "order": 3}, {"count": 6, "color": "#FF9932", "y": 1, "order": 4}, {"count": 6, "color": "#FF2A00", "y": 1, "order": 5}, {"count": 7, "color": "#002AFF", "y": 1, "order": 0}, {"count": 7, "color": "#3299FF", "y": 1, "order": 1}, {"count": 7, "color": "#65CCFF", "y": 1, "order": 2}, {"count": 7, "color": "#FFFFCC", "y": 1, "order": 3}, {"count": 7, "color": "#FFEE99", "y": 1, "order": 4}, {"count": 7, "color": "#FF9932", "y": 1, "order": 5}, {"count": 7, "color": "#FF2A00", "y": 1, "order": 6}, {"count": 8, "color": "#002AFF", "y": 1, "order": 0}, {"count": 8, "color": "#3299FF", "y": 1, "order": 1}, {"count": 8, "color": "#99EDFF", "y": 1, "order": 2}, {"count": 8, "color": "#CCFFFF", "y": 1, "order": 3}, {"count": 8, "color": "#FFFFCC", "y": 1, "order": 4}, {"count": 8, "color": "#FFCC65", "y": 1, "order": 5}, {"count": 8, "color": "#FF9932", "y": 1, "order": 6}, {"count": 8, "color": "#FF2A00", "y": 1, "order": 7}, {"count": 9, "color": "#002AFF", "y": 1, "order": 0}, {"count": 9, "color": "#1965FF", "y": 1, "order": 1}, {"count": 9, "color": "#99EDFF", "y": 1, "order": 2}, {"count": 9, "color": "#65CCFF", "y": 1, "order": 3}, {"count": 9, "color": "#FFFFCC", "y": 1, "order": 4}, {"count": 9, "color": "#FFEE99", "y": 1, "order": 5}, {"count": 9, "color": "#FFCC65", "y": 1, "order": 6}, {"count": 9, "color": "#FF6619", "y": 1, "order": 7}, {"count": 9, "color": "#FF2A00", "y": 1, "order": 8}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#002AFF','#1965FF','#3299FF','#99EDFF','#65CCFF','#CCFFFF','#FFFFCC','#FFEE99','#FFCC65','#FF9932','#FF6619','#FF2A00']</code></p>
+</div>
+<section id="blueorange8" class="level2 cell-output cell-output-display" data-number="5.10">
+<h2 data-number="5.10" class="anchored" data-anchor-id="blueorange8"><span class="header-section-number">5.10</span> BlueOrange8</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-3740c7135204495d956778672e8e7190.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-3740c7135204495d956778672e8e7190.vega-embed details,
+  #altair-viz-3740c7135204495d956778672e8e7190.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-3740c7135204495d956778672e8e7190"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-3740c7135204495d956778672e8e7190") {
+      outputDiv = document.getElementById("altair-viz-3740c7135204495d956778672e8e7190");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#CCFFFF", "#FFC34C", "#4CC3FF", "#FFEE99", "#007FFF", "#FFFFCC", "#99EDFF", "#FF7F00"], "domain": ["#CCFFFF", "#FFC34C", "#4CC3FF", "#FFEE99", "#007FFF", "#FFFFCC", "#99EDFF", "#FF7F00"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-56ec64bcf3cd897c9cec5615b75e3ad2"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-56ec64bcf3cd897c9cec5615b75e3ad2": [{"count": 2, "color": "#007FFF", "y": 1, "order": 0}, {"count": 2, "color": "#FF7F00", "y": 1, "order": 1}, {"count": 3, "color": "#007FFF", "y": 1, "order": 0}, {"count": 3, "color": "#FFFFCC", "y": 1, "order": 1}, {"count": 3, "color": "#FF7F00", "y": 1, "order": 2}, {"count": 4, "color": "#007FFF", "y": 1, "order": 0}, {"count": 4, "color": "#99EDFF", "y": 1, "order": 1}, {"count": 4, "color": "#FFEE99", "y": 1, "order": 2}, {"count": 4, "color": "#FF7F00", "y": 1, "order": 3}, {"count": 5, "color": "#007FFF", "y": 1, "order": 0}, {"count": 5, "color": "#99EDFF", "y": 1, "order": 1}, {"count": 5, "color": "#FFFFCC", "y": 1, "order": 2}, {"count": 5, "color": "#FFEE99", "y": 1, "order": 3}, {"count": 5, "color": "#FF7F00", "y": 1, "order": 4}, {"count": 6, "color": "#007FFF", "y": 1, "order": 0}, {"count": 6, "color": "#4CC3FF", "y": 1, "order": 1}, {"count": 6, "color": "#CCFFFF", "y": 1, "order": 2}, {"count": 6, "color": "#FFFFCC", "y": 1, "order": 3}, {"count": 6, "color": "#FFC34C", "y": 1, "order": 4}, {"count": 6, "color": "#FF7F00", "y": 1, "order": 5}, {"count": 7, "color": "#007FFF", "y": 1, "order": 0}, {"count": 7, "color": "#4CC3FF", "y": 1, "order": 1}, {"count": 7, "color": "#99EDFF", "y": 1, "order": 2}, {"count": 7, "color": "#FFFFCC", "y": 1, "order": 3}, {"count": 7, "color": "#FFEE99", "y": 1, "order": 4}, {"count": 7, "color": "#FFC34C", "y": 1, "order": 5}, {"count": 7, "color": "#FF7F00", "y": 1, "order": 6}, {"count": 8, "color": "#007FFF", "y": 1, "order": 0}, {"count": 8, "color": "#4CC3FF", "y": 1, "order": 1}, {"count": 8, "color": "#99EDFF", "y": 1, "order": 2}, {"count": 8, "color": "#CCFFFF", "y": 1, "order": 3}, {"count": 8, "color": "#FFFFCC", "y": 1, "order": 4}, {"count": 8, "color": "#FFEE99", "y": 1, "order": 5}, {"count": 8, "color": "#FFC34C", "y": 1, "order": 6}, {"count": 8, "color": "#FF7F00", "y": 1, "order": 7}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#007FFF','#4CC3FF','#99EDFF','#CCFFFF','#FFFFCC','#FFEE99','#FFC34C','#FF7F00']</code></p>
+</div>
+<section id="blueorangered" class="level2 cell-output cell-output-display" data-number="5.11">
+<h2 data-number="5.11" class="anchored" data-anchor-id="blueorangered"><span class="header-section-number">5.11</span> BlueOrangeRed</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-671e150f117c4148a84e0e78190b2071.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-671e150f117c4148a84e0e78190b2071.vega-embed details,
+  #altair-viz-671e150f117c4148a84e0e78190b2071.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-671e150f117c4148a84e0e78190b2071"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-671e150f117c4148a84e0e78190b2071") {
+      outputDiv = document.getElementById("altair-viz-671e150f117c4148a84e0e78190b2071");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#FFFF99", "#8CB2FF", "#BFD4FF", "#F7F9FF", "#075AFF", "#FFFF00", "#FF0000", "#FF9900", "#FFFFCC", "#FFCC00", "#5990FF", "#3276FF", "#FF6600", "#E5EEFF"], "domain": ["#FFFF99", "#8CB2FF", "#BFD4FF", "#F7F9FF", "#075AFF", "#FFFF00", "#FF0000", "#FF9900", "#FFFFCC", "#FFCC00", "#5990FF", "#3276FF", "#FF6600", "#E5EEFF"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-debd11991a026021778602a929205a80"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-debd11991a026021778602a929205a80": [{"count": 10, "color": "#075AFF", "y": 1, "order": 0}, {"count": 10, "color": "#3276FF", "y": 1, "order": 1}, {"count": 10, "color": "#8CB2FF", "y": 1, "order": 2}, {"count": 10, "color": "#BFD4FF", "y": 1, "order": 3}, {"count": 10, "color": "#F7F9FF", "y": 1, "order": 4}, {"count": 10, "color": "#FFFFCC", "y": 1, "order": 5}, {"count": 10, "color": "#FFFF00", "y": 1, "order": 6}, {"count": 10, "color": "#FFCC00", "y": 1, "order": 7}, {"count": 10, "color": "#FF6600", "y": 1, "order": 8}, {"count": 10, "color": "#FF0000", "y": 1, "order": 9}, {"count": 11, "color": "#075AFF", "y": 1, "order": 0}, {"count": 11, "color": "#3276FF", "y": 1, "order": 1}, {"count": 11, "color": "#8CB2FF", "y": 1, "order": 2}, {"count": 11, "color": "#BFD4FF", "y": 1, "order": 3}, {"count": 11, "color": "#E5EEFF", "y": 1, "order": 4}, {"count": 11, "color": "#F7F9FF", "y": 1, "order": 5}, {"count": 11, "color": "#FFFF99", "y": 1, "order": 6}, {"count": 11, "color": "#FFFF00", "y": 1, "order": 7}, {"count": 11, "color": "#FFCC00", "y": 1, "order": 8}, {"count": 11, "color": "#FF6600", "y": 1, "order": 9}, {"count": 11, "color": "#FF0000", "y": 1, "order": 10}, {"count": 12, "color": "#075AFF", "y": 1, "order": 0}, {"count": 12, "color": "#3276FF", "y": 1, "order": 1}, {"count": 12, "color": "#5990FF", "y": 1, "order": 2}, {"count": 12, "color": "#BFD4FF", "y": 1, "order": 3}, {"count": 12, "color": "#E5EEFF", "y": 1, "order": 4}, {"count": 12, "color": "#F7F9FF", "y": 1, "order": 5}, {"count": 12, "color": "#FFFFCC", "y": 1, "order": 6}, {"count": 12, "color": "#FFFF99", "y": 1, "order": 7}, {"count": 12, "color": "#FFFF00", "y": 1, "order": 8}, {"count": 12, "color": "#FF9900", "y": 1, "order": 9}, {"count": 12, "color": "#FF6600", "y": 1, "order": 10}, {"count": 12, "color": "#FF0000", "y": 1, "order": 11}, {"count": 13, "color": "#075AFF", "y": 1, "order": 0}, {"count": 13, "color": "#3276FF", "y": 1, "order": 1}, {"count": 13, "color": "#5990FF", "y": 1, "order": 2}, {"count": 13, "color": "#8CB2FF", "y": 1, "order": 3}, {"count": 13, "color": "#BFD4FF", "y": 1, "order": 4}, {"count": 13, "color": "#E5EEFF", "y": 1, "order": 5}, {"count": 13, "color": "#F7F9FF", "y": 1, "order": 6}, {"count": 13, "color": "#FFFF99", "y": 1, "order": 7}, {"count": 13, "color": "#FFFF00", "y": 1, "order": 8}, {"count": 13, "color": "#FFCC00", "y": 1, "order": 9}, {"count": 13, "color": "#FF9900", "y": 1, "order": 10}, {"count": 13, "color": "#FF6600", "y": 1, "order": 11}, {"count": 13, "color": "#FF0000", "y": 1, "order": 12}, {"count": 14, "color": "#075AFF", "y": 1, "order": 0}, {"count": 14, "color": "#3276FF", "y": 1, "order": 1}, {"count": 14, "color": "#5990FF", "y": 1, "order": 2}, {"count": 14, "color": "#8CB2FF", "y": 1, "order": 3}, {"count": 14, "color": "#BFD4FF", "y": 1, "order": 4}, {"count": 14, "color": "#E5EEFF", "y": 1, "order": 5}, {"count": 14, "color": "#F7F9FF", "y": 1, "order": 6}, {"count": 14, "color": "#FFFFCC", "y": 1, "order": 7}, {"count": 14, "color": "#FFFF99", "y": 1, "order": 8}, {"count": 14, "color": "#FFFF00", "y": 1, "order": 9}, {"count": 14, "color": "#FFCC00", "y": 1, "order": 10}, {"count": 14, "color": "#FF9900", "y": 1, "order": 11}, {"count": 14, "color": "#FF6600", "y": 1, "order": 12}, {"count": 14, "color": "#FF0000", "y": 1, "order": 13}, {"count": 2, "color": "#075AFF", "y": 1, "order": 0}, {"count": 2, "color": "#FF0000", "y": 1, "order": 1}, {"count": 3, "color": "#075AFF", "y": 1, "order": 0}, {"count": 3, "color": "#F7F9FF", "y": 1, "order": 1}, {"count": 3, "color": "#FF0000", "y": 1, "order": 2}, {"count": 4, "color": "#075AFF", "y": 1, "order": 0}, {"count": 4, "color": "#BFD4FF", "y": 1, "order": 1}, {"count": 4, "color": "#FFFF00", "y": 1, "order": 2}, {"count": 4, "color": "#FF0000", "y": 1, "order": 3}, {"count": 5, "color": "#075AFF", "y": 1, "order": 0}, {"count": 5, "color": "#8CB2FF", "y": 1, "order": 1}, {"count": 5, "color": "#F7F9FF", "y": 1, "order": 2}, {"count": 5, "color": "#FFCC00", "y": 1, "order": 3}, {"count": 5, "color": "#FF0000", "y": 1, "order": 4}, {"count": 6, "color": "#075AFF", "y": 1, "order": 0}, {"count": 6, "color": "#8CB2FF", "y": 1, "order": 1}, {"count": 6, "color": "#E5EEFF", "y": 1, "order": 2}, {"count": 6, "color": "#FFFF99", "y": 1, "order": 3}, {"count": 6, "color": "#FFCC00", "y": 1, "order": 4}, {"count": 6, "color": "#FF0000", "y": 1, "order": 5}, {"count": 7, "color": "#075AFF", "y": 1, "order": 0}, {"count": 7, "color": "#5990FF", "y": 1, "order": 1}, {"count": 7, "color": "#BFD4FF", "y": 1, "order": 2}, {"count": 7, "color": "#F7F9FF", "y": 1, "order": 3}, {"count": 7, "color": "#FFFF00", "y": 1, "order": 4}, {"count": 7, "color": "#FF9900", "y": 1, "order": 5}, {"count": 7, "color": "#FF0000", "y": 1, "order": 6}, {"count": 8, "color": "#075AFF", "y": 1, "order": 0}, {"count": 8, "color": "#5990FF", "y": 1, "order": 1}, {"count": 8, "color": "#BFD4FF", "y": 1, "order": 2}, {"count": 8, "color": "#F7F9FF", "y": 1, "order": 3}, {"count": 8, "color": "#FFFFCC", "y": 1, "order": 4}, {"count": 8, "color": "#FFFF00", "y": 1, "order": 5}, {"count": 8, "color": "#FF9900", "y": 1, "order": 6}, {"count": 8, "color": "#FF0000", "y": 1, "order": 7}, {"count": 9, "color": "#075AFF", "y": 1, "order": 0}, {"count": 9, "color": "#5990FF", "y": 1, "order": 1}, {"count": 9, "color": "#8CB2FF", "y": 1, "order": 2}, {"count": 9, "color": "#E5EEFF", "y": 1, "order": 3}, {"count": 9, "color": "#F7F9FF", "y": 1, "order": 4}, {"count": 9, "color": "#FFFF99", "y": 1, "order": 5}, {"count": 9, "color": "#FFCC00", "y": 1, "order": 6}, {"count": 9, "color": "#FF9900", "y": 1, "order": 7}, {"count": 9, "color": "#FF0000", "y": 1, "order": 8}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#075AFF','#3276FF','#5990FF','#8CB2FF','#BFD4FF','#E5EEFF','#F7F9FF','#FFFFCC','#FFFF99','#FFFF00','#FFCC00','#FF9900','#FF6600','#FF0000']</code></p>
+</div>
+<section id="brownblue10" class="level2 cell-output cell-output-display" data-number="5.12">
+<h2 data-number="5.12" class="anchored" data-anchor-id="brownblue10"><span class="header-section-number">5.12</span> BrownBlue10</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-11b3514b138c44c8a5e78cbf10c2280d.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-11b3514b138c44c8a5e78cbf10c2280d.vega-embed details,
+  #altair-viz-11b3514b138c44c8a5e78cbf10c2280d.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-11b3514b138c44c8a5e78cbf10c2280d"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-11b3514b138c44c8a5e78cbf10c2280d") {
+      outputDiv = document.getElementById("altair-viz-11b3514b138c44c8a5e78cbf10c2280d");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#F2DACD", "#00A9CC", "#996035", "#CC9B7A", "#CCFDFF", "#65EFFF", "#32E3FF", "#99F8FF", "#D8AF97", "#662F00"], "domain": ["#F2DACD", "#00A9CC", "#996035", "#CC9B7A", "#CCFDFF", "#65EFFF", "#32E3FF", "#99F8FF", "#D8AF97", "#662F00"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-247b2f17c4889e9d84384bc9aad77c7c"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-247b2f17c4889e9d84384bc9aad77c7c": [{"count": 10, "color": "#662F00", "y": 1, "order": 0}, {"count": 10, "color": "#996035", "y": 1, "order": 1}, {"count": 10, "color": "#CC9B7A", "y": 1, "order": 2}, {"count": 10, "color": "#D8AF97", "y": 1, "order": 3}, {"count": 10, "color": "#F2DACD", "y": 1, "order": 4}, {"count": 10, "color": "#CCFDFF", "y": 1, "order": 5}, {"count": 10, "color": "#99F8FF", "y": 1, "order": 6}, {"count": 10, "color": "#65EFFF", "y": 1, "order": 7}, {"count": 10, "color": "#32E3FF", "y": 1, "order": 8}, {"count": 10, "color": "#00A9CC", "y": 1, "order": 9}, {"count": 2, "color": "#662F00", "y": 1, "order": 0}, {"count": 2, "color": "#00A9CC", "y": 1, "order": 1}, {"count": 3, "color": "#662F00", "y": 1, "order": 0}, {"count": 3, "color": "#F2DACD", "y": 1, "order": 1}, {"count": 3, "color": "#00A9CC", "y": 1, "order": 2}, {"count": 4, "color": "#662F00", "y": 1, "order": 0}, {"count": 4, "color": "#D8AF97", "y": 1, "order": 1}, {"count": 4, "color": "#99F8FF", "y": 1, "order": 2}, {"count": 4, "color": "#00A9CC", "y": 1, "order": 3}, {"count": 5, "color": "#662F00", "y": 1, "order": 0}, {"count": 5, "color": "#CC9B7A", "y": 1, "order": 1}, {"count": 5, "color": "#F2DACD", "y": 1, "order": 2}, {"count": 5, "color": "#65EFFF", "y": 1, "order": 3}, {"count": 5, "color": "#00A9CC", "y": 1, "order": 4}, {"count": 6, "color": "#662F00", "y": 1, "order": 0}, {"count": 6, "color": "#CC9B7A", "y": 1, "order": 1}, {"count": 6, "color": "#F2DACD", "y": 1, "order": 2}, {"count": 6, "color": "#CCFDFF", "y": 1, "order": 3}, {"count": 6, "color": "#65EFFF", "y": 1, "order": 4}, {"count": 6, "color": "#00A9CC", "y": 1, "order": 5}, {"count": 7, "color": "#662F00", "y": 1, "order": 0}, {"count": 7, "color": "#CC9B7A", "y": 1, "order": 1}, {"count": 7, "color": "#D8AF97", "y": 1, "order": 2}, {"count": 7, "color": "#F2DACD", "y": 1, "order": 3}, {"count": 7, "color": "#99F8FF", "y": 1, "order": 4}, {"count": 7, "color": "#32E3FF", "y": 1, "order": 5}, {"count": 7, "color": "#00A9CC", "y": 1, "order": 6}, {"count": 8, "color": "#662F00", "y": 1, "order": 0}, {"count": 8, "color": "#996035", "y": 1, "order": 1}, {"count": 8, "color": "#D8AF97", "y": 1, "order": 2}, {"count": 8, "color": "#F2DACD", "y": 1, "order": 3}, {"count": 8, "color": "#CCFDFF", "y": 1, "order": 4}, {"count": 8, "color": "#99F8FF", "y": 1, "order": 5}, {"count": 8, "color": "#32E3FF", "y": 1, "order": 6}, {"count": 8, "color": "#00A9CC", "y": 1, "order": 7}, {"count": 9, "color": "#662F00", "y": 1, "order": 0}, {"count": 9, "color": "#996035", "y": 1, "order": 1}, {"count": 9, "color": "#CC9B7A", "y": 1, "order": 2}, {"count": 9, "color": "#D8AF97", "y": 1, "order": 3}, {"count": 9, "color": "#F2DACD", "y": 1, "order": 4}, {"count": 9, "color": "#99F8FF", "y": 1, "order": 5}, {"count": 9, "color": "#65EFFF", "y": 1, "order": 6}, {"count": 9, "color": "#32E3FF", "y": 1, "order": 7}, {"count": 9, "color": "#00A9CC", "y": 1, "order": 8}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#662F00','#996035','#CC9B7A','#D8AF97','#F2DACD','#CCFDFF','#99F8FF','#65EFFF','#32E3FF','#00A9CC']</code></p>
+</div>
+<section id="brownblue12" class="level2 cell-output cell-output-display" data-number="5.13">
+<h2 data-number="5.13" class="anchored" data-anchor-id="brownblue12"><span class="header-section-number">5.13</span> BrownBlue12</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-15090c2e757d42d7b857b2085651822a.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-15090c2e757d42d7b857b2085651822a.vega-embed details,
+  #altair-viz-15090c2e757d42d7b857b2085651822a.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-15090c2e757d42d7b857b2085651822a"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-15090c2e757d42d7b857b2085651822a") {
+      outputDiv = document.getElementById("altair-viz-15090c2e757d42d7b857b2085651822a");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#01EFFF", "#331900", "#32E3FF", "#00A9CC", "#04FDFF", "#356035", "#007A99", "#049B7A", "#35F8FF", "#022F00", "#2ADACD", "#10AF97"], "domain": ["#01EFFF", "#331900", "#32E3FF", "#00A9CC", "#04FDFF", "#356035", "#007A99", "#049B7A", "#35F8FF", "#022F00", "#2ADACD", "#10AF97"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-20be53daeae72fda6fdffe77d342cbab"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-20be53daeae72fda6fdffe77d342cbab": [{"count": 10, "color": "#331900", "y": 1, "order": 0}, {"count": 10, "color": "#022F00", "y": 1, "order": 1}, {"count": 10, "color": "#356035", "y": 1, "order": 2}, {"count": 10, "color": "#10AF97", "y": 1, "order": 3}, {"count": 10, "color": "#2ADACD", "y": 1, "order": 4}, {"count": 10, "color": "#04FDFF", "y": 1, "order": 5}, {"count": 10, "color": "#35F8FF", "y": 1, "order": 6}, {"count": 10, "color": "#32E3FF", "y": 1, "order": 7}, {"count": 10, "color": "#00A9CC", "y": 1, "order": 8}, {"count": 10, "color": "#007A99", "y": 1, "order": 9}, {"count": 11, "color": "#331900", "y": 1, "order": 0}, {"count": 11, "color": "#022F00", "y": 1, "order": 1}, {"count": 11, "color": "#356035", "y": 1, "order": 2}, {"count": 11, "color": "#049B7A", "y": 1, "order": 3}, {"count": 11, "color": "#10AF97", "y": 1, "order": 4}, {"count": 11, "color": "#04FDFF", "y": 1, "order": 5}, {"count": 11, "color": "#35F8FF", "y": 1, "order": 6}, {"count": 11, "color": "#01EFFF", "y": 1, "order": 7}, {"count": 11, "color": "#32E3FF", "y": 1, "order": 8}, {"count": 11, "color": "#00A9CC", "y": 1, "order": 9}, {"count": 11, "color": "#007A99", "y": 1, "order": 10}, {"count": 12, "color": "#331900", "y": 1, "order": 0}, {"count": 12, "color": "#022F00", "y": 1, "order": 1}, {"count": 12, "color": "#356035", "y": 1, "order": 2}, {"count": 12, "color": "#049B7A", "y": 1, "order": 3}, {"count": 12, "color": "#10AF97", "y": 1, "order": 4}, {"count": 12, "color": "#2ADACD", "y": 1, "order": 5}, {"count": 12, "color": "#04FDFF", "y": 1, "order": 6}, {"count": 12, "color": "#35F8FF", "y": 1, "order": 7}, {"count": 12, "color": "#01EFFF", "y": 1, "order": 8}, {"count": 12, "color": "#32E3FF", "y": 1, "order": 9}, {"count": 12, "color": "#00A9CC", "y": 1, "order": 10}, {"count": 12, "color": "#007A99", "y": 1, "order": 11}, {"count": 2, "color": "#331900", "y": 1, "order": 0}, {"count": 2, "color": "#007A99", "y": 1, "order": 1}, {"count": 3, "color": "#331900", "y": 1, "order": 0}, {"count": 3, "color": "#04FDFF", "y": 1, "order": 1}, {"count": 3, "color": "#007A99", "y": 1, "order": 2}, {"count": 4, "color": "#331900", "y": 1, "order": 0}, {"count": 4, "color": "#10AF97", "y": 1, "order": 1}, {"count": 4, "color": "#35F8FF", "y": 1, "order": 2}, {"count": 4, "color": "#007A99", "y": 1, "order": 3}, {"count": 5, "color": "#331900", "y": 1, "order": 0}, {"count": 5, "color": "#049B7A", "y": 1, "order": 1}, {"count": 5, "color": "#04FDFF", "y": 1, "order": 2}, {"count": 5, "color": "#01EFFF", "y": 1, "order": 3}, {"count": 5, "color": "#007A99", "y": 1, "order": 4}, {"count": 6, "color": "#331900", "y": 1, "order": 0}, {"count": 6, "color": "#356035", "y": 1, "order": 1}, {"count": 6, "color": "#10AF97", "y": 1, "order": 2}, {"count": 6, "color": "#35F8FF", "y": 1, "order": 3}, {"count": 6, "color": "#32E3FF", "y": 1, "order": 4}, {"count": 6, "color": "#007A99", "y": 1, "order": 5}, {"count": 7, "color": "#331900", "y": 1, "order": 0}, {"count": 7, "color": "#356035", "y": 1, "order": 1}, {"count": 7, "color": "#10AF97", "y": 1, "order": 2}, {"count": 7, "color": "#04FDFF", "y": 1, "order": 3}, {"count": 7, "color": "#35F8FF", "y": 1, "order": 4}, {"count": 7, "color": "#32E3FF", "y": 1, "order": 5}, {"count": 7, "color": "#007A99", "y": 1, "order": 6}, {"count": 8, "color": "#331900", "y": 1, "order": 0}, {"count": 8, "color": "#356035", "y": 1, "order": 1}, {"count": 8, "color": "#049B7A", "y": 1, "order": 2}, {"count": 8, "color": "#2ADACD", "y": 1, "order": 3}, {"count": 8, "color": "#04FDFF", "y": 1, "order": 4}, {"count": 8, "color": "#01EFFF", "y": 1, "order": 5}, {"count": 8, "color": "#32E3FF", "y": 1, "order": 6}, {"count": 8, "color": "#007A99", "y": 1, "order": 7}, {"count": 9, "color": "#331900", "y": 1, "order": 0}, {"count": 9, "color": "#022F00", "y": 1, "order": 1}, {"count": 9, "color": "#049B7A", "y": 1, "order": 2}, {"count": 9, "color": "#10AF97", "y": 1, "order": 3}, {"count": 9, "color": "#04FDFF", "y": 1, "order": 4}, {"count": 9, "color": "#35F8FF", "y": 1, "order": 5}, {"count": 9, "color": "#01EFFF", "y": 1, "order": 6}, {"count": 9, "color": "#00A9CC", "y": 1, "order": 7}, {"count": 9, "color": "#007A99", "y": 1, "order": 8}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#331900','#022F00','#356035','#049B7A','#10AF97','#2ADACD','#04FDFF','#35F8FF','#01EFFF','#32E3FF','#00A9CC','#007A99']</code></p>
+</div>
+<section id="greenmagenta" class="level2 cell-output cell-output-display" data-number="5.14">
+<h2 data-number="5.14" class="anchored" data-anchor-id="greenmagenta"><span class="header-section-number">5.14</span> GreenMagenta</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-21f2b7a09f2341af8c2e096f944804aa.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-21f2b7a09f2341af8c2e096f944804aa.vega-embed details,
+  #altair-viz-21f2b7a09f2341af8c2e096f944804aa.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-21f2b7a09f2341af8c2e096f944804aa"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-21f2b7a09f2341af8c2e096f944804aa") {
+      outputDiv = document.getElementById("altair-viz-21f2b7a09f2341af8c2e096f944804aa");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#860086", "#86FF86", "#FF50FF", "#F100F1", "#FF86FF", "#00F100", "#FFBBFF", "#BB00BB", "#005000", "#008600", "#500050", "#50FF50", "#BBFFBB", "#FFFFFF", "#00BB00", "#FFF1FF"], "domain": ["#860086", "#86FF86", "#FF50FF", "#F100F1", "#FF86FF", "#00F100", "#FFBBFF", "#BB00BB", "#005000", "#008600", "#500050", "#50FF50", "#BBFFBB", "#FFFFFF", "#00BB00", "#FFF1FF"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-ba5d25455fd3501a12a794c802a5638b"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-ba5d25455fd3501a12a794c802a5638b": [{"count": 10, "color": "#005000", "y": 1, "order": 0}, {"count": 10, "color": "#00BB00", "y": 1, "order": 1}, {"count": 10, "color": "#00F100", "y": 1, "order": 2}, {"count": 10, "color": "#86FF86", "y": 1, "order": 3}, {"count": 10, "color": "#FFFFFF", "y": 1, "order": 4}, {"count": 10, "color": "#FFF1FF", "y": 1, "order": 5}, {"count": 10, "color": "#FF86FF", "y": 1, "order": 6}, {"count": 10, "color": "#F100F1", "y": 1, "order": 7}, {"count": 10, "color": "#BB00BB", "y": 1, "order": 8}, {"count": 10, "color": "#500050", "y": 1, "order": 9}, {"count": 11, "color": "#005000", "y": 1, "order": 0}, {"count": 11, "color": "#00BB00", "y": 1, "order": 1}, {"count": 11, "color": "#00F100", "y": 1, "order": 2}, {"count": 11, "color": "#50FF50", "y": 1, "order": 3}, {"count": 11, "color": "#BBFFBB", "y": 1, "order": 4}, {"count": 11, "color": "#FFF1FF", "y": 1, "order": 5}, {"count": 11, "color": "#FFBBFF", "y": 1, "order": 6}, {"count": 11, "color": "#FF86FF", "y": 1, "order": 7}, {"count": 11, "color": "#F100F1", "y": 1, "order": 8}, {"count": 11, "color": "#860086", "y": 1, "order": 9}, {"count": 11, "color": "#500050", "y": 1, "order": 10}, {"count": 12, "color": "#005000", "y": 1, "order": 0}, {"count": 12, "color": "#008600", "y": 1, "order": 1}, {"count": 12, "color": "#00F100", "y": 1, "order": 2}, {"count": 12, "color": "#50FF50", "y": 1, "order": 3}, {"count": 12, "color": "#86FF86", "y": 1, "order": 4}, {"count": 12, "color": "#FFFFFF", "y": 1, "order": 5}, {"count": 12, "color": "#FFF1FF", "y": 1, "order": 6}, {"count": 12, "color": "#FF86FF", "y": 1, "order": 7}, {"count": 12, "color": "#FF50FF", "y": 1, "order": 8}, {"count": 12, "color": "#F100F1", "y": 1, "order": 9}, {"count": 12, "color": "#860086", "y": 1, "order": 10}, {"count": 12, "color": "#500050", "y": 1, "order": 11}, {"count": 13, "color": "#005000", "y": 1, "order": 0}, {"count": 13, "color": "#008600", "y": 1, "order": 1}, {"count": 13, "color": "#00BB00", "y": 1, "order": 2}, {"count": 13, "color": "#50FF50", "y": 1, "order": 3}, {"count": 13, "color": "#86FF86", "y": 1, "order": 4}, {"count": 13, "color": "#BBFFBB", "y": 1, "order": 5}, {"count": 13, "color": "#FFF1FF", "y": 1, "order": 6}, {"count": 13, "color": "#FFBBFF", "y": 1, "order": 7}, {"count": 13, "color": "#FF86FF", "y": 1, "order": 8}, {"count": 13, "color": "#FF50FF", "y": 1, "order": 9}, {"count": 13, "color": "#F100F1", "y": 1, "order": 10}, {"count": 13, "color": "#860086", "y": 1, "order": 11}, {"count": 13, "color": "#500050", "y": 1, "order": 12}, {"count": 14, "color": "#005000", "y": 1, "order": 0}, {"count": 14, "color": "#008600", "y": 1, "order": 1}, {"count": 14, "color": "#00BB00", "y": 1, "order": 2}, {"count": 14, "color": "#00F100", "y": 1, "order": 3}, {"count": 14, "color": "#86FF86", "y": 1, "order": 4}, {"count": 14, "color": "#BBFFBB", "y": 1, "order": 5}, {"count": 14, "color": "#FFFFFF", "y": 1, "order": 6}, {"count": 14, "color": "#FFF1FF", "y": 1, "order": 7}, {"count": 14, "color": "#FFBBFF", "y": 1, "order": 8}, {"count": 14, "color": "#FF86FF", "y": 1, "order": 9}, {"count": 14, "color": "#F100F1", "y": 1, "order": 10}, {"count": 14, "color": "#BB00BB", "y": 1, "order": 11}, {"count": 14, "color": "#860086", "y": 1, "order": 12}, {"count": 14, "color": "#500050", "y": 1, "order": 13}, {"count": 15, "color": "#005000", "y": 1, "order": 0}, {"count": 15, "color": "#008600", "y": 1, "order": 1}, {"count": 15, "color": "#00BB00", "y": 1, "order": 2}, {"count": 15, "color": "#00F100", "y": 1, "order": 3}, {"count": 15, "color": "#50FF50", "y": 1, "order": 4}, {"count": 15, "color": "#86FF86", "y": 1, "order": 5}, {"count": 15, "color": "#BBFFBB", "y": 1, "order": 6}, {"count": 15, "color": "#FFF1FF", "y": 1, "order": 7}, {"count": 15, "color": "#FFBBFF", "y": 1, "order": 8}, {"count": 15, "color": "#FF86FF", "y": 1, "order": 9}, {"count": 15, "color": "#FF50FF", "y": 1, "order": 10}, {"count": 15, "color": "#F100F1", "y": 1, "order": 11}, {"count": 15, "color": "#BB00BB", "y": 1, "order": 12}, {"count": 15, "color": "#860086", "y": 1, "order": 13}, {"count": 15, "color": "#500050", "y": 1, "order": 14}, {"count": 16, "color": "#005000", "y": 1, "order": 0}, {"count": 16, "color": "#008600", "y": 1, "order": 1}, {"count": 16, "color": "#00BB00", "y": 1, "order": 2}, {"count": 16, "color": "#00F100", "y": 1, "order": 3}, {"count": 16, "color": "#50FF50", "y": 1, "order": 4}, {"count": 16, "color": "#86FF86", "y": 1, "order": 5}, {"count": 16, "color": "#BBFFBB", "y": 1, "order": 6}, {"count": 16, "color": "#FFFFFF", "y": 1, "order": 7}, {"count": 16, "color": "#FFF1FF", "y": 1, "order": 8}, {"count": 16, "color": "#FFBBFF", "y": 1, "order": 9}, {"count": 16, "color": "#FF86FF", "y": 1, "order": 10}, {"count": 16, "color": "#FF50FF", "y": 1, "order": 11}, {"count": 16, "color": "#F100F1", "y": 1, "order": 12}, {"count": 16, "color": "#BB00BB", "y": 1, "order": 13}, {"count": 16, "color": "#860086", "y": 1, "order": 14}, {"count": 16, "color": "#500050", "y": 1, "order": 15}, {"count": 2, "color": "#005000", "y": 1, "order": 0}, {"count": 2, "color": "#500050", "y": 1, "order": 1}, {"count": 3, "color": "#005000", "y": 1, "order": 0}, {"count": 3, "color": "#FFF1FF", "y": 1, "order": 1}, {"count": 3, "color": "#500050", "y": 1, "order": 2}, {"count": 4, "color": "#005000", "y": 1, "order": 0}, {"count": 4, "color": "#86FF86", "y": 1, "order": 1}, {"count": 4, "color": "#FF86FF", "y": 1, "order": 2}, {"count": 4, "color": "#500050", "y": 1, "order": 3}, {"count": 5, "color": "#005000", "y": 1, "order": 0}, {"count": 5, "color": "#50FF50", "y": 1, "order": 1}, {"count": 5, "color": "#FFF1FF", "y": 1, "order": 2}, {"count": 5, "color": "#FF50FF", "y": 1, "order": 3}, {"count": 5, "color": "#500050", "y": 1, "order": 4}, {"count": 6, "color": "#005000", "y": 1, "order": 0}, {"count": 6, "color": "#00F100", "y": 1, "order": 1}, {"count": 6, "color": "#BBFFBB", "y": 1, "order": 2}, {"count": 6, "color": "#FFBBFF", "y": 1, "order": 3}, {"count": 6, "color": "#F100F1", "y": 1, "order": 4}, {"count": 6, "color": "#500050", "y": 1, "order": 5}, {"count": 7, "color": "#005000", "y": 1, "order": 0}, {"count": 7, "color": "#00BB00", "y": 1, "order": 1}, {"count": 7, "color": "#86FF86", "y": 1, "order": 2}, {"count": 7, "color": "#FFF1FF", "y": 1, "order": 3}, {"count": 7, "color": "#FF86FF", "y": 1, "order": 4}, {"count": 7, "color": "#F100F1", "y": 1, "order": 5}, {"count": 7, "color": "#500050", "y": 1, "order": 6}, {"count": 8, "color": "#005000", "y": 1, "order": 0}, {"count": 8, "color": "#00BB00", "y": 1, "order": 1}, {"count": 8, "color": "#50FF50", "y": 1, "order": 2}, {"count": 8, "color": "#BBFFBB", "y": 1, "order": 3}, {"count": 8, "color": "#FFBBFF", "y": 1, "order": 4}, {"count": 8, "color": "#FF50FF", "y": 1, "order": 5}, {"count": 8, "color": "#BB00BB", "y": 1, "order": 6}, {"count": 8, "color": "#500050", "y": 1, "order": 7}, {"count": 9, "color": "#005000", "y": 1, "order": 0}, {"count": 9, "color": "#00BB00", "y": 1, "order": 1}, {"count": 9, "color": "#50FF50", "y": 1, "order": 2}, {"count": 9, "color": "#BBFFBB", "y": 1, "order": 3}, {"count": 9, "color": "#FFF1FF", "y": 1, "order": 4}, {"count": 9, "color": "#FFBBFF", "y": 1, "order": 5}, {"count": 9, "color": "#FF50FF", "y": 1, "order": 6}, {"count": 9, "color": "#BB00BB", "y": 1, "order": 7}, {"count": 9, "color": "#500050", "y": 1, "order": 8}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#005000','#008600','#00BB00','#00F100','#50FF50','#86FF86','#BBFFBB','#FFFFFF','#FFF1FF','#FFBBFF','#FF86FF','#FF50FF','#F100F1','#BB00BB','#860086','#500050']</code></p>
+</div>
+<section id="redyellowblue" class="level2 cell-output cell-output-display" data-number="5.15">
+<h2 data-number="5.15" class="anchored" data-anchor-id="redyellowblue"><span class="header-section-number">5.15</span> RedYellowBlue</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-0c03c5cdaa5243f2ab09e200805c9425.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-0c03c5cdaa5243f2ab09e200805c9425.vega-embed details,
+  #altair-viz-0c03c5cdaa5243f2ab09e200805c9425.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-0c03c5cdaa5243f2ab09e200805c9425"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-0c03c5cdaa5243f2ab09e200805c9425") {
+      outputDiv = document.getElementById("altair-viz-0c03c5cdaa5243f2ab09e200805c9425");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#FFAD72", "#F76D5E", "#72D8FF", "#3FA0FF", "#FFFFBF", "#264CFF", "#A50021", "#AAF7FF", "#E0FFFF", "#FFE099", "#D82632"], "domain": ["#FFAD72", "#F76D5E", "#72D8FF", "#3FA0FF", "#FFFFBF", "#264CFF", "#A50021", "#AAF7FF", "#E0FFFF", "#FFE099", "#D82632"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-217233f8e331ed920b495d425a38c30a"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-217233f8e331ed920b495d425a38c30a": [{"count": 10, "color": "#A50021", "y": 1, "order": 0}, {"count": 10, "color": "#D82632", "y": 1, "order": 1}, {"count": 10, "color": "#F76D5E", "y": 1, "order": 2}, {"count": 10, "color": "#FFAD72", "y": 1, "order": 3}, {"count": 10, "color": "#FFE099", "y": 1, "order": 4}, {"count": 10, "color": "#E0FFFF", "y": 1, "order": 5}, {"count": 10, "color": "#AAF7FF", "y": 1, "order": 6}, {"count": 10, "color": "#72D8FF", "y": 1, "order": 7}, {"count": 10, "color": "#3FA0FF", "y": 1, "order": 8}, {"count": 10, "color": "#264CFF", "y": 1, "order": 9}, {"count": 11, "color": "#A50021", "y": 1, "order": 0}, {"count": 11, "color": "#D82632", "y": 1, "order": 1}, {"count": 11, "color": "#F76D5E", "y": 1, "order": 2}, {"count": 11, "color": "#FFAD72", "y": 1, "order": 3}, {"count": 11, "color": "#FFE099", "y": 1, "order": 4}, {"count": 11, "color": "#FFFFBF", "y": 1, "order": 5}, {"count": 11, "color": "#E0FFFF", "y": 1, "order": 6}, {"count": 11, "color": "#AAF7FF", "y": 1, "order": 7}, {"count": 11, "color": "#72D8FF", "y": 1, "order": 8}, {"count": 11, "color": "#3FA0FF", "y": 1, "order": 9}, {"count": 11, "color": "#264CFF", "y": 1, "order": 10}, {"count": 2, "color": "#A50021", "y": 1, "order": 0}, {"count": 2, "color": "#264CFF", "y": 1, "order": 1}, {"count": 3, "color": "#A50021", "y": 1, "order": 0}, {"count": 3, "color": "#FFFFBF", "y": 1, "order": 1}, {"count": 3, "color": "#264CFF", "y": 1, "order": 2}, {"count": 4, "color": "#A50021", "y": 1, "order": 0}, {"count": 4, "color": "#FFAD72", "y": 1, "order": 1}, {"count": 4, "color": "#AAF7FF", "y": 1, "order": 2}, {"count": 4, "color": "#264CFF", "y": 1, "order": 3}, {"count": 5, "color": "#A50021", "y": 1, "order": 0}, {"count": 5, "color": "#F76D5E", "y": 1, "order": 1}, {"count": 5, "color": "#FFFFBF", "y": 1, "order": 2}, {"count": 5, "color": "#72D8FF", "y": 1, "order": 3}, {"count": 5, "color": "#264CFF", "y": 1, "order": 4}, {"count": 6, "color": "#A50021", "y": 1, "order": 0}, {"count": 6, "color": "#F76D5E", "y": 1, "order": 1}, {"count": 6, "color": "#FFE099", "y": 1, "order": 2}, {"count": 6, "color": "#E0FFFF", "y": 1, "order": 3}, {"count": 6, "color": "#72D8FF", "y": 1, "order": 4}, {"count": 6, "color": "#264CFF", "y": 1, "order": 5}, {"count": 7, "color": "#A50021", "y": 1, "order": 0}, {"count": 7, "color": "#F76D5E", "y": 1, "order": 1}, {"count": 7, "color": "#FFAD72", "y": 1, "order": 2}, {"count": 7, "color": "#FFFFBF", "y": 1, "order": 3}, {"count": 7, "color": "#AAF7FF", "y": 1, "order": 4}, {"count": 7, "color": "#72D8FF", "y": 1, "order": 5}, {"count": 7, "color": "#264CFF", "y": 1, "order": 6}, {"count": 8, "color": "#A50021", "y": 1, "order": 0}, {"count": 8, "color": "#D82632", "y": 1, "order": 1}, {"count": 8, "color": "#FFAD72", "y": 1, "order": 2}, {"count": 8, "color": "#FFE099", "y": 1, "order": 3}, {"count": 8, "color": "#E0FFFF", "y": 1, "order": 4}, {"count": 8, "color": "#AAF7FF", "y": 1, "order": 5}, {"count": 8, "color": "#3FA0FF", "y": 1, "order": 6}, {"count": 8, "color": "#264CFF", "y": 1, "order": 7}, {"count": 9, "color": "#A50021", "y": 1, "order": 0}, {"count": 9, "color": "#D82632", "y": 1, "order": 1}, {"count": 9, "color": "#F76D5E", "y": 1, "order": 2}, {"count": 9, "color": "#FFE099", "y": 1, "order": 3}, {"count": 9, "color": "#FFFFBF", "y": 1, "order": 4}, {"count": 9, "color": "#E0FFFF", "y": 1, "order": 5}, {"count": 9, "color": "#72D8FF", "y": 1, "order": 6}, {"count": 9, "color": "#3FA0FF", "y": 1, "order": 7}, {"count": 9, "color": "#264CFF", "y": 1, "order": 8}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#A50021','#D82632','#F76D5E','#FFAD72','#FFE099','#FFFFBF','#E0FFFF','#AAF7FF','#72D8FF','#3FA0FF','#264CFF']</code></p>
+</div>
+<section id="blues10" class="level2 cell-output cell-output-display" data-number="5.16">
+<h2 data-number="5.16" class="anchored" data-anchor-id="blues10"><span class="header-section-number">5.16</span> Blues10</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-d0633a62e967419b93a7f4ce062e947a.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-d0633a62e967419b93a7f4ce062e947a.vega-embed details,
+  #altair-viz-d0633a62e967419b93a7f4ce062e947a.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-d0633a62e967419b93a7f4ce062e947a"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-d0633a62e967419b93a7f4ce062e947a") {
+      outputDiv = document.getElementById("altair-viz-d0633a62e967419b93a7f4ce062e947a");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#003FFF", "#65BFFF", "#1965FF", "#4CA5FF", "#E5FFFF", "#99E5FF", "#3288FF", "#CCFAFF", "#B2F2FF", "#7FD4FF"], "domain": ["#003FFF", "#65BFFF", "#1965FF", "#4CA5FF", "#E5FFFF", "#99E5FF", "#3288FF", "#CCFAFF", "#B2F2FF", "#7FD4FF"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-b2c9ca394df60afe3fec7e8cef06e75a"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-b2c9ca394df60afe3fec7e8cef06e75a": [{"count": 10, "color": "#E5FFFF", "y": 1, "order": 0}, {"count": 10, "color": "#CCFAFF", "y": 1, "order": 1}, {"count": 10, "color": "#B2F2FF", "y": 1, "order": 2}, {"count": 10, "color": "#99E5FF", "y": 1, "order": 3}, {"count": 10, "color": "#7FD4FF", "y": 1, "order": 4}, {"count": 10, "color": "#65BFFF", "y": 1, "order": 5}, {"count": 10, "color": "#4CA5FF", "y": 1, "order": 6}, {"count": 10, "color": "#3288FF", "y": 1, "order": 7}, {"count": 10, "color": "#1965FF", "y": 1, "order": 8}, {"count": 10, "color": "#003FFF", "y": 1, "order": 9}, {"count": 2, "color": "#E5FFFF", "y": 1, "order": 0}, {"count": 2, "color": "#003FFF", "y": 1, "order": 1}, {"count": 3, "color": "#E5FFFF", "y": 1, "order": 0}, {"count": 3, "color": "#7FD4FF", "y": 1, "order": 1}, {"count": 3, "color": "#003FFF", "y": 1, "order": 2}, {"count": 4, "color": "#E5FFFF", "y": 1, "order": 0}, {"count": 4, "color": "#99E5FF", "y": 1, "order": 1}, {"count": 4, "color": "#4CA5FF", "y": 1, "order": 2}, {"count": 4, "color": "#003FFF", "y": 1, "order": 3}, {"count": 5, "color": "#E5FFFF", "y": 1, "order": 0}, {"count": 5, "color": "#B2F2FF", "y": 1, "order": 1}, {"count": 5, "color": "#7FD4FF", "y": 1, "order": 2}, {"count": 5, "color": "#3288FF", "y": 1, "order": 3}, {"count": 5, "color": "#003FFF", "y": 1, "order": 4}, {"count": 6, "color": "#E5FFFF", "y": 1, "order": 0}, {"count": 6, "color": "#B2F2FF", "y": 1, "order": 1}, {"count": 6, "color": "#7FD4FF", "y": 1, "order": 2}, {"count": 6, "color": "#65BFFF", "y": 1, "order": 3}, {"count": 6, "color": "#3288FF", "y": 1, "order": 4}, {"count": 6, "color": "#003FFF", "y": 1, "order": 5}, {"count": 7, "color": "#E5FFFF", "y": 1, "order": 0}, {"count": 7, "color": "#B2F2FF", "y": 1, "order": 1}, {"count": 7, "color": "#99E5FF", "y": 1, "order": 2}, {"count": 7, "color": "#7FD4FF", "y": 1, "order": 3}, {"count": 7, "color": "#4CA5FF", "y": 1, "order": 4}, {"count": 7, "color": "#1965FF", "y": 1, "order": 5}, {"count": 7, "color": "#003FFF", "y": 1, "order": 6}, {"count": 8, "color": "#E5FFFF", "y": 1, "order": 0}, {"count": 8, "color": "#CCFAFF", "y": 1, "order": 1}, {"count": 8, "color": "#99E5FF", "y": 1, "order": 2}, {"count": 8, "color": "#7FD4FF", "y": 1, "order": 3}, {"count": 8, "color": "#65BFFF", "y": 1, "order": 4}, {"count": 8, "color": "#4CA5FF", "y": 1, "order": 5}, {"count": 8, "color": "#1965FF", "y": 1, "order": 6}, {"count": 8, "color": "#003FFF", "y": 1, "order": 7}, {"count": 9, "color": "#E5FFFF", "y": 1, "order": 0}, {"count": 9, "color": "#CCFAFF", "y": 1, "order": 1}, {"count": 9, "color": "#B2F2FF", "y": 1, "order": 2}, {"count": 9, "color": "#99E5FF", "y": 1, "order": 3}, {"count": 9, "color": "#7FD4FF", "y": 1, "order": 4}, {"count": 9, "color": "#4CA5FF", "y": 1, "order": 5}, {"count": 9, "color": "#3288FF", "y": 1, "order": 6}, {"count": 9, "color": "#1965FF", "y": 1, "order": 7}, {"count": 9, "color": "#003FFF", "y": 1, "order": 8}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#E5FFFF','#CCFAFF','#B2F2FF','#99E5FF','#7FD4FF','#65BFFF','#4CA5FF','#3288FF','#1965FF','#003FFF']</code></p>
+</div>
+<section id="blues7" class="level2 cell-output cell-output-display" data-number="5.17">
+<h2 data-number="5.17" class="anchored" data-anchor-id="blues7"><span class="header-section-number">5.17</span> Blues7</h2>
+</section>
+<div class="cell-output cell-output-display">
+
+<style>
+  #altair-viz-05387be1f35641b88ca6190bafd0c3b1.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-05387be1f35641b88ca6190bafd0c3b1.vega-embed details,
+  #altair-viz-05387be1f35641b88ca6190bafd0c3b1.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-05387be1f35641b88ca6190bafd0c3b1"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-05387be1f35641b88ca6190bafd0c3b1") {
+      outputDiv = document.getElementById("altair-viz-05387be1f35641b88ca6190bafd0c3b1");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.8.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.8.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"domain": false, "grid": false}}, "hconcat": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "color", "legend": null, "scale": {"range": ["#FFFFFF", "#33E3FF", "#99F8FF", "#007A99", "#CCFDFF", "#00AACC", "#66EFFF"], "domain": ["#FFFFFF", "#33E3FF", "#99F8FF", "#007A99", "#CCFDFF", "#00AACC", "#66EFFF"]}, "type": "nominal"}, "order": {"field": "order", "type": "quantitative"}, "tooltip": [{"field": "color", "type": "nominal"}], "x": {"axis": null, "field": "y", "stack": "zero", "type": "quantitative"}, "y": {"axis": null, "field": "count", "type": "nominal"}}, "height": 300, "width": 600}], "data": {"name": "data-7835ff465464089cacb0ed20975bbb30"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-7835ff465464089cacb0ed20975bbb30": [{"count": 2, "color": "#FFFFFF", "y": 1, "order": 0}, {"count": 2, "color": "#007A99", "y": 1, "order": 1}, {"count": 3, "color": "#FFFFFF", "y": 1, "order": 0}, {"count": 3, "color": "#66EFFF", "y": 1, "order": 1}, {"count": 3, "color": "#007A99", "y": 1, "order": 2}, {"count": 4, "color": "#FFFFFF", "y": 1, "order": 0}, {"count": 4, "color": "#99F8FF", "y": 1, "order": 1}, {"count": 4, "color": "#33E3FF", "y": 1, "order": 2}, {"count": 4, "color": "#007A99", "y": 1, "order": 3}, {"count": 5, "color": "#FFFFFF", "y": 1, "order": 0}, {"count": 5, "color": "#99F8FF", "y": 1, "order": 1}, {"count": 5, "color": "#66EFFF", "y": 1, "order": 2}, {"count": 5, "color": "#33E3FF", "y": 1, "order": 3}, {"count": 5, "color": "#007A99", "y": 1, "order": 4}, {"count": 6, "color": "#FFFFFF", "y": 1, "order": 0}, {"count": 6, "color": "#CCFDFF", "y": 1, "order": 1}, {"count": 6, "color": "#99F8FF", "y": 1, "order": 2}, {"count": 6, "color": "#33E3FF", "y": 1, "order": 3}, {"count": 6, "color": "#00AACC", "y": 1, "order": 4}, {"count": 6, "color": "#007A99", "y": 1, "order": 5}, {"count": 7, "color": "#FFFFFF", "y": 1, "order": 0}, {"count": 7, "color": "#CCFDFF", "y": 1, "order": 1}, {"count": 7, "color": "#99F8FF", "y": 1, "order": 2}, {"count": 7, "color": "#66EFFF", "y": 1, "order": 3}, {"count": 7, "color": "#33E3FF", "y": 1, "order": 4}, {"count": 7, "color": "#00AACC", "y": 1, "order": 5}, {"count": 7, "color": "#007A99", "y": 1, "order": 6}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<div class="cell-output cell-output-display">
+<p><code>['#FFFFFF','#CCFDFF','#99F8FF','#66EFFF','#33E3FF','#00AACC','#007A99']</code></p>
+</div>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation column-page-right">
+  <div class="nav-page nav-page-previous">
+      <a href="../notebooks/colorbrewer.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">colorbrewer</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../notebooks/matplotlib.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">matplotlib</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
