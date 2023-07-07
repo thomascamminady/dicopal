@@ -21,9 +21,9 @@ want to browse by source or type, use the table of contents.
 from dicopal.create_page import create_page_by_type
 
 path = "dicopal.js/src/palettes_apdocc.json"
-create_page_by_type("sequential", path)
-create_page_by_type("diverging", path)
-create_page_by_type("qualitative", path)
+create_page_by_type("sequential", path, include_example=False)
+create_page_by_type("diverging", path, include_example=False)
+create_page_by_type("qualitative", path, include_example=False)
 
 ```
 
