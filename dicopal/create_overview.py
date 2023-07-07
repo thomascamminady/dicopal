@@ -35,7 +35,7 @@ def create_overview(
     chart = (
         alt.hconcat(
             base.mark_bar().encode(
-                x=alt.X("y:Q").axis(None).stack("zero"),
+                x=alt.X("y:Q").axis(None).stack("normalize"),
                 color=alt.Color("color:N")
                 .scale(range=colors, domain=colors)
                 .legend(None),
@@ -78,12 +78,12 @@ def create_example(palette):
         alt.Chart(states)
         .mark_geoshape()
         .encode(
-            alt.Color("population:Q", type="quantitative")
+            alt.Color("engineers:Q", type="quantitative")
             .scale(range=palette)
             .legend(None)
         )
         .transform_lookup(
-            lookup="id", from_=alt.LookupData(source, "id", ["population"])
+            lookup="id", from_=alt.LookupData(source, "id", ["engineers"])
         )
         .properties(width=width, height=height)
         .project(type="albersUsa")
