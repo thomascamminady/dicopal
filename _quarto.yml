@@ -35,8 +35,10 @@ book:
 format:
   html:
     theme:
-      light: flatly
-      dark: darkly
+      # light: flatly
+      # dark: darkly
+      - cosmo
+      - custom.scss
     page-layout: full
     code-fold: true
     code-copy: true
