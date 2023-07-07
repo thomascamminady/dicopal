@@ -1,10 +1,13 @@
 import altair as alt
+import numpy as np
 import polars as pl
 
 alt.renderers.set_embed_options(actions=False)
 
 
-def create_overview(palette: dict[str, list[str]]) -> tuple[alt.HConcatChart, str]:
+def create_overview(
+    palette: dict[str, list[str]]
+) -> tuple[alt.HConcatChart, list[str]]:
     df = pl.DataFrame(
         [
             {"count": int(key), "color": color, "y": 1, "order": i}
@@ -31,7 +34,7 @@ def create_overview(palette: dict[str, list[str]]) -> tuple[alt.HConcatChart, st
     chart = (
         alt.hconcat(
             base.mark_bar().encode(
-                x=alt.X("y:Q").axis(None).stack("normalize"),
+                x=alt.X("y:Q").axis(None).stack("zero"),
                 color=alt.Color("color:N")
                 .scale(range=colors, domain=colors)
                 .legend(None),
@@ -44,11 +47,15 @@ def create_overview(palette: dict[str, list[str]]) -> tuple[alt.HConcatChart, st
         .configure_view(strokeWidth=0)
         .configure_axis(grid=False, domain=False)
     )
-    colors = ",".join(
-        [
-            f"'{str(c)}'"
-            for c in df.filter(pl.col("count") == df["count"].max())["color"].to_list()
-        ]
-    )
+
+    colors = [
+        ",".join(
+            [
+                f"'{str(c)}'"
+                for c in df.filter(pl.col("count") == count)["color"].to_list()
+            ]
+        )
+        for count in np.sort(df["count"].unique())
+    ]
 
     return (chart, colors)

@@ -9,8 +9,10 @@ from dicopal.create_overview import create_overview
 def create(palettes, source, palette, url, palettetype):
     chart, colors = create_overview(palettes[source][palette]["values"])
     display(Markdown(f"## [{palette}]({url}), {palettetype}"))
-    display(Markdown(f"```python\n[{colors}]\n```"))
+    color_strings = [f"\n[{color}]" for color in colors]
+    color_string = "".join(color_strings)
     display(chart)
+    display(Markdown(f"""```python{color_string}\n```"""))
     # display(Markdown("```python\n[\n " + ",\n ".join(colors.split(",")) + ",\n]\n```"))
 
 
