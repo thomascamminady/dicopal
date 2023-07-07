@@ -1,8 +1,12 @@
 ---
-title: "dicopal.js"
+title: "dicopal"
 ---
 
-# `dicopal.js`
+# `dicopal`
+This is [`dicopal`](https://github.com/thomascamminady/dicopal/tree/main), an homage to the [`dicopal.js`](https://github.com/riatelab/dicopal.js)  project. This website allows you to quickly browse a variety of color palettes and just copy their hex codes.
+
+
+## `dicopal.js`
 
 [`dicopal.js`](https://github.com/riatelab/dicopal.js) deserves all credit for this work. I have only taken the palettes that they have collected and put them up on this page together with the hex codes. `dicopal.js` is using the Apache-2.0 license.
 
@@ -23,7 +27,7 @@ In total, `dicopal.js` has compiled color palettes with the following indentifie
 
 ```
 
-# How to use?
+## How to use?
 
 Either go to [`dicopal.js`](https://github.com/riatelab/dicopal.js) to use these palettes or copy the provided hex codes and hard-code them in your application.
 

@@ -17,3 +17,18 @@ def create_page(source: str):
         display(Markdown(f"## [{palette}]({url}), {palettetype}"))
         display(chart)
         display(Markdown("```[" + colors + "]```"))
+
+
+def create_page_by_type(requested_palettetype: str):
+    with open("../dicopal.js/src/palettes.json", "r") as f:
+        palettes = json.load(f)
+
+    for source in palettes.keys():
+        for palette in palettes[source].keys():
+            palettetype = palettes[source][palette]["type"]
+            if requested_palettetype == palettetype:
+                chart, colors = create_overview(palettes[source][palette]["values"])
+                url = palettes[source][palette]["url"]
+                display(Markdown(f"## [{palette}]({url}), {palettetype}"))
+                display(chart)
+                display(Markdown("```[" + colors + "]```"))

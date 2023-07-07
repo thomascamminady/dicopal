@@ -22,13 +22,20 @@ book:
         - notebooks/tableau.qmd
         - notebooks/wesanderson.qmd
         - notebooks/otakeito.qmd
-  page-navigation: true
+    - part: types.qmd
+      chapters:
+        - notebooks/sequential.qmd
+        - notebooks/diverging.qmd
+        - notebooks/qualitative.qmd
+  page-navigation: false
 
 
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: flatly
+      dark: darkly
     page-layout: full
     code-fold: true
     toc: true

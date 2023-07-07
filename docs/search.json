@@ -4,68 +4,82 @@
     "href": "index.html",
     "title": "dicopal",
     "section": "",
-    "text": "1 dicopal.js\ndicopal.js deserves all credit for this work. I have only taken the palettes that they have collected and put them up on this page together with the hex codes. dicopal.js is using the Apache-2.0 license.\nIn total, dicopal.js has compiled color palettes with the following indentifiers:\n[\n  \"cartocolors\",\n  \"cmocean\",\n  \"colorbrewer\",\n  \"lightbartlein\",\n  \"matplotlib\",\n  \"mycarta\",\n  \"scientific\",\n  \"tableau\",\n  \"wesanderson\",\n  \"otakeito\",\n]\n\n\n2 How to use?\nEither go to dicopal.js to use these palettes or copy the provided hex codes and hard-code them in your application.\nI just wanted to have a collection of useful and beautiful colormaps from which I can copy the corresponding hex values when needed."
+    "text": "1 dicopal\nThis is dicopal, an homage to the dicopal.js project. This website allows you to quickly browse a variety of color palettes and just copy their hex codes."
+  },
+  {
+    "objectID": "index.html#dicopal.js",
+    "href": "index.html#dicopal.js",
+    "title": "dicopal",
+    "section": "1.1 dicopal.js",
+    "text": "1.1 dicopal.js\ndicopal.js deserves all credit for this work. I have only taken the palettes that they have collected and put them up on this page together with the hex codes. dicopal.js is using the Apache-2.0 license.\nIn total, dicopal.js has compiled color palettes with the following indentifiers:\n[\n  \"cartocolors\",\n  \"cmocean\",\n  \"colorbrewer\",\n  \"lightbartlein\",\n  \"matplotlib\",\n  \"mycarta\",\n  \"scientific\",\n  \"tableau\",\n  \"wesanderson\",\n  \"otakeito\",\n]"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "dicopal",
+    "section": "1.2 How to use?",
+    "text": "1.2 How to use?\nEither go to dicopal.js to use these palettes or copy the provided hex codes and hard-code them in your application.\nI just wanted to have a collection of useful and beautiful colormaps from which I can copy the corresponding hex values when needed."
   },
   {
     "objectID": "Sources.html#fabio-crameris-scientific-colour-maps",
     "href": "Sources.html#fabio-crameris-scientific-colour-maps",
-    "title": "Sources",
+    "title": "By sources",
     "section": "Fabio Crameri’s Scientific Colour Maps",
     "text": "Fabio Crameri’s Scientific Colour Maps\nhttps://www.fabiocrameri.ch/colourmaps/"
   },
   {
     "objectID": "Sources.html#colorbrewer",
     "href": "Sources.html#colorbrewer",
-    "title": "Sources",
+    "title": "By sources",
     "section": "Colorbrewer",
     "text": "Colorbrewer\nhttps://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3"
   },
   {
     "objectID": "Sources.html#cartocolors",
     "href": "Sources.html#cartocolors",
-    "title": "Sources",
+    "title": "By sources",
     "section": "Cartocolors",
     "text": "Cartocolors\nhttps://carto.com/carto-colors/"
   },
   {
     "objectID": "Sources.html#cmocean",
     "href": "Sources.html#cmocean",
-    "title": "Sources",
+    "title": "By sources",
     "section": "cmocean",
     "text": "cmocean\nhttps://matplotlib.org/cmocean/"
   },
   {
     "objectID": "Sources.html#matplotlib",
     "href": "Sources.html#matplotlib",
-    "title": "Sources",
+    "title": "By sources",
     "section": "matplotlib",
     "text": "matplotlib\nhttps://bids.github.io/colormap/"
   },
   {
     "objectID": "Sources.html#mycarta",
     "href": "Sources.html#mycarta",
-    "title": "Sources",
+    "title": "By sources",
     "section": "mycarta",
     "text": "mycarta\nhttps://mycartablog.com/color-palettes/"
   },
   {
     "objectID": "Sources.html#tableau",
     "href": "Sources.html#tableau",
-    "title": "Sources",
+    "title": "By sources",
     "section": "tableau",
     "text": "tableau\nhttps://help.tableau.com/current/pro/desktop/en-us/formatting_create_custom_colors.htm#hex-values-for-discontinued-color-palettes"
   },
   {
     "objectID": "Sources.html#the-wes-anderson-palettes-blog",
     "href": "Sources.html#the-wes-anderson-palettes-blog",
-    "title": "Sources",
+    "title": "By sources",
     "section": "The Wes Anderson Palettes blog",
     "text": "The Wes Anderson Palettes blog\nhttps://wesandersonpalettes.tumblr.com/"
   },
   {
     "objectID": "Sources.html#masataka-okabe-and-kei-itos-color-universal-design-cud-palette",
     "href": "Sources.html#masataka-okabe-and-kei-itos-color-universal-design-cud-palette",
-    "title": "Sources",
+    "title": "By sources",
     "section": "Masataka Okabe and Kei Ito’s Color Universal Design (CUD) palette",
     "text": "Masataka Okabe and Kei Ito’s Color Universal Design (CUD) palette\nhttps://jfly.uni-koeln.de/color/"
   },
@@ -1321,5 +1335,1265 @@
     "title": "11  otakeito",
     "section": "11.1 Okabe_Ito_Categorigal, qualitative",
     "text": "11.1 Okabe_Ito_Categorigal, qualitative"
+  },
+  {
+    "objectID": "types.html",
+    "href": "types.html",
+    "title": "By type",
+    "section": "",
+    "text": "Lists palettes grouped by whether they are sequential, diverging, or qualitative."
+  },
+  {
+    "objectID": "notebooks/sequential.html#blugrn-sequential",
+    "href": "notebooks/sequential.html#blugrn-sequential",
+    "title": "12  sequential",
+    "section": "12.1 BluGrn, sequential",
+    "text": "12.1 BluGrn, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#bluyl-sequential",
+    "href": "notebooks/sequential.html#bluyl-sequential",
+    "title": "12  sequential",
+    "section": "12.2 BluYl, sequential",
+    "text": "12.2 BluYl, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#brwnyl-sequential",
+    "href": "notebooks/sequential.html#brwnyl-sequential",
+    "title": "12  sequential",
+    "section": "12.3 BrwnYl, sequential",
+    "text": "12.3 BrwnYl, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#burgyl-sequential",
+    "href": "notebooks/sequential.html#burgyl-sequential",
+    "title": "12  sequential",
+    "section": "12.4 BurgYl, sequential",
+    "text": "12.4 BurgYl, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#burg-sequential",
+    "href": "notebooks/sequential.html#burg-sequential",
+    "title": "12  sequential",
+    "section": "12.5 Burg, sequential",
+    "text": "12.5 Burg, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#darkmint-sequential",
+    "href": "notebooks/sequential.html#darkmint-sequential",
+    "title": "12  sequential",
+    "section": "12.6 DarkMint, sequential",
+    "text": "12.6 DarkMint, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#emrld-sequential",
+    "href": "notebooks/sequential.html#emrld-sequential",
+    "title": "12  sequential",
+    "section": "12.7 Emrld, sequential",
+    "text": "12.7 Emrld, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#magenta-sequential",
+    "href": "notebooks/sequential.html#magenta-sequential",
+    "title": "12  sequential",
+    "section": "12.8 Magenta, sequential",
+    "text": "12.8 Magenta, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#mint-sequential",
+    "href": "notebooks/sequential.html#mint-sequential",
+    "title": "12  sequential",
+    "section": "12.9 Mint, sequential",
+    "text": "12.9 Mint, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#oryel-sequential",
+    "href": "notebooks/sequential.html#oryel-sequential",
+    "title": "12  sequential",
+    "section": "12.10 OrYel, sequential",
+    "text": "12.10 OrYel, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#peach-sequential",
+    "href": "notebooks/sequential.html#peach-sequential",
+    "title": "12  sequential",
+    "section": "12.11 Peach, sequential",
+    "text": "12.11 Peach, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#pinkyl-sequential",
+    "href": "notebooks/sequential.html#pinkyl-sequential",
+    "title": "12  sequential",
+    "section": "12.12 PinkYl, sequential",
+    "text": "12.12 PinkYl, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#purpor-sequential",
+    "href": "notebooks/sequential.html#purpor-sequential",
+    "title": "12  sequential",
+    "section": "12.13 PurpOr, sequential",
+    "text": "12.13 PurpOr, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#purp-sequential",
+    "href": "notebooks/sequential.html#purp-sequential",
+    "title": "12  sequential",
+    "section": "12.14 Purp, sequential",
+    "text": "12.14 Purp, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#redor-sequential",
+    "href": "notebooks/sequential.html#redor-sequential",
+    "title": "12  sequential",
+    "section": "12.15 RedOr, sequential",
+    "text": "12.15 RedOr, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#sunsetdark-sequential",
+    "href": "notebooks/sequential.html#sunsetdark-sequential",
+    "title": "12  sequential",
+    "section": "12.16 SunsetDark, sequential",
+    "text": "12.16 SunsetDark, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#sunset-sequential",
+    "href": "notebooks/sequential.html#sunset-sequential",
+    "title": "12  sequential",
+    "section": "12.17 Sunset, sequential",
+    "text": "12.17 Sunset, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#tealgrn-sequential",
+    "href": "notebooks/sequential.html#tealgrn-sequential",
+    "title": "12  sequential",
+    "section": "12.18 TealGrn, sequential",
+    "text": "12.18 TealGrn, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#teal-sequential",
+    "href": "notebooks/sequential.html#teal-sequential",
+    "title": "12  sequential",
+    "section": "12.19 Teal, sequential",
+    "text": "12.19 Teal, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#aggrnyl-sequential",
+    "href": "notebooks/sequential.html#aggrnyl-sequential",
+    "title": "12  sequential",
+    "section": "12.20 agGrnYl, sequential",
+    "text": "12.20 agGrnYl, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#agsunset-sequential",
+    "href": "notebooks/sequential.html#agsunset-sequential",
+    "title": "12  sequential",
+    "section": "12.21 agSunset, sequential",
+    "text": "12.21 agSunset, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#algae-sequential",
+    "href": "notebooks/sequential.html#algae-sequential",
+    "title": "12  sequential",
+    "section": "12.22 Algae, sequential",
+    "text": "12.22 Algae, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#amp-sequential",
+    "href": "notebooks/sequential.html#amp-sequential",
+    "title": "12  sequential",
+    "section": "12.23 Amp, sequential",
+    "text": "12.23 Amp, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#deep-sequential",
+    "href": "notebooks/sequential.html#deep-sequential",
+    "title": "12  sequential",
+    "section": "12.24 Deep, sequential",
+    "text": "12.24 Deep, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#dense-sequential",
+    "href": "notebooks/sequential.html#dense-sequential",
+    "title": "12  sequential",
+    "section": "12.25 Dense, sequential",
+    "text": "12.25 Dense, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#gray-sequential",
+    "href": "notebooks/sequential.html#gray-sequential",
+    "title": "12  sequential",
+    "section": "12.26 Gray, sequential",
+    "text": "12.26 Gray, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#haline-sequential",
+    "href": "notebooks/sequential.html#haline-sequential",
+    "title": "12  sequential",
+    "section": "12.27 Haline, sequential",
+    "text": "12.27 Haline, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#ice-sequential",
+    "href": "notebooks/sequential.html#ice-sequential",
+    "title": "12  sequential",
+    "section": "12.28 Ice, sequential",
+    "text": "12.28 Ice, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#matter-sequential",
+    "href": "notebooks/sequential.html#matter-sequential",
+    "title": "12  sequential",
+    "section": "12.29 Matter, sequential",
+    "text": "12.29 Matter, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#oxy-sequential",
+    "href": "notebooks/sequential.html#oxy-sequential",
+    "title": "12  sequential",
+    "section": "12.30 Oxy, sequential",
+    "text": "12.30 Oxy, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#phase-sequential",
+    "href": "notebooks/sequential.html#phase-sequential",
+    "title": "12  sequential",
+    "section": "12.31 Phase, sequential",
+    "text": "12.31 Phase, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#solar-sequential",
+    "href": "notebooks/sequential.html#solar-sequential",
+    "title": "12  sequential",
+    "section": "12.32 Solar, sequential",
+    "text": "12.32 Solar, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#speed-sequential",
+    "href": "notebooks/sequential.html#speed-sequential",
+    "title": "12  sequential",
+    "section": "12.33 Speed, sequential",
+    "text": "12.33 Speed, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#tempo-sequential",
+    "href": "notebooks/sequential.html#tempo-sequential",
+    "title": "12  sequential",
+    "section": "12.34 Tempo, sequential",
+    "text": "12.34 Tempo, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#thermal-sequential",
+    "href": "notebooks/sequential.html#thermal-sequential",
+    "title": "12  sequential",
+    "section": "12.35 Thermal, sequential",
+    "text": "12.35 Thermal, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#turbid-sequential",
+    "href": "notebooks/sequential.html#turbid-sequential",
+    "title": "12  sequential",
+    "section": "12.36 Turbid, sequential",
+    "text": "12.36 Turbid, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#blues-sequential",
+    "href": "notebooks/sequential.html#blues-sequential",
+    "title": "12  sequential",
+    "section": "12.37 Blues, sequential",
+    "text": "12.37 Blues, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#bugn-sequential",
+    "href": "notebooks/sequential.html#bugn-sequential",
+    "title": "12  sequential",
+    "section": "12.38 BuGn, sequential",
+    "text": "12.38 BuGn, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#bupu-sequential",
+    "href": "notebooks/sequential.html#bupu-sequential",
+    "title": "12  sequential",
+    "section": "12.39 BuPu, sequential",
+    "text": "12.39 BuPu, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#gnbu-sequential",
+    "href": "notebooks/sequential.html#gnbu-sequential",
+    "title": "12  sequential",
+    "section": "12.40 GnBu, sequential",
+    "text": "12.40 GnBu, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#greens-sequential",
+    "href": "notebooks/sequential.html#greens-sequential",
+    "title": "12  sequential",
+    "section": "12.41 Greens, sequential",
+    "text": "12.41 Greens, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#greys-sequential",
+    "href": "notebooks/sequential.html#greys-sequential",
+    "title": "12  sequential",
+    "section": "12.42 Greys, sequential",
+    "text": "12.42 Greys, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#orrd-sequential",
+    "href": "notebooks/sequential.html#orrd-sequential",
+    "title": "12  sequential",
+    "section": "12.43 OrRd, sequential",
+    "text": "12.43 OrRd, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#oranges-sequential",
+    "href": "notebooks/sequential.html#oranges-sequential",
+    "title": "12  sequential",
+    "section": "12.44 Oranges, sequential",
+    "text": "12.44 Oranges, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#pubugn-sequential",
+    "href": "notebooks/sequential.html#pubugn-sequential",
+    "title": "12  sequential",
+    "section": "12.45 PuBuGn, sequential",
+    "text": "12.45 PuBuGn, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#pubu-sequential",
+    "href": "notebooks/sequential.html#pubu-sequential",
+    "title": "12  sequential",
+    "section": "12.46 PuBu, sequential",
+    "text": "12.46 PuBu, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#purd-sequential",
+    "href": "notebooks/sequential.html#purd-sequential",
+    "title": "12  sequential",
+    "section": "12.47 PuRd, sequential",
+    "text": "12.47 PuRd, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#purples-sequential",
+    "href": "notebooks/sequential.html#purples-sequential",
+    "title": "12  sequential",
+    "section": "12.48 Purples, sequential",
+    "text": "12.48 Purples, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#rdpu-sequential",
+    "href": "notebooks/sequential.html#rdpu-sequential",
+    "title": "12  sequential",
+    "section": "12.49 RdPu, sequential",
+    "text": "12.49 RdPu, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#reds-sequential",
+    "href": "notebooks/sequential.html#reds-sequential",
+    "title": "12  sequential",
+    "section": "12.50 Reds, sequential",
+    "text": "12.50 Reds, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#ylgnbu-sequential",
+    "href": "notebooks/sequential.html#ylgnbu-sequential",
+    "title": "12  sequential",
+    "section": "12.51 YlGnBu, sequential",
+    "text": "12.51 YlGnBu, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#ylgn-sequential",
+    "href": "notebooks/sequential.html#ylgn-sequential",
+    "title": "12  sequential",
+    "section": "12.52 YlGn, sequential",
+    "text": "12.52 YlGn, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#ylorbr-sequential",
+    "href": "notebooks/sequential.html#ylorbr-sequential",
+    "title": "12  sequential",
+    "section": "12.53 YlOrBr, sequential",
+    "text": "12.53 YlOrBr, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#ylorrd-sequential",
+    "href": "notebooks/sequential.html#ylorrd-sequential",
+    "title": "12  sequential",
+    "section": "12.54 YlOrRd, sequential",
+    "text": "12.54 YlOrRd, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#blues10-sequential",
+    "href": "notebooks/sequential.html#blues10-sequential",
+    "title": "12  sequential",
+    "section": "12.55 Blues10, sequential",
+    "text": "12.55 Blues10, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#blues7-sequential",
+    "href": "notebooks/sequential.html#blues7-sequential",
+    "title": "12  sequential",
+    "section": "12.56 Blues7, sequential",
+    "text": "12.56 Blues7, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#inferno-sequential",
+    "href": "notebooks/sequential.html#inferno-sequential",
+    "title": "12  sequential",
+    "section": "12.57 Inferno, sequential",
+    "text": "12.57 Inferno, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#magma-sequential",
+    "href": "notebooks/sequential.html#magma-sequential",
+    "title": "12  sequential",
+    "section": "12.58 Magma, sequential",
+    "text": "12.58 Magma, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#plasma-sequential",
+    "href": "notebooks/sequential.html#plasma-sequential",
+    "title": "12  sequential",
+    "section": "12.59 Plasma, sequential",
+    "text": "12.59 Plasma, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#viridis-sequential",
+    "href": "notebooks/sequential.html#viridis-sequential",
+    "title": "12  sequential",
+    "section": "12.60 Viridis, sequential",
+    "text": "12.60 Viridis, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#cube1-sequential",
+    "href": "notebooks/sequential.html#cube1-sequential",
+    "title": "12  sequential",
+    "section": "12.61 Cube1, sequential",
+    "text": "12.61 Cube1, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#cubeyf-sequential",
+    "href": "notebooks/sequential.html#cubeyf-sequential",
+    "title": "12  sequential",
+    "section": "12.62 CubeYF, sequential",
+    "text": "12.62 CubeYF, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#linearl-sequential",
+    "href": "notebooks/sequential.html#linearl-sequential",
+    "title": "12  sequential",
+    "section": "12.63 LinearL, sequential",
+    "text": "12.63 LinearL, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#acton-sequential",
+    "href": "notebooks/sequential.html#acton-sequential",
+    "title": "12  sequential",
+    "section": "12.64 Acton, sequential",
+    "text": "12.64 Acton, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#bamako-sequential",
+    "href": "notebooks/sequential.html#bamako-sequential",
+    "title": "12  sequential",
+    "section": "12.65 Bamako, sequential",
+    "text": "12.65 Bamako, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#batlow-sequential",
+    "href": "notebooks/sequential.html#batlow-sequential",
+    "title": "12  sequential",
+    "section": "12.66 Batlow, sequential",
+    "text": "12.66 Batlow, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#bilbao-sequential",
+    "href": "notebooks/sequential.html#bilbao-sequential",
+    "title": "12  sequential",
+    "section": "12.67 Bilbao, sequential",
+    "text": "12.67 Bilbao, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#buda-sequential",
+    "href": "notebooks/sequential.html#buda-sequential",
+    "title": "12  sequential",
+    "section": "12.68 Buda, sequential",
+    "text": "12.68 Buda, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#davos-sequential",
+    "href": "notebooks/sequential.html#davos-sequential",
+    "title": "12  sequential",
+    "section": "12.69 Davos, sequential",
+    "text": "12.69 Davos, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#devon-sequential",
+    "href": "notebooks/sequential.html#devon-sequential",
+    "title": "12  sequential",
+    "section": "12.70 Devon, sequential",
+    "text": "12.70 Devon, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#grayc-sequential",
+    "href": "notebooks/sequential.html#grayc-sequential",
+    "title": "12  sequential",
+    "section": "12.71 GrayC, sequential",
+    "text": "12.71 GrayC, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#hawaii-sequential",
+    "href": "notebooks/sequential.html#hawaii-sequential",
+    "title": "12  sequential",
+    "section": "12.72 Hawaii, sequential",
+    "text": "12.72 Hawaii, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#imola-sequential",
+    "href": "notebooks/sequential.html#imola-sequential",
+    "title": "12  sequential",
+    "section": "12.73 Imola, sequential",
+    "text": "12.73 Imola, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#lajolla-sequential",
+    "href": "notebooks/sequential.html#lajolla-sequential",
+    "title": "12  sequential",
+    "section": "12.74 LaJolla, sequential",
+    "text": "12.74 LaJolla, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#lapaz-sequential",
+    "href": "notebooks/sequential.html#lapaz-sequential",
+    "title": "12  sequential",
+    "section": "12.75 LaPaz, sequential",
+    "text": "12.75 LaPaz, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#nuuk-sequential",
+    "href": "notebooks/sequential.html#nuuk-sequential",
+    "title": "12  sequential",
+    "section": "12.76 Nuuk, sequential",
+    "text": "12.76 Nuuk, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#oleron-sequential",
+    "href": "notebooks/sequential.html#oleron-sequential",
+    "title": "12  sequential",
+    "section": "12.77 Oleron, sequential",
+    "text": "12.77 Oleron, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#oslo-sequential",
+    "href": "notebooks/sequential.html#oslo-sequential",
+    "title": "12  sequential",
+    "section": "12.78 Oslo, sequential",
+    "text": "12.78 Oslo, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#tokyo-sequential",
+    "href": "notebooks/sequential.html#tokyo-sequential",
+    "title": "12  sequential",
+    "section": "12.79 Tokyo, sequential",
+    "text": "12.79 Tokyo, sequential"
+  },
+  {
+    "objectID": "notebooks/sequential.html#turku-sequential",
+    "href": "notebooks/sequential.html#turku-sequential",
+    "title": "12  sequential",
+    "section": "12.80 Turku, sequential",
+    "text": "12.80 Turku, sequential"
+  },
+  {
+    "objectID": "notebooks/diverging.html#armyrose-diverging",
+    "href": "notebooks/diverging.html#armyrose-diverging",
+    "title": "13  diverging",
+    "section": "13.1 ArmyRose, diverging",
+    "text": "13.1 ArmyRose, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#earth-diverging",
+    "href": "notebooks/diverging.html#earth-diverging",
+    "title": "13  diverging",
+    "section": "13.2 Earth, diverging",
+    "text": "13.2 Earth, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#fall-diverging",
+    "href": "notebooks/diverging.html#fall-diverging",
+    "title": "13  diverging",
+    "section": "13.3 Fall, diverging",
+    "text": "13.3 Fall, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#geyser-diverging",
+    "href": "notebooks/diverging.html#geyser-diverging",
+    "title": "13  diverging",
+    "section": "13.4 Geyser, diverging",
+    "text": "13.4 Geyser, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#tealrose-diverging",
+    "href": "notebooks/diverging.html#tealrose-diverging",
+    "title": "13  diverging",
+    "section": "13.5 TealRose, diverging",
+    "text": "13.5 TealRose, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#temps-diverging",
+    "href": "notebooks/diverging.html#temps-diverging",
+    "title": "13  diverging",
+    "section": "13.6 Temps, diverging",
+    "text": "13.6 Temps, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#tropic-diverging",
+    "href": "notebooks/diverging.html#tropic-diverging",
+    "title": "13  diverging",
+    "section": "13.7 Tropic, diverging",
+    "text": "13.7 Tropic, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#balance-diverging",
+    "href": "notebooks/diverging.html#balance-diverging",
+    "title": "13  diverging",
+    "section": "13.8 Balance, diverging",
+    "text": "13.8 Balance, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#curl-diverging",
+    "href": "notebooks/diverging.html#curl-diverging",
+    "title": "13  diverging",
+    "section": "13.9 Curl, diverging",
+    "text": "13.9 Curl, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#delta-diverging",
+    "href": "notebooks/diverging.html#delta-diverging",
+    "title": "13  diverging",
+    "section": "13.10 Delta, diverging",
+    "text": "13.10 Delta, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#brbg-diverging",
+    "href": "notebooks/diverging.html#brbg-diverging",
+    "title": "13  diverging",
+    "section": "13.11 BrBG, diverging",
+    "text": "13.11 BrBG, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#prgn-diverging",
+    "href": "notebooks/diverging.html#prgn-diverging",
+    "title": "13  diverging",
+    "section": "13.12 PRGn, diverging",
+    "text": "13.12 PRGn, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#piyg-diverging",
+    "href": "notebooks/diverging.html#piyg-diverging",
+    "title": "13  diverging",
+    "section": "13.13 PiYG, diverging",
+    "text": "13.13 PiYG, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#puor-diverging",
+    "href": "notebooks/diverging.html#puor-diverging",
+    "title": "13  diverging",
+    "section": "13.14 PuOr, diverging",
+    "text": "13.14 PuOr, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#rdbu-diverging",
+    "href": "notebooks/diverging.html#rdbu-diverging",
+    "title": "13  diverging",
+    "section": "13.15 RdBu, diverging",
+    "text": "13.15 RdBu, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#rdgy-diverging",
+    "href": "notebooks/diverging.html#rdgy-diverging",
+    "title": "13  diverging",
+    "section": "13.16 RdGy, diverging",
+    "text": "13.16 RdGy, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#rdylbu-diverging",
+    "href": "notebooks/diverging.html#rdylbu-diverging",
+    "title": "13  diverging",
+    "section": "13.17 RdYlBu, diverging",
+    "text": "13.17 RdYlBu, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#rdylgn-diverging",
+    "href": "notebooks/diverging.html#rdylgn-diverging",
+    "title": "13  diverging",
+    "section": "13.18 RdYlGn, diverging",
+    "text": "13.18 RdYlGn, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#spectral-diverging",
+    "href": "notebooks/diverging.html#spectral-diverging",
+    "title": "13  diverging",
+    "section": "13.19 Spectral, diverging",
+    "text": "13.19 Spectral, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#bluedarkorange12-diverging",
+    "href": "notebooks/diverging.html#bluedarkorange12-diverging",
+    "title": "13  diverging",
+    "section": "13.20 BlueDarkOrange12, diverging",
+    "text": "13.20 BlueDarkOrange12, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#bluedarkorange18-diverging",
+    "href": "notebooks/diverging.html#bluedarkorange18-diverging",
+    "title": "13  diverging",
+    "section": "13.21 BlueDarkOrange18, diverging",
+    "text": "13.21 BlueDarkOrange18, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#bluedarkred12-diverging",
+    "href": "notebooks/diverging.html#bluedarkred12-diverging",
+    "title": "13  diverging",
+    "section": "13.22 BlueDarkRed12, diverging",
+    "text": "13.22 BlueDarkRed12, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#bluedarkred18-diverging",
+    "href": "notebooks/diverging.html#bluedarkred18-diverging",
+    "title": "13  diverging",
+    "section": "13.23 BlueDarkRed18, diverging",
+    "text": "13.23 BlueDarkRed18, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#bluegray-diverging",
+    "href": "notebooks/diverging.html#bluegray-diverging",
+    "title": "13  diverging",
+    "section": "13.24 BlueGray, diverging",
+    "text": "13.24 BlueGray, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#bluegreen-diverging",
+    "href": "notebooks/diverging.html#bluegreen-diverging",
+    "title": "13  diverging",
+    "section": "13.25 BlueGreen, diverging",
+    "text": "13.25 BlueGreen, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#bluegrey-diverging",
+    "href": "notebooks/diverging.html#bluegrey-diverging",
+    "title": "13  diverging",
+    "section": "13.26 BlueGrey, diverging",
+    "text": "13.26 BlueGrey, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#blueorange10-diverging",
+    "href": "notebooks/diverging.html#blueorange10-diverging",
+    "title": "13  diverging",
+    "section": "13.27 BlueOrange10, diverging",
+    "text": "13.27 BlueOrange10, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#blueorange12-diverging",
+    "href": "notebooks/diverging.html#blueorange12-diverging",
+    "title": "13  diverging",
+    "section": "13.28 BlueOrange12, diverging",
+    "text": "13.28 BlueOrange12, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#blueorange8-diverging",
+    "href": "notebooks/diverging.html#blueorange8-diverging",
+    "title": "13  diverging",
+    "section": "13.29 BlueOrange8, diverging",
+    "text": "13.29 BlueOrange8, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#blueorangered-diverging",
+    "href": "notebooks/diverging.html#blueorangered-diverging",
+    "title": "13  diverging",
+    "section": "13.30 BlueOrangeRed, diverging",
+    "text": "13.30 BlueOrangeRed, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#brownblue10-diverging",
+    "href": "notebooks/diverging.html#brownblue10-diverging",
+    "title": "13  diverging",
+    "section": "13.31 BrownBlue10, diverging",
+    "text": "13.31 BrownBlue10, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#brownblue12-diverging",
+    "href": "notebooks/diverging.html#brownblue12-diverging",
+    "title": "13  diverging",
+    "section": "13.32 BrownBlue12, diverging",
+    "text": "13.32 BrownBlue12, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#greenmagenta-diverging",
+    "href": "notebooks/diverging.html#greenmagenta-diverging",
+    "title": "13  diverging",
+    "section": "13.33 GreenMagenta, diverging",
+    "text": "13.33 GreenMagenta, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#redyellowblue-diverging",
+    "href": "notebooks/diverging.html#redyellowblue-diverging",
+    "title": "13  diverging",
+    "section": "13.34 RedYellowBlue, diverging",
+    "text": "13.34 RedYellowBlue, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#berlin-diverging",
+    "href": "notebooks/diverging.html#berlin-diverging",
+    "title": "13  diverging",
+    "section": "13.35 Berlin, diverging",
+    "text": "13.35 Berlin, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#broc-diverging",
+    "href": "notebooks/diverging.html#broc-diverging",
+    "title": "13  diverging",
+    "section": "13.36 Broc, diverging",
+    "text": "13.36 Broc, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#cork-diverging",
+    "href": "notebooks/diverging.html#cork-diverging",
+    "title": "13  diverging",
+    "section": "13.37 Cork, diverging",
+    "text": "13.37 Cork, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#lisbon-diverging",
+    "href": "notebooks/diverging.html#lisbon-diverging",
+    "title": "13  diverging",
+    "section": "13.38 Lisbon, diverging",
+    "text": "13.38 Lisbon, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#roma-diverging",
+    "href": "notebooks/diverging.html#roma-diverging",
+    "title": "13  diverging",
+    "section": "13.39 Roma, diverging",
+    "text": "13.39 Roma, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#tofino-diverging",
+    "href": "notebooks/diverging.html#tofino-diverging",
+    "title": "13  diverging",
+    "section": "13.40 Tofino, diverging",
+    "text": "13.40 Tofino, diverging"
+  },
+  {
+    "objectID": "notebooks/diverging.html#vik-diverging",
+    "href": "notebooks/diverging.html#vik-diverging",
+    "title": "13  diverging",
+    "section": "13.41 Vik, diverging",
+    "text": "13.41 Vik, diverging"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#antique-qualitative",
+    "href": "notebooks/qualitative.html#antique-qualitative",
+    "title": "14  qualitative",
+    "section": "14.1 Antique, qualitative",
+    "text": "14.1 Antique, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#bold-qualitative",
+    "href": "notebooks/qualitative.html#bold-qualitative",
+    "title": "14  qualitative",
+    "section": "14.2 Bold, qualitative",
+    "text": "14.2 Bold, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#pastel-qualitative",
+    "href": "notebooks/qualitative.html#pastel-qualitative",
+    "title": "14  qualitative",
+    "section": "14.3 Pastel, qualitative",
+    "text": "14.3 Pastel, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#prism-qualitative",
+    "href": "notebooks/qualitative.html#prism-qualitative",
+    "title": "14  qualitative",
+    "section": "14.4 Prism, qualitative",
+    "text": "14.4 Prism, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#safe-qualitative",
+    "href": "notebooks/qualitative.html#safe-qualitative",
+    "title": "14  qualitative",
+    "section": "14.5 Safe, qualitative",
+    "text": "14.5 Safe, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#vivid-qualitative",
+    "href": "notebooks/qualitative.html#vivid-qualitative",
+    "title": "14  qualitative",
+    "section": "14.6 Vivid, qualitative",
+    "text": "14.6 Vivid, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#accent-qualitative",
+    "href": "notebooks/qualitative.html#accent-qualitative",
+    "title": "14  qualitative",
+    "section": "14.7 Accent, qualitative",
+    "text": "14.7 Accent, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#dark2-qualitative",
+    "href": "notebooks/qualitative.html#dark2-qualitative",
+    "title": "14  qualitative",
+    "section": "14.8 Dark2, qualitative",
+    "text": "14.8 Dark2, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#paired-qualitative",
+    "href": "notebooks/qualitative.html#paired-qualitative",
+    "title": "14  qualitative",
+    "section": "14.9 Paired, qualitative",
+    "text": "14.9 Paired, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#pastel1-qualitative",
+    "href": "notebooks/qualitative.html#pastel1-qualitative",
+    "title": "14  qualitative",
+    "section": "14.10 Pastel1, qualitative",
+    "text": "14.10 Pastel1, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#pastel2-qualitative",
+    "href": "notebooks/qualitative.html#pastel2-qualitative",
+    "title": "14  qualitative",
+    "section": "14.11 Pastel2, qualitative",
+    "text": "14.11 Pastel2, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#set1-qualitative",
+    "href": "notebooks/qualitative.html#set1-qualitative",
+    "title": "14  qualitative",
+    "section": "14.12 Set1, qualitative",
+    "text": "14.12 Set1, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#set2-qualitative",
+    "href": "notebooks/qualitative.html#set2-qualitative",
+    "title": "14  qualitative",
+    "section": "14.13 Set2, qualitative",
+    "text": "14.13 Set2, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#set3-qualitative",
+    "href": "notebooks/qualitative.html#set3-qualitative",
+    "title": "14  qualitative",
+    "section": "14.14 Set3, qualitative",
+    "text": "14.14 Set3, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#bluered-qualitative",
+    "href": "notebooks/qualitative.html#bluered-qualitative",
+    "title": "14  qualitative",
+    "section": "14.15 BlueRed, qualitative",
+    "text": "14.15 BlueRed, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#colorblind-qualitative",
+    "href": "notebooks/qualitative.html#colorblind-qualitative",
+    "title": "14  qualitative",
+    "section": "14.16 ColorBlind, qualitative",
+    "text": "14.16 ColorBlind, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#gray-qualitative",
+    "href": "notebooks/qualitative.html#gray-qualitative",
+    "title": "14  qualitative",
+    "section": "14.17 Gray, qualitative",
+    "text": "14.17 Gray, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#greenorange-qualitative",
+    "href": "notebooks/qualitative.html#greenorange-qualitative",
+    "title": "14  qualitative",
+    "section": "14.18 GreenOrange, qualitative",
+    "text": "14.18 GreenOrange, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#purplegray-qualitative",
+    "href": "notebooks/qualitative.html#purplegray-qualitative",
+    "title": "14  qualitative",
+    "section": "14.19 PurpleGray, qualitative",
+    "text": "14.19 PurpleGray, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#tableaulight-qualitative",
+    "href": "notebooks/qualitative.html#tableaulight-qualitative",
+    "title": "14  qualitative",
+    "section": "14.20 TableauLight, qualitative",
+    "text": "14.20 TableauLight, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#tableaumedium-qualitative",
+    "href": "notebooks/qualitative.html#tableaumedium-qualitative",
+    "title": "14  qualitative",
+    "section": "14.21 TableauMedium, qualitative",
+    "text": "14.21 TableauMedium, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#tableau-qualitative",
+    "href": "notebooks/qualitative.html#tableau-qualitative",
+    "title": "14  qualitative",
+    "section": "14.22 Tableau, qualitative",
+    "text": "14.22 Tableau, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#trafficlight-qualitative",
+    "href": "notebooks/qualitative.html#trafficlight-qualitative",
+    "title": "14  qualitative",
+    "section": "14.23 TrafficLight, qualitative",
+    "text": "14.23 TrafficLight, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#aquatic1-qualitative",
+    "href": "notebooks/qualitative.html#aquatic1-qualitative",
+    "title": "14  qualitative",
+    "section": "14.24 Aquatic1, qualitative",
+    "text": "14.24 Aquatic1, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#aquatic2-qualitative",
+    "href": "notebooks/qualitative.html#aquatic2-qualitative",
+    "title": "14  qualitative",
+    "section": "14.25 Aquatic2, qualitative",
+    "text": "14.25 Aquatic2, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#aquatic3-qualitative",
+    "href": "notebooks/qualitative.html#aquatic3-qualitative",
+    "title": "14  qualitative",
+    "section": "14.26 Aquatic3, qualitative",
+    "text": "14.26 Aquatic3, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#cavalcanti-qualitative",
+    "href": "notebooks/qualitative.html#cavalcanti-qualitative",
+    "title": "14  qualitative",
+    "section": "14.27 Cavalcanti, qualitative",
+    "text": "14.27 Cavalcanti, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#chevalier-qualitative",
+    "href": "notebooks/qualitative.html#chevalier-qualitative",
+    "title": "14  qualitative",
+    "section": "14.28 Chevalier, qualitative",
+    "text": "14.28 Chevalier, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#darjeeling1-qualitative",
+    "href": "notebooks/qualitative.html#darjeeling1-qualitative",
+    "title": "14  qualitative",
+    "section": "14.29 Darjeeling1, qualitative",
+    "text": "14.29 Darjeeling1, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#darjeeling2-qualitative",
+    "href": "notebooks/qualitative.html#darjeeling2-qualitative",
+    "title": "14  qualitative",
+    "section": "14.30 Darjeeling2, qualitative",
+    "text": "14.30 Darjeeling2, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#darjeeling3-qualitative",
+    "href": "notebooks/qualitative.html#darjeeling3-qualitative",
+    "title": "14  qualitative",
+    "section": "14.31 Darjeeling3, qualitative",
+    "text": "14.31 Darjeeling3, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#darjeeling4-qualitative",
+    "href": "notebooks/qualitative.html#darjeeling4-qualitative",
+    "title": "14  qualitative",
+    "section": "14.32 Darjeeling4, qualitative",
+    "text": "14.32 Darjeeling4, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#fantasticfox1-qualitative",
+    "href": "notebooks/qualitative.html#fantasticfox1-qualitative",
+    "title": "14  qualitative",
+    "section": "14.33 FantasticFox1, qualitative",
+    "text": "14.33 FantasticFox1, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#fantasticfox2-qualitative",
+    "href": "notebooks/qualitative.html#fantasticfox2-qualitative",
+    "title": "14  qualitative",
+    "section": "14.34 FantasticFox2, qualitative",
+    "text": "14.34 FantasticFox2, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#grandbudapest1-qualitative",
+    "href": "notebooks/qualitative.html#grandbudapest1-qualitative",
+    "title": "14  qualitative",
+    "section": "14.35 GrandBudapest1, qualitative",
+    "text": "14.35 GrandBudapest1, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#grandbudapest2-qualitative",
+    "href": "notebooks/qualitative.html#grandbudapest2-qualitative",
+    "title": "14  qualitative",
+    "section": "14.36 GrandBudapest2, qualitative",
+    "text": "14.36 GrandBudapest2, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#grandbudapest3-qualitative",
+    "href": "notebooks/qualitative.html#grandbudapest3-qualitative",
+    "title": "14  qualitative",
+    "section": "14.37 GrandBudapest3, qualitative",
+    "text": "14.37 GrandBudapest3, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#grandbudapest4-qualitative",
+    "href": "notebooks/qualitative.html#grandbudapest4-qualitative",
+    "title": "14  qualitative",
+    "section": "14.38 GrandBudapest4, qualitative",
+    "text": "14.38 GrandBudapest4, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#grandbudapest5-qualitative",
+    "href": "notebooks/qualitative.html#grandbudapest5-qualitative",
+    "title": "14  qualitative",
+    "section": "14.39 GrandBudapest5, qualitative",
+    "text": "14.39 GrandBudapest5, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#isleofdogs1-qualitative",
+    "href": "notebooks/qualitative.html#isleofdogs1-qualitative",
+    "title": "14  qualitative",
+    "section": "14.40 IsleOfDogs1, qualitative",
+    "text": "14.40 IsleOfDogs1, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#isleofdogs2-qualitative",
+    "href": "notebooks/qualitative.html#isleofdogs2-qualitative",
+    "title": "14  qualitative",
+    "section": "14.41 IsleOfDogs2, qualitative",
+    "text": "14.41 IsleOfDogs2, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#isleofdogs3-qualitative",
+    "href": "notebooks/qualitative.html#isleofdogs3-qualitative",
+    "title": "14  qualitative",
+    "section": "14.42 IsleOfDogs3, qualitative",
+    "text": "14.42 IsleOfDogs3, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#margot1-qualitative",
+    "href": "notebooks/qualitative.html#margot1-qualitative",
+    "title": "14  qualitative",
+    "section": "14.43 Margot1, qualitative",
+    "text": "14.43 Margot1, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#margot2-qualitative",
+    "href": "notebooks/qualitative.html#margot2-qualitative",
+    "title": "14  qualitative",
+    "section": "14.44 Margot2, qualitative",
+    "text": "14.44 Margot2, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#margot3-qualitative",
+    "href": "notebooks/qualitative.html#margot3-qualitative",
+    "title": "14  qualitative",
+    "section": "14.45 Margot3, qualitative",
+    "text": "14.45 Margot3, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#mendl-qualitative",
+    "href": "notebooks/qualitative.html#mendl-qualitative",
+    "title": "14  qualitative",
+    "section": "14.46 Mendl, qualitative",
+    "text": "14.46 Mendl, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#moonrise1-qualitative",
+    "href": "notebooks/qualitative.html#moonrise1-qualitative",
+    "title": "14  qualitative",
+    "section": "14.47 Moonrise1, qualitative",
+    "text": "14.47 Moonrise1, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#moonrise2-qualitative",
+    "href": "notebooks/qualitative.html#moonrise2-qualitative",
+    "title": "14  qualitative",
+    "section": "14.48 Moonrise2, qualitative",
+    "text": "14.48 Moonrise2, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#moonrise3-qualitative",
+    "href": "notebooks/qualitative.html#moonrise3-qualitative",
+    "title": "14  qualitative",
+    "section": "14.49 Moonrise3, qualitative",
+    "text": "14.49 Moonrise3, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#moonrise4-qualitative",
+    "href": "notebooks/qualitative.html#moonrise4-qualitative",
+    "title": "14  qualitative",
+    "section": "14.50 Moonrise4, qualitative",
+    "text": "14.50 Moonrise4, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#moonrise5-qualitative",
+    "href": "notebooks/qualitative.html#moonrise5-qualitative",
+    "title": "14  qualitative",
+    "section": "14.51 Moonrise5, qualitative",
+    "text": "14.51 Moonrise5, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#moonrise6-qualitative",
+    "href": "notebooks/qualitative.html#moonrise6-qualitative",
+    "title": "14  qualitative",
+    "section": "14.52 Moonrise6, qualitative",
+    "text": "14.52 Moonrise6, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#moonrise7-qualitative",
+    "href": "notebooks/qualitative.html#moonrise7-qualitative",
+    "title": "14  qualitative",
+    "section": "14.53 Moonrise7, qualitative",
+    "text": "14.53 Moonrise7, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#royal1-qualitative",
+    "href": "notebooks/qualitative.html#royal1-qualitative",
+    "title": "14  qualitative",
+    "section": "14.54 Royal1, qualitative",
+    "text": "14.54 Royal1, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#royal2-qualitative",
+    "href": "notebooks/qualitative.html#royal2-qualitative",
+    "title": "14  qualitative",
+    "section": "14.55 Royal2, qualitative",
+    "text": "14.55 Royal2, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#royal3-qualitative",
+    "href": "notebooks/qualitative.html#royal3-qualitative",
+    "title": "14  qualitative",
+    "section": "14.56 Royal3, qualitative",
+    "text": "14.56 Royal3, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#zissou-qualitative",
+    "href": "notebooks/qualitative.html#zissou-qualitative",
+    "title": "14  qualitative",
+    "section": "14.57 Zissou, qualitative",
+    "text": "14.57 Zissou, qualitative"
+  },
+  {
+    "objectID": "notebooks/qualitative.html#okabe_ito_categorigal-qualitative",
+    "href": "notebooks/qualitative.html#okabe_ito_categorigal-qualitative",
+    "title": "14  qualitative",
+    "section": "14.58 Okabe_Ito_Categorigal, qualitative",
+    "text": "14.58 Okabe_Ito_Categorigal, qualitative"
   }
 ]

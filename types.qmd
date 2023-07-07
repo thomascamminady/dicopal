@@ -1,0 +1,5 @@
+---
+title: "By type"
+---
+
+Lists palettes grouped by whether they are sequential, diverging, or qualitative.

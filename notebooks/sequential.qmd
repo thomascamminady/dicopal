@@ -1,0 +1,11 @@
+---
+title: sequential
+---
+
+
+```{python}
+from dicopal.create_page import create_page_by_type
+
+create_page_by_type("sequential")
+```
+
