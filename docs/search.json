@@ -11,14 +11,14 @@
     "href": "index.html#dicopal.js",
     "title": "dicopal",
     "section": "1.1 dicopal.js",
-    "text": "1.1 dicopal.js\ndicopal.js deserves all credit for this work. I have only taken the palettes that they have collected and put them up on this page together with the hex codes. dicopal.js is using the Apache-2.0 license.\nIn total, dicopal.js has compiled color palettes with the following indentifiers:\n[\n  \"cartocolors\",\n  \"cmocean\",\n  \"colorbrewer\",\n  \"lightbartlein\",\n  \"matplotlib\",\n  \"mycarta\",\n  \"scientific\",\n  \"tableau\",\n  \"wesanderson\",\n  \"otakeito\",\n]"
+    "text": "1.1 dicopal.js\ndicopal.js deserves all credit for this work. I have only taken the palettes that they have collected and put them up on this page together with the hex codes. dicopal.js is using the Apache-2.0 license."
   },
   {
     "objectID": "index.html#how-to-use",
     "href": "index.html#how-to-use",
     "title": "dicopal",
-    "section": "1.2 How to use?",
-    "text": "1.2 How to use?\nEither go to dicopal.js to use these palettes or copy the provided hex codes and hard-code them in your application.\nI just wanted to have a collection of useful and beautiful colormaps from which I can copy the corresponding hex values when needed."
+    "section": "1.182 How to use?",
+    "text": "1.182 How to use?\nEither go to dicopal.js to use these palettes or copy the provided hex codes and hard-code them in your application.\nI just wanted to have a collection of useful and beautiful colormaps from which I can copy the corresponding hex values when needed."
   },
   {
     "objectID": "Sources.html#fabio-crameris-scientific-colour-maps",
@@ -2595,5 +2595,1272 @@
     "title": "14  qualitative",
     "section": "14.58 Okabe_Ito_Categorigal, qualitative",
     "text": "14.58 Okabe_Ito_Categorigal, qualitative"
+  },
+  {
+    "objectID": "index.html#just-give-me-all-the-palettes",
+    "href": "index.html#just-give-me-all-the-palettes",
+    "title": "dicopal",
+    "section": "1.3 Just give me all the palettes",
+    "text": "1.3 Just give me all the palettes\n\n\nCode\nfrom dicopal.create_page import create_page_by_type\n\npath = \"dicopal.js/src/palettes.json\"\ncreate_page_by_type(\"sequential\", path)\ncreate_page_by_type(\"diverging\", path)\ncreate_page_by_type(\"qualitative\", path)\n\n\n1.4 BluGrn, sequential\n\n\n\n\n\n\n\n\n['#C4E6C3','#96D2A4','#6DBC90','#4DA284','#36877A','#266B6E','#1D4F60']\n\n\n1.5 BluYl, sequential\n\n\n\n\n\n\n\n\n['#F7FEAE','#B7E6A5','#7CCBA2','#46AEA0','#089099','#00718B','#045275']\n\n\n1.6 BrwnYl, sequential\n\n\n\n\n\n\n\n\n['#EDE5CF','#E0C2A2','#D39C83','#C1766F','#A65461','#813753','#541F3F']\n\n\n1.7 BurgYl, sequential\n\n\n\n\n\n\n\n\n['#FBE6C5','#F5BA98','#EE8A82','#DC7176','#C8586C','#9C3F5D','#70284A']\n\n\n1.8 Burg, sequential\n\n\n\n\n\n\n\n\n['#FFC6C4','#F4A3A8','#E38191','#CC607D','#AD466C','#8B3058','#672044']\n\n\n1.9 DarkMint, sequential\n\n\n\n\n\n\n\n\n['#D2FBD4','#A5DBC2','#7BBCB0','#559C9E','#3A7C89','#235D72','#123F5A']\n\n\n1.10 Emrld, sequential\n\n\n\n\n\n\n\n\n['#D3F2A3','#97E196','#6CC08B','#4C9B82','#217A79','#105965','#074050']\n\n\n1.11 Magenta, sequential\n\n\n\n\n\n\n\n\n['#F3CBD3','#EAA9BD','#DD88AC','#CA699D','#B14D8E','#91357D','#6C2167']\n\n\n1.12 Mint, sequential\n\n\n\n\n\n\n\n\n['#E4F1E1','#B4D9CC','#89C0B6','#63A6A0','#448C8A','#287274','#0D585F']\n\n\n1.13 OrYel, sequential\n\n\n\n\n\n\n\n\n['#ECDA9A','#EFC47E','#F3AD6A','#F7945D','#F97B57','#F66356','#EE4D5A']\n\n\n1.14 Peach, sequential\n\n\n\n\n\n\n\n\n['#FDE0C5','#FACBA6','#F8B58B','#F59E72','#F2855D','#EF6A4C','#EB4A40']\n\n\n1.15 PinkYl, sequential\n\n\n\n\n\n\n\n\n['#FEF6B5','#FFDD9A','#FFC285','#FFA679','#FA8A76','#F16D7A','#E15383']\n\n\n1.16 PurpOr, sequential\n\n\n\n\n\n\n\n\n['#F9DDDA','#F2B9C4','#E597B9','#CE78B3','#AD5FAD','#834BA0','#573B88']\n\n\n1.17 Purp, sequential\n\n\n\n\n\n\n\n\n['#F3E0F7','#E4C7F1','#D1AFE8','#B998DD','#9F82CE','#826DBA','#63589F']\n\n\n1.18 RedOr, sequential\n\n\n\n\n\n\n\n\n['#F6D2A9','#F5B78E','#F19C7C','#EA8171','#DD686C','#CA5268','#B13F64']\n\n\n1.19 SunsetDark, sequential\n\n\n\n\n\n\n\n\n['#FCDE9C','#FAA476','#F0746E','#E34F6F','#DC3977','#B9257A','#7C1D6F']\n\n\n1.20 Sunset, sequential\n\n\n\n\n\n\n\n\n['#F3E79B','#FAC484','#F8A07E','#EB7F86','#CE6693','#A059A0','#5C53A5']\n\n\n1.21 TealGrn, sequential\n\n\n\n\n\n\n\n\n['#B0F2BC','#89E8AC','#67DBA5','#4CC8A3','#38B2A3','#2C98A0','#257D98']\n\n\n1.22 Teal, sequential\n\n\n\n\n\n\n\n\n['#D1EEEA','#A8DBD9','#85C4C9','#68ABB8','#4F90A6','#3B738F','#2A5674']\n\n\n1.23 agGrnYl, sequential\n\n\n\n\n\n\n\n\n['#245668','#0F7279','#0D8F81','#39AB7E','#6EC574','#A9DC67','#EDEF5D']\n\n\n1.24 agSunset, sequential\n\n\n\n\n\n\n\n\n['#4B2991','#872CA2','#C0369D','#EA4F88','#FA7876','#F6A97A','#EDD9A3']\n\n\n1.25 Algae, sequential\n\n\n\n\n\n\n\n\n['#D7F9D0','#C7EDBD','#B5E1A9','#A4D698','#92CB86','#80C176','#6BB767','#54AE5B','#39A553','#1C9A51','#0B8F4F','#07824C','#0D7648','#136A43','#185E3D','#1A5336','#1A472E','#183B26','#162F1D','#122414']\n\n\n1.26 Amp, sequential\n\n\n\n\n\n\n\n\n['#F1EDEC','#EADDDA','#E4CDC6','#DFBEB3','#DBAE9F','#D69F8C','#D18F78','#CD8066','#C87155','#C36143','#BD5134','#B63F29','#AE2D24','#A21E25','#931228','#830E29','#700E27','#5F0E21','#4D0C1A','#3C0912']\n\n\n1.27 Deep, sequential\n\n\n\n\n\n\n\n\n['#FDFECC','#E3F4BD','#C6EAB0','#AAE0A8','#8BD6A3','#73CBA3','#61BEA4','#56B0A4','#50A3A2','#4A959F','#46889C','#427A99','#3F6D97','#3E6094','#3F508E','#424380','#3F3869','#392E54','#30243E','#281A2C']\n\n\n1.28 Dense, sequential\n\n\n\n\n\n\n\n\n['#E6F1F1','#D0E6E9','#B9DAE4','#A5CFE2','#92C3E2','#83B6E3','#78A8E4','#749AE4','#748AE2','#7679DA','#786AD0','#795AC1','#784CB1','#753E9F','#70318A','#6A2675','#601C5E','#551649','#461234','#360E24']\n\n\n1.29 Gray, sequential\n\n\n\n\n\n\n\n\n['#000000','#060606','#151414','#212121','#2E2E2E','#3A3939','#474646','#525251','#5E5E5D','#6B6B6A','#777776','#858484','#929191','#9F9F9E','#AEADAD','#BCBCBB','#CCCCCB','#DCDCDB','#EEEDEC','#FFFFFD']\n\n\n1.30 Haline, sequential\n\n\n\n\n\n\n\n\n['#2A186C','#2E1C8C','#262BA3','#16409D','#0C5195','#115E8F','#1D6B8B','#27768A','#308189','#388D88','#3F9986','#47A583','#51B17D','#5EBD75','#73C86A','#8DD25F','#AFD95D','#CCDF6A','#E7E781','#FDEF9A']\n\n\n1.31 Ice, sequential\n\n\n\n\n\n\n\n\n['#040613','#101125','#1D1C3A','#28264E','#323164','#3A3B7A','#3E4890','#3F55A1','#3E63AD','#4073B4','#4581BA','#4E90BF','#599EC4','#65ACC9','#75BBCF','#88C8D4','#A0D6DC','#B9E2E5','#D3EFF1','#EAFDFD']\n\n\n1.32 Matter, sequential\n\n\n\n\n\n\n\n\n['#FEEDB0','#FCDB9F','#FAC88D','#F8B67E','#F5A370','#F19164','#EC7E5A','#E76C55','#DF5B53','#D54B54','#C83D58','#B9325D','#AA2961','#9A2263','#881D63','#761A61','#63185B','#521653','#401349','#2F0F3E']\n\n\n1.33 Oxy, sequential\n\n\n\n\n\n\n\n\n['#400505','#55070B','#6D060F','#83080C','#525151','#5F5E5E','#6B6B6A','#787777','#858584','#939392','#A2A1A0','#B1B0AF','#C0C0BF','#CFCFCE','#E0E0DF','#F2F2F1','#EAF145','#E8D92E','#E3C322','#DDAF19']\n\n\n1.34 Phase, sequential\n\n\n\n\n\n\n\n\n['#A8780D','#BA6B23','#CA5C3A','#D54B53','#DD3876','#DE289D','#D42AC7','#C33EE2','#AC54F1','#8F69F4','#6E7AEB','#4788D5','#2A90BA','#1A94A0','#0E9884','#139A66','#3C993C','#6B9017','#8F840D','#A8780D']\n\n\n1.35 Solar, sequential\n\n\n\n\n\n\n\n\n['#331418','#43191E','#551E22','#652324','#772824','#852E21','#93381D','#9F4319','#A84F16','#B25D14','#BA6B13','#C17A14','#C78817','#CD971B','#D3A721','#D7B728','#DBC831','#DED939','#E0EB42','#E1FD4B']\n\n\n1.36 Speed, sequential\n\n\n\n\n\n\n\n\n['#FFFDCD','#F6EDB1','#EDDD93','#E3CF77','#D5C259','#C5B83F','#B1AE27','#9BA614','#859F07','#6C9607','#548E11','#3B841C','#257A24','#136F29','#0B632C','#0F562C','#15492A','#193D24','#192F1C','#172313']\n\n\n1.37 Tempo, sequential\n\n\n\n\n\n\n\n\n['#FFF6F4','#EDEAE1','#D9DDCD','#C6D3BC','#B1C8AC','#9CBF9F','#85B593','#6DAD8A','#54A484','#389981','#218E7E','#12827B','#127676','#166971','#1A5C6A','#1C5062','#1C435A','#1A3753','#182A4B','#151D44']\n\n\n1.38 Thermal, sequential\n\n\n\n\n\n\n\n\n['#042333','#072C4D','#12326F','#273491','#4635A0','#5B3D9B','#6E4794','#804E8F','#92558B','#A65C86','#BA627E','#CE6971','#E07163','#EE7D53','#F88E44','#FBA13D','#FBB73D','#F8CD44','#F1E44F','#E8FA5B']\n\n\n1.39 Turbid, sequential\n\n\n\n\n\n\n\n\n['#E9F6AB','#E2E798','#DAD784','#D4C873','#CEB862','#C8AA55','#C19B4A','#BA8E42','#B1823E','#A7763C','#9C6B3B','#8F613A','#825839','#755037','#664835','#594031','#4A382C','#3D3027','#2F2721','#221F1B']\n\n\n1.40 Blues, sequential\n\n\n\n\n\n\n\n\n['#F7FBFF','#DEEBF7','#C6DBEF','#9ECAE1','#6BAED6','#4292C6','#2171B5','#08519C','#08306B']\n\n\n1.41 BuGn, sequential\n\n\n\n\n\n\n\n\n['#F7FCFD','#E5F5F9','#CCECE6','#99D8C9','#66C2A4','#41AE76','#238B45','#006D2C','#00441B']\n\n\n1.42 BuPu, sequential\n\n\n\n\n\n\n\n\n['#F7FCFD','#E0ECF4','#BFD3E6','#9EBCDA','#8C96C6','#8C6BB1','#88419D','#810F7C','#4D004B']\n\n\n1.43 GnBu, sequential\n\n\n\n\n\n\n\n\n['#F7FCF0','#E0F3DB','#CCEBC5','#A8DDB5','#7BCCC4','#4EB3D3','#2B8CBE','#0868AC','#084081']\n\n\n1.44 Greens, sequential\n\n\n\n\n\n\n\n\n['#F7FCF5','#E5F5E0','#C7E9C0','#A1D99B','#74C476','#41AB5D','#238B45','#006D2C','#00441B']\n\n\n1.45 Greys, sequential\n\n\n\n\n\n\n\n\n['#FFFFFF','#F0F0F0','#D9D9D9','#BDBDBD','#969696','#737373','#525252','#252525','#000000']\n\n\n1.46 OrRd, sequential\n\n\n\n\n\n\n\n\n['#FFF7EC','#FEE8C8','#FDD49E','#FDBB84','#FC8D59','#EF6548','#D7301F','#B30000','#7F0000']\n\n\n1.47 Oranges, sequential\n\n\n\n\n\n\n\n\n['#FFF5EB','#FEE6CE','#FDD0A2','#FDAE6B','#FD8D3C','#F16913','#D94801','#A63603','#7F2704']\n\n\n1.48 PuBuGn, sequential\n\n\n\n\n\n\n\n\n['#FFF7FB','#ECE2F0','#D0D1E6','#A6BDDB','#67A9CF','#3690C0','#02818A','#016C59','#014636']\n\n\n1.49 PuBu, sequential\n\n\n\n\n\n\n\n\n['#FFF7FB','#ECE7F2','#D0D1E6','#A6BDDB','#74A9CF','#3690C0','#0570B0','#045A8D','#023858']\n\n\n1.50 PuRd, sequential\n\n\n\n\n\n\n\n\n['#F7F4F9','#E7E1EF','#D4B9DA','#C994C7','#DF65B0','#E7298A','#CE1256','#980043','#67001F']\n\n\n1.51 Purples, sequential\n\n\n\n\n\n\n\n\n['#FCFBFD','#EFEDF5','#DADAEB','#BCBDDC','#9E9AC8','#807DBA','#6A51A3','#54278F','#3F007D']\n\n\n1.52 RdPu, sequential\n\n\n\n\n\n\n\n\n['#FFF7F3','#FDE0DD','#FCC5C0','#FA9FB5','#F768A1','#DD3497','#AE017E','#7A0177','#49006A']\n\n\n1.53 Reds, sequential\n\n\n\n\n\n\n\n\n['#FFF5F0','#FEE0D2','#FCBBA1','#FC9272','#FB6A4A','#EF3B2C','#CB181D','#A50F15','#67000D']\n\n\n1.54 YlGnBu, sequential\n\n\n\n\n\n\n\n\n['#FFFFD9','#EDF8B1','#C7E9B4','#7FCDBB','#41B6C4','#1D91C0','#225EA8','#253494','#081D58']\n\n\n1.55 YlGn, sequential\n\n\n\n\n\n\n\n\n['#FFFFE5','#F7FCB9','#D9F0A3','#ADDD8E','#78C679','#41AB5D','#238443','#006837','#004529']\n\n\n1.56 YlOrBr, sequential\n\n\n\n\n\n\n\n\n['#FFFFE5','#FFF7BC','#FEE391','#FEC44F','#FE9929','#EC7014','#CC4C02','#993404','#662506']\n\n\n1.57 YlOrRd, sequential\n\n\n\n\n\n\n\n\n['#FFFFCC','#FFEDA0','#FED976','#FEB24C','#FD8D3C','#FC4E2A','#E31A1C','#BD0026','#800026']\n\n\n1.58 Blues10, sequential\n\n\n\n\n\n\n\n\n['#E5FFFF','#CCFAFF','#B2F2FF','#99E5FF','#7FD4FF','#65BFFF','#4CA5FF','#3288FF','#1965FF','#003FFF']\n\n\n1.59 Blues7, sequential\n\n\n\n\n\n\n\n\n['#FFFFFF','#CCFDFF','#99F8FF','#66EFFF','#33E3FF','#00AACC','#007A99']\n\n\n1.60 Inferno, sequential\n\n\n\n\n\n\n\n\n['#000004','#08051D','#190C3E','#2F0A5B','#470B6A','#5C126E','#721A6E','#87216B','#9B2964','#B1325A','#C43C4E','#D74B3F','#E55C30','#F06F20','#F8870E','#FC9F07','#FBBA1F','#F7D340','#F1ED71','#FCFFA4']\n\n\n1.61 Magma, sequential\n\n\n\n\n\n\n\n\n['#000004','#07061C','#160F3B','#29115A','#400F74','#56147D','#6B1D81','#802582','#942C80','#AB337C','#C03A76','#D6456C','#E85362','#F4675C','#FA815F','#FD9A6A','#FEB47B','#FECC8F','#FDE5A7','#FCFDBF']\n\n\n1.62 Plasma, sequential\n\n\n\n\n\n\n\n\n['#0D0887','#2C0594','#44039E','#5901A5','#6F00A8','#8305A7','#9613A1','#A72197','#B6308B','#C5407E','#D14E72','#DD5E66','#E76E5B','#EF7E50','#F79044','#FBA238','#FEB72D','#FDCB26','#F7E225','#F0F921']\n\n\n1.63 Viridis, sequential\n\n\n\n\n\n\n\n\n['#440154','#481467','#482677','#453781','#3F4788','#39558C','#32648E','#2D718E','#287D8E','#238A8D','#1F968B','#20A386','#29AF7F','#3BBB75','#56C667','#73D056','#95D840','#B8DE29','#DDE318','#FDE725']\n\n\n1.64 Cube1, sequential\n\n\n\n\n\n\n\n\n['#780085','#8209AA','#812AD0','#794DED','#6B68FD','#5F82F3','#5098E0','#3FABC9','#3ABCAE','#45CA8E','#4DD471','#57E04E','#6DE84B','#8EEB52','#AFEC57','#C8EC59','#D8E25B','#E7D05D','#F5B65E','#F9965B']\n\n\n1.65 CubeYF, sequential\n\n\n\n\n\n\n\n\n['#7B0290','#850DB1','#852DCE','#7F45E6','#715BFB','#686EFF','#5E84F2','#5294E3','#47A4D3','#3AB4BD','#3CBFA8','#45CA8D','#4CD376','#54DB5F','#5CE349','#71E84C','#91EB52','#ABEC56','#BFEC59','#D1EB5B']\n\n\n1.66 LinearL, sequential\n\n\n\n\n\n\n\n\n['#040404','#200C1C','#2E1532','#2D1C5F','#222C78','#1B3C81','#104F80','#01626F','#00735F','#008549','#009638','#00A822','#3BB300','#57C000','#A1C500','#CBCA33','#E7D197','#F7DCC6','#F7EFE8','#FFFFFF']\n\n\n1.67 Acton, sequential\n\n\n\n\n\n\n\n\n['#2E214D','#3B2D58','#4A3A65','#594672','#6A527E','#7B5B88','#8D628F','#9D6592','#AB6694','#BB6A98','#CA739F','#D381AA','#D58DB2','#D498BA','#D3A4C2','#D5AFCB','#D7BDD4','#DBCADD','#E1D8E7','#E6E6F0']\n\n\n1.68 Bamako, sequential\n\n\n\n\n\n\n\n\n['#00404C','#094548','#124A43','#1A503E','#245638','#2D5C32','#37632C','#416926','#4C7120','#5A7918','#688210','#798A07','#8A8F03','#9C940B','#B4A120','#C9B238','#DBC152','#E7CE6A','#F4DA83','#FFE599']\n\n\n1.69 Batlow, sequential\n\n\n\n\n\n\n\n\n['#011959','#08275C','#0E355E','#134360','#1A5261','#265F5F','#386A58','#4B724E','#5F7843','#757E38','#8B852F','#A88B2F','#C3913B','#DC964F','#F19D6B','#FAA587','#FDAFA4','#FDB8BF','#FCC2DD','#FACCFA']\n\n\n1.70 Bilbao, sequential\n\n\n\n\n\n\n\n\n['#FFFFFF','#EEEEEE','#DDDCDA','#D0CEC7','#C6C2B3','#C0BAA2','#BBB190','#B5A77F','#B09A71','#AC8D68','#A88163','#A5755E','#A16959','#9D5D53','#964F4A','#8B403E','#7C302F','#6D2121','#5C1113','#4D0001']\n\n\n1.71 Buda, sequential\n\n\n\n\n\n\n\n\n['#B301B3','#B318A8','#B3299F','#B53798','#B84593','#BC518F','#C15D8B','#C46987','#C87384','#CC7F80','#CF8A7D','#D2977A','#D5A277','#D8AD74','#DBBA71','#DEC66E','#E1D36B','#E5E068','#F0EF66','#FFFF66']\n\n\n1.72 Davos, sequential\n\n\n\n\n\n\n\n\n['#00054A','#06185D','#112B70','#1A3C80','#264E8F','#325E98','#3F6C9D','#4C779D','#58819A','#658A95','#729190','#7F9A8B','#8DA488','#9EB188','#B6C391','#CFD6A2','#E6E9BC','#F3F4D4','#FBFBEB','#FEFEFE']\n\n\n1.73 Devon, sequential\n\n\n\n\n\n\n\n\n['#2C1A4C','#2B2658','#293366','#283F72','#274E82','#2A5B93','#3266A7','#3F70B9','#557CCA','#7188D8','#8A94E1','#A2A0EA','#B1ACEF','#BDB7F1','#C8C3F4','#D2CEF6','#DEDBF8','#E8E6FA','#F4F3FD','#FFFFFF']\n\n\n1.74 GrayC, sequential\n\n\n\n\n\n\n\n\n['#FFFFFF','#F0F0F0','#E1E1E1','#D2D2D2','#C3C3C3','#B5B5B5','#A6A6A6','#999999','#8B8B8B','#7D7D7D','#717171','#636363','#575757','#4B4B4B','#3E3E3E','#333333','#272727','#1D1D1D','#111111','#000000']\n\n\n1.75 Hawaii, sequential\n\n\n\n\n\n\n\n\n['#8C0273','#8F1966','#92295A','#93364F','#954445','#97513C','#995F32','#9B6C2A','#9C7B21','#9D8D1C','#9A9F20','#93B033','#88BE4C','#7CC867','#6FD286','#64DAA2','#5FE4C2','#6DEBDC','#8FF0F1','#B3F2FD']\n\n\n1.76 Imola, sequential\n\n\n\n\n\n\n\n\n['#1A33B3','#1F3CAE','#2446A9','#284EA5','#2D57A0','#31609C','#376896','#3E708F','#457788','#4E8181','#598B7D','#66987A','#72A576','#7FB273','#8DC070','#9CCE6C','#AFDE69','#C6EB67','#E4F666','#FFFF66']\n\n\n1.77 LaJolla, sequential\n\n\n\n\n\n\n\n\n['#FFFFCC','#FEF7B5','#FCED9C','#F9E184','#F5D06C','#F1BF5D','#EDAD56','#EA9D53','#E68E52','#E17D50','#DA6C4E','#CA5B4B','#B54D46','#9D4440','#843D37','#6E362D','#562F21','#412817','#2B210D','#1A1A01']\n\n\n1.78 LaPaz, sequential\n\n\n\n\n\n\n\n\n['#1A0C64','#1F1D6F','#222C7A','#263A84','#29498D','#2E5695','#34639B','#3C70A0','#467BA3','#5487A4','#6390A2','#76999F','#879F9B','#99A497','#AEAA95','#C5B49B','#DEC3AB','#F0D4C2','#FAE5DC','#FEF2F3']\n\n\n1.79 Nuuk, sequential\n\n\n\n\n\n\n\n\n['#05598C','#195D88','#286284','#366882','#467083','#577986','#6A848B','#7B8E91','#8B9795','#9AA198','#A6A997','#AFB094','#B6B690','#BBBB8B','#C1C186','#C8C883','#D3D385','#E1E18F','#F1F1A0','#FEFEB2']\n\n\n1.80 Oleron, sequential\n\n\n\n\n\n\n\n\n['#1A2659','#2E3A6D','#445083','#596699','#727EB1','#8996C9','#A3AFE1','#B9C6F2','#CBD8F8','#DEEAFD','#2A5100','#495A01','#65660C','#837628','#A18A47','#BE9F65','#DEB886','#F2D0A7','#F9E7C7','#FDFDE6']\n\n\n1.81 Oslo, sequential\n\n\n\n\n\n\n\n\n['#010101','#080F17','#0D1A28','#0F2439','#12304C','#173B60','#1D4875','#255589','#31629E','#4472B3','#5982C2','#6E90C8','#7E9ACA','#8DA3C9','#9EAEC9','#AEB9CB','#C2C7D1','#D5D8DC','#EBECED','#FFFFFF']\n\n\n1.82 Tokyo, sequential\n\n\n\n\n\n\n\n\n['#1A0E34','#2E153F','#431F4B','#572B58','#6B3A64','#794A6E','#835A76','#88677C','#8C7480','#8E8184','#918D87','#93998B','#95A58E','#98B292','#9FC197','#AAD2A0','#C0E5AE','#D7F3BD','#EDFBCC','#FEFED8']\n\n\n1.83 Turku, sequential\n\n\n\n\n\n\n\n\n['#000000','#151513','#23231F','#30302A','#3F3F34','#4D4C3B','#5B5B42','#686848','#77754F','#898456','#9C925F','#B29D6A','#C4A474','#D3A67F','#E1A98C','#EDAF9C','#F7BBB1','#FCC8C4','#FFD8D6','#FFE6E6']\n\n\n1.84 ArmyRose, diverging\n\n\n\n\n\n\n\n\n['#798234','#A3AD62','#D0D3A2','#FDFBE4','#F0C6C3','#DF91A3','#D46780']\n\n\n1.85 Earth, diverging\n\n\n\n\n\n\n\n\n['#A16928','#BD925A','#D6BD8D','#EDEAC2','#B5C8B8','#79A7AC','#2887A1']\n\n\n1.86 Fall, diverging\n\n\n\n\n\n\n\n\n['#3D5941','#778868','#B5B991','#F6EDBD','#EDBB8A','#DE8A5A','#CA562C']\n\n\n1.87 Geyser, diverging\n\n\n\n\n\n\n\n\n['#008080','#70A494','#B4C8A8','#F6EDBD','#EDBB8A','#DE8A5A','#CA562C']\n\n\n1.88 TealRose, diverging\n\n\n\n\n\n\n\n\n['#009392','#72AAA1','#B1C7B3','#F1EAC8','#E5B9AD','#D98994','#D0587E']\n\n\n1.89 Temps, diverging\n\n\n\n\n\n\n\n\n['#009392','#39B185','#9CCB86','#E9E29C','#EEB479','#E88471','#CF597E']\n\n\n1.90 Tropic, diverging\n\n\n\n\n\n\n\n\n['#009B9E','#42B7B9','#A7D3D4','#F1F1F1','#E4C1D9','#D691C1','#C75DAB']\n\n\n1.91 Balance, diverging\n\n\n\n\n\n\n\n\n['#181C43','#242E6C','#29409E','#1059BE','#1E76BB','#408DBA','#68A4BC','#91B7C3','#B9CAD0','#E1E1E3','#EBDEDB','#DFBDB2','#D69F8D','#CD8268','#C36143','#B74029','#A11D25','#830E29','#5E0E21','#3C0912']\n\n\n1.92 Curl, diverging\n\n\n\n\n\n\n\n\n['#151D44','#1A3753','#1C5062','#166971','#13837B','#389981','#6DAD8A','#9CBF9F','#C6D3BC','#EDEAE1','#F6E6DF','#EAC5B3','#E1A38B','#D7816F','#C86162','#B44560','#992D61','#7A1B5E','#571350','#340D35']\n\n\n1.93 Delta, diverging\n\n\n\n\n\n\n\n\n['#112040','#21316D','#21469A','#1B639F','#267EA5','#3896AB','#5BAEB1','#8FC2BB','#BED7CD','#E9EEE0','#F6EDB1','#E3CF77','#C5B83F','#9BA614','#6C9607','#3D851B','#136F29','#0F562C','#193D24','#172313']\n\n\n1.94 BrBG, diverging\n\n\n\n\n\n\n\n\n['#543005','#8C510A','#BF812D','#DFC27D','#F6E8C3','#F5F5F5','#C7EAE5','#80CDC1','#35978F','#01665E','#003C30']\n\n\n1.95 PRGn, diverging\n\n\n\n\n\n\n\n\n['#40004B','#762A83','#9970AB','#C2A5CF','#E7D4E8','#F7F7F7','#D9F0D3','#A6DBA0','#5AAE61','#1B7837','#00441B']\n\n\n1.96 PiYG, diverging\n\n\n\n\n\n\n\n\n['#8E0152','#C51B7D','#DE77AE','#F1B6DA','#FDE0EF','#F7F7F7','#E6F5D0','#B8E186','#7FBC41','#4D9221','#276419']\n\n\n1.97 PuOr, diverging\n\n\n\n\n\n\n\n\n['#7F3B08','#B35806','#E08214','#FDB863','#FEE0B6','#F7F7F7','#D8DAEB','#B2ABD2','#8073AC','#542788','#2D004B']\n\n\n1.98 RdBu, diverging\n\n\n\n\n\n\n\n\n['#67001F','#B2182B','#D6604D','#F4A582','#FDDBC7','#F7F7F7','#D1E5F0','#92C5DE','#4393C3','#2166AC','#053061']\n\n\n1.99 RdGy, diverging\n\n\n\n\n\n\n\n\n['#67001F','#B2182B','#D6604D','#F4A582','#FDDBC7','#FFFFFF','#E0E0E0','#BABABA','#878787','#4D4D4D','#1A1A1A']\n\n\n1.100 RdYlBu, diverging\n\n\n\n\n\n\n\n\n['#A50026','#D73027','#F46D43','#FDAE61','#FEE090','#FFFFBF','#E0F3F8','#ABD9E9','#74ADD1','#4575B4','#313695']\n\n\n1.101 RdYlGn, diverging\n\n\n\n\n\n\n\n\n['#A50026','#D73027','#F46D43','#FDAE61','#FEE08B','#FFFFBF','#D9EF8B','#A6D96A','#66BD63','#1A9850','#006837']\n\n\n1.102 Spectral, diverging\n\n\n\n\n\n\n\n\n['#9E0142','#D53E4F','#F46D43','#FDAE61','#FEE08B','#FFFFBF','#E6F598','#ABDDA4','#66C2A5','#3288BD','#5E4FA2']\n\n\n1.103 BlueDarkOrange12, diverging\n\n\n\n\n\n\n\n\n['#1E8E99','#51C3CC','#99F9FF','#B2FCFF','#CCFEFF','#E5FFFF','#FFE5CC','#FFCA99','#FFAD65','#FF8E32','#CC5800','#993F00']\n\n\n1.104 BlueDarkOrange18, diverging\n\n\n\n\n\n\n\n\n['#006666','#009999','#00CCCC','#00FFFF','#33FFFF','#65FFFF','#99FFFF','#B2FFFF','#CBFFFF','#E5FFFF','#FFE5CB','#FFCA99','#FFAD65','#FF8E33','#FF6E00','#CC5500','#993D00','#662700']\n\n\n1.105 BlueDarkRed12, diverging\n\n\n\n\n\n\n\n\n['#290AD8','#264DFF','#3FA0FF','#72D9FF','#AAF7FF','#E0FFFF','#FFFFBF','#FFE099','#FFAD72','#F76D5E','#D82632','#A50021']\n\n\n1.106 BlueDarkRed18, diverging\n\n\n\n\n\n\n\n\n['#2400D8','#181CF7','#2857FF','#3D87FF','#56B0FF','#75D3FF','#99EAFF','#BCF9FF','#EAFFFF','#FFFFEA','#FFF1BC','#FFD699','#FFAC75','#FF7856','#FF3D3D','#F72735','#D8152F','#A50021']\n\n\n1.107 BlueGray, diverging\n\n\n\n\n\n\n\n\n['#0099CC','#66E5FF','#99FFFF','#CCFFFF','#E5E5E5','#999999','#666666','#333333']\n\n\n1.108 BlueGreen, diverging\n\n\n\n\n\n\n\n\n['#0000FF','#3333FF','#6565FF','#9999FF','#B2B2FF','#CBCBFF','#E5E5FF','#E5FFE5','#CBFFCB','#B2FFB2','#99FF99','#65FF65','#33FF33','#00FF00']\n\n\n1.109 BlueGrey, diverging\n\n\n\n\n\n\n\n\n['#0099CC','#66E5FF','#99FFFF','#CCFFFF','#E5E5E5','#999999','#666666','#333333']\n\n\n1.110 BlueOrange10, diverging\n\n\n\n\n\n\n\n\n['#0054FF','#3299FF','#65CCFF','#99EDFF','#CCFFFF','#FFFFCC','#FFEE99','#FFCC65','#FF9932','#FF5500']\n\n\n1.111 BlueOrange12, diverging\n\n\n\n\n\n\n\n\n['#002AFF','#1965FF','#3299FF','#99EDFF','#65CCFF','#CCFFFF','#FFFFCC','#FFEE99','#FFCC65','#FF9932','#FF6619','#FF2A00']\n\n\n1.112 BlueOrange8, diverging\n\n\n\n\n\n\n\n\n['#007FFF','#4CC3FF','#99EDFF','#CCFFFF','#FFFFCC','#FFEE99','#FFC34C','#FF7F00']\n\n\n1.113 BlueOrangeRed, diverging\n\n\n\n\n\n\n\n\n['#075AFF','#3276FF','#5990FF','#8CB2FF','#BFD4FF','#E5EEFF','#F7F9FF','#FFFFCC','#FFFF99','#FFFF00','#FFCC00','#FF9900','#FF6600','#FF0000']\n\n\n1.114 BrownBlue10, diverging\n\n\n\n\n\n\n\n\n['#662F00','#996035','#CC9B7A','#D8AF97','#F2DACD','#CCFDFF','#99F8FF','#65EFFF','#32E3FF','#00A9CC']\n\n\n1.115 BrownBlue12, diverging\n\n\n\n\n\n\n\n\n['#331900','#022F00','#356035','#049B7A','#10AF97','#2ADACD','#04FDFF','#35F8FF','#01EFFF','#32E3FF','#00A9CC','#007A99']\n\n\n1.116 GreenMagenta, diverging\n\n\n\n\n\n\n\n\n['#005000','#008600','#00BB00','#00F100','#50FF50','#86FF86','#BBFFBB','#FFFFFF','#FFF1FF','#FFBBFF','#FF86FF','#FF50FF','#F100F1','#BB00BB','#860086','#500050']\n\n\n1.117 RedYellowBlue, diverging\n\n\n\n\n\n\n\n\n['#A50021','#D82632','#F76D5E','#FFAD72','#FFE099','#FFFFBF','#E0FFFF','#AAF7FF','#72D8FF','#3FA0FF','#264CFF']\n\n\n1.118 Berlin, diverging\n\n\n\n\n\n\n\n\n['#9EB0FF','#80ACF1','#5DA5DD','#4194C1','#307A9E','#26627F','#1C495F','#153342','#112028','#131112','#200B04','#300F00','#421301','#571B06','#752D17','#904430','#AC5E4F','#C6776C','#E3938E','#FFADAD']\n\n\n1.119 Broc, diverging\n\n\n\n\n\n\n\n\n['#2C1A4C','#2A2D60','#284375','#2E5889','#45719C','#6187AC','#82A0BD','#A0B7CD','#BFCFDD','#E0E7EC','#EEEFE3','#E1E1C4','#D2D2A5','#BEBE85','#A1A167','#878751','#6C6C3A','#545426','#3B3B12','#262600']\n\n\n1.120 Cork, diverging\n\n\n\n\n\n\n\n\n['#2C1A4C','#2B2C5F','#2A4174','#2F5687','#436D9A','#5D83A9','#7B9BBA','#98B1C9','#B6C7D8','#D3DFE5','#D9E7DE','#C1DBC4','#A7CBAA','#8DBC91','#71AC76','#589B5B','#45843D','#406F26','#425C13','#424D03']\n\n\n1.121 Lisbon, diverging\n\n\n\n\n\n\n\n\n['#E6E5FF','#C3CCEA','#9EB1D4','#7C98C0','#597DA9','#3A6491','#224A71','#173653','#122437','#131920','#1C1C17','#302D1E','#46422A','#5E5838','#797249','#948B5B','#B1A975','#CBC593','#E6E3B6','#FFFFD9']\n\n\n1.122 Roma, diverging\n\n\n\n\n\n\n\n\n['#7F1900','#8D3A0B','#9C5717','#A97122','#B68C2F','#C4A841','#D5C861','#E0DD86','#E2E8A6','#D6ECC0','#BDE9CF','#98DFD7','#75CCD6','#5BB6D0','#4A9DC7','#4087BD','#3770B4','#2F5CAB','#2547A1','#1A3399']\n\n\n1.123 Tofino, diverging\n\n\n\n\n\n\n\n\n['#DED9FF','#BBC0F0','#96A6DF','#738DCE','#5171B4','#3A5993','#2B426F','#1F304F','#151F32','#0E151A','#0E1A11','#152A17','#1D3E20','#27542C','#346D39','#448747','#64A45C','#8BBB71','#B5D187','#DBE69B']\n\n\n1.124 Vik, diverging\n\n\n\n\n\n\n\n\n['#001261','#02276E','#033C7C','#055189','#176999','#3983AB','#64A0BE','#8DBAD0','#B6D3E1','#E0E6E9','#EEDDD3','#E5C1AD','#DBA88B','#D0906B','#C6774A','#BB602D','#A5400F','#892606','#6F1107','#590008']\n\n\n1.125 Antique, qualitative\n\n\n\n\n\n\n\n\n['#855C75','#D9AF6B','#AF6458','#736F4C','#526A83','#625377','#68855C','#9C9C5E','#A06177','#8C785D']\n\n\n1.126 Bold, qualitative\n\n\n\n\n\n\n\n\n['#7F3C8D','#11A579','#3969AC','#F2B701','#E73F74','#80BA5A','#E68310','#008695','#CF1C90','#F97B72']\n\n\n1.127 Pastel, qualitative\n\n\n\n\n\n\n\n\n['#66C5CC','#F6CF71','#F89C74','#DCB0F2','#87C55F','#9EB9F3','#FE88B1','#C9DB74','#8BE0A4','#B497E7']\n\n\n1.128 Prism, qualitative\n\n\n\n\n\n\n\n\n['#5F4690','#1D6996','#38A6A5','#0F8554','#73AF48','#EDAD08','#E17C05','#CC503E','#94346E','#6F4070']\n\n\n1.129 Safe, qualitative\n\n\n\n\n\n\n\n\n['#88CCEE','#CC6677','#DDCC77','#117733','#332288','#AA4499','#44AA99','#999933','#882255','#661100']\n\n\n1.130 Vivid, qualitative\n\n\n\n\n\n\n\n\n['#E58606','#5D69B1','#52BCA3','#99C945','#CC61B0','#24796C','#DAA51B','#2F8AC4','#764E9F','#ED645A']\n\n\n1.131 Accent, qualitative\n\n\n\n\n\n\n\n\n['#7FC97F','#BEAED4','#FDC086','#FFFF99','#386CB0','#F0027F','#BF5B17','#666666']\n\n\n1.132 Dark2, qualitative\n\n\n\n\n\n\n\n\n['#1B9E77','#D95F02','#7570B3','#E7298A','#66A61E','#E6AB02','#A6761D','#666666']\n\n\n1.133 Paired, qualitative\n\n\n\n\n\n\n\n\n['#A6CEE3','#1F78B4','#B2DF8A','#33A02C','#FB9A99','#E31A1C','#FDBF6F','#FF7F00','#CAB2D6','#6A3D9A','#FFFF99','#B15928']\n\n\n1.134 Pastel1, qualitative\n\n\n\n\n\n\n\n\n['#FBB4AE','#B3CDE3','#CCEBC5','#DECBE4','#FED9A6','#FFFFCC','#E5D8BD','#FDDAEC','#F2F2F2']\n\n\n1.135 Pastel2, qualitative\n\n\n\n\n\n\n\n\n['#B3E2CD','#FDCDAC','#CBD5E8','#F4CAE4','#E6F5C9','#FFF2AE','#F1E2CC','#CCCCCC']\n\n\n1.136 Set1, qualitative\n\n\n\n\n\n\n\n\n['#E41A1C','#377EB8','#4DAF4A','#984EA3','#FF7F00','#FFFF33','#A65628','#F781BF','#999999']\n\n\n1.137 Set2, qualitative\n\n\n\n\n\n\n\n\n['#66C2A5','#FC8D62','#8DA0CB','#E78AC3','#A6D854','#FFD92F','#E5C494','#B3B3B3']\n\n\n1.138 Set3, qualitative\n\n\n\n\n\n\n\n\n['#8DD3C7','#FFFFB3','#BEBADA','#FB8072','#80B1D3','#FDB462','#B3DE69','#FCCDE5','#D9D9D9','#BC80BD','#CCEBC5','#FFED6F']\n\n\n1.139 BlueRed, qualitative\n\n\n\n\n\n\n\n\n['#2C69B0','#B5C8E2','#F02720','#FFB6B0','#AC613C','#E9C39B','#6BA3D6','#B5DFFD','#AC8763','#DDC9B4','#BD0A36','#F4737A']\n\n\n1.140 ColorBlind, qualitative\n\n\n\n\n\n\n\n\n['#006BA4','#FF800E','#ABABAB','#595959','#5F9ED1','#C85200','#898989','#A2C8EC','#FFBC79','#CFCFCF']\n\n\n1.141 Gray, qualitative\n\n\n\n\n\n\n\n\n['#60636A','#A5ACAF','#414451','#8F8782','#CFCFCF']\n\n\n1.142 GreenOrange, qualitative\n\n\n\n\n\n\n\n\n['#32A251','#ACD98D','#FF7F0F','#FFB977','#3CB7CC','#98D9E4','#B85A0D','#FFD94A','#39737C','#86B4A9','#82853B','#CCC94D']\n\n\n1.143 PurpleGray, qualitative\n\n\n\n\n\n\n\n\n['#7B66D2','#A699E8','#DC5FBD','#FFC0DA','#5F5A41','#B4B19B','#995688','#D898BA','#AB6AD5','#D098EE','#8B7C6E','#DBD4C5']\n\n\n1.144 TableauLight, qualitative\n\n\n\n\n\n\n\n\n['#AEC7E8','#FFBB78','#98DF8A','#FF9896','#C5B0D5','#C49C94','#F7B6D2','#C7C7C7','#DBDB8D','#9EDAE5']\n\n\n1.145 TableauMedium, qualitative\n\n\n\n\n\n\n\n\n['#729ECE','#FF9E4A','#67BF5C','#ED665D','#AD8BC9','#A8786E','#ED97CA','#A2A2A2','#CDCC5D','#6DCCDA']\n\n\n1.146 Tableau, qualitative\n\n\n\n\n\n\n\n\n['#1F77B4','#AEC7E8','#FF7F0E','#FFBB78','#2CA02C','#98DF8A','#D62728','#FF9896','#9467BD','#C5B0D5','#8C564B','#C49C94','#E377C2','#F7B6D2','#7F7F7F','#C7C7C7','#BCBD22','#DBDB8D','#17BECF','#9EDAE5']\n\n\n1.147 TrafficLight, qualitative\n\n\n\n\n\n\n\n\n['#B10318','#DBA13A','#309343','#D82526','#FFC156','#69B764','#F26C64','#FFDD71','#9FCD99']\n\n\n1.148 Aquatic1, qualitative\n\n\n\n\n\n\n\n\n['#342419','#1C4027','#F1C90E','#665899','#B89382']\n\n\n1.149 Aquatic2, qualitative\n\n\n\n\n\n\n\n\n['#8B9CB8','#E9E541','#589FC2','#A08D5E','#BDB9CE']\n\n\n1.150 Aquatic3, qualitative\n\n\n\n\n\n\n\n\n['#D6A142','#C28072','#C8B7A1','#BD442D','#64543C']\n\n\n1.151 Cavalcanti, qualitative\n\n\n\n\n\n\n\n\n['#D1AA00','#083213','#929460','#6F9879','#842111']\n\n\n1.152 Chevalier, qualitative\n\n\n\n\n\n\n\n\n['#355243','#FECA49','#C9D5D5','#BBA289']\n\n\n1.153 Darjeeling1, qualitative\n\n\n\n\n\n\n\n\n['#9E9797','#C28E00','#836659','#9C5A33']\n\n\n1.154 Darjeeling2, qualitative\n\n\n\n\n\n\n\n\n['#D5E3D8','#618A98','#F9DA95','#AE4B16','#787064']\n\n\n1.155 Darjeeling3, qualitative\n\n\n\n\n\n\n\n\n['#A8AB50','#FFE83D','#A9D3D2','#24477D','#5A917C']\n\n\n1.156 Darjeeling4, qualitative\n\n\n\n\n\n\n\n\n['#746768','#684762','#800806','#BC840E','#AE595C']\n\n\n1.157 FantasticFox1, qualitative\n\n\n\n\n\n\n\n\n['#F9DB20','#934B4E','#42170D','#C27922','#E2C8A7']\n\n\n1.158 FantasticFox2, qualitative\n\n\n\n\n\n\n\n\n['#E4BF44','#C65742','#9AD0BB','#332737','#ABA18D']\n\n\n1.159 GrandBudapest1, qualitative\n\n\n\n\n\n\n\n\n['#EEAE65','#FB4F55','#481313','#CC5F27']\n\n\n1.160 GrandBudapest2, qualitative\n\n\n\n\n\n\n\n\n['#FFA68E','#FBCCB7','#8C1108','#290B04']\n\n\n1.161 GrandBudapest3, qualitative\n\n\n\n\n\n\n\n\n['#FFDCB6','#253845','#E7AD9D','#66756E','#8B3F31','#966D35']\n\n\n1.162 GrandBudapest4, qualitative\n\n\n\n\n\n\n\n\n['#BA6E00','#502056','#FFF6BB','#9A7F19','#1F121B']\n\n\n1.163 GrandBudapest5, qualitative\n\n\n\n\n\n\n\n\n['#E19283','#8C1B4C','#D19336','#E7C7BE','#330C00']\n\n\n1.164 IsleOfDogs1, qualitative\n\n\n\n\n\n\n\n\n['#FEC5AF','#AE7E71','#D26732','#322323','#181213']\n\n\n1.165 IsleOfDogs2, qualitative\n\n\n\n\n\n\n\n\n['#986C96','#8A1F1F','#D5AB55','#0E0C0C','#DCC2C9','#82726C']\n\n\n1.166 IsleOfDogs3, qualitative\n\n\n\n\n\n\n\n\n['#E58EA7','#E0C1A0','#1E1263','#D8B148']\n\n\n1.167 Margot1, qualitative\n\n\n\n\n\n\n\n\n['#897712','#F3C2A4','#F69F97','#FED68C','#629075']\n\n\n1.168 Margot2, qualitative\n\n\n\n\n\n\n\n\n['#768B93','#BC240F','#F9ECC5','#D47329']\n\n\n1.169 Margot3, qualitative\n\n\n\n\n\n\n\n\n['#87A2A4','#CAA065','#D6CABF','#D6A0A0']\n\n\n1.170 Mendl, qualitative\n\n\n\n\n\n\n\n\n['#DE8DB9','#B8C0F6','#CF9387','#5C80CC']\n\n\n1.171 Moonrise1, qualitative\n\n\n\n\n\n\n\n\n['#72CADD','#F0A5B0','#8C8536','#C3B477','#FAD063']\n\n\n1.172 Moonrise2, qualitative\n\n\n\n\n\n\n\n\n['#667C74','#B56A27','#C2BA7C','#1F1917']\n\n\n1.173 Moonrise3, qualitative\n\n\n\n\n\n\n\n\n['#F2DA52','#C59D00','#CBCBC9','#1B1E14']\n\n\n1.174 Moonrise4, qualitative\n\n\n\n\n\n\n\n\n['#7B8761','#C1A62E','#4F8F6B','#3B453C','#9F3208']\n\n\n1.175 Moonrise5, qualitative\n\n\n\n\n\n\n\n\n['#DF8C90','#D8D28E','#F5BE25','#3D4A1C','#D13060','#A86B4C']\n\n\n1.176 Moonrise6, qualitative\n\n\n\n\n\n\n\n\n['#BF513D','#C9A296','#C5C188','#7BB191','#D9AE30']\n\n\n1.177 Moonrise7, qualitative\n\n\n\n\n\n\n\n\n['#232355','#616860','#A75B44','#912B29','#FFE38F']\n\n\n1.178 Royal1, qualitative\n\n\n\n\n\n\n\n\n['#79A43A','#F2D6AF','#5E4829','#181401']\n\n\n1.179 Royal2, qualitative\n\n\n\n\n\n\n\n\n['#C2ABBA','#8C3B49','#B6ACA6','#212053','#D1D3D5']\n\n\n1.180 Royal3, qualitative\n\n\n\n\n\n\n\n\n['#FC576C','#ED7E53','#E2998B','#2E1718','#FBD6CA']\n\n\n1.181 Zissou, qualitative\n\n\n\n\n\n\n\n\n['#0099E6','#12255A','#F23814','#DFB78B','#B6C3C5']\n\n\n1.182 Okabe_Ito_Categorigal, qualitative\n\n\n\n\n\n\n\n\n['#000000','#e69f00','#56b4e9','#009e73','#f0e442','#0072b2','#d55e00','#cc79a7']"
+  },
+  {
+    "objectID": "index.html#blugrn-sequential",
+    "href": "index.html#blugrn-sequential",
+    "title": "dicopal",
+    "section": "1.3 BluGrn, sequential",
+    "text": "1.3 BluGrn, sequential"
+  },
+  {
+    "objectID": "index.html#bluyl-sequential",
+    "href": "index.html#bluyl-sequential",
+    "title": "dicopal",
+    "section": "1.4 BluYl, sequential",
+    "text": "1.4 BluYl, sequential"
+  },
+  {
+    "objectID": "index.html#brwnyl-sequential",
+    "href": "index.html#brwnyl-sequential",
+    "title": "dicopal",
+    "section": "1.5 BrwnYl, sequential",
+    "text": "1.5 BrwnYl, sequential"
+  },
+  {
+    "objectID": "index.html#burgyl-sequential",
+    "href": "index.html#burgyl-sequential",
+    "title": "dicopal",
+    "section": "1.6 BurgYl, sequential",
+    "text": "1.6 BurgYl, sequential"
+  },
+  {
+    "objectID": "index.html#burg-sequential",
+    "href": "index.html#burg-sequential",
+    "title": "dicopal",
+    "section": "1.7 Burg, sequential",
+    "text": "1.7 Burg, sequential"
+  },
+  {
+    "objectID": "index.html#darkmint-sequential",
+    "href": "index.html#darkmint-sequential",
+    "title": "dicopal",
+    "section": "1.8 DarkMint, sequential",
+    "text": "1.8 DarkMint, sequential"
+  },
+  {
+    "objectID": "index.html#emrld-sequential",
+    "href": "index.html#emrld-sequential",
+    "title": "dicopal",
+    "section": "1.9 Emrld, sequential",
+    "text": "1.9 Emrld, sequential"
+  },
+  {
+    "objectID": "index.html#magenta-sequential",
+    "href": "index.html#magenta-sequential",
+    "title": "dicopal",
+    "section": "1.10 Magenta, sequential",
+    "text": "1.10 Magenta, sequential"
+  },
+  {
+    "objectID": "index.html#mint-sequential",
+    "href": "index.html#mint-sequential",
+    "title": "dicopal",
+    "section": "1.11 Mint, sequential",
+    "text": "1.11 Mint, sequential"
+  },
+  {
+    "objectID": "index.html#oryel-sequential",
+    "href": "index.html#oryel-sequential",
+    "title": "dicopal",
+    "section": "1.12 OrYel, sequential",
+    "text": "1.12 OrYel, sequential"
+  },
+  {
+    "objectID": "index.html#peach-sequential",
+    "href": "index.html#peach-sequential",
+    "title": "dicopal",
+    "section": "1.13 Peach, sequential",
+    "text": "1.13 Peach, sequential"
+  },
+  {
+    "objectID": "index.html#pinkyl-sequential",
+    "href": "index.html#pinkyl-sequential",
+    "title": "dicopal",
+    "section": "1.14 PinkYl, sequential",
+    "text": "1.14 PinkYl, sequential"
+  },
+  {
+    "objectID": "index.html#purpor-sequential",
+    "href": "index.html#purpor-sequential",
+    "title": "dicopal",
+    "section": "1.15 PurpOr, sequential",
+    "text": "1.15 PurpOr, sequential"
+  },
+  {
+    "objectID": "index.html#purp-sequential",
+    "href": "index.html#purp-sequential",
+    "title": "dicopal",
+    "section": "1.16 Purp, sequential",
+    "text": "1.16 Purp, sequential"
+  },
+  {
+    "objectID": "index.html#redor-sequential",
+    "href": "index.html#redor-sequential",
+    "title": "dicopal",
+    "section": "1.17 RedOr, sequential",
+    "text": "1.17 RedOr, sequential"
+  },
+  {
+    "objectID": "index.html#sunsetdark-sequential",
+    "href": "index.html#sunsetdark-sequential",
+    "title": "dicopal",
+    "section": "1.18 SunsetDark, sequential",
+    "text": "1.18 SunsetDark, sequential"
+  },
+  {
+    "objectID": "index.html#sunset-sequential",
+    "href": "index.html#sunset-sequential",
+    "title": "dicopal",
+    "section": "1.19 Sunset, sequential",
+    "text": "1.19 Sunset, sequential"
+  },
+  {
+    "objectID": "index.html#tealgrn-sequential",
+    "href": "index.html#tealgrn-sequential",
+    "title": "dicopal",
+    "section": "1.20 TealGrn, sequential",
+    "text": "1.20 TealGrn, sequential"
+  },
+  {
+    "objectID": "index.html#teal-sequential",
+    "href": "index.html#teal-sequential",
+    "title": "dicopal",
+    "section": "1.21 Teal, sequential",
+    "text": "1.21 Teal, sequential"
+  },
+  {
+    "objectID": "index.html#aggrnyl-sequential",
+    "href": "index.html#aggrnyl-sequential",
+    "title": "dicopal",
+    "section": "1.22 agGrnYl, sequential",
+    "text": "1.22 agGrnYl, sequential"
+  },
+  {
+    "objectID": "index.html#agsunset-sequential",
+    "href": "index.html#agsunset-sequential",
+    "title": "dicopal",
+    "section": "1.23 agSunset, sequential",
+    "text": "1.23 agSunset, sequential"
+  },
+  {
+    "objectID": "index.html#algae-sequential",
+    "href": "index.html#algae-sequential",
+    "title": "dicopal",
+    "section": "1.24 Algae, sequential",
+    "text": "1.24 Algae, sequential"
+  },
+  {
+    "objectID": "index.html#amp-sequential",
+    "href": "index.html#amp-sequential",
+    "title": "dicopal",
+    "section": "1.25 Amp, sequential",
+    "text": "1.25 Amp, sequential"
+  },
+  {
+    "objectID": "index.html#deep-sequential",
+    "href": "index.html#deep-sequential",
+    "title": "dicopal",
+    "section": "1.26 Deep, sequential",
+    "text": "1.26 Deep, sequential"
+  },
+  {
+    "objectID": "index.html#dense-sequential",
+    "href": "index.html#dense-sequential",
+    "title": "dicopal",
+    "section": "1.27 Dense, sequential",
+    "text": "1.27 Dense, sequential"
+  },
+  {
+    "objectID": "index.html#gray-sequential",
+    "href": "index.html#gray-sequential",
+    "title": "dicopal",
+    "section": "1.28 Gray, sequential",
+    "text": "1.28 Gray, sequential"
+  },
+  {
+    "objectID": "index.html#haline-sequential",
+    "href": "index.html#haline-sequential",
+    "title": "dicopal",
+    "section": "1.29 Haline, sequential",
+    "text": "1.29 Haline, sequential"
+  },
+  {
+    "objectID": "index.html#ice-sequential",
+    "href": "index.html#ice-sequential",
+    "title": "dicopal",
+    "section": "1.30 Ice, sequential",
+    "text": "1.30 Ice, sequential"
+  },
+  {
+    "objectID": "index.html#matter-sequential",
+    "href": "index.html#matter-sequential",
+    "title": "dicopal",
+    "section": "1.31 Matter, sequential",
+    "text": "1.31 Matter, sequential"
+  },
+  {
+    "objectID": "index.html#oxy-sequential",
+    "href": "index.html#oxy-sequential",
+    "title": "dicopal",
+    "section": "1.32 Oxy, sequential",
+    "text": "1.32 Oxy, sequential"
+  },
+  {
+    "objectID": "index.html#phase-sequential",
+    "href": "index.html#phase-sequential",
+    "title": "dicopal",
+    "section": "1.33 Phase, sequential",
+    "text": "1.33 Phase, sequential"
+  },
+  {
+    "objectID": "index.html#solar-sequential",
+    "href": "index.html#solar-sequential",
+    "title": "dicopal",
+    "section": "1.34 Solar, sequential",
+    "text": "1.34 Solar, sequential"
+  },
+  {
+    "objectID": "index.html#speed-sequential",
+    "href": "index.html#speed-sequential",
+    "title": "dicopal",
+    "section": "1.35 Speed, sequential",
+    "text": "1.35 Speed, sequential"
+  },
+  {
+    "objectID": "index.html#tempo-sequential",
+    "href": "index.html#tempo-sequential",
+    "title": "dicopal",
+    "section": "1.36 Tempo, sequential",
+    "text": "1.36 Tempo, sequential"
+  },
+  {
+    "objectID": "index.html#thermal-sequential",
+    "href": "index.html#thermal-sequential",
+    "title": "dicopal",
+    "section": "1.37 Thermal, sequential",
+    "text": "1.37 Thermal, sequential"
+  },
+  {
+    "objectID": "index.html#turbid-sequential",
+    "href": "index.html#turbid-sequential",
+    "title": "dicopal",
+    "section": "1.38 Turbid, sequential",
+    "text": "1.38 Turbid, sequential"
+  },
+  {
+    "objectID": "index.html#blues-sequential",
+    "href": "index.html#blues-sequential",
+    "title": "dicopal",
+    "section": "1.39 Blues, sequential",
+    "text": "1.39 Blues, sequential"
+  },
+  {
+    "objectID": "index.html#bugn-sequential",
+    "href": "index.html#bugn-sequential",
+    "title": "dicopal",
+    "section": "1.40 BuGn, sequential",
+    "text": "1.40 BuGn, sequential"
+  },
+  {
+    "objectID": "index.html#bupu-sequential",
+    "href": "index.html#bupu-sequential",
+    "title": "dicopal",
+    "section": "1.41 BuPu, sequential",
+    "text": "1.41 BuPu, sequential"
+  },
+  {
+    "objectID": "index.html#gnbu-sequential",
+    "href": "index.html#gnbu-sequential",
+    "title": "dicopal",
+    "section": "1.42 GnBu, sequential",
+    "text": "1.42 GnBu, sequential"
+  },
+  {
+    "objectID": "index.html#greens-sequential",
+    "href": "index.html#greens-sequential",
+    "title": "dicopal",
+    "section": "1.43 Greens, sequential",
+    "text": "1.43 Greens, sequential"
+  },
+  {
+    "objectID": "index.html#greys-sequential",
+    "href": "index.html#greys-sequential",
+    "title": "dicopal",
+    "section": "1.44 Greys, sequential",
+    "text": "1.44 Greys, sequential"
+  },
+  {
+    "objectID": "index.html#orrd-sequential",
+    "href": "index.html#orrd-sequential",
+    "title": "dicopal",
+    "section": "1.45 OrRd, sequential",
+    "text": "1.45 OrRd, sequential"
+  },
+  {
+    "objectID": "index.html#oranges-sequential",
+    "href": "index.html#oranges-sequential",
+    "title": "dicopal",
+    "section": "1.46 Oranges, sequential",
+    "text": "1.46 Oranges, sequential"
+  },
+  {
+    "objectID": "index.html#pubugn-sequential",
+    "href": "index.html#pubugn-sequential",
+    "title": "dicopal",
+    "section": "1.47 PuBuGn, sequential",
+    "text": "1.47 PuBuGn, sequential"
+  },
+  {
+    "objectID": "index.html#pubu-sequential",
+    "href": "index.html#pubu-sequential",
+    "title": "dicopal",
+    "section": "1.48 PuBu, sequential",
+    "text": "1.48 PuBu, sequential"
+  },
+  {
+    "objectID": "index.html#purd-sequential",
+    "href": "index.html#purd-sequential",
+    "title": "dicopal",
+    "section": "1.49 PuRd, sequential",
+    "text": "1.49 PuRd, sequential"
+  },
+  {
+    "objectID": "index.html#purples-sequential",
+    "href": "index.html#purples-sequential",
+    "title": "dicopal",
+    "section": "1.50 Purples, sequential",
+    "text": "1.50 Purples, sequential"
+  },
+  {
+    "objectID": "index.html#rdpu-sequential",
+    "href": "index.html#rdpu-sequential",
+    "title": "dicopal",
+    "section": "1.51 RdPu, sequential",
+    "text": "1.51 RdPu, sequential"
+  },
+  {
+    "objectID": "index.html#reds-sequential",
+    "href": "index.html#reds-sequential",
+    "title": "dicopal",
+    "section": "1.52 Reds, sequential",
+    "text": "1.52 Reds, sequential"
+  },
+  {
+    "objectID": "index.html#ylgnbu-sequential",
+    "href": "index.html#ylgnbu-sequential",
+    "title": "dicopal",
+    "section": "1.53 YlGnBu, sequential",
+    "text": "1.53 YlGnBu, sequential"
+  },
+  {
+    "objectID": "index.html#ylgn-sequential",
+    "href": "index.html#ylgn-sequential",
+    "title": "dicopal",
+    "section": "1.54 YlGn, sequential",
+    "text": "1.54 YlGn, sequential"
+  },
+  {
+    "objectID": "index.html#ylorbr-sequential",
+    "href": "index.html#ylorbr-sequential",
+    "title": "dicopal",
+    "section": "1.55 YlOrBr, sequential",
+    "text": "1.55 YlOrBr, sequential"
+  },
+  {
+    "objectID": "index.html#ylorrd-sequential",
+    "href": "index.html#ylorrd-sequential",
+    "title": "dicopal",
+    "section": "1.56 YlOrRd, sequential",
+    "text": "1.56 YlOrRd, sequential"
+  },
+  {
+    "objectID": "index.html#blues10-sequential",
+    "href": "index.html#blues10-sequential",
+    "title": "dicopal",
+    "section": "1.57 Blues10, sequential",
+    "text": "1.57 Blues10, sequential"
+  },
+  {
+    "objectID": "index.html#blues7-sequential",
+    "href": "index.html#blues7-sequential",
+    "title": "dicopal",
+    "section": "1.58 Blues7, sequential",
+    "text": "1.58 Blues7, sequential"
+  },
+  {
+    "objectID": "index.html#inferno-sequential",
+    "href": "index.html#inferno-sequential",
+    "title": "dicopal",
+    "section": "1.59 Inferno, sequential",
+    "text": "1.59 Inferno, sequential"
+  },
+  {
+    "objectID": "index.html#magma-sequential",
+    "href": "index.html#magma-sequential",
+    "title": "dicopal",
+    "section": "1.60 Magma, sequential",
+    "text": "1.60 Magma, sequential"
+  },
+  {
+    "objectID": "index.html#plasma-sequential",
+    "href": "index.html#plasma-sequential",
+    "title": "dicopal",
+    "section": "1.61 Plasma, sequential",
+    "text": "1.61 Plasma, sequential"
+  },
+  {
+    "objectID": "index.html#viridis-sequential",
+    "href": "index.html#viridis-sequential",
+    "title": "dicopal",
+    "section": "1.62 Viridis, sequential",
+    "text": "1.62 Viridis, sequential"
+  },
+  {
+    "objectID": "index.html#cube1-sequential",
+    "href": "index.html#cube1-sequential",
+    "title": "dicopal",
+    "section": "1.63 Cube1, sequential",
+    "text": "1.63 Cube1, sequential"
+  },
+  {
+    "objectID": "index.html#cubeyf-sequential",
+    "href": "index.html#cubeyf-sequential",
+    "title": "dicopal",
+    "section": "1.64 CubeYF, sequential",
+    "text": "1.64 CubeYF, sequential"
+  },
+  {
+    "objectID": "index.html#linearl-sequential",
+    "href": "index.html#linearl-sequential",
+    "title": "dicopal",
+    "section": "1.65 LinearL, sequential",
+    "text": "1.65 LinearL, sequential"
+  },
+  {
+    "objectID": "index.html#acton-sequential",
+    "href": "index.html#acton-sequential",
+    "title": "dicopal",
+    "section": "1.66 Acton, sequential",
+    "text": "1.66 Acton, sequential"
+  },
+  {
+    "objectID": "index.html#bamako-sequential",
+    "href": "index.html#bamako-sequential",
+    "title": "dicopal",
+    "section": "1.67 Bamako, sequential",
+    "text": "1.67 Bamako, sequential"
+  },
+  {
+    "objectID": "index.html#batlow-sequential",
+    "href": "index.html#batlow-sequential",
+    "title": "dicopal",
+    "section": "1.68 Batlow, sequential",
+    "text": "1.68 Batlow, sequential"
+  },
+  {
+    "objectID": "index.html#bilbao-sequential",
+    "href": "index.html#bilbao-sequential",
+    "title": "dicopal",
+    "section": "1.69 Bilbao, sequential",
+    "text": "1.69 Bilbao, sequential"
+  },
+  {
+    "objectID": "index.html#buda-sequential",
+    "href": "index.html#buda-sequential",
+    "title": "dicopal",
+    "section": "1.70 Buda, sequential",
+    "text": "1.70 Buda, sequential"
+  },
+  {
+    "objectID": "index.html#davos-sequential",
+    "href": "index.html#davos-sequential",
+    "title": "dicopal",
+    "section": "1.71 Davos, sequential",
+    "text": "1.71 Davos, sequential"
+  },
+  {
+    "objectID": "index.html#devon-sequential",
+    "href": "index.html#devon-sequential",
+    "title": "dicopal",
+    "section": "1.72 Devon, sequential",
+    "text": "1.72 Devon, sequential"
+  },
+  {
+    "objectID": "index.html#grayc-sequential",
+    "href": "index.html#grayc-sequential",
+    "title": "dicopal",
+    "section": "1.73 GrayC, sequential",
+    "text": "1.73 GrayC, sequential"
+  },
+  {
+    "objectID": "index.html#hawaii-sequential",
+    "href": "index.html#hawaii-sequential",
+    "title": "dicopal",
+    "section": "1.74 Hawaii, sequential",
+    "text": "1.74 Hawaii, sequential"
+  },
+  {
+    "objectID": "index.html#imola-sequential",
+    "href": "index.html#imola-sequential",
+    "title": "dicopal",
+    "section": "1.75 Imola, sequential",
+    "text": "1.75 Imola, sequential"
+  },
+  {
+    "objectID": "index.html#lajolla-sequential",
+    "href": "index.html#lajolla-sequential",
+    "title": "dicopal",
+    "section": "1.76 LaJolla, sequential",
+    "text": "1.76 LaJolla, sequential"
+  },
+  {
+    "objectID": "index.html#lapaz-sequential",
+    "href": "index.html#lapaz-sequential",
+    "title": "dicopal",
+    "section": "1.77 LaPaz, sequential",
+    "text": "1.77 LaPaz, sequential"
+  },
+  {
+    "objectID": "index.html#nuuk-sequential",
+    "href": "index.html#nuuk-sequential",
+    "title": "dicopal",
+    "section": "1.78 Nuuk, sequential",
+    "text": "1.78 Nuuk, sequential"
+  },
+  {
+    "objectID": "index.html#oleron-sequential",
+    "href": "index.html#oleron-sequential",
+    "title": "dicopal",
+    "section": "1.79 Oleron, sequential",
+    "text": "1.79 Oleron, sequential"
+  },
+  {
+    "objectID": "index.html#oslo-sequential",
+    "href": "index.html#oslo-sequential",
+    "title": "dicopal",
+    "section": "1.80 Oslo, sequential",
+    "text": "1.80 Oslo, sequential"
+  },
+  {
+    "objectID": "index.html#tokyo-sequential",
+    "href": "index.html#tokyo-sequential",
+    "title": "dicopal",
+    "section": "1.81 Tokyo, sequential",
+    "text": "1.81 Tokyo, sequential"
+  },
+  {
+    "objectID": "index.html#turku-sequential",
+    "href": "index.html#turku-sequential",
+    "title": "dicopal",
+    "section": "1.82 Turku, sequential",
+    "text": "1.82 Turku, sequential"
+  },
+  {
+    "objectID": "index.html#armyrose-diverging",
+    "href": "index.html#armyrose-diverging",
+    "title": "dicopal",
+    "section": "1.83 ArmyRose, diverging",
+    "text": "1.83 ArmyRose, diverging"
+  },
+  {
+    "objectID": "index.html#earth-diverging",
+    "href": "index.html#earth-diverging",
+    "title": "dicopal",
+    "section": "1.84 Earth, diverging",
+    "text": "1.84 Earth, diverging"
+  },
+  {
+    "objectID": "index.html#fall-diverging",
+    "href": "index.html#fall-diverging",
+    "title": "dicopal",
+    "section": "1.85 Fall, diverging",
+    "text": "1.85 Fall, diverging"
+  },
+  {
+    "objectID": "index.html#geyser-diverging",
+    "href": "index.html#geyser-diverging",
+    "title": "dicopal",
+    "section": "1.86 Geyser, diverging",
+    "text": "1.86 Geyser, diverging"
+  },
+  {
+    "objectID": "index.html#tealrose-diverging",
+    "href": "index.html#tealrose-diverging",
+    "title": "dicopal",
+    "section": "1.87 TealRose, diverging",
+    "text": "1.87 TealRose, diverging"
+  },
+  {
+    "objectID": "index.html#temps-diverging",
+    "href": "index.html#temps-diverging",
+    "title": "dicopal",
+    "section": "1.88 Temps, diverging",
+    "text": "1.88 Temps, diverging"
+  },
+  {
+    "objectID": "index.html#tropic-diverging",
+    "href": "index.html#tropic-diverging",
+    "title": "dicopal",
+    "section": "1.89 Tropic, diverging",
+    "text": "1.89 Tropic, diverging"
+  },
+  {
+    "objectID": "index.html#balance-diverging",
+    "href": "index.html#balance-diverging",
+    "title": "dicopal",
+    "section": "1.90 Balance, diverging",
+    "text": "1.90 Balance, diverging"
+  },
+  {
+    "objectID": "index.html#curl-diverging",
+    "href": "index.html#curl-diverging",
+    "title": "dicopal",
+    "section": "1.91 Curl, diverging",
+    "text": "1.91 Curl, diverging"
+  },
+  {
+    "objectID": "index.html#delta-diverging",
+    "href": "index.html#delta-diverging",
+    "title": "dicopal",
+    "section": "1.92 Delta, diverging",
+    "text": "1.92 Delta, diverging"
+  },
+  {
+    "objectID": "index.html#brbg-diverging",
+    "href": "index.html#brbg-diverging",
+    "title": "dicopal",
+    "section": "1.93 BrBG, diverging",
+    "text": "1.93 BrBG, diverging"
+  },
+  {
+    "objectID": "index.html#prgn-diverging",
+    "href": "index.html#prgn-diverging",
+    "title": "dicopal",
+    "section": "1.94 PRGn, diverging",
+    "text": "1.94 PRGn, diverging"
+  },
+  {
+    "objectID": "index.html#piyg-diverging",
+    "href": "index.html#piyg-diverging",
+    "title": "dicopal",
+    "section": "1.95 PiYG, diverging",
+    "text": "1.95 PiYG, diverging"
+  },
+  {
+    "objectID": "index.html#puor-diverging",
+    "href": "index.html#puor-diverging",
+    "title": "dicopal",
+    "section": "1.96 PuOr, diverging",
+    "text": "1.96 PuOr, diverging"
+  },
+  {
+    "objectID": "index.html#rdbu-diverging",
+    "href": "index.html#rdbu-diverging",
+    "title": "dicopal",
+    "section": "1.97 RdBu, diverging",
+    "text": "1.97 RdBu, diverging"
+  },
+  {
+    "objectID": "index.html#rdgy-diverging",
+    "href": "index.html#rdgy-diverging",
+    "title": "dicopal",
+    "section": "1.98 RdGy, diverging",
+    "text": "1.98 RdGy, diverging"
+  },
+  {
+    "objectID": "index.html#rdylbu-diverging",
+    "href": "index.html#rdylbu-diverging",
+    "title": "dicopal",
+    "section": "1.99 RdYlBu, diverging",
+    "text": "1.99 RdYlBu, diverging"
+  },
+  {
+    "objectID": "index.html#rdylgn-diverging",
+    "href": "index.html#rdylgn-diverging",
+    "title": "dicopal",
+    "section": "1.100 RdYlGn, diverging",
+    "text": "1.100 RdYlGn, diverging"
+  },
+  {
+    "objectID": "index.html#spectral-diverging",
+    "href": "index.html#spectral-diverging",
+    "title": "dicopal",
+    "section": "1.101 Spectral, diverging",
+    "text": "1.101 Spectral, diverging"
+  },
+  {
+    "objectID": "index.html#bluedarkorange12-diverging",
+    "href": "index.html#bluedarkorange12-diverging",
+    "title": "dicopal",
+    "section": "1.102 BlueDarkOrange12, diverging",
+    "text": "1.102 BlueDarkOrange12, diverging"
+  },
+  {
+    "objectID": "index.html#bluedarkorange18-diverging",
+    "href": "index.html#bluedarkorange18-diverging",
+    "title": "dicopal",
+    "section": "1.103 BlueDarkOrange18, diverging",
+    "text": "1.103 BlueDarkOrange18, diverging"
+  },
+  {
+    "objectID": "index.html#bluedarkred12-diverging",
+    "href": "index.html#bluedarkred12-diverging",
+    "title": "dicopal",
+    "section": "1.104 BlueDarkRed12, diverging",
+    "text": "1.104 BlueDarkRed12, diverging"
+  },
+  {
+    "objectID": "index.html#bluedarkred18-diverging",
+    "href": "index.html#bluedarkred18-diverging",
+    "title": "dicopal",
+    "section": "1.105 BlueDarkRed18, diverging",
+    "text": "1.105 BlueDarkRed18, diverging"
+  },
+  {
+    "objectID": "index.html#bluegray-diverging",
+    "href": "index.html#bluegray-diverging",
+    "title": "dicopal",
+    "section": "1.106 BlueGray, diverging",
+    "text": "1.106 BlueGray, diverging"
+  },
+  {
+    "objectID": "index.html#bluegreen-diverging",
+    "href": "index.html#bluegreen-diverging",
+    "title": "dicopal",
+    "section": "1.107 BlueGreen, diverging",
+    "text": "1.107 BlueGreen, diverging"
+  },
+  {
+    "objectID": "index.html#bluegrey-diverging",
+    "href": "index.html#bluegrey-diverging",
+    "title": "dicopal",
+    "section": "1.108 BlueGrey, diverging",
+    "text": "1.108 BlueGrey, diverging"
+  },
+  {
+    "objectID": "index.html#blueorange10-diverging",
+    "href": "index.html#blueorange10-diverging",
+    "title": "dicopal",
+    "section": "1.109 BlueOrange10, diverging",
+    "text": "1.109 BlueOrange10, diverging"
+  },
+  {
+    "objectID": "index.html#blueorange12-diverging",
+    "href": "index.html#blueorange12-diverging",
+    "title": "dicopal",
+    "section": "1.110 BlueOrange12, diverging",
+    "text": "1.110 BlueOrange12, diverging"
+  },
+  {
+    "objectID": "index.html#blueorange8-diverging",
+    "href": "index.html#blueorange8-diverging",
+    "title": "dicopal",
+    "section": "1.111 BlueOrange8, diverging",
+    "text": "1.111 BlueOrange8, diverging"
+  },
+  {
+    "objectID": "index.html#blueorangered-diverging",
+    "href": "index.html#blueorangered-diverging",
+    "title": "dicopal",
+    "section": "1.112 BlueOrangeRed, diverging",
+    "text": "1.112 BlueOrangeRed, diverging"
+  },
+  {
+    "objectID": "index.html#brownblue10-diverging",
+    "href": "index.html#brownblue10-diverging",
+    "title": "dicopal",
+    "section": "1.113 BrownBlue10, diverging",
+    "text": "1.113 BrownBlue10, diverging"
+  },
+  {
+    "objectID": "index.html#brownblue12-diverging",
+    "href": "index.html#brownblue12-diverging",
+    "title": "dicopal",
+    "section": "1.114 BrownBlue12, diverging",
+    "text": "1.114 BrownBlue12, diverging"
+  },
+  {
+    "objectID": "index.html#greenmagenta-diverging",
+    "href": "index.html#greenmagenta-diverging",
+    "title": "dicopal",
+    "section": "1.115 GreenMagenta, diverging",
+    "text": "1.115 GreenMagenta, diverging"
+  },
+  {
+    "objectID": "index.html#redyellowblue-diverging",
+    "href": "index.html#redyellowblue-diverging",
+    "title": "dicopal",
+    "section": "1.116 RedYellowBlue, diverging",
+    "text": "1.116 RedYellowBlue, diverging"
+  },
+  {
+    "objectID": "index.html#berlin-diverging",
+    "href": "index.html#berlin-diverging",
+    "title": "dicopal",
+    "section": "1.117 Berlin, diverging",
+    "text": "1.117 Berlin, diverging"
+  },
+  {
+    "objectID": "index.html#broc-diverging",
+    "href": "index.html#broc-diverging",
+    "title": "dicopal",
+    "section": "1.118 Broc, diverging",
+    "text": "1.118 Broc, diverging"
+  },
+  {
+    "objectID": "index.html#cork-diverging",
+    "href": "index.html#cork-diverging",
+    "title": "dicopal",
+    "section": "1.119 Cork, diverging",
+    "text": "1.119 Cork, diverging"
+  },
+  {
+    "objectID": "index.html#lisbon-diverging",
+    "href": "index.html#lisbon-diverging",
+    "title": "dicopal",
+    "section": "1.120 Lisbon, diverging",
+    "text": "1.120 Lisbon, diverging"
+  },
+  {
+    "objectID": "index.html#roma-diverging",
+    "href": "index.html#roma-diverging",
+    "title": "dicopal",
+    "section": "1.121 Roma, diverging",
+    "text": "1.121 Roma, diverging"
+  },
+  {
+    "objectID": "index.html#tofino-diverging",
+    "href": "index.html#tofino-diverging",
+    "title": "dicopal",
+    "section": "1.122 Tofino, diverging",
+    "text": "1.122 Tofino, diverging"
+  },
+  {
+    "objectID": "index.html#vik-diverging",
+    "href": "index.html#vik-diverging",
+    "title": "dicopal",
+    "section": "1.123 Vik, diverging",
+    "text": "1.123 Vik, diverging"
+  },
+  {
+    "objectID": "index.html#antique-qualitative",
+    "href": "index.html#antique-qualitative",
+    "title": "dicopal",
+    "section": "1.124 Antique, qualitative",
+    "text": "1.124 Antique, qualitative"
+  },
+  {
+    "objectID": "index.html#bold-qualitative",
+    "href": "index.html#bold-qualitative",
+    "title": "dicopal",
+    "section": "1.125 Bold, qualitative",
+    "text": "1.125 Bold, qualitative"
+  },
+  {
+    "objectID": "index.html#pastel-qualitative",
+    "href": "index.html#pastel-qualitative",
+    "title": "dicopal",
+    "section": "1.126 Pastel, qualitative",
+    "text": "1.126 Pastel, qualitative"
+  },
+  {
+    "objectID": "index.html#prism-qualitative",
+    "href": "index.html#prism-qualitative",
+    "title": "dicopal",
+    "section": "1.127 Prism, qualitative",
+    "text": "1.127 Prism, qualitative"
+  },
+  {
+    "objectID": "index.html#safe-qualitative",
+    "href": "index.html#safe-qualitative",
+    "title": "dicopal",
+    "section": "1.128 Safe, qualitative",
+    "text": "1.128 Safe, qualitative"
+  },
+  {
+    "objectID": "index.html#vivid-qualitative",
+    "href": "index.html#vivid-qualitative",
+    "title": "dicopal",
+    "section": "1.129 Vivid, qualitative",
+    "text": "1.129 Vivid, qualitative"
+  },
+  {
+    "objectID": "index.html#accent-qualitative",
+    "href": "index.html#accent-qualitative",
+    "title": "dicopal",
+    "section": "1.130 Accent, qualitative",
+    "text": "1.130 Accent, qualitative"
+  },
+  {
+    "objectID": "index.html#dark2-qualitative",
+    "href": "index.html#dark2-qualitative",
+    "title": "dicopal",
+    "section": "1.131 Dark2, qualitative",
+    "text": "1.131 Dark2, qualitative"
+  },
+  {
+    "objectID": "index.html#paired-qualitative",
+    "href": "index.html#paired-qualitative",
+    "title": "dicopal",
+    "section": "1.132 Paired, qualitative",
+    "text": "1.132 Paired, qualitative"
+  },
+  {
+    "objectID": "index.html#pastel1-qualitative",
+    "href": "index.html#pastel1-qualitative",
+    "title": "dicopal",
+    "section": "1.133 Pastel1, qualitative",
+    "text": "1.133 Pastel1, qualitative"
+  },
+  {
+    "objectID": "index.html#pastel2-qualitative",
+    "href": "index.html#pastel2-qualitative",
+    "title": "dicopal",
+    "section": "1.134 Pastel2, qualitative",
+    "text": "1.134 Pastel2, qualitative"
+  },
+  {
+    "objectID": "index.html#set1-qualitative",
+    "href": "index.html#set1-qualitative",
+    "title": "dicopal",
+    "section": "1.135 Set1, qualitative",
+    "text": "1.135 Set1, qualitative"
+  },
+  {
+    "objectID": "index.html#set2-qualitative",
+    "href": "index.html#set2-qualitative",
+    "title": "dicopal",
+    "section": "1.136 Set2, qualitative",
+    "text": "1.136 Set2, qualitative"
+  },
+  {
+    "objectID": "index.html#set3-qualitative",
+    "href": "index.html#set3-qualitative",
+    "title": "dicopal",
+    "section": "1.137 Set3, qualitative",
+    "text": "1.137 Set3, qualitative"
+  },
+  {
+    "objectID": "index.html#bluered-qualitative",
+    "href": "index.html#bluered-qualitative",
+    "title": "dicopal",
+    "section": "1.138 BlueRed, qualitative",
+    "text": "1.138 BlueRed, qualitative"
+  },
+  {
+    "objectID": "index.html#colorblind-qualitative",
+    "href": "index.html#colorblind-qualitative",
+    "title": "dicopal",
+    "section": "1.139 ColorBlind, qualitative",
+    "text": "1.139 ColorBlind, qualitative"
+  },
+  {
+    "objectID": "index.html#gray-qualitative",
+    "href": "index.html#gray-qualitative",
+    "title": "dicopal",
+    "section": "1.140 Gray, qualitative",
+    "text": "1.140 Gray, qualitative"
+  },
+  {
+    "objectID": "index.html#greenorange-qualitative",
+    "href": "index.html#greenorange-qualitative",
+    "title": "dicopal",
+    "section": "1.141 GreenOrange, qualitative",
+    "text": "1.141 GreenOrange, qualitative"
+  },
+  {
+    "objectID": "index.html#purplegray-qualitative",
+    "href": "index.html#purplegray-qualitative",
+    "title": "dicopal",
+    "section": "1.142 PurpleGray, qualitative",
+    "text": "1.142 PurpleGray, qualitative"
+  },
+  {
+    "objectID": "index.html#tableaulight-qualitative",
+    "href": "index.html#tableaulight-qualitative",
+    "title": "dicopal",
+    "section": "1.143 TableauLight, qualitative",
+    "text": "1.143 TableauLight, qualitative"
+  },
+  {
+    "objectID": "index.html#tableaumedium-qualitative",
+    "href": "index.html#tableaumedium-qualitative",
+    "title": "dicopal",
+    "section": "1.144 TableauMedium, qualitative",
+    "text": "1.144 TableauMedium, qualitative"
+  },
+  {
+    "objectID": "index.html#tableau-qualitative",
+    "href": "index.html#tableau-qualitative",
+    "title": "dicopal",
+    "section": "1.145 Tableau, qualitative",
+    "text": "1.145 Tableau, qualitative"
+  },
+  {
+    "objectID": "index.html#trafficlight-qualitative",
+    "href": "index.html#trafficlight-qualitative",
+    "title": "dicopal",
+    "section": "1.146 TrafficLight, qualitative",
+    "text": "1.146 TrafficLight, qualitative"
+  },
+  {
+    "objectID": "index.html#aquatic1-qualitative",
+    "href": "index.html#aquatic1-qualitative",
+    "title": "dicopal",
+    "section": "1.147 Aquatic1, qualitative",
+    "text": "1.147 Aquatic1, qualitative"
+  },
+  {
+    "objectID": "index.html#aquatic2-qualitative",
+    "href": "index.html#aquatic2-qualitative",
+    "title": "dicopal",
+    "section": "1.148 Aquatic2, qualitative",
+    "text": "1.148 Aquatic2, qualitative"
+  },
+  {
+    "objectID": "index.html#aquatic3-qualitative",
+    "href": "index.html#aquatic3-qualitative",
+    "title": "dicopal",
+    "section": "1.149 Aquatic3, qualitative",
+    "text": "1.149 Aquatic3, qualitative"
+  },
+  {
+    "objectID": "index.html#cavalcanti-qualitative",
+    "href": "index.html#cavalcanti-qualitative",
+    "title": "dicopal",
+    "section": "1.150 Cavalcanti, qualitative",
+    "text": "1.150 Cavalcanti, qualitative"
+  },
+  {
+    "objectID": "index.html#chevalier-qualitative",
+    "href": "index.html#chevalier-qualitative",
+    "title": "dicopal",
+    "section": "1.151 Chevalier, qualitative",
+    "text": "1.151 Chevalier, qualitative"
+  },
+  {
+    "objectID": "index.html#darjeeling1-qualitative",
+    "href": "index.html#darjeeling1-qualitative",
+    "title": "dicopal",
+    "section": "1.152 Darjeeling1, qualitative",
+    "text": "1.152 Darjeeling1, qualitative"
+  },
+  {
+    "objectID": "index.html#darjeeling2-qualitative",
+    "href": "index.html#darjeeling2-qualitative",
+    "title": "dicopal",
+    "section": "1.153 Darjeeling2, qualitative",
+    "text": "1.153 Darjeeling2, qualitative"
+  },
+  {
+    "objectID": "index.html#darjeeling3-qualitative",
+    "href": "index.html#darjeeling3-qualitative",
+    "title": "dicopal",
+    "section": "1.154 Darjeeling3, qualitative",
+    "text": "1.154 Darjeeling3, qualitative"
+  },
+  {
+    "objectID": "index.html#darjeeling4-qualitative",
+    "href": "index.html#darjeeling4-qualitative",
+    "title": "dicopal",
+    "section": "1.155 Darjeeling4, qualitative",
+    "text": "1.155 Darjeeling4, qualitative"
+  },
+  {
+    "objectID": "index.html#fantasticfox1-qualitative",
+    "href": "index.html#fantasticfox1-qualitative",
+    "title": "dicopal",
+    "section": "1.156 FantasticFox1, qualitative",
+    "text": "1.156 FantasticFox1, qualitative"
+  },
+  {
+    "objectID": "index.html#fantasticfox2-qualitative",
+    "href": "index.html#fantasticfox2-qualitative",
+    "title": "dicopal",
+    "section": "1.157 FantasticFox2, qualitative",
+    "text": "1.157 FantasticFox2, qualitative"
+  },
+  {
+    "objectID": "index.html#grandbudapest1-qualitative",
+    "href": "index.html#grandbudapest1-qualitative",
+    "title": "dicopal",
+    "section": "1.158 GrandBudapest1, qualitative",
+    "text": "1.158 GrandBudapest1, qualitative"
+  },
+  {
+    "objectID": "index.html#grandbudapest2-qualitative",
+    "href": "index.html#grandbudapest2-qualitative",
+    "title": "dicopal",
+    "section": "1.159 GrandBudapest2, qualitative",
+    "text": "1.159 GrandBudapest2, qualitative"
+  },
+  {
+    "objectID": "index.html#grandbudapest3-qualitative",
+    "href": "index.html#grandbudapest3-qualitative",
+    "title": "dicopal",
+    "section": "1.160 GrandBudapest3, qualitative",
+    "text": "1.160 GrandBudapest3, qualitative"
+  },
+  {
+    "objectID": "index.html#grandbudapest4-qualitative",
+    "href": "index.html#grandbudapest4-qualitative",
+    "title": "dicopal",
+    "section": "1.161 GrandBudapest4, qualitative",
+    "text": "1.161 GrandBudapest4, qualitative"
+  },
+  {
+    "objectID": "index.html#grandbudapest5-qualitative",
+    "href": "index.html#grandbudapest5-qualitative",
+    "title": "dicopal",
+    "section": "1.162 GrandBudapest5, qualitative",
+    "text": "1.162 GrandBudapest5, qualitative"
+  },
+  {
+    "objectID": "index.html#isleofdogs1-qualitative",
+    "href": "index.html#isleofdogs1-qualitative",
+    "title": "dicopal",
+    "section": "1.163 IsleOfDogs1, qualitative",
+    "text": "1.163 IsleOfDogs1, qualitative"
+  },
+  {
+    "objectID": "index.html#isleofdogs2-qualitative",
+    "href": "index.html#isleofdogs2-qualitative",
+    "title": "dicopal",
+    "section": "1.164 IsleOfDogs2, qualitative",
+    "text": "1.164 IsleOfDogs2, qualitative"
+  },
+  {
+    "objectID": "index.html#isleofdogs3-qualitative",
+    "href": "index.html#isleofdogs3-qualitative",
+    "title": "dicopal",
+    "section": "1.165 IsleOfDogs3, qualitative",
+    "text": "1.165 IsleOfDogs3, qualitative"
+  },
+  {
+    "objectID": "index.html#margot1-qualitative",
+    "href": "index.html#margot1-qualitative",
+    "title": "dicopal",
+    "section": "1.166 Margot1, qualitative",
+    "text": "1.166 Margot1, qualitative"
+  },
+  {
+    "objectID": "index.html#margot2-qualitative",
+    "href": "index.html#margot2-qualitative",
+    "title": "dicopal",
+    "section": "1.167 Margot2, qualitative",
+    "text": "1.167 Margot2, qualitative"
+  },
+  {
+    "objectID": "index.html#margot3-qualitative",
+    "href": "index.html#margot3-qualitative",
+    "title": "dicopal",
+    "section": "1.168 Margot3, qualitative",
+    "text": "1.168 Margot3, qualitative"
+  },
+  {
+    "objectID": "index.html#mendl-qualitative",
+    "href": "index.html#mendl-qualitative",
+    "title": "dicopal",
+    "section": "1.169 Mendl, qualitative",
+    "text": "1.169 Mendl, qualitative"
+  },
+  {
+    "objectID": "index.html#moonrise1-qualitative",
+    "href": "index.html#moonrise1-qualitative",
+    "title": "dicopal",
+    "section": "1.170 Moonrise1, qualitative",
+    "text": "1.170 Moonrise1, qualitative"
+  },
+  {
+    "objectID": "index.html#moonrise2-qualitative",
+    "href": "index.html#moonrise2-qualitative",
+    "title": "dicopal",
+    "section": "1.171 Moonrise2, qualitative",
+    "text": "1.171 Moonrise2, qualitative"
+  },
+  {
+    "objectID": "index.html#moonrise3-qualitative",
+    "href": "index.html#moonrise3-qualitative",
+    "title": "dicopal",
+    "section": "1.172 Moonrise3, qualitative",
+    "text": "1.172 Moonrise3, qualitative"
+  },
+  {
+    "objectID": "index.html#moonrise4-qualitative",
+    "href": "index.html#moonrise4-qualitative",
+    "title": "dicopal",
+    "section": "1.173 Moonrise4, qualitative",
+    "text": "1.173 Moonrise4, qualitative"
+  },
+  {
+    "objectID": "index.html#moonrise5-qualitative",
+    "href": "index.html#moonrise5-qualitative",
+    "title": "dicopal",
+    "section": "1.174 Moonrise5, qualitative",
+    "text": "1.174 Moonrise5, qualitative"
+  },
+  {
+    "objectID": "index.html#moonrise6-qualitative",
+    "href": "index.html#moonrise6-qualitative",
+    "title": "dicopal",
+    "section": "1.175 Moonrise6, qualitative",
+    "text": "1.175 Moonrise6, qualitative"
+  },
+  {
+    "objectID": "index.html#moonrise7-qualitative",
+    "href": "index.html#moonrise7-qualitative",
+    "title": "dicopal",
+    "section": "1.176 Moonrise7, qualitative",
+    "text": "1.176 Moonrise7, qualitative"
+  },
+  {
+    "objectID": "index.html#royal1-qualitative",
+    "href": "index.html#royal1-qualitative",
+    "title": "dicopal",
+    "section": "1.177 Royal1, qualitative",
+    "text": "1.177 Royal1, qualitative"
+  },
+  {
+    "objectID": "index.html#royal2-qualitative",
+    "href": "index.html#royal2-qualitative",
+    "title": "dicopal",
+    "section": "1.178 Royal2, qualitative",
+    "text": "1.178 Royal2, qualitative"
+  },
+  {
+    "objectID": "index.html#royal3-qualitative",
+    "href": "index.html#royal3-qualitative",
+    "title": "dicopal",
+    "section": "1.179 Royal3, qualitative",
+    "text": "1.179 Royal3, qualitative"
+  },
+  {
+    "objectID": "index.html#zissou-qualitative",
+    "href": "index.html#zissou-qualitative",
+    "title": "dicopal",
+    "section": "1.180 Zissou, qualitative",
+    "text": "1.180 Zissou, qualitative"
+  },
+  {
+    "objectID": "index.html#okabe_ito_categorigal-qualitative",
+    "href": "index.html#okabe_ito_categorigal-qualitative",
+    "title": "dicopal",
+    "section": "1.181 Okabe_Ito_Categorigal, qualitative",
+    "text": "1.181 Okabe_Ito_Categorigal, qualitative"
+  },
+  {
+    "objectID": "index.html#stop-talking-i-want-colors",
+    "href": "index.html#stop-talking-i-want-colors",
+    "title": "dicopal",
+    "section": "1.2 Stop talking, I want colors",
+    "text": "1.2 Stop talking, I want colors\nYou’ll find all palettes below in order sequential, diverging, qualitative. If you want to browse by source or type, use the table of contents.\n\n\nCode\nfrom dicopal.create_page import create_page_by_type\n\npath = \"dicopal.js/src/palettes.json\"\ncreate_page_by_type(\"sequential\", path)\ncreate_page_by_type(\"diverging\", path)\ncreate_page_by_type(\"qualitative\", path)\n\n\n1.3 BluGrn, sequential\n\n\n\n\n\n\n\n\n['#C4E6C3','#96D2A4','#6DBC90','#4DA284','#36877A','#266B6E','#1D4F60']\n\n\n1.4 BluYl, sequential\n\n\n\n\n\n\n\n\n['#F7FEAE','#B7E6A5','#7CCBA2','#46AEA0','#089099','#00718B','#045275']\n\n\n1.5 BrwnYl, sequential\n\n\n\n\n\n\n\n\n['#EDE5CF','#E0C2A2','#D39C83','#C1766F','#A65461','#813753','#541F3F']\n\n\n1.6 BurgYl, sequential\n\n\n\n\n\n\n\n\n['#FBE6C5','#F5BA98','#EE8A82','#DC7176','#C8586C','#9C3F5D','#70284A']\n\n\n1.7 Burg, sequential\n\n\n\n\n\n\n\n\n['#FFC6C4','#F4A3A8','#E38191','#CC607D','#AD466C','#8B3058','#672044']\n\n\n1.8 DarkMint, sequential\n\n\n\n\n\n\n\n\n['#D2FBD4','#A5DBC2','#7BBCB0','#559C9E','#3A7C89','#235D72','#123F5A']\n\n\n1.9 Emrld, sequential\n\n\n\n\n\n\n\n\n['#D3F2A3','#97E196','#6CC08B','#4C9B82','#217A79','#105965','#074050']\n\n\n1.10 Magenta, sequential\n\n\n\n\n\n\n\n\n['#F3CBD3','#EAA9BD','#DD88AC','#CA699D','#B14D8E','#91357D','#6C2167']\n\n\n1.11 Mint, sequential\n\n\n\n\n\n\n\n\n['#E4F1E1','#B4D9CC','#89C0B6','#63A6A0','#448C8A','#287274','#0D585F']\n\n\n1.12 OrYel, sequential\n\n\n\n\n\n\n\n\n['#ECDA9A','#EFC47E','#F3AD6A','#F7945D','#F97B57','#F66356','#EE4D5A']\n\n\n1.13 Peach, sequential\n\n\n\n\n\n\n\n\n['#FDE0C5','#FACBA6','#F8B58B','#F59E72','#F2855D','#EF6A4C','#EB4A40']\n\n\n1.14 PinkYl, sequential\n\n\n\n\n\n\n\n\n['#FEF6B5','#FFDD9A','#FFC285','#FFA679','#FA8A76','#F16D7A','#E15383']\n\n\n1.15 PurpOr, sequential\n\n\n\n\n\n\n\n\n['#F9DDDA','#F2B9C4','#E597B9','#CE78B3','#AD5FAD','#834BA0','#573B88']\n\n\n1.16 Purp, sequential\n\n\n\n\n\n\n\n\n['#F3E0F7','#E4C7F1','#D1AFE8','#B998DD','#9F82CE','#826DBA','#63589F']\n\n\n1.17 RedOr, sequential\n\n\n\n\n\n\n\n\n['#F6D2A9','#F5B78E','#F19C7C','#EA8171','#DD686C','#CA5268','#B13F64']\n\n\n1.18 SunsetDark, sequential\n\n\n\n\n\n\n\n\n['#FCDE9C','#FAA476','#F0746E','#E34F6F','#DC3977','#B9257A','#7C1D6F']\n\n\n1.19 Sunset, sequential\n\n\n\n\n\n\n\n\n['#F3E79B','#FAC484','#F8A07E','#EB7F86','#CE6693','#A059A0','#5C53A5']\n\n\n1.20 TealGrn, sequential\n\n\n\n\n\n\n\n\n['#B0F2BC','#89E8AC','#67DBA5','#4CC8A3','#38B2A3','#2C98A0','#257D98']\n\n\n1.21 Teal, sequential\n\n\n\n\n\n\n\n\n['#D1EEEA','#A8DBD9','#85C4C9','#68ABB8','#4F90A6','#3B738F','#2A5674']\n\n\n1.22 agGrnYl, sequential\n\n\n\n\n\n\n\n\n['#245668','#0F7279','#0D8F81','#39AB7E','#6EC574','#A9DC67','#EDEF5D']\n\n\n1.23 agSunset, sequential\n\n\n\n\n\n\n\n\n['#4B2991','#872CA2','#C0369D','#EA4F88','#FA7876','#F6A97A','#EDD9A3']\n\n\n1.24 Algae, sequential\n\n\n\n\n\n\n\n\n['#D7F9D0','#C7EDBD','#B5E1A9','#A4D698','#92CB86','#80C176','#6BB767','#54AE5B','#39A553','#1C9A51','#0B8F4F','#07824C','#0D7648','#136A43','#185E3D','#1A5336','#1A472E','#183B26','#162F1D','#122414']\n\n\n1.25 Amp, sequential\n\n\n\n\n\n\n\n\n['#F1EDEC','#EADDDA','#E4CDC6','#DFBEB3','#DBAE9F','#D69F8C','#D18F78','#CD8066','#C87155','#C36143','#BD5134','#B63F29','#AE2D24','#A21E25','#931228','#830E29','#700E27','#5F0E21','#4D0C1A','#3C0912']\n\n\n1.26 Deep, sequential\n\n\n\n\n\n\n\n\n['#FDFECC','#E3F4BD','#C6EAB0','#AAE0A8','#8BD6A3','#73CBA3','#61BEA4','#56B0A4','#50A3A2','#4A959F','#46889C','#427A99','#3F6D97','#3E6094','#3F508E','#424380','#3F3869','#392E54','#30243E','#281A2C']\n\n\n1.27 Dense, sequential\n\n\n\n\n\n\n\n\n['#E6F1F1','#D0E6E9','#B9DAE4','#A5CFE2','#92C3E2','#83B6E3','#78A8E4','#749AE4','#748AE2','#7679DA','#786AD0','#795AC1','#784CB1','#753E9F','#70318A','#6A2675','#601C5E','#551649','#461234','#360E24']\n\n\n1.28 Gray, sequential\n\n\n\n\n\n\n\n\n['#000000','#060606','#151414','#212121','#2E2E2E','#3A3939','#474646','#525251','#5E5E5D','#6B6B6A','#777776','#858484','#929191','#9F9F9E','#AEADAD','#BCBCBB','#CCCCCB','#DCDCDB','#EEEDEC','#FFFFFD']\n\n\n1.29 Haline, sequential\n\n\n\n\n\n\n\n\n['#2A186C','#2E1C8C','#262BA3','#16409D','#0C5195','#115E8F','#1D6B8B','#27768A','#308189','#388D88','#3F9986','#47A583','#51B17D','#5EBD75','#73C86A','#8DD25F','#AFD95D','#CCDF6A','#E7E781','#FDEF9A']\n\n\n1.30 Ice, sequential\n\n\n\n\n\n\n\n\n['#040613','#101125','#1D1C3A','#28264E','#323164','#3A3B7A','#3E4890','#3F55A1','#3E63AD','#4073B4','#4581BA','#4E90BF','#599EC4','#65ACC9','#75BBCF','#88C8D4','#A0D6DC','#B9E2E5','#D3EFF1','#EAFDFD']\n\n\n1.31 Matter, sequential\n\n\n\n\n\n\n\n\n['#FEEDB0','#FCDB9F','#FAC88D','#F8B67E','#F5A370','#F19164','#EC7E5A','#E76C55','#DF5B53','#D54B54','#C83D58','#B9325D','#AA2961','#9A2263','#881D63','#761A61','#63185B','#521653','#401349','#2F0F3E']\n\n\n1.32 Oxy, sequential\n\n\n\n\n\n\n\n\n['#400505','#55070B','#6D060F','#83080C','#525151','#5F5E5E','#6B6B6A','#787777','#858584','#939392','#A2A1A0','#B1B0AF','#C0C0BF','#CFCFCE','#E0E0DF','#F2F2F1','#EAF145','#E8D92E','#E3C322','#DDAF19']\n\n\n1.33 Phase, sequential\n\n\n\n\n\n\n\n\n['#A8780D','#BA6B23','#CA5C3A','#D54B53','#DD3876','#DE289D','#D42AC7','#C33EE2','#AC54F1','#8F69F4','#6E7AEB','#4788D5','#2A90BA','#1A94A0','#0E9884','#139A66','#3C993C','#6B9017','#8F840D','#A8780D']\n\n\n1.34 Solar, sequential\n\n\n\n\n\n\n\n\n['#331418','#43191E','#551E22','#652324','#772824','#852E21','#93381D','#9F4319','#A84F16','#B25D14','#BA6B13','#C17A14','#C78817','#CD971B','#D3A721','#D7B728','#DBC831','#DED939','#E0EB42','#E1FD4B']\n\n\n1.35 Speed, sequential\n\n\n\n\n\n\n\n\n['#FFFDCD','#F6EDB1','#EDDD93','#E3CF77','#D5C259','#C5B83F','#B1AE27','#9BA614','#859F07','#6C9607','#548E11','#3B841C','#257A24','#136F29','#0B632C','#0F562C','#15492A','#193D24','#192F1C','#172313']\n\n\n1.36 Tempo, sequential\n\n\n\n\n\n\n\n\n['#FFF6F4','#EDEAE1','#D9DDCD','#C6D3BC','#B1C8AC','#9CBF9F','#85B593','#6DAD8A','#54A484','#389981','#218E7E','#12827B','#127676','#166971','#1A5C6A','#1C5062','#1C435A','#1A3753','#182A4B','#151D44']\n\n\n1.37 Thermal, sequential\n\n\n\n\n\n\n\n\n['#042333','#072C4D','#12326F','#273491','#4635A0','#5B3D9B','#6E4794','#804E8F','#92558B','#A65C86','#BA627E','#CE6971','#E07163','#EE7D53','#F88E44','#FBA13D','#FBB73D','#F8CD44','#F1E44F','#E8FA5B']\n\n\n1.38 Turbid, sequential\n\n\n\n\n\n\n\n\n['#E9F6AB','#E2E798','#DAD784','#D4C873','#CEB862','#C8AA55','#C19B4A','#BA8E42','#B1823E','#A7763C','#9C6B3B','#8F613A','#825839','#755037','#664835','#594031','#4A382C','#3D3027','#2F2721','#221F1B']\n\n\n1.39 Blues, sequential\n\n\n\n\n\n\n\n\n['#F7FBFF','#DEEBF7','#C6DBEF','#9ECAE1','#6BAED6','#4292C6','#2171B5','#08519C','#08306B']\n\n\n1.40 BuGn, sequential\n\n\n\n\n\n\n\n\n['#F7FCFD','#E5F5F9','#CCECE6','#99D8C9','#66C2A4','#41AE76','#238B45','#006D2C','#00441B']\n\n\n1.41 BuPu, sequential\n\n\n\n\n\n\n\n\n['#F7FCFD','#E0ECF4','#BFD3E6','#9EBCDA','#8C96C6','#8C6BB1','#88419D','#810F7C','#4D004B']\n\n\n1.42 GnBu, sequential\n\n\n\n\n\n\n\n\n['#F7FCF0','#E0F3DB','#CCEBC5','#A8DDB5','#7BCCC4','#4EB3D3','#2B8CBE','#0868AC','#084081']\n\n\n1.43 Greens, sequential\n\n\n\n\n\n\n\n\n['#F7FCF5','#E5F5E0','#C7E9C0','#A1D99B','#74C476','#41AB5D','#238B45','#006D2C','#00441B']\n\n\n1.44 Greys, sequential\n\n\n\n\n\n\n\n\n['#FFFFFF','#F0F0F0','#D9D9D9','#BDBDBD','#969696','#737373','#525252','#252525','#000000']\n\n\n1.45 OrRd, sequential\n\n\n\n\n\n\n\n\n['#FFF7EC','#FEE8C8','#FDD49E','#FDBB84','#FC8D59','#EF6548','#D7301F','#B30000','#7F0000']\n\n\n1.46 Oranges, sequential\n\n\n\n\n\n\n\n\n['#FFF5EB','#FEE6CE','#FDD0A2','#FDAE6B','#FD8D3C','#F16913','#D94801','#A63603','#7F2704']\n\n\n1.47 PuBuGn, sequential\n\n\n\n\n\n\n\n\n['#FFF7FB','#ECE2F0','#D0D1E6','#A6BDDB','#67A9CF','#3690C0','#02818A','#016C59','#014636']\n\n\n1.48 PuBu, sequential\n\n\n\n\n\n\n\n\n['#FFF7FB','#ECE7F2','#D0D1E6','#A6BDDB','#74A9CF','#3690C0','#0570B0','#045A8D','#023858']\n\n\n1.49 PuRd, sequential\n\n\n\n\n\n\n\n\n['#F7F4F9','#E7E1EF','#D4B9DA','#C994C7','#DF65B0','#E7298A','#CE1256','#980043','#67001F']\n\n\n1.50 Purples, sequential\n\n\n\n\n\n\n\n\n['#FCFBFD','#EFEDF5','#DADAEB','#BCBDDC','#9E9AC8','#807DBA','#6A51A3','#54278F','#3F007D']\n\n\n1.51 RdPu, sequential\n\n\n\n\n\n\n\n\n['#FFF7F3','#FDE0DD','#FCC5C0','#FA9FB5','#F768A1','#DD3497','#AE017E','#7A0177','#49006A']\n\n\n1.52 Reds, sequential\n\n\n\n\n\n\n\n\n['#FFF5F0','#FEE0D2','#FCBBA1','#FC9272','#FB6A4A','#EF3B2C','#CB181D','#A50F15','#67000D']\n\n\n1.53 YlGnBu, sequential\n\n\n\n\n\n\n\n\n['#FFFFD9','#EDF8B1','#C7E9B4','#7FCDBB','#41B6C4','#1D91C0','#225EA8','#253494','#081D58']\n\n\n1.54 YlGn, sequential\n\n\n\n\n\n\n\n\n['#FFFFE5','#F7FCB9','#D9F0A3','#ADDD8E','#78C679','#41AB5D','#238443','#006837','#004529']\n\n\n1.55 YlOrBr, sequential\n\n\n\n\n\n\n\n\n['#FFFFE5','#FFF7BC','#FEE391','#FEC44F','#FE9929','#EC7014','#CC4C02','#993404','#662506']\n\n\n1.56 YlOrRd, sequential\n\n\n\n\n\n\n\n\n['#FFFFCC','#FFEDA0','#FED976','#FEB24C','#FD8D3C','#FC4E2A','#E31A1C','#BD0026','#800026']\n\n\n1.57 Blues10, sequential\n\n\n\n\n\n\n\n\n['#E5FFFF','#CCFAFF','#B2F2FF','#99E5FF','#7FD4FF','#65BFFF','#4CA5FF','#3288FF','#1965FF','#003FFF']\n\n\n1.58 Blues7, sequential\n\n\n\n\n\n\n\n\n['#FFFFFF','#CCFDFF','#99F8FF','#66EFFF','#33E3FF','#00AACC','#007A99']\n\n\n1.59 Inferno, sequential\n\n\n\n\n\n\n\n\n['#000004','#08051D','#190C3E','#2F0A5B','#470B6A','#5C126E','#721A6E','#87216B','#9B2964','#B1325A','#C43C4E','#D74B3F','#E55C30','#F06F20','#F8870E','#FC9F07','#FBBA1F','#F7D340','#F1ED71','#FCFFA4']\n\n\n1.60 Magma, sequential\n\n\n\n\n\n\n\n\n['#000004','#07061C','#160F3B','#29115A','#400F74','#56147D','#6B1D81','#802582','#942C80','#AB337C','#C03A76','#D6456C','#E85362','#F4675C','#FA815F','#FD9A6A','#FEB47B','#FECC8F','#FDE5A7','#FCFDBF']\n\n\n1.61 Plasma, sequential\n\n\n\n\n\n\n\n\n['#0D0887','#2C0594','#44039E','#5901A5','#6F00A8','#8305A7','#9613A1','#A72197','#B6308B','#C5407E','#D14E72','#DD5E66','#E76E5B','#EF7E50','#F79044','#FBA238','#FEB72D','#FDCB26','#F7E225','#F0F921']\n\n\n1.62 Viridis, sequential\n\n\n\n\n\n\n\n\n['#440154','#481467','#482677','#453781','#3F4788','#39558C','#32648E','#2D718E','#287D8E','#238A8D','#1F968B','#20A386','#29AF7F','#3BBB75','#56C667','#73D056','#95D840','#B8DE29','#DDE318','#FDE725']\n\n\n1.63 Cube1, sequential\n\n\n\n\n\n\n\n\n['#780085','#8209AA','#812AD0','#794DED','#6B68FD','#5F82F3','#5098E0','#3FABC9','#3ABCAE','#45CA8E','#4DD471','#57E04E','#6DE84B','#8EEB52','#AFEC57','#C8EC59','#D8E25B','#E7D05D','#F5B65E','#F9965B']\n\n\n1.64 CubeYF, sequential\n\n\n\n\n\n\n\n\n['#7B0290','#850DB1','#852DCE','#7F45E6','#715BFB','#686EFF','#5E84F2','#5294E3','#47A4D3','#3AB4BD','#3CBFA8','#45CA8D','#4CD376','#54DB5F','#5CE349','#71E84C','#91EB52','#ABEC56','#BFEC59','#D1EB5B']\n\n\n1.65 LinearL, sequential\n\n\n\n\n\n\n\n\n['#040404','#200C1C','#2E1532','#2D1C5F','#222C78','#1B3C81','#104F80','#01626F','#00735F','#008549','#009638','#00A822','#3BB300','#57C000','#A1C500','#CBCA33','#E7D197','#F7DCC6','#F7EFE8','#FFFFFF']\n\n\n1.66 Acton, sequential\n\n\n\n\n\n\n\n\n['#2E214D','#3B2D58','#4A3A65','#594672','#6A527E','#7B5B88','#8D628F','#9D6592','#AB6694','#BB6A98','#CA739F','#D381AA','#D58DB2','#D498BA','#D3A4C2','#D5AFCB','#D7BDD4','#DBCADD','#E1D8E7','#E6E6F0']\n\n\n1.67 Bamako, sequential\n\n\n\n\n\n\n\n\n['#00404C','#094548','#124A43','#1A503E','#245638','#2D5C32','#37632C','#416926','#4C7120','#5A7918','#688210','#798A07','#8A8F03','#9C940B','#B4A120','#C9B238','#DBC152','#E7CE6A','#F4DA83','#FFE599']\n\n\n1.68 Batlow, sequential\n\n\n\n\n\n\n\n\n['#011959','#08275C','#0E355E','#134360','#1A5261','#265F5F','#386A58','#4B724E','#5F7843','#757E38','#8B852F','#A88B2F','#C3913B','#DC964F','#F19D6B','#FAA587','#FDAFA4','#FDB8BF','#FCC2DD','#FACCFA']\n\n\n1.69 Bilbao, sequential\n\n\n\n\n\n\n\n\n['#FFFFFF','#EEEEEE','#DDDCDA','#D0CEC7','#C6C2B3','#C0BAA2','#BBB190','#B5A77F','#B09A71','#AC8D68','#A88163','#A5755E','#A16959','#9D5D53','#964F4A','#8B403E','#7C302F','#6D2121','#5C1113','#4D0001']\n\n\n1.70 Buda, sequential\n\n\n\n\n\n\n\n\n['#B301B3','#B318A8','#B3299F','#B53798','#B84593','#BC518F','#C15D8B','#C46987','#C87384','#CC7F80','#CF8A7D','#D2977A','#D5A277','#D8AD74','#DBBA71','#DEC66E','#E1D36B','#E5E068','#F0EF66','#FFFF66']\n\n\n1.71 Davos, sequential\n\n\n\n\n\n\n\n\n['#00054A','#06185D','#112B70','#1A3C80','#264E8F','#325E98','#3F6C9D','#4C779D','#58819A','#658A95','#729190','#7F9A8B','#8DA488','#9EB188','#B6C391','#CFD6A2','#E6E9BC','#F3F4D4','#FBFBEB','#FEFEFE']\n\n\n1.72 Devon, sequential\n\n\n\n\n\n\n\n\n['#2C1A4C','#2B2658','#293366','#283F72','#274E82','#2A5B93','#3266A7','#3F70B9','#557CCA','#7188D8','#8A94E1','#A2A0EA','#B1ACEF','#BDB7F1','#C8C3F4','#D2CEF6','#DEDBF8','#E8E6FA','#F4F3FD','#FFFFFF']\n\n\n1.73 GrayC, sequential\n\n\n\n\n\n\n\n\n['#FFFFFF','#F0F0F0','#E1E1E1','#D2D2D2','#C3C3C3','#B5B5B5','#A6A6A6','#999999','#8B8B8B','#7D7D7D','#717171','#636363','#575757','#4B4B4B','#3E3E3E','#333333','#272727','#1D1D1D','#111111','#000000']\n\n\n1.74 Hawaii, sequential\n\n\n\n\n\n\n\n\n['#8C0273','#8F1966','#92295A','#93364F','#954445','#97513C','#995F32','#9B6C2A','#9C7B21','#9D8D1C','#9A9F20','#93B033','#88BE4C','#7CC867','#6FD286','#64DAA2','#5FE4C2','#6DEBDC','#8FF0F1','#B3F2FD']\n\n\n1.75 Imola, sequential\n\n\n\n\n\n\n\n\n['#1A33B3','#1F3CAE','#2446A9','#284EA5','#2D57A0','#31609C','#376896','#3E708F','#457788','#4E8181','#598B7D','#66987A','#72A576','#7FB273','#8DC070','#9CCE6C','#AFDE69','#C6EB67','#E4F666','#FFFF66']\n\n\n1.76 LaJolla, sequential\n\n\n\n\n\n\n\n\n['#FFFFCC','#FEF7B5','#FCED9C','#F9E184','#F5D06C','#F1BF5D','#EDAD56','#EA9D53','#E68E52','#E17D50','#DA6C4E','#CA5B4B','#B54D46','#9D4440','#843D37','#6E362D','#562F21','#412817','#2B210D','#1A1A01']\n\n\n1.77 LaPaz, sequential\n\n\n\n\n\n\n\n\n['#1A0C64','#1F1D6F','#222C7A','#263A84','#29498D','#2E5695','#34639B','#3C70A0','#467BA3','#5487A4','#6390A2','#76999F','#879F9B','#99A497','#AEAA95','#C5B49B','#DEC3AB','#F0D4C2','#FAE5DC','#FEF2F3']\n\n\n1.78 Nuuk, sequential\n\n\n\n\n\n\n\n\n['#05598C','#195D88','#286284','#366882','#467083','#577986','#6A848B','#7B8E91','#8B9795','#9AA198','#A6A997','#AFB094','#B6B690','#BBBB8B','#C1C186','#C8C883','#D3D385','#E1E18F','#F1F1A0','#FEFEB2']\n\n\n1.79 Oleron, sequential\n\n\n\n\n\n\n\n\n['#1A2659','#2E3A6D','#445083','#596699','#727EB1','#8996C9','#A3AFE1','#B9C6F2','#CBD8F8','#DEEAFD','#2A5100','#495A01','#65660C','#837628','#A18A47','#BE9F65','#DEB886','#F2D0A7','#F9E7C7','#FDFDE6']\n\n\n1.80 Oslo, sequential\n\n\n\n\n\n\n\n\n['#010101','#080F17','#0D1A28','#0F2439','#12304C','#173B60','#1D4875','#255589','#31629E','#4472B3','#5982C2','#6E90C8','#7E9ACA','#8DA3C9','#9EAEC9','#AEB9CB','#C2C7D1','#D5D8DC','#EBECED','#FFFFFF']\n\n\n1.81 Tokyo, sequential\n\n\n\n\n\n\n\n\n['#1A0E34','#2E153F','#431F4B','#572B58','#6B3A64','#794A6E','#835A76','#88677C','#8C7480','#8E8184','#918D87','#93998B','#95A58E','#98B292','#9FC197','#AAD2A0','#C0E5AE','#D7F3BD','#EDFBCC','#FEFED8']\n\n\n1.82 Turku, sequential\n\n\n\n\n\n\n\n\n['#000000','#151513','#23231F','#30302A','#3F3F34','#4D4C3B','#5B5B42','#686848','#77754F','#898456','#9C925F','#B29D6A','#C4A474','#D3A67F','#E1A98C','#EDAF9C','#F7BBB1','#FCC8C4','#FFD8D6','#FFE6E6']\n\n\n1.83 ArmyRose, diverging\n\n\n\n\n\n\n\n\n['#798234','#A3AD62','#D0D3A2','#FDFBE4','#F0C6C3','#DF91A3','#D46780']\n\n\n1.84 Earth, diverging\n\n\n\n\n\n\n\n\n['#A16928','#BD925A','#D6BD8D','#EDEAC2','#B5C8B8','#79A7AC','#2887A1']\n\n\n1.85 Fall, diverging\n\n\n\n\n\n\n\n\n['#3D5941','#778868','#B5B991','#F6EDBD','#EDBB8A','#DE8A5A','#CA562C']\n\n\n1.86 Geyser, diverging\n\n\n\n\n\n\n\n\n['#008080','#70A494','#B4C8A8','#F6EDBD','#EDBB8A','#DE8A5A','#CA562C']\n\n\n1.87 TealRose, diverging\n\n\n\n\n\n\n\n\n['#009392','#72AAA1','#B1C7B3','#F1EAC8','#E5B9AD','#D98994','#D0587E']\n\n\n1.88 Temps, diverging\n\n\n\n\n\n\n\n\n['#009392','#39B185','#9CCB86','#E9E29C','#EEB479','#E88471','#CF597E']\n\n\n1.89 Tropic, diverging\n\n\n\n\n\n\n\n\n['#009B9E','#42B7B9','#A7D3D4','#F1F1F1','#E4C1D9','#D691C1','#C75DAB']\n\n\n1.90 Balance, diverging\n\n\n\n\n\n\n\n\n['#181C43','#242E6C','#29409E','#1059BE','#1E76BB','#408DBA','#68A4BC','#91B7C3','#B9CAD0','#E1E1E3','#EBDEDB','#DFBDB2','#D69F8D','#CD8268','#C36143','#B74029','#A11D25','#830E29','#5E0E21','#3C0912']\n\n\n1.91 Curl, diverging\n\n\n\n\n\n\n\n\n['#151D44','#1A3753','#1C5062','#166971','#13837B','#389981','#6DAD8A','#9CBF9F','#C6D3BC','#EDEAE1','#F6E6DF','#EAC5B3','#E1A38B','#D7816F','#C86162','#B44560','#992D61','#7A1B5E','#571350','#340D35']\n\n\n1.92 Delta, diverging\n\n\n\n\n\n\n\n\n['#112040','#21316D','#21469A','#1B639F','#267EA5','#3896AB','#5BAEB1','#8FC2BB','#BED7CD','#E9EEE0','#F6EDB1','#E3CF77','#C5B83F','#9BA614','#6C9607','#3D851B','#136F29','#0F562C','#193D24','#172313']\n\n\n1.93 BrBG, diverging\n\n\n\n\n\n\n\n\n['#543005','#8C510A','#BF812D','#DFC27D','#F6E8C3','#F5F5F5','#C7EAE5','#80CDC1','#35978F','#01665E','#003C30']\n\n\n1.94 PRGn, diverging\n\n\n\n\n\n\n\n\n['#40004B','#762A83','#9970AB','#C2A5CF','#E7D4E8','#F7F7F7','#D9F0D3','#A6DBA0','#5AAE61','#1B7837','#00441B']\n\n\n1.95 PiYG, diverging\n\n\n\n\n\n\n\n\n['#8E0152','#C51B7D','#DE77AE','#F1B6DA','#FDE0EF','#F7F7F7','#E6F5D0','#B8E186','#7FBC41','#4D9221','#276419']\n\n\n1.96 PuOr, diverging\n\n\n\n\n\n\n\n\n['#7F3B08','#B35806','#E08214','#FDB863','#FEE0B6','#F7F7F7','#D8DAEB','#B2ABD2','#8073AC','#542788','#2D004B']\n\n\n1.97 RdBu, diverging\n\n\n\n\n\n\n\n\n['#67001F','#B2182B','#D6604D','#F4A582','#FDDBC7','#F7F7F7','#D1E5F0','#92C5DE','#4393C3','#2166AC','#053061']\n\n\n1.98 RdGy, diverging\n\n\n\n\n\n\n\n\n['#67001F','#B2182B','#D6604D','#F4A582','#FDDBC7','#FFFFFF','#E0E0E0','#BABABA','#878787','#4D4D4D','#1A1A1A']\n\n\n1.99 RdYlBu, diverging\n\n\n\n\n\n\n\n\n['#A50026','#D73027','#F46D43','#FDAE61','#FEE090','#FFFFBF','#E0F3F8','#ABD9E9','#74ADD1','#4575B4','#313695']\n\n\n1.100 RdYlGn, diverging\n\n\n\n\n\n\n\n\n['#A50026','#D73027','#F46D43','#FDAE61','#FEE08B','#FFFFBF','#D9EF8B','#A6D96A','#66BD63','#1A9850','#006837']\n\n\n1.101 Spectral, diverging\n\n\n\n\n\n\n\n\n['#9E0142','#D53E4F','#F46D43','#FDAE61','#FEE08B','#FFFFBF','#E6F598','#ABDDA4','#66C2A5','#3288BD','#5E4FA2']\n\n\n1.102 BlueDarkOrange12, diverging\n\n\n\n\n\n\n\n\n['#1E8E99','#51C3CC','#99F9FF','#B2FCFF','#CCFEFF','#E5FFFF','#FFE5CC','#FFCA99','#FFAD65','#FF8E32','#CC5800','#993F00']\n\n\n1.103 BlueDarkOrange18, diverging\n\n\n\n\n\n\n\n\n['#006666','#009999','#00CCCC','#00FFFF','#33FFFF','#65FFFF','#99FFFF','#B2FFFF','#CBFFFF','#E5FFFF','#FFE5CB','#FFCA99','#FFAD65','#FF8E33','#FF6E00','#CC5500','#993D00','#662700']\n\n\n1.104 BlueDarkRed12, diverging\n\n\n\n\n\n\n\n\n['#290AD8','#264DFF','#3FA0FF','#72D9FF','#AAF7FF','#E0FFFF','#FFFFBF','#FFE099','#FFAD72','#F76D5E','#D82632','#A50021']\n\n\n1.105 BlueDarkRed18, diverging\n\n\n\n\n\n\n\n\n['#2400D8','#181CF7','#2857FF','#3D87FF','#56B0FF','#75D3FF','#99EAFF','#BCF9FF','#EAFFFF','#FFFFEA','#FFF1BC','#FFD699','#FFAC75','#FF7856','#FF3D3D','#F72735','#D8152F','#A50021']\n\n\n1.106 BlueGray, diverging\n\n\n\n\n\n\n\n\n['#0099CC','#66E5FF','#99FFFF','#CCFFFF','#E5E5E5','#999999','#666666','#333333']\n\n\n1.107 BlueGreen, diverging\n\n\n\n\n\n\n\n\n['#0000FF','#3333FF','#6565FF','#9999FF','#B2B2FF','#CBCBFF','#E5E5FF','#E5FFE5','#CBFFCB','#B2FFB2','#99FF99','#65FF65','#33FF33','#00FF00']\n\n\n1.108 BlueGrey, diverging\n\n\n\n\n\n\n\n\n['#0099CC','#66E5FF','#99FFFF','#CCFFFF','#E5E5E5','#999999','#666666','#333333']\n\n\n1.109 BlueOrange10, diverging\n\n\n\n\n\n\n\n\n['#0054FF','#3299FF','#65CCFF','#99EDFF','#CCFFFF','#FFFFCC','#FFEE99','#FFCC65','#FF9932','#FF5500']\n\n\n1.110 BlueOrange12, diverging\n\n\n\n\n\n\n\n\n['#002AFF','#1965FF','#3299FF','#99EDFF','#65CCFF','#CCFFFF','#FFFFCC','#FFEE99','#FFCC65','#FF9932','#FF6619','#FF2A00']\n\n\n1.111 BlueOrange8, diverging\n\n\n\n\n\n\n\n\n['#007FFF','#4CC3FF','#99EDFF','#CCFFFF','#FFFFCC','#FFEE99','#FFC34C','#FF7F00']\n\n\n1.112 BlueOrangeRed, diverging\n\n\n\n\n\n\n\n\n['#075AFF','#3276FF','#5990FF','#8CB2FF','#BFD4FF','#E5EEFF','#F7F9FF','#FFFFCC','#FFFF99','#FFFF00','#FFCC00','#FF9900','#FF6600','#FF0000']\n\n\n1.113 BrownBlue10, diverging\n\n\n\n\n\n\n\n\n['#662F00','#996035','#CC9B7A','#D8AF97','#F2DACD','#CCFDFF','#99F8FF','#65EFFF','#32E3FF','#00A9CC']\n\n\n1.114 BrownBlue12, diverging\n\n\n\n\n\n\n\n\n['#331900','#022F00','#356035','#049B7A','#10AF97','#2ADACD','#04FDFF','#35F8FF','#01EFFF','#32E3FF','#00A9CC','#007A99']\n\n\n1.115 GreenMagenta, diverging\n\n\n\n\n\n\n\n\n['#005000','#008600','#00BB00','#00F100','#50FF50','#86FF86','#BBFFBB','#FFFFFF','#FFF1FF','#FFBBFF','#FF86FF','#FF50FF','#F100F1','#BB00BB','#860086','#500050']\n\n\n1.116 RedYellowBlue, diverging\n\n\n\n\n\n\n\n\n['#A50021','#D82632','#F76D5E','#FFAD72','#FFE099','#FFFFBF','#E0FFFF','#AAF7FF','#72D8FF','#3FA0FF','#264CFF']\n\n\n1.117 Berlin, diverging\n\n\n\n\n\n\n\n\n['#9EB0FF','#80ACF1','#5DA5DD','#4194C1','#307A9E','#26627F','#1C495F','#153342','#112028','#131112','#200B04','#300F00','#421301','#571B06','#752D17','#904430','#AC5E4F','#C6776C','#E3938E','#FFADAD']\n\n\n1.118 Broc, diverging\n\n\n\n\n\n\n\n\n['#2C1A4C','#2A2D60','#284375','#2E5889','#45719C','#6187AC','#82A0BD','#A0B7CD','#BFCFDD','#E0E7EC','#EEEFE3','#E1E1C4','#D2D2A5','#BEBE85','#A1A167','#878751','#6C6C3A','#545426','#3B3B12','#262600']\n\n\n1.119 Cork, diverging\n\n\n\n\n\n\n\n\n['#2C1A4C','#2B2C5F','#2A4174','#2F5687','#436D9A','#5D83A9','#7B9BBA','#98B1C9','#B6C7D8','#D3DFE5','#D9E7DE','#C1DBC4','#A7CBAA','#8DBC91','#71AC76','#589B5B','#45843D','#406F26','#425C13','#424D03']\n\n\n1.120 Lisbon, diverging\n\n\n\n\n\n\n\n\n['#E6E5FF','#C3CCEA','#9EB1D4','#7C98C0','#597DA9','#3A6491','#224A71','#173653','#122437','#131920','#1C1C17','#302D1E','#46422A','#5E5838','#797249','#948B5B','#B1A975','#CBC593','#E6E3B6','#FFFFD9']\n\n\n1.121 Roma, diverging\n\n\n\n\n\n\n\n\n['#7F1900','#8D3A0B','#9C5717','#A97122','#B68C2F','#C4A841','#D5C861','#E0DD86','#E2E8A6','#D6ECC0','#BDE9CF','#98DFD7','#75CCD6','#5BB6D0','#4A9DC7','#4087BD','#3770B4','#2F5CAB','#2547A1','#1A3399']\n\n\n1.122 Tofino, diverging\n\n\n\n\n\n\n\n\n['#DED9FF','#BBC0F0','#96A6DF','#738DCE','#5171B4','#3A5993','#2B426F','#1F304F','#151F32','#0E151A','#0E1A11','#152A17','#1D3E20','#27542C','#346D39','#448747','#64A45C','#8BBB71','#B5D187','#DBE69B']\n\n\n1.123 Vik, diverging\n\n\n\n\n\n\n\n\n['#001261','#02276E','#033C7C','#055189','#176999','#3983AB','#64A0BE','#8DBAD0','#B6D3E1','#E0E6E9','#EEDDD3','#E5C1AD','#DBA88B','#D0906B','#C6774A','#BB602D','#A5400F','#892606','#6F1107','#590008']\n\n\n1.124 Antique, qualitative\n\n\n\n\n\n\n\n\n['#855C75','#D9AF6B','#AF6458','#736F4C','#526A83','#625377','#68855C','#9C9C5E','#A06177','#8C785D']\n\n\n1.125 Bold, qualitative\n\n\n\n\n\n\n\n\n['#7F3C8D','#11A579','#3969AC','#F2B701','#E73F74','#80BA5A','#E68310','#008695','#CF1C90','#F97B72']\n\n\n1.126 Pastel, qualitative\n\n\n\n\n\n\n\n\n['#66C5CC','#F6CF71','#F89C74','#DCB0F2','#87C55F','#9EB9F3','#FE88B1','#C9DB74','#8BE0A4','#B497E7']\n\n\n1.127 Prism, qualitative\n\n\n\n\n\n\n\n\n['#5F4690','#1D6996','#38A6A5','#0F8554','#73AF48','#EDAD08','#E17C05','#CC503E','#94346E','#6F4070']\n\n\n1.128 Safe, qualitative\n\n\n\n\n\n\n\n\n['#88CCEE','#CC6677','#DDCC77','#117733','#332288','#AA4499','#44AA99','#999933','#882255','#661100']\n\n\n1.129 Vivid, qualitative\n\n\n\n\n\n\n\n\n['#E58606','#5D69B1','#52BCA3','#99C945','#CC61B0','#24796C','#DAA51B','#2F8AC4','#764E9F','#ED645A']\n\n\n1.130 Accent, qualitative\n\n\n\n\n\n\n\n\n['#7FC97F','#BEAED4','#FDC086','#FFFF99','#386CB0','#F0027F','#BF5B17','#666666']\n\n\n1.131 Dark2, qualitative\n\n\n\n\n\n\n\n\n['#1B9E77','#D95F02','#7570B3','#E7298A','#66A61E','#E6AB02','#A6761D','#666666']\n\n\n1.132 Paired, qualitative\n\n\n\n\n\n\n\n\n['#A6CEE3','#1F78B4','#B2DF8A','#33A02C','#FB9A99','#E31A1C','#FDBF6F','#FF7F00','#CAB2D6','#6A3D9A','#FFFF99','#B15928']\n\n\n1.133 Pastel1, qualitative\n\n\n\n\n\n\n\n\n['#FBB4AE','#B3CDE3','#CCEBC5','#DECBE4','#FED9A6','#FFFFCC','#E5D8BD','#FDDAEC','#F2F2F2']\n\n\n1.134 Pastel2, qualitative\n\n\n\n\n\n\n\n\n['#B3E2CD','#FDCDAC','#CBD5E8','#F4CAE4','#E6F5C9','#FFF2AE','#F1E2CC','#CCCCCC']\n\n\n1.135 Set1, qualitative\n\n\n\n\n\n\n\n\n['#E41A1C','#377EB8','#4DAF4A','#984EA3','#FF7F00','#FFFF33','#A65628','#F781BF','#999999']\n\n\n1.136 Set2, qualitative\n\n\n\n\n\n\n\n\n['#66C2A5','#FC8D62','#8DA0CB','#E78AC3','#A6D854','#FFD92F','#E5C494','#B3B3B3']\n\n\n1.137 Set3, qualitative\n\n\n\n\n\n\n\n\n['#8DD3C7','#FFFFB3','#BEBADA','#FB8072','#80B1D3','#FDB462','#B3DE69','#FCCDE5','#D9D9D9','#BC80BD','#CCEBC5','#FFED6F']\n\n\n1.138 BlueRed, qualitative\n\n\n\n\n\n\n\n\n['#2C69B0','#B5C8E2','#F02720','#FFB6B0','#AC613C','#E9C39B','#6BA3D6','#B5DFFD','#AC8763','#DDC9B4','#BD0A36','#F4737A']\n\n\n1.139 ColorBlind, qualitative\n\n\n\n\n\n\n\n\n['#006BA4','#FF800E','#ABABAB','#595959','#5F9ED1','#C85200','#898989','#A2C8EC','#FFBC79','#CFCFCF']\n\n\n1.140 Gray, qualitative\n\n\n\n\n\n\n\n\n['#60636A','#A5ACAF','#414451','#8F8782','#CFCFCF']\n\n\n1.141 GreenOrange, qualitative\n\n\n\n\n\n\n\n\n['#32A251','#ACD98D','#FF7F0F','#FFB977','#3CB7CC','#98D9E4','#B85A0D','#FFD94A','#39737C','#86B4A9','#82853B','#CCC94D']\n\n\n1.142 PurpleGray, qualitative\n\n\n\n\n\n\n\n\n['#7B66D2','#A699E8','#DC5FBD','#FFC0DA','#5F5A41','#B4B19B','#995688','#D898BA','#AB6AD5','#D098EE','#8B7C6E','#DBD4C5']\n\n\n1.143 TableauLight, qualitative\n\n\n\n\n\n\n\n\n['#AEC7E8','#FFBB78','#98DF8A','#FF9896','#C5B0D5','#C49C94','#F7B6D2','#C7C7C7','#DBDB8D','#9EDAE5']\n\n\n1.144 TableauMedium, qualitative\n\n\n\n\n\n\n\n\n['#729ECE','#FF9E4A','#67BF5C','#ED665D','#AD8BC9','#A8786E','#ED97CA','#A2A2A2','#CDCC5D','#6DCCDA']\n\n\n1.145 Tableau, qualitative\n\n\n\n\n\n\n\n\n['#1F77B4','#AEC7E8','#FF7F0E','#FFBB78','#2CA02C','#98DF8A','#D62728','#FF9896','#9467BD','#C5B0D5','#8C564B','#C49C94','#E377C2','#F7B6D2','#7F7F7F','#C7C7C7','#BCBD22','#DBDB8D','#17BECF','#9EDAE5']\n\n\n1.146 TrafficLight, qualitative\n\n\n\n\n\n\n\n\n['#B10318','#DBA13A','#309343','#D82526','#FFC156','#69B764','#F26C64','#FFDD71','#9FCD99']\n\n\n1.147 Aquatic1, qualitative\n\n\n\n\n\n\n\n\n['#342419','#1C4027','#F1C90E','#665899','#B89382']\n\n\n1.148 Aquatic2, qualitative\n\n\n\n\n\n\n\n\n['#8B9CB8','#E9E541','#589FC2','#A08D5E','#BDB9CE']\n\n\n1.149 Aquatic3, qualitative\n\n\n\n\n\n\n\n\n['#D6A142','#C28072','#C8B7A1','#BD442D','#64543C']\n\n\n1.150 Cavalcanti, qualitative\n\n\n\n\n\n\n\n\n['#D1AA00','#083213','#929460','#6F9879','#842111']\n\n\n1.151 Chevalier, qualitative\n\n\n\n\n\n\n\n\n['#355243','#FECA49','#C9D5D5','#BBA289']\n\n\n1.152 Darjeeling1, qualitative\n\n\n\n\n\n\n\n\n['#9E9797','#C28E00','#836659','#9C5A33']\n\n\n1.153 Darjeeling2, qualitative\n\n\n\n\n\n\n\n\n['#D5E3D8','#618A98','#F9DA95','#AE4B16','#787064']\n\n\n1.154 Darjeeling3, qualitative\n\n\n\n\n\n\n\n\n['#A8AB50','#FFE83D','#A9D3D2','#24477D','#5A917C']\n\n\n1.155 Darjeeling4, qualitative\n\n\n\n\n\n\n\n\n['#746768','#684762','#800806','#BC840E','#AE595C']\n\n\n1.156 FantasticFox1, qualitative\n\n\n\n\n\n\n\n\n['#F9DB20','#934B4E','#42170D','#C27922','#E2C8A7']\n\n\n1.157 FantasticFox2, qualitative\n\n\n\n\n\n\n\n\n['#E4BF44','#C65742','#9AD0BB','#332737','#ABA18D']\n\n\n1.158 GrandBudapest1, qualitative\n\n\n\n\n\n\n\n\n['#EEAE65','#FB4F55','#481313','#CC5F27']\n\n\n1.159 GrandBudapest2, qualitative\n\n\n\n\n\n\n\n\n['#FFA68E','#FBCCB7','#8C1108','#290B04']\n\n\n1.160 GrandBudapest3, qualitative\n\n\n\n\n\n\n\n\n['#FFDCB6','#253845','#E7AD9D','#66756E','#8B3F31','#966D35']\n\n\n1.161 GrandBudapest4, qualitative\n\n\n\n\n\n\n\n\n['#BA6E00','#502056','#FFF6BB','#9A7F19','#1F121B']\n\n\n1.162 GrandBudapest5, qualitative\n\n\n\n\n\n\n\n\n['#E19283','#8C1B4C','#D19336','#E7C7BE','#330C00']\n\n\n1.163 IsleOfDogs1, qualitative\n\n\n\n\n\n\n\n\n['#FEC5AF','#AE7E71','#D26732','#322323','#181213']\n\n\n1.164 IsleOfDogs2, qualitative\n\n\n\n\n\n\n\n\n['#986C96','#8A1F1F','#D5AB55','#0E0C0C','#DCC2C9','#82726C']\n\n\n1.165 IsleOfDogs3, qualitative\n\n\n\n\n\n\n\n\n['#E58EA7','#E0C1A0','#1E1263','#D8B148']\n\n\n1.166 Margot1, qualitative\n\n\n\n\n\n\n\n\n['#897712','#F3C2A4','#F69F97','#FED68C','#629075']\n\n\n1.167 Margot2, qualitative\n\n\n\n\n\n\n\n\n['#768B93','#BC240F','#F9ECC5','#D47329']\n\n\n1.168 Margot3, qualitative\n\n\n\n\n\n\n\n\n['#87A2A4','#CAA065','#D6CABF','#D6A0A0']\n\n\n1.169 Mendl, qualitative\n\n\n\n\n\n\n\n\n['#DE8DB9','#B8C0F6','#CF9387','#5C80CC']\n\n\n1.170 Moonrise1, qualitative\n\n\n\n\n\n\n\n\n['#72CADD','#F0A5B0','#8C8536','#C3B477','#FAD063']\n\n\n1.171 Moonrise2, qualitative\n\n\n\n\n\n\n\n\n['#667C74','#B56A27','#C2BA7C','#1F1917']\n\n\n1.172 Moonrise3, qualitative\n\n\n\n\n\n\n\n\n['#F2DA52','#C59D00','#CBCBC9','#1B1E14']\n\n\n1.173 Moonrise4, qualitative\n\n\n\n\n\n\n\n\n['#7B8761','#C1A62E','#4F8F6B','#3B453C','#9F3208']\n\n\n1.174 Moonrise5, qualitative\n\n\n\n\n\n\n\n\n['#DF8C90','#D8D28E','#F5BE25','#3D4A1C','#D13060','#A86B4C']\n\n\n1.175 Moonrise6, qualitative\n\n\n\n\n\n\n\n\n['#BF513D','#C9A296','#C5C188','#7BB191','#D9AE30']\n\n\n1.176 Moonrise7, qualitative\n\n\n\n\n\n\n\n\n['#232355','#616860','#A75B44','#912B29','#FFE38F']\n\n\n1.177 Royal1, qualitative\n\n\n\n\n\n\n\n\n['#79A43A','#F2D6AF','#5E4829','#181401']\n\n\n1.178 Royal2, qualitative\n\n\n\n\n\n\n\n\n['#C2ABBA','#8C3B49','#B6ACA6','#212053','#D1D3D5']\n\n\n1.179 Royal3, qualitative\n\n\n\n\n\n\n\n\n['#FC576C','#ED7E53','#E2998B','#2E1718','#FBD6CA']\n\n\n1.180 Zissou, qualitative\n\n\n\n\n\n\n\n\n['#0099E6','#12255A','#F23814','#DFB78B','#B6C3C5']\n\n\n1.181 Okabe_Ito_Categorigal, qualitative\n\n\n\n\n\n\n\n\n['#000000','#e69f00','#56b4e9','#009e73','#f0e442','#0072b2','#d55e00','#cc79a7']"
   }
 ]

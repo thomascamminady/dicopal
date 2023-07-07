@@ -10,22 +10,22 @@ This is [`dicopal`](https://github.com/thomascamminady/dicopal/tree/main), an ho
 
 [`dicopal.js`](https://github.com/riatelab/dicopal.js) deserves all credit for this work. I have only taken the palettes that they have collected and put them up on this page together with the hex codes. `dicopal.js` is using the Apache-2.0 license.
 
-In total, `dicopal.js` has compiled color palettes with the following indentifiers:
-```python
-[
-  "cartocolors",
-  "cmocean",
-  "colorbrewer",
-  "lightbartlein",
-  "matplotlib",
-  "mycarta",
-  "scientific",
-  "tableau",
-  "wesanderson",
-  "otakeito",
-]
+
+
+## Stop talking, I want colors
+You'll find all palettes below in order sequential, diverging, qualitative. If you
+want to browse by source or type, use the table of contents.
+
+```{python}
+from dicopal.create_page import create_page_by_type
+
+path = "dicopal.js/src/palettes.json"
+create_page_by_type("sequential", path)
+create_page_by_type("diverging", path)
+create_page_by_type("qualitative", path)
 
 ```
+
 
 ## How to use?
 

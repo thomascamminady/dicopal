@@ -6,8 +6,8 @@ from IPython.display import display
 from dicopal.create_overview import create_overview
 
 
-def create_page(source: str):
-    with open("../dicopal.js/src/palettes.json", "r") as f:
+def create_page(source: str, path: str = "../dicopal.js/src/palettes.json"):
+    with open(path, "r") as f:
         palettes = json.load(f)
 
     for palette in palettes[source].keys():
@@ -19,8 +19,10 @@ def create_page(source: str):
         display(Markdown("```[" + colors + "]```"))
 
 
-def create_page_by_type(requested_palettetype: str):
-    with open("../dicopal.js/src/palettes.json", "r") as f:
+def create_page_by_type(
+    requested_palettetype: str, path: str = "../dicopal.js/src/palettes.json"
+):
+    with open(path, "r") as f:
         palettes = json.load(f)
 
     for source in palettes.keys():

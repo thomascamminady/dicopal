@@ -39,6 +39,6 @@ format:
     page-layout: full
     code-fold: true
     toc: true
-    toc-expand: 3
-    toc-depth: 3
+    toc-expand: 10
+    toc-depth: 10
 
