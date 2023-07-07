@@ -21,8 +21,8 @@ def create_overview(palette: dict[str, list[str]]) -> tuple[alt.HConcatChart, st
             tooltip=["color:N"],
         )
         .properties(
-            width=600,
-            height=300,
+            width=700,
+            height=60 * len(palette.items()),
         )
     )
 
@@ -33,7 +33,7 @@ def create_overview(palette: dict[str, list[str]]) -> tuple[alt.HConcatChart, st
                 color=alt.Color("color:N")
                 .scale(range=colors, domain=colors)
                 .legend(None),
-            ),
+            )
             # base.mark_text(fontSize=15, color="black").encode(
             #     x=alt.X("y:Q").axis(None).stack("zero"),
             #     text=alt.Text("color:N"),

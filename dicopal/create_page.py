@@ -9,8 +9,9 @@ from dicopal.create_overview import create_overview
 def create(palettes, source, palette, url, palettetype):
     chart, colors = create_overview(palettes[source][palette]["values"])
     display(Markdown(f"## [{palette}]({url}), {palettetype}"))
+    display(Markdown(f"```python\n[{colors}]\n```"))
     display(chart)
-    display(Markdown("```python\n[\n " + ",\n ".join(colors.split(",")) + ",\n]\n```"))
+    # display(Markdown("```python\n[\n " + ",\n ".join(colors.split(",")) + ",\n]\n```"))
 
 
 def create_page(source: str, path: str = "../dicopal.js/src/palettes.json"):
