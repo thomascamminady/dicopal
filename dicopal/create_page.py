@@ -15,11 +15,11 @@ def create(
     colorhex = [c.strip("'") for c in colors[n].split(",")]
     example = create_example(colorhex)
 
-    link_with_more_info = f"""https://thomascamminady.github.io/dicopal/notebooks/{source}.html#{palette.lower().replace("_","")}-{palettetype}-reference"""
+    link_with_more_info = f"""https://thomascamminady.github.io/dicopal/notebooks/{source}.html#{palette.lower().replace(" ","_")}-{palettetype}-reference"""
 
     display(
         Markdown(
-            f"""   \n## [{palette.lower().replace("_","")}]({link_with_more_info}), {palettetype}, [reference]({url})"""
+            f"""   \n## [{palette.lower().replace(" ","_")}]({link_with_more_info}), {palettetype}, [reference]({url})"""
         )
     )
     color_strings = [f"\n[{color}]" for color in colors]

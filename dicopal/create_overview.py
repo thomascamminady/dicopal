@@ -1,7 +1,8 @@
 import altair as alt
 import numpy as np
 import polars as pl
-from vega_datasets import data
+
+# from vega_datasets import data
 
 alt.renderers.set_embed_options(actions=False)
 
@@ -70,9 +71,18 @@ def create_overview(
 def create_example(palette):
     width = 180
     height = 150
+    np.random.seed(1)
+    n = 30
+    df = pl.DataFrame(
+        {
+            "x": np.sort(np.random.rand(n)),
+            "y": np.random.rand(n),
+            "color": np.random.randint(0, 5, n),
+        }
+    )
     base = (
-        alt.Chart(data.cars())
-        .encode(color=alt.Color("Name:N").scale(range=palette).legend(None))
+        alt.Chart(df)
+        .encode(color=alt.Color("color:N").scale(range=palette).legend(None))
         .properties(width=width, height=height)
     )
 
@@ -93,30 +103,25 @@ def create_example(palette):
         alt.vconcat(
             alt.hconcat(
                 base.mark_circle(size=100, opacity=1, clip=True).encode(
-                    x=alt.X("Horsepower:Q").title("").scale(domain=(50, 140)),
-                    y=alt.Y("Miles_per_Gallon:Q").title("").scale(domain=(20, 30)),
+                    x=alt.X("x:Q").title(""),  # .scale(domain=(50, 140)),
+                    y=alt.Y("y:Q").title(""),  # .scale(domain=(20, 30)),
                 ),
                 base.mark_bar().encode(
-                    x=alt.X("Miles_per_Gallon:Q").bin().title(""),
-                    y=alt.Y("Miles_per_Gallon:Q").title(""),
-                    color=alt.Color("Miles_per_Gallon:N")
-                    .scale(range=palette)
-                    .legend(None),
+                    x=alt.X("y:Q").bin().title(""),
+                    y=alt.Y("y:Q").title(""),
+                    color=alt.Color("y:N").scale(range=palette).legend(None),
                 ),
                 base.mark_line(strokeWidth=4).encode(
-                    x=alt.X("Horsepower:Q").title(""),
-                    y=alt.Y("Miles_per_Gallon:Q").title(""),
-                    color=alt.Color("Miles_per_Gallon:N")
-                    .scale(range=palette)
-                    .legend(None),
+                    x=alt.X("x:Q").title(""),
+                    y=alt.Y("y:Q").title(""),
                 ),
                 # geomap,
             ),
             # alt.hconcat(
             #     base.mark_line(strokeWidth=4).encode(
-            #         x=alt.X("Horsepower:Q").title(""),
-            #         y=alt.Y("Miles_per_Gallon:Q").title(""),
-            #         color=alt.Color("Miles_per_Gallon:N")
+            #         x=alt.X("x:Q").title(""),
+            #         y=alt.Y("y:Q").title(""),
+            #         color=alt.Color("y:N")
             #         .scale(range=palette)
             #         .legend(None),
             #     ),
