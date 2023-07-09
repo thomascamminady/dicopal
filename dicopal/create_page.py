@@ -15,11 +15,11 @@ def create(
     colorhex = [c.strip("'") for c in colors[n].split(",")]
     example = create_example(colorhex)
 
-    link_with_more_info = f"""https://thomascamminady.github.io/dicopal/notebooks/{source}.html#{palette.lower()}-{palettetype}-reference"""
+    link_with_more_info = f"""https://thomascamminady.github.io/dicopal/notebooks/{source}.html#{palette.lower().replace("_","")}-{palettetype}-reference"""
 
     display(
         Markdown(
-            f"   \n## [{palette}]({link_with_more_info}), {palettetype}, [reference]({url})"
+            f"""   \n## [{palette.lower().replace("_","")}]({link_with_more_info}), {palettetype}, [reference]({url})"""
         )
     )
     color_strings = [f"\n[{color}]" for color in colors]
@@ -45,7 +45,7 @@ def create_page(
     path: str = "../dicopal.js/src/palettes_apdocc.json",
     include_example=True,
 ):
-    with open(path, "r") as f:
+    with open(path) as f:
         palettes = json.load(f)
 
     for palette in palettes[source].keys():
@@ -60,7 +60,7 @@ def create_page_by_type(
     include_example=True,
     only_one=False,
 ):
-    with open(path, "r") as f:
+    with open(path) as f:
         palettes = json.load(f)
 
     for source in palettes.keys():

@@ -50,3 +50,5 @@ format:
     toc-expand: 10
     toc-depth: 10
 
+execute:
+  cache: true
