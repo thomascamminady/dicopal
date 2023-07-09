@@ -15,7 +15,7 @@ def create(
     colorhex = [c.strip("'") for c in colors[n].split(",")]
     example = create_example(colorhex)
 
-    link_with_more_info = f"""https://thomascamminady.github.io/dicopal/notebooks/{source}.html#{palette.lower()}-{palettetype}"""
+    link_with_more_info = f"""https://thomascamminady.github.io/dicopal/notebooks/{source}.html#{palette.lower()}-{palettetype}-reference"""
 
     display(
         Markdown(
