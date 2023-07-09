@@ -6,5 +6,5 @@ title: apdocc
 ```{python}
 from dicopal.create_page import create_page
 
-create_page("'A Dictionary of Color Combinations' by Sanzo Wada")
+create_page("apdocc")
 ```
