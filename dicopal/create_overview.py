@@ -7,7 +7,7 @@ alt.renderers.set_embed_options(actions=False)
 
 
 def create_overview(
-    palette: dict[str, list[str]]
+    palette: dict[str, list[str]], only_one=True
 ) -> tuple[alt.HConcatChart, list[str]]:
     df = pl.DataFrame(
         [
@@ -16,6 +16,11 @@ def create_overview(
             for i, color in enumerate(colors)
         ]
     )
+
+    height = 50 * len(palette.items())
+    if only_one:
+        df = df.filter(pl.col("count") == pl.col("count").max())
+        height = 50
 
     colors = df["color"].unique().to_list()
 
@@ -28,7 +33,7 @@ def create_overview(
         )
         .properties(
             width=900,
-            height=50 * len(palette.items()),
+            height=height,
         )
     )
 
@@ -66,24 +71,24 @@ def create_example(palette):
     width = 180
     height = 150
     base = (
-        alt.Chart(data.cars.url)
+        alt.Chart(data.cars())
         .encode(color=alt.Color("Name:N").scale(range=palette).legend(None))
         .properties(width=width, height=height)
     )
 
-    states = alt.topo_feature(data.us_10m.url, "states")
-    source = data.population_engineers_hurricanes.url
+    # states = alt.topo_feature(data.us_10m.url, "states")
+    # source = data.population_engineers_hurricanes.url
 
-    geomap = (
-        alt.Chart(states)
-        .mark_geoshape()
-        .encode(alt.Color("engineers:N").scale(range=palette).legend(None))
-        .transform_lookup(
-            lookup="id", from_=alt.LookupData(source, "id", ["engineers"])
-        )
-        .properties(width=width, height=height)
-        .project(type="albersUsa")
-    )
+    # geomap = (
+    #     alt.Chart(states)
+    #     .mark_geoshape()
+    #     .encode(alt.Color("engineers:N").scale(range=palette).legend(None))
+    #     .transform_lookup(
+    #         lookup="id", from_=alt.LookupData(source, "id", ["engineers"])
+    #     )
+    #     .properties(width=width, height=height)
+    #     .project(type="albersUsa")
+    # )
     return (
         alt.vconcat(
             alt.hconcat(
@@ -105,7 +110,7 @@ def create_example(palette):
                     .scale(range=palette)
                     .legend(None),
                 ),
-                geomap,
+                # geomap,
             ),
             # alt.hconcat(
             #     base.mark_line(strokeWidth=4).encode(

@@ -6,13 +6,22 @@ from IPython.display import display
 from dicopal.create_overview import create_example, create_overview
 
 
-def create(palettes, source, palette, url, palettetype, include_example):
-    chart, colors = create_overview(palettes[source][palette]["values"])
+def create(
+    palettes, source, palette, url, palettetype, include_example, only_one=False
+):
+    chart, colors = create_overview(palettes[source][palette]["values"], only_one)
 
     n = len(colors) // 5
     colorhex = [c.strip("'") for c in colors[n].split(",")]
     example = create_example(colorhex)
-    display(Markdown(f"   \n## [{palette}]({url}), {palettetype}"))
+
+    link_with_more_info = f"""https://thomascamminady.github.io/dicopal/notebooks/colorbrewer.html#{palette.lower()}-{palettetype}"""
+
+    display(
+        Markdown(
+            f"   \n## [{palette}]({link_with_more_info}), {palettetype}, [reference]({url})"
+        )
+    )
     color_strings = [f"\n[{color}]" for color in colors]
     color_string = "".join(color_strings)
     display(chart)
@@ -49,6 +58,7 @@ def create_page_by_type(
     requested_palettetype: str,
     path: str = "../dicopal.js/src/palettes_apdocc.json",
     include_example=True,
+    only_one=False,
 ):
     with open(path, "r") as f:
         palettes = json.load(f)
@@ -58,4 +68,12 @@ def create_page_by_type(
             palettetype = palettes[source][palette]["type"]
             if requested_palettetype == palettetype:
                 url = palettes[source][palette]["url"]
-                create(palettes, source, palette, url, palettetype, include_example)
+                create(
+                    palettes,
+                    source,
+                    palette,
+                    url,
+                    palettetype,
+                    include_example,
+                    only_one,
+                )

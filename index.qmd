@@ -5,7 +5,7 @@ title: "A Collection Of Colors"
 # Getting started
 This is [a collection of colors](https://github.com/thomascamminady/dicopal/tree/main), an homage to the [`dicopal.js`](https://github.com/riatelab/dicopal.js) project. This website allows you to quickly browse a variety of color palettes and just copy their hex codes.
 
-I can think of two ways in which this collection might be helpfuls. A) You want to look for a suitable palette, click on the reference, and use the palette from the original source. B) You are looking for a **discrete** palette (the underlying map can still be continuous) and just need some fixed values that you can hard code in your application.
+I can think of two ways in which this collection might be helpful. A) You want to look for a suitable palette, click on the reference, and use the palette from the original source. B) You are looking for a **discrete** palette (the underlying map can still be continuous) and just need some fixed values that you can hard code in your application.
 
 ## `dicopal.js`
 
@@ -14,16 +14,22 @@ I can think of two ways in which this collection might be helpfuls. A) You want 
 
 
 ## Stop talking, I want colors
-You'll find all palettes below in order sequential, diverging, qualitative. If you
-want to browse by source or type, use the table of contents.
+Below, you'll find all palettes in the order *sequential*, *diverging*, *qualitative*.
+
+If you want to browse palettes by source or type, use the table of contents.
+There, you'll also find different versions
+of the same palettes (varying in the number of colors being used), as well as some example charts with the respective palette.
+
+**Click on the hyperlink in the palette name to see the example charts and more information.**
+
 
 ```{python}
 from dicopal.create_page import create_page_by_type
 
 path = "dicopal.js/src/palettes_apdocc.json"
-create_page_by_type("sequential", path, include_example=False)
-create_page_by_type("diverging", path, include_example=False)
-create_page_by_type("qualitative", path, include_example=False)
+create_page_by_type("sequential", path, include_example=False, only_one=True)
+create_page_by_type("diverging", path, include_example=False, only_one=True)
+create_page_by_type("qualitative", path, include_example=False, only_one=True)
 
 ```
 
